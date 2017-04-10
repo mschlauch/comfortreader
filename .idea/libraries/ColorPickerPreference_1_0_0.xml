@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ColorPickerPreference-1.0.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/net.margaritov.preference.colorpicker.ColorPickerPreference/ColorPickerPreference/1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/net.margaritov.preference.colorpicker.ColorPickerPreference/ColorPickerPreference/1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.margaritov.preference.colorpicker.ColorPickerPreference/ColorPickerPreference/1.0.0/e2bb57c8e7d8b59fe124502f409dee46aa776fa6/ColorPickerPreference-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

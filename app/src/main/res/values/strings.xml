@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comfort Reader</string>
+    <string name="app_text_after_shareweblink">Read with Comfort Reader (experimential)</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="next_button">"&gt;&gt;"</string>
+    <string name="previous_button">"&lt;&lt;"</string>
+    <string name="play_button"> ●/> </string>
+    <string name="georgia">fontname</string>
+    <string name="wordsperminuteSetting">words per minute</string>
+    <string name="title_activity_custommenu">CustommenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
+    <string name="title_activity_note">Annotation Editor</string>
+
+
+
+    <string name="settings_title_readingoptions">Reading</string>
+    <string name="settings_title_supportoptions">Support</string>
+    <string name="settings_help_title">Get help</string>
+
+    <string name="settings_title_textoptions">Text</string>
+
+    <string name="settings_recent_texts">Load recent text</string>
+    <string name="settings_recent_texts_summary">Continue reading something</string>
+    <string name="settings_filepicker_title">Current pdf or txt</string>
+
+    <string name="settings_positionslider_title">Position</string>
+
+    <string name="settings_wpm_title">Reading speed</string>
+    <string name="settings_wpn_summary">Words per minute:</string>
+
+    <string name="settings_minwords_title">Minimum line length</string>
+    <string name="settings_minwords_summary">Line should have more than</string>
+    <string name="settings_minwords_summary2">characters</string>
+
+    <string name="settings_maxwords_title">Maximum line length</string>
+    <string name="settings_maxwords_summary">Line should have less than</string>
+    <string name="settings_maxwords_summary2">characters</string>
+
+    <string name="settings_title_appearanceoptions">Appearance</string>
+    <string name="settings_fontsize_title">Font size</string>
+
+    <string name="settings_fontname_title">Typeface</string>
+    <string name="settings_fontname_summary"></string>
+    <string name="settings_textcolor_title">Text color</string>
+    <string name="settings_textcolor_summary">normal color</string>
+    <string name="settings_focuscolor_title">Focus color</string>
+    <string name="settings_focuscolor_summary">flowing letters</string>
+
+    <string name="settings_loadcopyandpaste_title">Reading temporary text</string>
+    <string name="settings_loadcopyandpaste_outputmessage_on">You can now read what you copied. Switch Off to get back to your text</string>
+    <string name="settings_loadcopyandpaste_outputmessage_off">You are now reading</string>
+
+    <string name="settings_fromcopypaste_summary">Switch On to paste copied text</string>
+
+    <string name="settings_backgroundcolor_title">Background color</string>
+    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_deviceorientation_title">Device orientation</string>
+    <string name="settings_deviceorientation_summary">behavior during device rotation</string>
+    <string name="settings_deviceorientation_default">Default system behavior</string>
+    <string name="settings_deviceorientation_portrait">Fixed Portrait mode</string>
+    <string name="settings_deviceorientation_landscape">Fixed Landscape mode</string>
+
+    <string name="notes_savebutton">Add this note</string>
+    <string name="notes_readnotebutton">View notes</string>
+    <string name="notes_message_done_saving_note">Done writing out to</string>
+    <string name="notes_title_current_notebook">Your notes:</string>
+
+    <string name="support_standarttext">
+    No text loaded. Click on the menu button on the upper left and load a txt or pdf file.</string>
+
+    <string name="fullscreen_text_while_loading">...Loading text...\n Please wait.</string>
+    <string name="fullscreen_copied_title">Copied text</string>
+
+    <string name="settings_filepicker_loadingtext">Loading pdf takes times. You may also prepare a txt from pdf on a computer</string>
+</resources>

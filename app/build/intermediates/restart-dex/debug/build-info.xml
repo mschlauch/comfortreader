@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="25"
+    density="hdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="7700620061234"
+    token="791353216150593170"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="2037" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="528" />
+    <task
+        name="verifier"
+        duration="22" />
+
+    <artifact
+        location="/home/michael/StudioProjects/ComfortReader/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="7700620061234"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/michael/StudioProjects/ComfortReader/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

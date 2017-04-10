@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comfort Reader</string>
+    <string name="app_text_after_shareweblink">Leggi con Comfort Reader (esperimentale)</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="next_button">"&gt;&gt;"</string>
+    <string name="previous_button">"&lt;&lt;"</string>
+    <string name="play_button"> ●/> </string>
+    <string name="georgia">fontname</string>
+    <string name="wordsperminuteSetting">words per minute</string>
+    <string name="title_activity_custommenu">CustommenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configurazione</string>
+    <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
+    <string name="title_activity_note">Scrivere una nota</string>
+
+
+
+    <string name="settings_title_readingoptions">Lettura</string>
+    <string name="settings_title_supportoptions">Aiuto</string>
+    <string name="settings_help_title">Vai al sito web</string>
+
+    <string name="settings_title_textoptions">Testo</string>
+
+    <string name="settings_recent_texts">Ultime letture</string>
+    <string name="settings_recent_texts_summary">Leggi un testo precedente</string>
+    <string name="settings_filepicker_title">File txt o pdf da leggere</string>
+
+    <string name="settings_positionslider_title">Posizione</string>
+
+    <string name="settings_wpm_title">Velocità lettura</string>
+    <string name="settings_wpn_summary">Numero di parole al minuto: </string>
+
+    <string name="settings_minwords_title">Lunghezza minima, una righa </string>
+    <string name="settings_minwords_summary">Una righa deve avere più di </string>
+    <string name="settings_minwords_summary2"> lettere.</string>
+
+    <string name="settings_maxwords_title">Lunghezza massima, una righa</string>
+    <string name="settings_maxwords_summary">Una righa deve avere meno di </string>
+    <string name="settings_maxwords_summary2"> lettere.</string>
+
+    <string name="settings_title_appearanceoptions">Aspetto</string>
+    <string name="settings_fontsize_title">Grandezza caratteri</string>
+
+    <string name="settings_fontname_title">Tipografia</string>
+    <string name="settings_fontname_summary"></string>
+    <string name="settings_textcolor_title">Colore testo</string>
+    <string name="settings_textcolor_summary">Colore normale</string>
+    <string name="settings_focuscolor_title">Colore focus</string>
+    <string name="settings_focuscolor_summary">Le lettere illuminate durante la lettura</string>
+
+    <string name="settings_loadcopyandpaste_title">Testo temporaneo</string>
+    <string name="settings_loadcopyandpaste_outputmessage_on">Adesso puoi leggere quello che hai copiato. Spegnere per tornare alla lettura orginale.</string>
+    <string name="settings_loadcopyandpaste_outputmessage_off">Stai leggendo </string>
+    <string name="settings_fromcopypaste_summary">Accendere per fare copia-incolla</string>
+
+    <string name="settings_backgroundcolor_title">Colore di fondo</string>
+    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_deviceorientation_title">Orientamento</string>
+    <string name="settings_deviceorientation_summary">cosa succede quando giri il display</string>
+    <string name="settings_deviceorientation_default">configurazione del sistema</string>
+    <string name="settings_deviceorientation_portrait">mantieni sempre verticale</string>
+    <string name="settings_deviceorientation_landscape">mantieni sempre orizzontale</string>
+
+    <string name="notes_savebutton">Salva appunto</string>
+    <string name="notes_readnotebutton">Blocco note</string>
+    <string name="notes_message_done_saving_note">Appunti salvate in </string>
+    <string name="notes_title_current_notebook">Tuoi appunti:</string>
+
+    <string name="fullscreen_copied_title">Copia-incolla</string>
+    <string name="fullscreen_text_while_loading">...Il testo viene caricato...\n Aspettare</string>
+
+    <string name="settings_filepicker_loadingtext">Testo viene processato. Sarebbe meglio preparare il Pdf-Export dal Computer.</string>
+        <string name="support_standarttext">Non hai caricato un testo. Vai su configurazioni ("...") e scegli un pdf o txt sul tuo telefono da leggere.</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ReadingTextSize">35sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_of_boxes">5dp</dimen>
+    <dimen name="OptionsTextSize">24sp</dimen>
+    <dimen name="smallDisplay">13sp</dimen>
+    <dimen name="paybuttonshight">50dp</dimen>
+   <dimen name="margintop">65dp</dimen>
+    
+</resources>

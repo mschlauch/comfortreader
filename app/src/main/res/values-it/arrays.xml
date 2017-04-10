@@ -1,0 +1,55 @@
+
+<resources>
+    
+	<string-array name="wpm_list_titles">
+        <item>200 slow</item>
+        <item>350 normal</item>
+        <item>550 very fast</item>
+        <item>1100 astro fast</item>
+    </string-array>
+    <string-array name="wpm_list_values">
+        <item>200</item>
+        <item>350</item>
+        <item>1100</item>
+    </string-array>
+
+    <string-array name="listArray">
+        <item>Headings</item>
+        <item>Headings and Details</item>
+        <item>All Data</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="orientationarray">
+        <item>Standart System</item>
+        <item>im Breitformat halten</item>
+        <item>im Hochformat halten</item>
+    </string-array>
+
+    <string-array name="orientationvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string-array name="fontlistarray">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospaced</item>
+    </string-array>
+
+    <string-array name="fontlistvalues">
+        <item>sans</item>
+        <item>serif</item>
+        <item>mono</item>
+    </string-array>
+
+    
+</resources>

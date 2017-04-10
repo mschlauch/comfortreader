@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.mschlauch.comfortreader.FullscreenActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+      
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/fullscreen_text_while_loading"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <FrameLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" 
+        >
+        
+         <LinearLayout
+             android:id="@+id/fulllinear"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical" >
+        
+         <LinearLayout
+             android:id="@+id/topcontrolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="top"
+             android:clickable="true"
+             android:gravity="top"
+             android:alpha="1"
+             android:orientation="vertical" >
+
+            
+             
+               
+             
+        <LinearLayout
+            android:id="@+id/topcontrolbar2"
+            style=""
+            android:background="#99000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+              
+            android:gravity="top"
+            tools:ignore="UselessParent" >
+
+                <Button
+                    android:id="@+id/menubutton"
+                          style=""
+                   	android:textColor="#FFFFFF"     
+                    android:background="#66000000"
+                    
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:minHeight="@dimen/paybuttonshight"
+                    android:onClick="menuButtonClicked"
+                    android:text="…"
+                    android:textSize="@dimen/OptionsTextSize" />
+
+
+
+
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:minHeight="@dimen/paybuttonshight"
+                    android:text="title"
+                    android:textSize="@dimen/smallDisplay" />
+
+                <Button
+                    android:id="@+id/notebutton"
+                          style=""
+                     android:textColor="#FFFFFF"     
+                    android:background="#66000000"
+                         
+                          
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="noteButtonClicked"
+                    android:minHeight="@dimen/paybuttonshight"
+                    android:text="¶"
+                    android:textSize="@dimen/OptionsTextSize" />
+
+            </LinearLayout>
+
+             <SeekBar
+                 android:id="@+id/reading_progress_bar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:alpha="0.4"
+                 android:max="1000"
+                 android:visibility="visible" />
+
+
+
+         </LinearLayout>
+             <ProgressBar
+                 android:id="@+id/spinnerProgress"
+                 style="?android:attr/progressBarStyleLarge"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" >
+             </ProgressBar>
+
+             <LinearLayout
+        android:id="@+id/fullscreen_content2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="70"
+        android:gravity="center"
+        android:text="_"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:keepScreenOn="true"
+        android:orientation="horizontal"
+        >
+           
+
+                <Button
+                    android:id="@+id/previousbutton"
+                    style="?metaButtonBarButtonStyle"
+                    android:background="@android:color/transparent"
+              		android:textColor="#FFFFFF" 
+              
+              		android:gravity="center|bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:minHeight="@dimen/paybuttonshight"
+                    android:onClick="previousButtonClicked"
+                    android:text="@string/previous_button"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/playbutton"
+                    style="?metaButtonBarButtonStyle"
+                    android:background="@android:color/transparent"
+                    android:textColor="#FFFFFF" 
+                    android:gravity="center|bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:minHeight="@dimen/paybuttonshight"
+                    android:onClick="playButtonClicked"
+                    android:text="@string/play_button"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/nextbutton"
+                    style="?metaButtonBarButtonStyle"
+                    android:background="@android:color/transparent"
+                    android:textColor="#FFFFFF" 
+                    	android:gravity="center|bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:minHeight="@dimen/paybuttonshight"
+                    android:onClick="nextButtonClicked"
+                    android:text="@string/next_button"
+                    android:textSize="14sp" />
+           
+             
+              </LinearLayout>
+        </LinearLayout> 
+             
+       
+ </FrameLayout>
+</FrameLayout>

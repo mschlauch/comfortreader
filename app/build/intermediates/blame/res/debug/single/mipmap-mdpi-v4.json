@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_type_file.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.github.angads25/filepicker/1.0.7/res/mipmap-mdpi-v4/ic_type_file.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_type_folder.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.github.angads25/filepicker/1.0.7/res/mipmap-mdpi-v4/ic_type_folder.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_directory_parent.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.github.angads25/filepicker/1.0.7/res/mipmap-mdpi-v4/ic_directory_parent.png"
+    }
+]
