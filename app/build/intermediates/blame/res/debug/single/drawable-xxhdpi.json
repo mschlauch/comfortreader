@@ -20,16 +20,16 @@
         "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_normal.png"
     },
     {
-        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_textfield_search_default_holo_dark.9.png",
-        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_textfield_search_default_holo_dark.9.png"
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_cab_background_top_holo_light.9.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_cab_background_top_holo_light.9.png"
     },
     {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_cab_done_holo_dark.png",
         "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_cab_done_holo_dark.png"
     },
     {
-        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_cab_background_top_holo_light.9.png",
-        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_cab_background_top_holo_light.9.png"
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_textfield_search_default_holo_dark.9.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_textfield_search_default_holo_dark.9.png"
     },
     {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_cab_done_holo_light.png",
@@ -192,12 +192,12 @@
         "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_go_search_api_holo_light.png"
     },
     {
-        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_voice_search_api_holo_light.png",
-        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_voice_search_api_holo_light.png"
-    },
-    {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_list_focused_holo.9.png",
         "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_voice_search_api_holo_light.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_voice_search_api_holo_light.png"
     },
     {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_textfield_search_right_selected_holo_light.9.png",
@@ -212,12 +212,12 @@
         "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ab_bottom_solid_light_holo.9.png"
     },
     {
-        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_menu_dropdown_panel_holo_dark.9.png",
-        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_menu_dropdown_panel_holo_dark.9.png"
-    },
-    {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_list_divider_holo_light.9.png",
         "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_list_divider_holo_light.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_menu_dropdown_panel_holo_dark.9.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_menu_dropdown_panel_holo_dark.9.png"
     },
     {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ab_solid_light_holo.9.png",

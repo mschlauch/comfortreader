@@ -59,7 +59,7 @@ public class Book {
 	    private boolean preloadrunning = false;
 	    
 	    public String texttoread = "uaeiaeu . iaeuaie uiaeiuae uia";
-	    		public String segmentors =".,)(:;";
+	    		public String segmentors =".,)(:;。、としにが・，।";
 	    public int globalposition = 1;
 		public int globalpositionbefore = 1 ;
 	//	private int globalpositionoffset;

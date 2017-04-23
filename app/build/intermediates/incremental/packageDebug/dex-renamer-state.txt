@@ -1,7 +1,4 @@
-#Tue Apr 11 00:57:07 CEST 2017
-base.0=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3cd11789e56001ffa53a1b79077f43238878feb2
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bd7add1b09158932393f181259753fc02e9d0145/classes.dex
-base.1=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bd7add1b09158932393f181259753fc02e9d0145
-file.0=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3cd11789e56001ffa53a1b79077f43238878feb2/classes.dex
+#Sun Apr 23 22:55:50 CEST 2017
+base.0=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

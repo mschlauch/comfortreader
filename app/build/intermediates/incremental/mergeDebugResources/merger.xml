@@ -1130,7 +1130,63 @@
     </style></file><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-de/colors.xml" qualifiers="de"><color name="black_overlay">#CC000000</color><color name="gray">#333333</color><color name="black">#000000</color><color name="white">#FFFFFF</color></file><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-de/attrs.xml" qualifiers="de"><declare-styleable name="ButtonBarContainerTheme">
         <attr format="reference" name="metaButtonBarStyle"/>
         <attr format="reference" name="metaButtonBarButtonStyle"/>
-    </declare-styleable></file><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-de/dimens.xml" qualifiers="de"><dimen name="activity_vertical_margin">16dp</dimen><dimen name="OptionsTextSize">24sp</dimen><dimen name="smallDisplay">13sp</dimen><dimen name="padding_of_boxes">5dp</dimen><dimen name="paybuttonshight">50dp</dimen><dimen name="ReadingTextSize">35sp</dimen><dimen name="margintop">65dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file name="ic_launcher" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="directory_up" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/directory_up.png" qualifiers="hdpi-v4" type="drawable"/><file name="icon" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="directory_icon" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/directory_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="file_icon" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/file_icon.png" qualifiers="hdpi-v4" type="drawable"/></source><source path="/home/michael/StudioProjects/ComfortReader/app/build/generated/res/rs/debug"/><source path="/home/michael/StudioProjects/ComfortReader/app/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/home/michael/StudioProjects/ComfortReader/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="metaButtonBarStyle"/><attr format="reference" name="metaButtonBarButtonStyle"/></declare-styleable><declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode">
+    </declare-styleable></file><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-de/dimens.xml" qualifiers="de"><dimen name="activity_vertical_margin">16dp</dimen><dimen name="OptionsTextSize">24sp</dimen><dimen name="smallDisplay">13sp</dimen><dimen name="padding_of_boxes">5dp</dimen><dimen name="paybuttonshight">50dp</dimen><dimen name="ReadingTextSize">35sp</dimen><dimen name="margintop">65dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file name="ic_launcher" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="directory_up" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/directory_up.png" qualifiers="hdpi-v4" type="drawable"/><file name="icon" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="directory_icon" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/directory_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="file_icon" path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/file_icon.png" qualifiers="hdpi-v4" type="drawable"/><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-ja/strings.xml" qualifiers="ja"><string name="action_settings">設定</string><string name="title_activity_custommenu">CustommenuActivity</string><string name="settings_title_supportoptions">サポート</string><string name="settings_backgroundcolor_title">背景色</string><string name="notes_message_done_saving_note">書き込み完了</string><string name="settings_filepicker_loadingtext">pdf の読み込みは時間がかかります。 お使いのコンピューターで pdf から txt に準備することもできます</string><string name="settings_title_readingoptions">読み方</string><string name="notes_readnotebutton">メモを表示</string><string name="settings_maxwords_summary2">文字以下</string><string name="settings_positionslider_title">位置</string><string name="settings_deviceorientation_summary">デバイスを回転した時の動作</string><string name="settings_recent_texts">最近読んだテキストを読み込む</string><string name="settings_fontname_title">フォント</string><string name="next_button">">>"</string><string name="settings_textcolor_summary">通常の色</string><string name="settings_deviceorientation_portrait">縦向きモードに固定</string><string name="settings_wpm_title">読む速さ</string><string name="settings_loadcopyandpaste_title">一時的なテキストを読む</string><string name="settings_deviceorientation_title">デバイスの向き</string><string name="settings_deviceorientation_default">デフォルトのシステム動作</string><string name="previous_button">"&lt;&lt;"</string><string name="notes_title_current_notebook">メモ:</string><string name="settings_textcolor_title">文字色</string><string name="settings_fromcopypaste_summary">コピーしたテキストを貼り付けるにはオンにします</string><string name="settings_fontsize_title">フォントサイズ</string><string name="app_text_after_shareweblink">Comfort Reader で読む(試験的)</string><string name="dummy_button">ダミーボタン</string><string name="hello_world">Hello world!</string><string name="dummy_content">ダミー\nコンテンツ</string><string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string><string name="settings_maxwords_title">行の長さの最大値</string><string name="support_standarttext">
+    テキストは読み込まれていません。 左上のメニューボタンをクリックして、txt または pdf ファイルを読み込みます。</string><string name="settings_help_title">ヘルプ</string><string name="settings_focuscolor_summary">流れる文字</string><string name="georgia">フォント名</string><string name="settings_backgroundcolor_summary"/><string name="wordsperminuteSetting">語/分</string><string name="play_button"> ●/> </string><string name="settings_recent_texts_summary">続けて読む時に使用します</string><string name="settings_wpn_summary">語/分:</string><string name="settings_loadcopyandpaste_outputmessage_on">コピーしたものを読むことができます。 オフにするとテキストに戻ります</string><string name="settings_title_appearanceoptions">外観</string><string name="notes_savebutton">このメモを追加</string><string name="fullscreen_copied_title">テキストをコピーしました</string><string name="settings_fontname_summary"/><string name="settings_loadcopyandpaste_outputmessage_off">今読んでいるもの</string><string name="app_name">Comfort Reader</string><string name="settings_title_textoptions">テキスト</string><string name="settings_filepicker_title">現在の pdf または txt</string><string name="settings_minwords_summary2">文字以上</string><string name="settings_minwords_title">行の長さの最小値</string><string name="settings_minwords_summary">行は</string><string name="settings_focuscolor_title">フォーカス色</string><string name="settings_maxwords_summary">行は</string><string name="fullscreen_text_while_loading">...テキストの読み込み中...\n お待ちください。</string><string name="settings_deviceorientation_landscape">横向きモードに固定</string><string name="title_activity_note">アノテーション エディター</string></file><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-ja/strings_activity_settings.xml" qualifiers="ja"><string-array name="pref_sync_frequency_titles">
+        <item>15 分</item>
+        <item>30 分</item>
+        <item>1 時間</item>
+        <item>3 時間</item>
+        <item>6 時間</item>
+        <item>しない</item>
+    </string-array><string name="title_activity_settings">設定</string><string name="pref_title_social_recommendations">ソーシャル レコメンデーションを有効にする</string><string name="pref_title_ringtone">着信音</string><string name="pref_description_social_recommendations">メッセージ履歴に基づいて連絡先の人を提案します</string><string name="pref_default_display_name">John Smith</string><string name="pref_title_display_name">表示名</string><string name="pref_ringtone_silent">サイレント</string><string name="pref_title_system_sync_settings">システム同期設定</string><string-array name="pref_example_list_titles">
+        <item>常に</item>
+        <item>可能な時</item>
+        <item>しない</item>
+    </string-array><string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array><string name="pref_header_data_sync">日付 &amp; 同期</string><string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array><string name="pref_header_general">全般</string><string name="pref_header_notifications">通知</string><string name="pref_title_new_message_notifications">新しいメッセージの通知</string><string name="pref_title_sync_frequency">同期頻度</string><string name="pref_title_add_friends_to_messages">メッセージする友達を追加</string><string name="pref_title_vibrate">振動</string></file><file path="/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-ja/arrays.xml" qualifiers="ja"><string-array name="orientationarray">
+        <item>デフォルト</item>
+        <item>常に横向き</item>
+        <item>常に縦向き</item>
+    </string-array><string-array name="listArray">
+        <item>見出し</item>
+        <item>見出しと詳細</item>
+        <item>すべてのデータ</item>
+    </string-array><string-array name="wpm_list_values">
+        <item>200</item>
+        <item>350</item>
+        <item>1100</item>
+    </string-array><string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array><string-array name="wpm_list_titles">
+        <item>200 遅い</item>
+        <item>350 通常</item>
+        <item>550 速い</item>
+        <item>1100 非常に速い</item>
+    </string-array><string-array name="orientationvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array><string-array name="fontlistvalues">
+        <item>sans</item>
+        <item>serif</item>
+        <item>mono</item>
+    </string-array><string-array name="fontlistarray">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospaced</item>
+    </string-array></file></source><source path="/home/michael/StudioProjects/ComfortReader/app/build/generated/res/rs/debug"/><source path="/home/michael/StudioProjects/ComfortReader/app/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/home/michael/StudioProjects/ComfortReader/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="metaButtonBarStyle"/><attr format="reference" name="metaButtonBarButtonStyle"/></declare-styleable><declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode">
 
             
             <enum name="dialog" value="0"/>
