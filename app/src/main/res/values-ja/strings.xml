@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comfort Reader</string>
+    <string name="app_text_after_shareweblink">Comfort Reader で読む(試験的)</string>
+    <string name="dummy_button">ダミーボタン</string>
+    <string name="dummy_content">ダミー\nコンテンツ</string>
+    <string name="next_button">"&gt;&gt;"</string>
+    <string name="previous_button">"&lt;&lt;"</string>
+    <string name="play_button"> ●/> </string>
+    <string name="georgia">フォント名</string>
+    <string name="wordsperminuteSetting">語/分</string>
+    <string name="title_activity_custommenu">CustommenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">設定</string>
+    <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
+    <string name="title_activity_note">アノテーション エディター</string>
+
+
+
+    <string name="settings_title_readingoptions">読み方</string>
+    <string name="settings_title_supportoptions">サポート</string>
+    <string name="settings_help_title">ヘルプ</string>
+
+    <string name="settings_title_textoptions">テキスト</string>
+
+    <string name="settings_recent_texts">最近読んだテキストを読み込む</string>
+    <string name="settings_recent_texts_summary">続けて読む時に使用します</string>
+    <string name="settings_filepicker_title">現在の pdf または txt</string>
+
+    <string name="settings_positionslider_title">位置</string>
+
+    <string name="settings_wpm_title">読む速さ</string>
+    <string name="settings_wpn_summary">語/分:</string>
+
+    <string name="settings_minwords_title">行の長さの最小値</string>
+    <string name="settings_minwords_summary">行は</string>
+    <string name="settings_minwords_summary2">文字以上</string>
+
+    <string name="settings_maxwords_title">行の長さの最大値</string>
+    <string name="settings_maxwords_summary">行は</string>
+    <string name="settings_maxwords_summary2">文字以下</string>
+
+    <string name="settings_title_appearanceoptions">外観</string>
+    <string name="settings_fontsize_title">フォントサイズ</string>
+
+    <string name="settings_fontname_title">フォント</string>
+    <string name="settings_fontname_summary"></string>
+    <string name="settings_textcolor_title">文字色</string>
+    <string name="settings_textcolor_summary">通常の色</string>
+    <string name="settings_focuscolor_title">フォーカス色</string>
+    <string name="settings_focuscolor_summary">流れる文字</string>
+
+    <string name="settings_loadcopyandpaste_title">一時的なテキストを読む</string>
+    <string name="settings_loadcopyandpaste_outputmessage_on">コピーしたものを読むことができます。 オフにするとテキストに戻ります</string>
+    <string name="settings_loadcopyandpaste_outputmessage_off">今読んでいるもの</string>
+
+    <string name="settings_fromcopypaste_summary">コピーしたテキストを貼り付けるにはオンにします</string>
+
+    <string name="settings_backgroundcolor_title">背景色</string>
+    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_deviceorientation_title">デバイスの向き</string>
+    <string name="settings_deviceorientation_summary">デバイスを回転した時の動作</string>
+    <string name="settings_deviceorientation_default">デフォルトのシステム動作</string>
+    <string name="settings_deviceorientation_portrait">縦向きモードに固定</string>
+    <string name="settings_deviceorientation_landscape">横向きモードに固定</string>
+
+    <string name="notes_savebutton">このメモを追加</string>
+    <string name="notes_readnotebutton">メモを表示</string>
+    <string name="notes_message_done_saving_note">書き込み完了</string>
+    <string name="notes_title_current_notebook">メモ:</string>
+
+    <string name="support_standarttext">
+    テキストは読み込まれていません。 左上のメニューボタンをクリックして、txt または pdf ファイルを読み込みます。</string>
+
+    <string name="fullscreen_text_while_loading">...テキストの読み込み中...\n お待ちください。</string>
+    <string name="fullscreen_copied_title">テキストをコピーしました</string>
+
+    <string name="settings_filepicker_loadingtext">pdf の読み込みは時間がかかります。 お使いのコンピューターで pdf から txt に準備することもできます</string>
+</resources>

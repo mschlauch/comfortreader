@@ -1,0 +1,58 @@
+
+<resources>
+    
+	<string-array name="wpm_list_titles">
+        <item>200 遅い</item>
+        <item>350 通常</item>
+        <item>550 速い</item>
+        <item>1100 非常に速い</item>
+    </string-array>
+    <string-array name="wpm_list_values">
+        <item>200</item>
+        <item>350</item>
+        <item>1100</item>
+    </string-array>
+
+    <string-array name="listArray">
+        <item>見出し</item>
+        <item>見出しと詳細</item>
+        <item>すべてのデータ</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="fontlistarray">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospaced</item>
+    </string-array>
+
+    <string-array name="fontlistvalues">
+        <item>sans</item>
+        <item>serif</item>
+        <item>mono</item>
+    </string-array>
+
+
+
+
+    <string-array name="orientationarray">
+        <item>デフォルト</item>
+        <item>常に横向き</item>
+        <item>常に縦向き</item>
+    </string-array>
+
+    <string-array name="orientationvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    
+</resources>
