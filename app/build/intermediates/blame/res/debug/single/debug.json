@@ -1,0 +1,442 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4_ic_directory_parent.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-hdpi-v4/ic_directory_parent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_file_icon.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/file_icon.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_notes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_happysmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_happysmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_speed.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_speed.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/anim_marked_item_animation.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/anim/marked_item_animation.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4_ic_type_folder.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-mdpi-v4/ic_type_folder.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_savenote.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_savenote.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_deviceorientation.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_deviceorientation.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4_ic_type_folder.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-xhdpi-v4/ic_type_folder.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_sadsmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_sadsmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_loadtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_loadtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_heart.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_heart.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_readnotes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_readnotes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4_ic_type_file.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-xxhdpi-v4/ic_type_file.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_happysmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_happysmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_deviceorientation.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_deviceorientation.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_lettercolor.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_lettercolor.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/menu_note.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/menu/note.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_settings.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_sadsmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_sadsmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_file_list_item.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/layout/dialog_file_list_item.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_copypaste.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_copypaste.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_deviceorientation.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_deviceorientation.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_loadrecent.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_loadrecent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_activity_fullscreen.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/layout/activity_fullscreen.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_main.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/layout/dialog_main.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_maximumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_maximumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_minimumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_minimumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4_ic_directory_parent.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-xhdpi-v4/ic_directory_parent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_happysmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_happysmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout-land_dialog_color_picker.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/624090e81776e073346240d091fa9254/res/layout-land/dialog_color_picker.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_readnotes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_readnotes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_college.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_college.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4_ic_directory_parent.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-mdpi-v4/ic_directory_parent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_color_picker.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/624090e81776e073346240d091fa9254/res/layout/dialog_color_picker.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_savenote.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_savenote.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4_ic_type_folder.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-xxhdpi-v4/ic_type_folder.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_lettercolor.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_lettercolor.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_heart.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_heart.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_minimumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_minimumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_typefacesize.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_typefacesize.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_settings.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_directory_up.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/directory_up.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_sadsmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_sadsmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_college.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_college.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_loadrecent.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_loadrecent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_notes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_notes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_maximumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_maximumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_deviceorientation.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_deviceorientation.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_typefacesize.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_typefacesize.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_college.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_college.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_settings.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_copypaste.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_copypaste.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_layout.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_speed.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_speed.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_loadrecent.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_loadrecent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_support.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_support.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_loadrecent.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_loadrecent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_heart.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_heart.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_happysmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_happysmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4_ic_type_file.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-hdpi-v4/ic_type_file.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_settings.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4_ic_type_folder.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-hdpi-v4/ic_type_folder.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_minimumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_minimumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_savenote.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_savenote.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4_ic_type_file.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-xhdpi-v4/ic_type_file.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_copypaste.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_copypaste.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_college.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_college.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_notes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_notes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_notes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_file_list.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/layout/dialog_file_list.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_readnotes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_readnotes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/xml_preferences.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_speed.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_speed.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_footer.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/layout/dialog_footer.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_loadtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_loadtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_directory_icon.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/directory_icon.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_speed.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_speed.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/menu_settings.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/menu/settings.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_typefacesize.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_typefacesize.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_support.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_support.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_lettercolor.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_lettercolor.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_maximumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_maximumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_maximumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_maximumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_heart.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_heart.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_typefacesize.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/ic_typefacesize.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_support.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_support.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4_ic_type_file.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-mdpi-v4/ic_type_file.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_activity_note.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/layout/activity_note.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_copypaste.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_copypaste.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_lettercolor.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_lettercolor.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_minimumtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_minimumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_savenote.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_savenote.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_support.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_support.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/raw_actions.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/raw/actions"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4_ic_directory_parent.png.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/mipmap-xxhdpi-v4/ic_directory_parent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_sadsmiley.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_sadsmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/anim_unmarked_item_animation.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/anim/unmarked_item_animation.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/xml_preference_seekbar.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/xml/preference_seekbar.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_loadtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xxhdpi/ic_loadtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout_dialog_header.xml.flat",
+        "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/layout/dialog_header.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_loadtext.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-xhdpi/ic_loadtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_readnotes.png.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_readnotes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/xml_popup_window.xml.flat",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/xml/popup_window.xml"
+    }
+]

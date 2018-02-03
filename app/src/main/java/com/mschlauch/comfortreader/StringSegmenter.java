@@ -141,7 +141,7 @@ public class StringSegmenter {
 		   getsegmenthtml(0);//load maxticks
 		   loadedhtmlstrings = new ArrayList<String>();
 		   int saltaticker = 0;
-		   for (int i = 0; i < maxticks; i++) {
+		   for (int i = 0; i < maxticks + 1; i++) {
 			   saltaticker = saltaticker + 1;
 			   if (saltaticker == saltaitickinbuffer ){ //segment has ended
 			   saltaticker = 0;

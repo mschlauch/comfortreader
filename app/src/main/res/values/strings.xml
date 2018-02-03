@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="words">words</string>
+
     <string name="app_name">Comfort Reader</string>
     <string name="app_text_after_shareweblink">Read with Comfort Reader (experimential)</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="next_button">"&gt;&gt;"</string>
     <string name="previous_button">"&lt;&lt;"</string>
-    <string name="play_button"> ●/> </string>
+    <string name="play_button"> ∣∣ > </string>
     <string name="georgia">fontname</string>
     <string name="wordsperminuteSetting">words per minute</string>
     <string name="title_activity_custommenu">CustommenuActivity</string>
@@ -20,6 +22,7 @@
 
     <string name="settings_title_readingoptions">Reading</string>
     <string name="settings_title_supportoptions">Support</string>
+    <string name="settings_title_gamification_options">Gamification</string>
     <string name="settings_help_title">Get help</string>
 
     <string name="settings_title_textoptions">Text</string>
@@ -42,6 +45,7 @@
     <string name="settings_maxwords_summary2">characters</string>
 
     <string name="settings_title_appearanceoptions">Appearance</string>
+    <string name="settings_title_linktoappearanceoptions">Change appearance</string>
     <string name="settings_fontsize_title">Font size</string>
 
     <string name="settings_fontname_title">Typeface</string>
@@ -56,6 +60,10 @@
     <string name="settings_loadcopyandpaste_outputmessage_off">You are now reading</string>
 
     <string name="settings_fromcopypaste_summary">Switch On to paste copied text</string>
+
+    <string name="settings_gamification_summary">Wordpoints earned:</string>
+
+    <string name="settings_gamification_title">Transform words</string>
 
     <string name="settings_backgroundcolor_title">Background color</string>
     <string name="settings_backgroundcolor_summary"></string>

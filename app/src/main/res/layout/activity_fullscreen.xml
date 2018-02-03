@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-      
+        android:lineSpacingMultiplier="1.2"
         android:gravity="center"
         android:keepScreenOn="true"
         android:text="@string/fullscreen_text_while_loading"
@@ -78,14 +78,14 @@
                           style=""
                    	android:textColor="#FFFFFF"     
                     android:background="#66000000"
-                    
+                    android:drawableTop="@drawable/ic_settings"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:minHeight="@dimen/paybuttonshight"
+                    android:minHeight="16sp"
                     android:onClick="menuButtonClicked"
-                    android:text="…"
-                    android:textSize="@dimen/OptionsTextSize" />
+
+                    android:textSize="14sp" />
 
 
 
@@ -95,28 +95,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:minHeight="@dimen/paybuttonshight"
+                    android:minHeight="16sp"
                     android:text="title"
-                    android:textSize="@dimen/smallDisplay" />
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/notebutton"
                           style=""
                      android:textColor="#FFFFFF"     
                     android:background="#66000000"
-                         
-                          
+
+                    android:drawableTop="@drawable/ic_notes"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:onClick="noteButtonClicked"
-                    android:minHeight="@dimen/paybuttonshight"
-                    android:text="¶"
-                    android:textSize="@dimen/OptionsTextSize" />
+                    android:minHeight="16sp"
+                    android:text=""
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
              <SeekBar
+
                  android:id="@+id/reading_progress_bar"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
@@ -149,7 +150,7 @@
 
                 <Button
                     android:id="@+id/previousbutton"
-                    style="?metaButtonBarButtonStyle"
+                    style=""
                     android:background="@android:color/transparent"
               		android:textColor="#FFFFFF" 
               
@@ -157,35 +158,35 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
-                    android:minHeight="@dimen/paybuttonshight"
+                    android:minHeight="16sp"
                     android:onClick="previousButtonClicked"
                     android:text="@string/previous_button"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/playbutton"
-                    style="?metaButtonBarButtonStyle"
+                    style=""
                     android:background="@android:color/transparent"
                     android:textColor="#FFFFFF" 
                     android:gravity="center|bottom"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.5"
-                    android:minHeight="@dimen/paybuttonshight"
+                    android:minHeight="16sp"
                     android:onClick="playButtonClicked"
                     android:text="@string/play_button"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/nextbutton"
-                    style="?metaButtonBarButtonStyle"
+                    style=""
                     android:background="@android:color/transparent"
                     android:textColor="#FFFFFF" 
                     	android:gravity="center|bottom"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
-                    android:minHeight="@dimen/paybuttonshight"
+                    android:minHeight="16sp"
                     android:onClick="nextButtonClicked"
                     android:text="@string/next_button"
                     android:textSize="14sp" />

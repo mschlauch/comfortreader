@@ -27,9 +27,9 @@
 
 
     <string-array name="orientationarray">
-        <item>Standart System</item>
-        <item>im Breitformat halten</item>
-        <item>im Hochformat halten</item>
+        <item>normale</item>
+        <item>tieni in orizzontale</item>
+        <item>tieni in verticale</item>
     </string-array>
 
     <string-array name="orientationvalues">

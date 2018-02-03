@@ -72,7 +72,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v4.view.MotionEventCompat;
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
@@ -233,6 +233,7 @@ public class FullscreenActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
    	    setContentView(R.layout.activity_fullscreen);
 		spinner = (ProgressBar)findViewById(R.id.spinnerProgress);
         controlsView2 = findViewById(R.id.topcontrolbar);
@@ -266,7 +267,56 @@ public class FullscreenActivity extends Activity {
                                                         }
         });
 
-        controlsView3tap.setOnClickListener(new View.OnClickListener() {
+		View previous = findViewById(R.id.previousbutton);
+		previous.setOnLongClickListener(new View.OnLongClickListener(){
+			@Override
+			public boolean onLongClick(View view) {
+				previousButtonLongClicked(view);
+				return true;}
+			});
+
+		View nextb = findViewById(R.id.nextbutton);
+
+		nextb.setOnLongClickListener(new View.OnLongClickListener(){
+				@Override
+				public boolean onLongClick(View view) {
+					nextButtonLongClicked(view);
+					return true;}
+				});
+		View middlebutton = findViewById(R.id.playbutton);
+
+		middlebutton.setOnLongClickListener(new View.OnLongClickListener(){
+			@Override
+			public boolean onLongClick(View view) {
+//refactor!!!
+
+				NoteComposer notec = new NoteComposer ();
+
+
+				Boolean success = settingsload.addtoCurrentNotes(notec.getcomposedNote("", settingsload));
+				if (success) {
+					String newpath = settingsload.getCurrentNotesFilePath();
+					newpath = newpath.substring(newpath.lastIndexOf("/")+1);
+
+					Toast.makeText(getBaseContext(),
+							getString(R.string.notes_message_done_saving_note) + "Comfort Reader/" + newpath,
+							Toast.LENGTH_SHORT).show();
+				}
+				else{
+					Toast.makeText(getBaseContext(),
+							"Error" ,
+							Toast.LENGTH_SHORT).show();
+				}
+
+
+
+
+				return true;}
+		});
+
+
+
+		controlsView3tap.setOnClickListener(new View.OnClickListener() {
         	 	@Override
             public void onClick(View view) {
             	playButtonClicked(view);
@@ -297,6 +347,7 @@ public class FullscreenActivity extends Activity {
         Log.i("Fullscreen", "automatic loading webview");
         String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
         contentView.setText(Html.fromHtml(html));
+		settingsload.saveWordpoints(settingsload.getWordpoints()+tickdistance);
 		texthaschanged();
     	if (segmenterObject.finished){
     		stop();
@@ -306,6 +357,8 @@ public class FullscreenActivity extends Activity {
     }
     
     public void playButtonClicked (View view){
+
+
 		if (switchofallmenus == false) {
 
 
@@ -314,8 +367,16 @@ public class FullscreenActivity extends Activity {
            	controlsView2.setVisibility(View.VISIBLE);
     	}
     	else {
-    		
-    		start();
+			View decorView = getWindow().getDecorView();
+// Hide both the navigation bar and the status bar.
+// SYSTEM_UI_FLAG_FULLSCREEN is only available on Android 4.1 and higher, but as
+// a general rule, you should design your app to hide the status bar whenever you
+// hide the navigation bar.
+			int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+					| View.SYSTEM_UI_FLAG_FULLSCREEN |  View.SYSTEM_UI_FLAG_IMMERSIVE;
+			decorView.setSystemUiVisibility(uiOptions);
+
+			start();
         	controlsView2.setVisibility(View.INVISIBLE);
    	}
 
@@ -331,23 +392,49 @@ public class FullscreenActivity extends Activity {
     	if (started == true){
         	stop();
         	restart = true;
-        	
-    	}
-    	
+        	    	}
 
     	segmenterObject.invokenextsegment();
     	String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
-
-
-		 contentView.setText(Html.fromHtml(html));
+		contentView.setText(Html.fromHtml(html));
 
 		texthaschanged();
 		if (restart){
 			start();
 		}
-    		
-    }
+    	}
 	}
+
+	public void nextButtonLongClicked (View view){
+		if (switchofallmenus == false) {
+
+			boolean restart = false;
+			if (started == true){
+				stop();
+				restart = true;
+			}
+
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			segmenterObject.invokenextsegment();
+			String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
+			contentView.setText(Html.fromHtml(html));
+
+			texthaschanged();
+			if (restart){
+				start();
+			}
+		}
+	}
+
+
     
     public void previousButtonClicked (View view){if (switchofallmenus == false) {
 
@@ -369,8 +456,43 @@ public class FullscreenActivity extends Activity {
 	start();	
 	}	
 }}
-    
-    public void texthaschanged() {
+
+
+	public void previousButtonLongClicked (View view){if (switchofallmenus == false) {
+
+		boolean restart = false;
+		if (started == true){
+			stop();
+			restart = true;
+
+		}
+		segmenterObject.finished = false;
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+		segmenterObject.invokeprevioussegment();
+
+		String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
+
+		contentView.setText(Html.fromHtml(html));
+
+		texthaschanged();
+		if (restart){
+			start();
+		}
+	}}
+
+
+
+
+
+	public void texthaschanged() {
 		if (switchofallmenus == false) {
 
 			int progress = segmenterObject.calculateprogress(1000);

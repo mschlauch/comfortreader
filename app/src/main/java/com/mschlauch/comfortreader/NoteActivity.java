@@ -23,9 +23,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBarActivity;
 import android.text.format.Time;
 import android.util.Log;
 import android.content.ClipData;
@@ -45,11 +46,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NoteActivity extends ActionBarActivity {
+public class NoteActivity extends Activity {
 
 
 	public SettingsLoader settingsload = null ;
-	public String savednotebook;
+	// public String savednotebook;
 	public String prefix;
 	public String filename;
 	public String note;
@@ -73,7 +74,7 @@ public class NoteActivity extends ActionBarActivity {
 		prefixTextView = (TextView) findViewById(R.id.textViewPrefix);
 		composedTextView = (TextView) findViewById(R.id.textViewComposed);
 
-		savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
+		// savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
 		position = settingsload.getGlobalPositionPercentString();
 
 		String texttoread = settingsload.getTexttoRead();//TODO ""
@@ -126,9 +127,11 @@ public class NoteActivity extends ActionBarActivity {
 		//percentage
 
 		prefix = "\n____________________\nQUOTATION:" + "\nFile:"+ filepath + "\nPosition: " +  position + "\nDate:" + datetext + "\nOriginal text:"  + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//" ;
+
+
 		prefixTextView.setText("Original text: " + extract);
-		composedTextView.setText((CharSequence)savednotebook);
-		composednotebook = savednotebook;
+		//composedTextView.setText((CharSequence)savednotebook);
+		//composednotebook = savednotebook;
 
 	}
 
@@ -149,7 +152,8 @@ public class NoteActivity extends ActionBarActivity {
 	}*/
 
 	private void saveTextfile(String text) {
-		Boolean success = settingsload.addtoCurrentNotes(text);
+
+        Boolean success = settingsload.addtoCurrentNotes(text);
 		if (success) {
 			String newpath = settingsload.getCurrentNotesFilePath();
 			newpath = newpath.substring(newpath.lastIndexOf("/")+1);
@@ -218,10 +222,11 @@ public class NoteActivity extends ActionBarActivity {
 	//	note = (String) inputTextView.getText();
 		note = "hallo";
 		note = inputTextView.getText().toString();
-		composednotebook = ""  + prefix  + note + savednotebook;
 
-		composedTextView.setText((CharSequence)composednotebook);
-		save("savednotebook",composednotebook);
+		NoteComposer notec = new NoteComposer();
+		composednotebook = notec.getcomposedNote(note, settingsload);
+	//	composedTextView.setText((CharSequence)composednotebook);
+	//	save("savednotebook",composednotebook);
 
 		saveTextfile(composednotebook);
 	}
@@ -246,7 +251,7 @@ public class NoteActivity extends ActionBarActivity {
 
 		saveTextfile(composednotebook);*/
 	}
-
+/*
 	 public void save(String variable, String value){
 
 
@@ -268,6 +273,8 @@ public class NoteActivity extends ActionBarActivity {
 		    	  editor.apply();
 
 		}
+
+
 		public String retrieve(String variable){
 			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 	  	  	String slotnumber = preferences.getString("slotnumber","");
@@ -331,5 +338,5 @@ public class NoteActivity extends ActionBarActivity {
 
 	    return true;
 	    }
-
+*/
 }

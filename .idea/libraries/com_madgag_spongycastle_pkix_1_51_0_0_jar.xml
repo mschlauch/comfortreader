@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.madgag.spongycastle:pkix:1.51.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/pkix/1.51.0.0/40a445852ca58187fc616e3a8b42de463bf14b8b/pkix-1.51.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/pkix/1.51.0.0/9ce9edf833264bca7b61a66d7737aacbcc4704be/pkix-1.51.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -7,7 +7,7 @@
     <string name="dummy_content">ダミー\nコンテンツ</string>
     <string name="next_button">"&gt;&gt;"</string>
     <string name="previous_button">"&lt;&lt;"</string>
-    <string name="play_button"> ●/> </string>
+    <string name="play_button"> ∣∣ > </string>
     <string name="georgia">フォント名</string>
     <string name="wordsperminuteSetting">語/分</string>
     <string name="title_activity_custommenu">CustommenuActivity</string>

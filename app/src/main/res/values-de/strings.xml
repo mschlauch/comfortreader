@@ -7,7 +7,7 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="next_button">"&gt;&gt;"</string>
     <string name="previous_button">"&lt;&lt;"</string>
-    <string name="play_button"> ●/> </string>
+    <string name="play_button"> ∣∣ > </string>
     <string name="georgia">fontname</string>
     <string name="wordsperminuteSetting">words per minute</string>
     <string name="title_activity_custommenu">CustommenuActivity</string>
@@ -42,6 +42,7 @@
     <string name="settings_maxwords_summary2"> Buchstaben haben.</string>
 
     <string name="settings_title_appearanceoptions">Aussehen</string>
+    <string name="settings_title_linktoappearanceoptions">Erscheinungsbild ändern</string>
     <string name="settings_fontsize_title">Schriftgröße</string>
 
     <string name="settings_fontname_title">Schriftart</string>

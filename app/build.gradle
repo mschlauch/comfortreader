@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 21
+
 
     defaultConfig {
+
         applicationId "com.mschlauch.comfortreader"
-        minSdkVersion 15
+        minSdkVersion 22
         targetSdkVersion 17
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -19,8 +21,13 @@ android {
 }
 
 dependencies {
+
+
+
+
+
     compile 'com.android.support:support-v4:20.0.0'
-    compile 'com.android.support:appcompat-v7:20.0.0'
+  //  compile 'com.android.support:appcompat-v7:20.0.0'
     compile 'org.jsoup:jsoup:1.10.2'
     //compile files('libs/awt-android-1.0.jar')
     //compile files('libs/fontbox-2.0.0-SNAPSHOT.jar')
@@ -31,8 +38,8 @@ dependencies {
 
 
     compile 'com.tom_roush:pdfbox-android:1.8.9.1'
-
-
+    //image viewing
+   // compile 'com.github.chathuralakmal:AndroidImagePopup:1.2.1'
     //dependency for filepicker
     compile 'com.github.angads25:filepicker:1.0.7'
     //dependency for colorpicker

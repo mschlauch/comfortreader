@@ -39,7 +39,7 @@ import java.net.URL;
  */
 
 import static android.provider.Telephony.Mms.Part.TEXT;
-import static com.mschlauch.comfortreader.R.id.dialog;
+//import static com.mschlauch.comfortreader.R.id.dialog;
 
 public class BroadcastReceiverWebLink extends Activity {
     private String TAG = "TagOpenTxt";

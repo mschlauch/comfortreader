@@ -37,10 +37,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+import static android.util.FloatMath.sqrt;
 import static android.util.Log.d;
 
 public class SettingsLoader {
 
+	protected String xppoints = "xppointsvalue";
+	protected String wordpoints = "wordpointsvalue";
 	protected String minblocksizekey = "minblocksizevalue";
 	protected String maxblocksizekey = "maxblocksizevalue";
 	protected String wpmkey="wpmvalue";
@@ -294,8 +297,43 @@ public class SettingsLoader {
 
 		return vhelper;
 	}
+	public int getWordpoints(){
+
+		int vhelper = retrieveNumber(wordpoints);
+		if (vhelper == 0){
+			vhelper = 0;
+		}
+
+		return vhelper;
+
+	}
+	void saveWordpoints(int number){
+		saveNumber(wordpoints, number);
 
 
+	}
+	public int getXPpoints(){
+
+		int vhelper = retrieveNumber(xppoints);
+		if (vhelper == 0){
+			vhelper = 0;
+		}
+
+		return vhelper;
+
+
+
+	}
+	void saveXPpoints(int number){
+		saveNumber(xppoints, number);
+
+
+	}
+	public float getGamificationLevel(){
+		int number = getXPpoints();
+		double levelnummer = 0.01 * sqrt( number );
+		return (float) levelnummer;
+	}
 
 	public String getCurrentNotes(){
 		String filepath = getCurrentNotesFilePath();
@@ -312,16 +350,17 @@ public class SettingsLoader {
 	public String getCurrentNotesFilePath(){
 		String filename = getFileofPath(getFilePath());
 		//ist da jetzt ein Doppelpunkt dran?
-		File directory = new File(Environment.getExternalStorageDirectory()+File.separator+"Comfort Reader");
+		File directory = new File(Environment.getExternalStorageDirectory(), "Comfort Reader");
 		directory.mkdirs();
-		filename = filename.substring(0,filename.lastIndexOf("."));
+		if (filename.contains(".")){
+		filename = filename.substring(0,filename.lastIndexOf("."));}
 
 		if(filename.length() > 30){
 			filename = filename.substring(0, 29); }
-		String newstring = "/storage/sdcard0/Comfort Reader/notes_" + filename + ".txt";
+		String newstring = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Comfort Reader/notes_" + filename + ".txt";
 
 		if (getReadingCopyTextOn()) {
-			newstring = "/storage/sdcard0/Comfort Reader/notes_copy_pasted_text.txt";
+			newstring = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Comfort Reader/notes_copy_pasted_text.txt";
 
 		}
 
@@ -338,6 +377,9 @@ public class SettingsLoader {
 
 		try {
 			File myFile = new File(path);
+			//if (!myFile.exists()) {
+			//	myFile.mkdirs();
+			//}
 			myFile.createNewFile();
 			FileOutputStream fOut = new FileOutputStream(myFile);
 			OutputStreamWriter myOutWriter =
@@ -608,7 +650,11 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 	public void loadTextfromFilePath(String path){
 		d("settings", "filename is " + path);
-		String extension = path.substring((path.lastIndexOf(".") + 1), path.length());
+		String extension = "";
+		if (path.contains(".")){
+			extension = path.substring((path.lastIndexOf(".") + 1), path.length());
+		}
+
 		d("settings", "extension is " + extension);
 		String texttoread = "";
 		if (extension.equals("pdf:")){// the : sign is necessary because of the caracteristics of the filepicker preference that appends always :
@@ -650,6 +696,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 		} catch (FileNotFoundException e) {
 			reader = null;
 			e.printStackTrace();
+			return "Failed to load file";
 		}
 
 		StringBuilder text = new StringBuilder();
@@ -664,12 +711,14 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 			// TODO Auto-generated catch block
 			text.append("No data found.");
 			e.printStackTrace();
+			return "Failed to load file";
 		}
 		try {
 			reader.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return "Failed to load file";
 		}
 
 		return text.toString();

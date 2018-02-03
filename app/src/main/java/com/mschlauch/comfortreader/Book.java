@@ -583,8 +583,7 @@ public class Book {
 	    	//	tickturnsegment = false;
 	    	//	output = getsegmentoutput (tickposition - 1);
 	    	//	output = getsegmentoutput(tickposition);
-		    	
-	    		
+
 	    		invokenextsegmentwaitingonthread();
 				Log.i("Book", "is self-invoking next segment thread at position:" + globalposition);
 	    		//preloadrunning = true;

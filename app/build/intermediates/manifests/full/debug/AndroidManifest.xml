@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mschlauch.comfortreader"
-    android:versionCode="6"
-    android:versionName="1.9alpha" >
+    android:versionCode="7"
+    android:versionName="1.9beta" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="22"
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,10 +15,12 @@
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.mschlauch.comfortreader.FullscreenActivity"
