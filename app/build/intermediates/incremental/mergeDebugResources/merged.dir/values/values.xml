@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fontlistarray">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospaced</item>
+    </string-array>
+    <string-array name="fontlistvalues">
+        <item>sans</item>
+        <item>serif</item>
+        <item>mono</item>
+    </string-array>
+    <string-array name="listArray">
+        <item>Headings</item>
+        <item>Headings and Details</item>
+        <item>All Data</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="orientationarray">
+        <item>Default</item>
+        <item>Landscape always</item>
+        <item>Portrait always</item>
+    </string-array>
+    <string-array name="orientationvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="wpm_list_titles">
+        <item>200 slow</item>
+        <item>350 normal</item>
+        <item>550 very fast</item>
+        <item>1100 astro fast</item>
+    </string-array>
+    <string-array name="wpm_list_values">
+        <item>200</item>
+        <item>350</item>
+        <item>1100</item>
+    </string-array>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#CC000000</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="colorHeader">@color/colorPrimary</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="green">#ffbf00</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="FilePickerPreference"><attr format="enum" name="selection_mode">
+            <enum name="single_mode" value="0"/>
+            <enum name="multi_mode" value="1"/>
+        </attr><attr format="enum" name="selection_type">
+            <enum name="file_select" value="0"/>
+            <enum name="dir_select" value="1"/>
+            <enum name="file_dir_select" value="2"/>
+        </attr><attr format="string" name="root_dir"/><attr format="string" name="error_dir"/><attr format="string" name="extensions"/><attr format="string" name="title_text"/></declare-styleable>
+    <dimen name="activity_margin">4dp</dimen>
+    <dimen name="toolbar_image_margin">16dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Comfort Reader</string>
+    <string name="app_text_after_shareweblink">Read with Comfort Reader (experimential)</string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="choose_button_label">Select</string>
+    <string name="default_dir">/sdcard</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="fullscreen_copied_title">Copied text</string>
+    <string name="fullscreen_text_while_loading">...Loading text...\n Please wait.</string>
+    <string name="georgia">fontname</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="label_parent_directory">Parent Directory</string>
+    <string name="next_button">">>"</string>
+    <string name="notes_message_done_saving_note">Done writing out to</string>
+    <string name="notes_readnotebutton">View notes</string>
+    <string name="notes_savebutton">Add this note</string>
+    <string name="notes_title_current_notebook">Your notes:</string>
+    <string name="play_button"> ∣∣ > </string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message history</string>
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="previous_button">"&lt;&lt;"</string>
+    <string name="settings_backgroundcolor_summary"/>
+    <string name="settings_backgroundcolor_title">Background color</string>
+    <string name="settings_deviceorientation_default">Default system behavior</string>
+    <string name="settings_deviceorientation_landscape">Fixed Landscape mode</string>
+    <string name="settings_deviceorientation_portrait">Fixed Portrait mode</string>
+    <string name="settings_deviceorientation_summary">behavior during device rotation</string>
+    <string name="settings_deviceorientation_title">Device orientation</string>
+    <string name="settings_filepicker_loadingtext">Loading pdf takes times. You may also prepare a txt from pdf on a computer</string>
+    <string name="settings_filepicker_title">Current pdf or txt</string>
+    <string name="settings_focuscolor_summary">flowing letters</string>
+    <string name="settings_focuscolor_title">Focus color</string>
+    <string name="settings_fontname_summary"/>
+    <string name="settings_fontname_title">Typeface</string>
+    <string name="settings_fontsize_title">Font size</string>
+    <string name="settings_fromcopypaste_summary">Switch On to paste copied text</string>
+    <string name="settings_gamification_summary">Wordpoints earned:</string>
+    <string name="settings_gamification_title">Transform words</string>
+    <string name="settings_help_title">Get help</string>
+    <string name="settings_loadcopyandpaste_outputmessage_off">You are now reading</string>
+    <string name="settings_loadcopyandpaste_outputmessage_on">You can now read what you copied. Switch Off to get back to your text</string>
+    <string name="settings_loadcopyandpaste_title">Reading temporary text</string>
+    <string name="settings_maxwords_summary">Line should have less than</string>
+    <string name="settings_maxwords_summary2">characters</string>
+    <string name="settings_maxwords_title">Maximum line length</string>
+    <string name="settings_minwords_summary">Line should have more than</string>
+    <string name="settings_minwords_summary2">characters</string>
+    <string name="settings_minwords_title">Minimum line length</string>
+    <string name="settings_positionslider_title">Position</string>
+    <string name="settings_recent_texts">Load recent text</string>
+    <string name="settings_recent_texts_summary">Continue reading something</string>
+    <string name="settings_textcolor_summary">normal color</string>
+    <string name="settings_textcolor_title">Text color</string>
+    <string name="settings_title_appearanceoptions">Appearance</string>
+    <string name="settings_title_gamification_options">Gamification</string>
+    <string name="settings_title_linktoappearanceoptions">Change appearance</string>
+    <string name="settings_title_readingoptions">Reading</string>
+    <string name="settings_title_supportoptions">Support</string>
+    <string name="settings_title_textoptions">Text</string>
+    <string name="settings_wpm_title">Reading speed</string>
+    <string name="settings_wpn_summary">Words per minute:</string>
+    <string name="support_standarttext">
+    No text loaded. Click on the menu button on the upper left and load a txt or pdf file.</string>
+    <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
+    <string name="title_activity_custommenu">CustommenuActivity</string>
+    <string name="title_activity_note">Annotation Editor</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="words">words</string>
+    <string name="wordsperminuteSetting">words per minute</string>
+    <style name="AppBaseTheme" parent="android:Theme.Material">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="ComfortReaderTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+   <!--     <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>-->
+
+    </style>
+    <style name="FullscreenTheme" parent="android:Theme.Material.Wallpaper.NoTitleBar">
+
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+      <!--  <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>-->
+    </style>
+</resources>

@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="5sp"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    android:paddingTop="5sp"
+    tools:context="com.mschlauch.comfortreader.NoteActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:drawableLeft="@drawable/ic_readnotes"
+                android:id="@+id/button2uuaie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/notes_readnotebutton"
+                android:textColor="@color/white"
+                android:onClick="opennotebook" />
+
+            <Button
+                android:drawableLeft="@drawable/ic_savenote"
+                android:id="@+id/button1uaie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:onClick="enter"
+                android:text="@string/notes_savebutton"
+                android:textColor="@color/white"
+                 />
+
+        </LinearLayout>
+        
+         
+        <TextView
+            android:id="@+id/textViewPrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:padding="5sp"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        
+        
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:padding="5sp" >
+
+            <requestFocus />
+        </EditText>
+
+       
+<!--
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+              
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Erase Notes"
+                android:textColor="@color/white" 
+                android:onClick="deleteall"/>
+              
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Copy This Only"
+                android:textColor="@color/white" 
+                android:onClick="copy"/>
+
+        </LinearLayout>-->
+        
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/notes_title_current_notebook"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewComposed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:text="ntdrndtrndtndtrndtrndtrndtrndtrndtrndtrndtrndtrn"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                />
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+      
+    </LinearLayout>
+
+</RelativeLayout>

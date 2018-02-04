@@ -740,7 +740,9 @@ public class FullscreenActivity extends Activity {
 	    return false; 
 	}
 	
-	
+	public boolean testMethod(){
+		return true;
+	}
     
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 

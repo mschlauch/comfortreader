@@ -23,6 +23,7 @@
 package com.mschlauch.comfortreader;
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;
+import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -51,6 +52,9 @@ import android.widget.Toast;
 import com.github.angads25.filepicker.view.FilePickerPreference;
 
 import java.util.Random;
+
+import static android.content.ClipDescription.MIMETYPE_TEXT_HTML;
+import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
 
 public class CRPreferenceActivity extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener{
@@ -568,18 +572,44 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
 }
 
+
     public String readFromClipboard() {
-        // Gets a handle to the clipboard service.
-        ClipboardManager clipboard = (ClipboardManager)
-                getSystemService(Context.CLIPBOARD_SERVICE);
-        if (clipboard.hasPrimaryClip()) {
-            android.content.ClipDescription description = clipboard.getPrimaryClipDescription();
-            android.content.ClipData data = clipboard.getPrimaryClip();
-            if (data != null && description != null && description.hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN))
-                return String.valueOf(data.getItemAt(0).getText());
+
+        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        String pasteData = "";
+
+
+        if (!(clipboard.hasPrimaryClip())) {
+            //disabled
+
+            Log.i("Options", "has primaty clip" + pasteData);
+
+
+        } else if (clipboard.getPrimaryClipDescription().hasMimeType(MIMETYPE_TEXT_HTML) || clipboard.getPrimaryClipDescription().hasMimeType(MIMETYPE_TEXT_PLAIN)) {
+
+            Log.i("Options", "plain text");
+
+
+
+            // This enables the paste menu item, since the clipboard contains plain text.
+            //enabled
+            //copy stuff
+            ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
+
+// Gets the clipboard as text.
+            pasteData = item.getText().toString();
+
         }
-        return "";
+
+
+        //      Log.i("Reading from Clipboard", pasteData);
+
+        Log.i("Options", "THIS IS" + pasteData);
+
+
+        return pasteData;
     }
+
 
 
 }

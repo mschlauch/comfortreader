@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,159,206,257,308,957,1003,1055,1103,1158,1213,1261",
+                        "endColumns": "45,57,46,50,50,52,45,51,47,54,54,47,67",
+                        "endOffsets": "96,154,201,252,303,356,998,1050,1098,1153,1208,1256,1324"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,16,17,18,19,20,21,23",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,159,206,257,308,957,1003,1055,1103,1158,1213,1322",
+                        "endColumns": "45,57,46,50,50,52,45,51,47,54,54,47,67",
+                        "endOffsets": "96,154,201,252,303,356,998,1050,1098,1153,1208,1256,1385"
+                    }
+                },
+                {
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/624090e81776e073346240d091fa9254/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,116",
+                        "endColumns": "60,72",
+                        "endOffsets": "111,184"
+                    },
+                    "to": {
+                        "startLines": "22,24",
+                        "startColumns": "4,4",
+                        "startOffsets": "1261,1390",
+                        "endColumns": "60,72",
+                        "endOffsets": "1317,1458"
+                    }
+                }
+            ]
+        }
+    ]
+}
