@@ -1,15 +1,13 @@
+# Comfort Reader
 
+This file is part of Comfort Reader. Streams text directly to your eyes
 
-This file is part of Comfort Reader.
+<a href="https://f-droid.org/packages/com.mschlauch.comfortreader/" target="_blank">
+<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.mschlauch.comfortreader" target="_blank">
+<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80"/></a>
 
-version 1.9 alpha
-
-last changes:
-- revised UI and usability
-- bugfixes
-
-DESCRIPTION
-
+## DESCRIPTION
 Comfort Reader makes reading easier for you. It streams any text directly to your eyes. Smart text processing and colored letter animation help you to recognize and understand text faster and better. Reading a book will seem just like watching a film - at the speed that works best for you.
 
 Main features:
@@ -21,8 +19,14 @@ Main features:
 - trains your reading, reduces regression and expands your vision span
 - fully costumizable text appearance and reading configuration
 
+## CHANGELOG
+version 1.9 alpha
 
-LICENSE
+last changes:
+- revised UI and usability
+- bugfixes
+
+## LICENSE
 Copyright 2014-2017 Michael Schlauch
 
 Comfort Reader is free software: you can redistribute it and/or modify
