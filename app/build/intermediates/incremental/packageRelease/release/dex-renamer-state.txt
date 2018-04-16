@@ -1,0 +1,4 @@
+#Mon Apr 16 20:27:41 CEST 2018
+base.0=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

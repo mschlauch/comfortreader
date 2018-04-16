@@ -3,201 +3,103 @@
 
     <item
         is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.github.angads25/filepicker/1.0.7/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-20.0.0.aar/f67805098d461fdfceee2e000630ca2c/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="22"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/michael/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        min-sdk-version="22"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.0.7.aar/8b39c6f153c87aa58cb88e4f2275b10c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="22"
+        optimize="true"
+        revision="26.0.2"
         sha1="b186d4f64ed6901a6806c4129b6757f0bc26e1d1">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.github.angads25-filepicker-1.0.7_83ecce297cfdf6c367ed9258b83f7c58ada7a1a3.jar" />
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/5.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/michael/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jar="/home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.9.1.aar/349cf5bd67dab13c0d810e351c9b039d/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="22"
         optimize="true"
-        revision="25.0.2"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0_05b35a1a1224638ec94eead31a608f07436cb326.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/prov/1.51.0.0/6755081df770180856ca48694b40cd34c2208128/prov-1.51.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6755081df770180856ca48694b40cd34c2208128">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/prov-1.51.0.0_1c2ed6d3e28d27332e7c62b74937eedf42de6b81.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/core/1.51.0.0/f642963312ea0e615ad65f28adc5a5b3a2a0862/core-1.51.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0f642963312ea0e615ad65f28adc5a5b3a2a0862">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/core-1.51.0.0_3469447c776c9dfc85ca7e3d22b1833d7570de5c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0_51d8e9d7bd931a9e2f5d297a58bbc56a9b164f16.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/pkix/1.51.0.0/40a445852ca58187fc616e3a8b42de463bf14b8b/pkix-1.51.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="40a445852ca58187fc616e3a8b42de463bf14b8b">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/pkix-1.51.0.0_b0e0042ac6e150b7a1de2d7c691407a782a9d426.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/net.margaritov.preference.colorpicker.ColorPickerPreference/ColorPickerPreference/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f5c833fd791609de66f1c0e66be8b6d6c5afec87">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/net.margaritov.preference.colorpicker.ColorPickerPreference-ColorPickerPreference-1.0.0_48c4d6fa3685d521867ce6fc2b75dd47fd06cc08.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0_51d8e9d7bd931a9e2f5d297a58bbc56a9b164f16.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-20.0.0_5bb8c0f9d13ea22af5f3419fda2381ae6f15fcaa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-20.0.0_f97a9310d29836c17e3421873e7d2daa019a9107.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.10.2/33ee82e324f4b1e40167f3dc5e01234a1c5cab61/jsoup-1.10.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="33ee82e324f4b1e40167f3dc5e01234a1c5cab61">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/jsoup-1.10.2_9afcad7495af46e24e6c68e630c0f9c386246685.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.10.2/33ee82e324f4b1e40167f3dc5e01234a1c5cab61/jsoup-1.10.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="33ee82e324f4b1e40167f3dc5e01234a1c5cab61">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/jsoup-1.10.2_9afcad7495af46e24e6c68e630c0f9c386246685.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/net.margaritov.preference.colorpicker.ColorPickerPreference/ColorPickerPreference/1.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f5c833fd791609de66f1c0e66be8b6d6c5afec87">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/net.margaritov.preference.colorpicker.ColorPickerPreference-ColorPickerPreference-1.0.0_48c4d6fa3685d521867ce6fc2b75dd47fd06cc08.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/pkix/1.51.0.0/40a445852ca58187fc616e3a8b42de463bf14b8b/pkix-1.51.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="40a445852ca58187fc616e3a8b42de463bf14b8b">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/pkix-1.51.0.0_b0e0042ac6e150b7a1de2d7c691407a782a9d426.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-20.0.0_5bb8c0f9d13ea22af5f3419fda2381ae6f15fcaa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-20.0.0_f97a9310d29836c17e3421873e7d2daa019a9107.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0_05b35a1a1224638ec94eead31a608f07436cb326.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.tom_roush/pdfbox-android/1.8.9.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="5d5404ac6a8ac3d09018be6b5625606a771eaa4f">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.tom_roush-pdfbox-android-1.8.9.1_a9adae2b5d9c95cc965f32581954479e3425aac9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.github.angads25/filepicker/1.0.7/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b186d4f64ed6901a6806c4129b6757f0bc26e1d1">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.github.angads25-filepicker-1.0.7_83ecce297cfdf6c367ed9258b83f7c58ada7a1a3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/prov/1.51.0.0/6755081df770180856ca48694b40cd34c2208128/prov-1.51.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6755081df770180856ca48694b40cd34c2208128">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/prov-1.51.0.0_1c2ed6d3e28d27332e7c62b74937eedf42de6b81.jar" />
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/4.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/core/1.51.0.0/f642963312ea0e615ad65f28adc5a5b3a2a0862/core-1.51.0.0.jar"
         jumboMode="false"
+        min-sdk-version="22"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="0f642963312ea0e615ad65f28adc5a5b3a2a0862">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/core-1.51.0.0_3469447c776c9dfc85ca7e3d22b1833d7570de5c.jar" />
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/10.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/exploded-aar/com.tom_roush/pdfbox-android/1.8.9.1/jars/classes.jar"
+        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/pkix/1.51.0.0/40a445852ca58187fc616e3a8b42de463bf14b8b/pkix-1.51.0.0.jar"
         jumboMode="false"
+        min-sdk-version="22"
         optimize="true"
-        revision="25.0.2"
-        sha1="5d5404ac6a8ac3d09018be6b5625606a771eaa4f">
-        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/pre-dexed/debug/com.tom_roush-pdfbox-android-1.8.9.1_a9adae2b5d9c95cc965f32581954479e3425aac9.jar" />
+        revision="26.0.2"
+        sha1="40a445852ca58187fc616e3a8b42de463bf14b8b">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-20.0.0.aar/f67805098d461fdfceee2e000630ca2c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="22"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/624090e81776e073346240d091fa9254/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="22"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f5c833fd791609de66f1c0e66be8b6d6c5afec87">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/michael/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.10.2/33ee82e324f4b1e40167f3dc5e01234a1c5cab61/jsoup-1.10.2.jar"
+        jumboMode="false"
+        min-sdk-version="22"
+        optimize="true"
+        revision="26.0.2"
+        sha1="33ee82e324f4b1e40167f3dc5e01234a1c5cab61">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/michael/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/prov/1.51.0.0/6755081df770180856ca48694b40cd34c2208128/prov-1.51.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="22"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6755081df770180856ca48694b40cd34c2208128">
+        <dex dex="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/preDex/release/9.jar" />
     </item>
 
 </items>
