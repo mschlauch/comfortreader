@@ -2,6 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.mschlauch.comfortreader"
       android:versionCode="7"
-      android:versionName="1.9beta"
+      android:versionName="1.10"
       split="lib_slice_5_apk">
 </manifest>

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Feb 04 15:57:06 CET 2018
+#Mon Apr 16 19:56:19 CEST 2018
 210.set=ASSET
 2.path=com/tom_roush/fontbox/resources/cmap/Add-H
 14.set=ASSET
@@ -14,7 +14,7 @@
 209.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 37.baseType=DIRECTORY
 21.set=ASSET
-107.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dexMerger/debug/31
+107.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 159.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 125.set=DEX
 206.path=fonts/Crimson-Roman.ttf
@@ -169,7 +169,7 @@
 208.path=com/tom_roush/fontbox/resources/cmap/Hankaku
 213.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 136.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
-106.path=com/tom_roush/fontbox/resources/cmap/78-RKSJ-H
+106.path=classes.dex
 206.baseType=DIRECTORY
 188.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 111.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
@@ -179,7 +179,7 @@
 163.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 210.path=com/tom_roush/fontbox/resources/cmap/Hojo-EUC-H
 133.path=com/tom_roush/fontbox/resources/cmap/B5-V
-106.set=ASSET
+106.set=DEX
 117.baseType=DIRECTORY
 185.path=com/tom_roush/fontbox/resources/cmap/KSC-V
 190.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
@@ -245,7 +245,7 @@
 62.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 214.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 137.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
-107.path=classes.dex
+107.path=com/tom_roush/fontbox/resources/cmap/78-RKSJ-H
 12.set=ASSET
 189.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 112.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
@@ -483,7 +483,7 @@
 112.path=com/tom_roush/pdfbox/resources/ttf/Arial-BoldItalicMT.ttf
 164.path=com/tom_roush/fontbox/resources/cmap/RKSJ-V
 0.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
-107.set=DEX
+107.set=ASSET
 110.baseType=DIRECTORY
 191.path=com/tom_roush/pdfbox/resources/afm/Times-Italic.afm
 91.baseType=DIRECTORY
@@ -796,7 +796,7 @@ count=215
 170.baseType=DIRECTORY
 208.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 11.set=ASSET
-106.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
+106.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dexMerger/debug/31
 158.base=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/assets/debug
 115.set=ASSET
 205.path=com/tom_roush/fontbox/resources/cmap/Adobe-Japan2-0

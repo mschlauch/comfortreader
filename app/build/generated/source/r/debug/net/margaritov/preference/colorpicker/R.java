@@ -12,7 +12,7 @@ public final class R {
         public static final int hex_val = 0x7f07001a;
         public static final int new_color_panel = 0x7f070021;
         public static final int old_color_panel = 0x7f070024;
-        public static final int text_hex_wrapper = 0x7f070032;
+        public static final int text_hex_wrapper = 0x7f070030;
     }
     public static final class layout {
         public static final int dialog_color_picker = 0x7f080002;

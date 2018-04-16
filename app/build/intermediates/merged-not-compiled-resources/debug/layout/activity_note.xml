@@ -95,33 +95,10 @@
                 android:onClick="copy"/>
 
         </LinearLayout>-->
-        
-        
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/notes_title_current_notebook"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
 
-        <ScrollView
-            android:id="@+id/scrollView1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
 
-            <TextView
-                android:id="@+id/textViewComposed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5sp"
-                android:text="ntdrndtrndtndtrndtrndtrndtrndtrndtrndtrndtrndtrn"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/white"
-                />
 
-        </ScrollView>
+
 
         <LinearLayout
             android:layout_width="match_parent"

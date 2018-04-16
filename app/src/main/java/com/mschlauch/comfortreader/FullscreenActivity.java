@@ -533,10 +533,10 @@ public class FullscreenActivity extends Activity {
 
 			stop();
 
-			int progress = segmenterObject.calculateprogress(1000);
-			float percentage = (float) progress / 10;
-			String percent = String.format("%.2f", (float) percentage) + "%";
-			settingsload.save("positiontextfornote", percent + " character: " + segmenterObject.globalposition);
+			// int progress = segmenterObject.calculateprogress(1000);
+			// float percentage = (float) progress / 10;
+			// String percent = String.format("%.2f", (float) percentage) + "%";
+			// settingsload.save("positiontextfornote", percent + " character: " + segmenterObject.globalposition);
 			Intent inent = new Intent("com.mschlauch.comfortreader.NoteActivity");
 			startActivity(inent);
 		}

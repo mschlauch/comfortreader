@@ -162,14 +162,12 @@ public final class R {
     public static final int single_mode=0x7f07002b;
     public static final int spinnerProgress=0x7f07002c;
     public static final int text=0x7f07002d;
-    public static final int textView2=0x7f07002e;
-    public static final int textViewComposed=0x7f07002f;
-    public static final int textViewPrefix=0x7f070030;
-    public static final int textViewStatus=0x7f070031;
-    public static final int text_hex_wrapper=0x7f070032;
-    public static final int title=0x7f070033;
-    public static final int topcontrolbar=0x7f070034;
-    public static final int topcontrolbar2=0x7f070035;
+    public static final int textViewPrefix=0x7f07002e;
+    public static final int textViewStatus=0x7f07002f;
+    public static final int text_hex_wrapper=0x7f070030;
+    public static final int title=0x7f070031;
+    public static final int topcontrolbar=0x7f070032;
+    public static final int topcontrolbar2=0x7f070033;
   }
   public static final class layout {
     public static final int activity_fullscreen=0x7f080000;

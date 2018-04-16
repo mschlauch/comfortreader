@@ -2,9 +2,11 @@
 
 This file is part of Comfort Reader.
 
-version 1.9 alpha
+version 1.10
 
 last changes:
+- long press functionality (backwards, fast-forward, quick-note (center))
+
 - revised UI and usability
 - bugfixes
 

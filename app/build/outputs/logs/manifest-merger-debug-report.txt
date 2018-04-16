@@ -16,7 +16,7 @@ INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidMan
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:5:5-34
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:5:5-31
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 	xmlns:android

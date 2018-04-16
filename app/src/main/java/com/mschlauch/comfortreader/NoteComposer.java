@@ -16,15 +16,13 @@ public class NoteComposer {
     private String position;
 
 
-    public String getcomposedNote (String note, SettingsLoader settingsload){
+    public String getExtract (SettingsLoader settingsload){
 
         // savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
         position = settingsload.getGlobalPositionPercentString();
 
         String texttoread = settingsload.getTexttoRead();//TODO ""
         int globalposition = settingsload.getGlobalPosition();
-        String filepath = settingsload.getFilePath();//TODO ""
-        filename = settingsload.getFileofPath(filepath);
 
         //String pathtofile = ("" + filepath + "/" + filename);
 
@@ -59,6 +57,56 @@ public class NoteComposer {
         extract =	extract.replaceAll("\n"," ");
 
         extract = "[…]" + extract + "[…]";
+        return extract;
+
+
+    }
+
+    public String getPrefix (SettingsLoader settingsload){
+
+        // savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
+        position = settingsload.getGlobalPositionPercentString();
+
+        String texttoread = settingsload.getTexttoRead();//TODO ""
+        int globalposition = settingsload.getGlobalPosition();
+        String filepath = settingsload.getFilePath();//TODO ""
+        filename = settingsload.getFileofPath(filepath);
+
+        //String pathtofile = ("" + filepath + "/" + filename);
+
+        String datetext = " " + android.text.format.DateFormat.format("yyyy-MM-dd hh:mm", new java.util.Date());
+/*
+
+        int textlength = texttoread.length();
+        int begin = globalposition - 100 - settingsload.getMaxBlockSize();
+        int end = globalposition + 100;
+        if (begin < 1){begin = 0;}
+        if (end > textlength || end < 0){
+            end = textlength;
+        }
+        String preextract = texttoread.substring(begin,end);
+
+
+        //get extracted text as words
+        textlength = preextract.length();
+        begin = 0;
+        end = 0;
+        begin = preextract.indexOf(" ");
+        end = preextract.lastIndexOf(" ");
+        if (begin < 1){begin = 0;}
+        if (end > preextract.length() || end < 0){
+            end = preextract.length() ;
+        }
+
+        String extract = " ";
+        extract = preextract.substring(begin, end);
+        extract =	extract.replaceAll("-\n","");
+
+        extract =	extract.replaceAll("\n"," ");
+
+        extract = "[…]" + extract + "[…]";*/
+
+        String extract = getExtract(settingsload);
         //linebreak bereinigung
         //extract.replace(System.getProperty ("line.separator"), "");
         //geht nicht TODO line.separator bereinigen...später
@@ -71,10 +119,13 @@ public class NoteComposer {
         //percentage
 
         prefix = "\n____________________\nQUOTATION:" + "\nFile:"+ filepath + "\nPosition: " +  position + "\nDate:" + datetext + "\nOriginal text:"  + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//" ;
-
-
-        return composednotebook = settingsload.getCurrentNotes() + ""  + prefix  + note + "";
+        return prefix;
 
     }
 
+    public String getcomposedNote (String note, SettingsLoader settingsload){
+        prefix = getPrefix(settingsload);
+        return composednotebook = settingsload.getCurrentNotes() + ""  + prefix  + note + "";
+
+    }
 }

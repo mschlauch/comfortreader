@@ -50,7 +50,7 @@ public final class R {
         public static final int multi_mode = 0x7f070020;
         public static final int select = 0x7f07002a;
         public static final int single_mode = 0x7f07002b;
-        public static final int title = 0x7f070033;
+        public static final int title = 0x7f070031;
     }
     public static final class layout {
         public static final int dialog_file_list = 0x7f080003;

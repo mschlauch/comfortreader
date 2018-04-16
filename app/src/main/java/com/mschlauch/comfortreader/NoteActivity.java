@@ -27,6 +27,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 //import android.support.v7.app.ActionBarActivity;
+import android.os.AsyncTask;
 import android.text.format.Time;
 import android.util.Log;
 import android.content.ClipData;
@@ -49,9 +50,10 @@ import android.widget.Toast;
 public class NoteActivity extends Activity {
 
 
-	public SettingsLoader settingsload = null ;
+	public SettingsLoader settingsload = null;
 	// public String savednotebook;
 	public String prefix;
+	public String extract;
 	public String filename;
 	public String note;
 	public String composednotebook;
@@ -61,19 +63,18 @@ public class NoteActivity extends Activity {
 	private TextView composedTextView;
 
 
-
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_note);
 
-		settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this));
+		settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this));
 		//EditText
 		inputTextView = (TextView) findViewById(R.id.editTextInput);
 		prefixTextView = (TextView) findViewById(R.id.textViewPrefix);
-		composedTextView = (TextView) findViewById(R.id.textViewComposed);
+	//	composedTextView = (TextView) findViewById(R.id.textViewComposed);
 
+		/*
 		// savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
 		position = settingsload.getGlobalPositionPercentString();
 
@@ -129,104 +130,87 @@ public class NoteActivity extends Activity {
 		prefix = "\n____________________\nQUOTATION:" + "\nFile:"+ filepath + "\nPosition: " +  position + "\nDate:" + datetext + "\nOriginal text:"  + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//" ;
 
 
-		prefixTextView.setText("Original text: " + extract);
+
 		//composedTextView.setText((CharSequence)savednotebook);
 		//composednotebook = savednotebook;
+
+		*/
+
+		String eins = " ";
+		new AsyncTask<String, Void, String>() {
+
+
+			@Override
+			protected String doInBackground(String... urlStr) {
+				// do stuff on non-UI thread
+
+				NoteComposer notec = new NoteComposer();
+				extract = notec.getExtract(settingsload);
+
+
+
+				return extract;
+
+				// String chunk1 = rawoutput.substring(rawoutput.indexOf(". "));
+				// String chunk2 = chunk1.substring(chunk1.indexOf(". "));
+
+				// return chunk2;
+
+				// return htmlCode.toString();
+			}
+
+
+			@Override
+			protected void onPostExecute(String htmlCode) {
+				// do stuff on UI thread with the html
+				prefixTextView.setText("Original text: " + extract);
+
+
+
+			}
+		}.execute(eins);
+
+
 
 	}
 
 
-	/*public void copy(View view) {
-
-		String thetext = prefix + inputTextView.getText().toString();
-
-		// Gets a handle to the clipboard service.
-		ClipboardManager clipboard = (ClipboardManager)
-		        getSystemService(Context.CLIPBOARD_SERVICE);
-		// Creates a new text clip to put on the clipboard
-		ClipData clip = ClipData.newPlainText("Comfort Reader note",thetext);
-		// Set the clipboard's primary clip.
-		clipboard.setPrimaryClip(clip);
-
-
-	}*/
-
 	private void saveTextfile(String text) {
 
-        Boolean success = settingsload.addtoCurrentNotes(text);
+		Boolean success = settingsload.addtoCurrentNotes(text);
 		if (success) {
 			String newpath = settingsload.getCurrentNotesFilePath();
-			newpath = newpath.substring(newpath.lastIndexOf("/")+1);
+			newpath = newpath.substring(newpath.lastIndexOf("/") + 1);
 
 			Toast.makeText(getBaseContext(),
-			getString(R.string.notes_message_done_saving_note) + "Comfort Reader/" + newpath,
-			Toast.LENGTH_SHORT).show();
-		}
-		else{
+					getString(R.string.notes_message_done_saving_note) + "Comfort Reader/" + newpath,
+					Toast.LENGTH_SHORT).show();
+		} else {
 			Toast.makeText(getBaseContext(),
-					"Error" ,
+					"Error",
 					Toast.LENGTH_SHORT).show();
 		}
 
 
 		finish();
-		/*File directory = new File(Environment.getExternalStorageDirectory()+File.separator+"Comfort Reader");
-		directory.mkdirs();
-
-
-		String filename = retrieve("filename");
-    	if(filename.length() > 30){
-    	filename = filename.substring(0, 29); }
-		String newstring = "mnt/sdcard/Comfort Reader/notes" + filename + ".txt";
-
-
-		try {
-            File myFile = new File(newstring);
-            myFile.createNewFile();
-            FileOutputStream fOut = new FileOutputStream(myFile);
-            OutputStreamWriter myOutWriter =
-                                    new OutputStreamWriter(fOut);
-            myOutWriter.append(text);
-            myOutWriter.close();
-            fOut.close();
-
-        } catch (Exception e) {
-            Toast.makeText(getBaseContext(), e.getMessage(),
-                    Toast.LENGTH_SHORT).show();
-        }*/
 	}
 
-	/*public void deleteall(View view) {
-		savednotebook = "";
-		composednotebook = "";
-		inputTextView.setText("");
-		composedTextView.setText((CharSequence) composednotebook);
-		//composedTextView.set
-		save("savednotebook",composednotebook);
-
-	}*/
-/*
-	public void delete(View view){
-		composedTextView.setText("");
-		enter(null);
-
-	}*/
 
 	public void enter(View view) {
 
-		InputMethodManager imm = (InputMethodManager)getSystemService(
-		      Context.INPUT_METHOD_SERVICE);
+		InputMethodManager imm = (InputMethodManager) getSystemService(
+				Context.INPUT_METHOD_SERVICE);
 		imm.hideSoftInputFromWindow(composedTextView.getWindowToken(), 0);
 
 		//CharSequence note = composedTextView.getText();
-	//	note = (String) inputTextView.getText();
+		//	note = (String) inputTextView.getText();
 		note = "hallo";
 		note = inputTextView.getText().toString();
 
 		NoteComposer notec = new NoteComposer();
 		composednotebook = notec.getcomposedNote(note, settingsload);
-	//	composedTextView.setText((CharSequence)composednotebook);
-	//	save("savednotebook",composednotebook);
+		//	composedTextView.setText((CharSequence)composednotebook);
+		//	save("savednotebook",composednotebook);
 
 		saveTextfile(composednotebook);
 	}
@@ -235,108 +219,9 @@ public class NoteActivity extends Activity {
 		Intent intent = new Intent(Intent.ACTION_VIEW);
 		//intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-		Uri uri = Uri.parse("file://"+settingsload.getCurrentNotesFilePath());
+		Uri uri = Uri.parse("file://" + settingsload.getCurrentNotesFilePath());
 		intent.setDataAndType(uri, "text/plain");
 		startActivity(intent);
 
-		/*String thetext = composednotebook;
-
-		// Gets a handle to the clipboard service.
-		ClipboardManager clipboard = (ClipboardManager)
-		        getSystemService(Context.CLIPBOARD_SERVICE);
-		// Creates a new text clip to put on the clipboard
-		ClipData clip = ClipData.newPlainText("Comfort Reader note",thetext);
-		// Set the clipboard's primary clip.
-		clipboard.setPrimaryClip(clip);
-
-		saveTextfile(composednotebook);*/
 	}
-/*
-	 public void save(String variable, String value){
-
-
-			//value = wpmTextBox.getText();
-
-			   SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-
-				String slotnumber = preferences.getString("slotnumber","");
-		  	  	if (slotnumber == "")
-		  	  	{
-		  	  		slotnumber = "slot1-";
-		  	  	}
-				variable = slotnumber + variable;
-
-
-			   SharedPreferences.Editor editor = preferences.edit();
-		    	  editor.putString(variable,value);
-		    	  editor.apply();
-
-		}
-
-
-		public String retrieve(String variable){
-			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-	  	  	String slotnumber = preferences.getString("slotnumber","");
-	  	  	if (slotnumber == "")
-	  	  	{
-	  	  		slotnumber = "slot1-";
-	  	  	}
-			variable = slotnumber + variable;
-			String value = preferences.getString(variable,"");
-
-			Log.d("notactivity", "retreived " + variable + " " + value);
-
-
-	  	  	return value;
-		}
-
-		public int retrieveNumber(String variable){
-			String value = retrieve(variable);
-			if (value == ""){
-				value = "0";
-			}
-
-			int number=Integer.parseInt(value.replaceAll("[\\D]",""));
-
-			//value = wpmTextBox.getText();
-			return number;
-		}
-
-
-		public boolean onKeyDown(int keyCode, KeyEvent event) {
-	        super.onKeyDown(keyCode, event);
-	        //VOLUME KEY DOWN
-	   if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
-	   {
-
-		   this.finish();
-
-	       return true;
-	   }
-	   //VOLUME KEY UP
-	   if (keyCode == KeyEvent.KEYCODE_VOLUME_UP)
-	   {
-		   enter(inputTextView);
-
-	       return true;
-	   }
-
-
-
-
-	    if (keyCode == KeyEvent.KEYCODE_MENU)
-	    {
-
-	    	this.finish();
-
-
-	        return true;
-	    }
-
-
-
-	    return true;
-	    }
-*/
 }
