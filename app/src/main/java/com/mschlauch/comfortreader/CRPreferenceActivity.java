@@ -421,40 +421,42 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                         preference.setTitle(getString(R.string.fullscreen_text_while_loading));
                         preference.setSummary(getString(R.string.settings_filepicker_loadingtext));
 
-                        new AsyncTask<String, Void, String>() {
+                        if (value != null && !value.isEmpty() && !value.equals("null")) //fix for bugreport java.lang.StringIndexOutOfBoundsException #12, menu now closes without crashing after secenting "empty"
+                        {
+                            new AsyncTask<String, Void, String>() {
 
 
-                            @Override
-                            protected String doInBackground(String... urlStr) {
-                                // do stuff on non-UI thread
+                                @Override
+                                protected String doInBackground(String... urlStr) {
+                                    // do stuff on non-UI thread
 
-                                Log.d("settings", "loading book global position 0: " + settingslolo.getGlobalPositionSeekbarValue());
-                                settingslolo.loadTextfromFilePath(value);
+                                    Log.d("settings", "loading book global position 0: " + settingslolo.getGlobalPositionSeekbarValue());
 
-                                String out = "";
-                                return out;
+                                    settingslolo.loadTextfromFilePath(value);
 
-                                // String chunk1 = rawoutput.substring(rawoutput.indexOf(". "));
-                                // String chunk2 = chunk1.substring(chunk1.indexOf(". "));
+                                    String out = "";
+                                    return out;
 
-                                // return chunk2;
+                                    // String chunk1 = rawoutput.substring(rawoutput.indexOf(". "));
+                                    // String chunk2 = chunk1.substring(chunk1.indexOf(". "));
 
-                                // return htmlCode.toString();
-                            }
+                                    // return chunk2;
 
-
-                            @Override
-                            protected void onPostExecute(String htmlCode) {
-                                // do stuff on UI thread with the html
-                                picker.setSummary(value);
-
-                                settingslolo.save("filepath",value);
+                                    // return htmlCode.toString();
+                                }
 
 
+                                @Override
+                                protected void onPostExecute(String htmlCode) {
+                                    // do stuff on UI thread with the html
+                                    picker.setSummary(value);
 
-                            }
-                        }.execute(eins);
+                                    settingslolo.save("filepath", value);
 
+
+                                }
+                            }.execute(eins);
+                        }
 
 
 
