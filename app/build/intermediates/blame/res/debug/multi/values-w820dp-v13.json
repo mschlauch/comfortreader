@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 45,
+                        "endOffset": 96
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 101,
+                    "endColumn": 51,
+                    "endOffset": 148
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 51,
+                        "endOffset": 148
+                    }
+                }
+            }
+        ]
+    }
+]

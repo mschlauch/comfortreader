@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_maximumtext.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_maximumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_copypaste.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_copypaste.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_readnotes.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_readnotes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_sadsmiley.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_sadsmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_loadtext.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_loadtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_settings.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_loadrecent.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_loadrecent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_notes.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_notes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_lettercolor.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_lettercolor.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_happysmiley.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_happysmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_deviceorientation.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_deviceorientation.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_savenote.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_savenote.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_college.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_college.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_minimumtext.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_minimumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_support.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_support.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_typefacesize.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_typefacesize.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_speed.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_speed.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_heart.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_heart.png"
+    }
+]

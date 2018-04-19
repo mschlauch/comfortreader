@@ -106,7 +106,8 @@ public class NoteComposer {
 
         extract = "[…]" + extract + "[…]";*/
 
-        String extract = getExtract(settingsload);
+        String extract;
+        extract = getExtract(settingsload);
         //linebreak bereinigung
         //extract.replace(System.getProperty ("line.separator"), "");
         //geht nicht TODO line.separator bereinigen...später

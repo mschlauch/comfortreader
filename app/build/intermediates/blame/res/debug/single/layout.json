@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_layout.xml",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_footer.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/layout/dialog_footer.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_header.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/layout/dialog_header.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_main.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/layout/dialog_main.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_file_list_item.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/layout/dialog_file_list_item.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_file_list.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/layout/dialog_file_list.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/dialog_color_picker.xml",
+        "source": "/home/michael/.android/build-cache/c3e431454637facedcfad7dc5e959505a49deb15/output/res/layout/dialog_color_picker.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/activity_note.xml",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/layout/activity_note.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/layout/activity_fullscreen.xml",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/layout/activity_fullscreen.xml"
+    }
+]

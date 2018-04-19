@@ -200,7 +200,7 @@ public class NoteActivity extends Activity {
 
 		InputMethodManager imm = (InputMethodManager) getSystemService(
 				Context.INPUT_METHOD_SERVICE);
-		imm.hideSoftInputFromWindow(composedTextView.getWindowToken(), 0);
+		imm.hideSoftInputFromWindow(inputTextView.getWindowToken(), 0);
 
 		//CharSequence note = composedTextView.getText();
 		//	note = (String) inputTextView.getText();

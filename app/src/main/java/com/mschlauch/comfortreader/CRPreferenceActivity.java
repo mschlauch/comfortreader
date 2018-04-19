@@ -65,6 +65,15 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
    // private ProgressDialog progressDialog;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+
+    public boolean isValidFragment(String fragmentName) {
+        return MyPreferenceFragment.class.getName().equals(fragmentName);
+
+    }
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/anim/unmarked_item_animation.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/anim/unmarked_item_animation.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/anim/marked_item_animation.xml",
+        "source": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/anim/marked_item_animation.xml"
+    }
+]
