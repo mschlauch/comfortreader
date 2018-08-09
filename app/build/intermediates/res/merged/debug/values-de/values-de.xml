@@ -30,32 +30,6 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
     <string-array name="wpm_list_titles">
         <item>200 slow</item>
         <item>350 normal</item>
@@ -67,39 +41,55 @@
         <item>350</item>
         <item>1100</item>
     </string-array>
-    <color name="black">#000000</color>
-    <color name="black_overlay">#CC000000</color>
-    <color name="gray">#333333</color>
-    <color name="white">#FFFFFF</color>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zur Startseite"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s: %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s: %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Nach oben"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Fertig"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alle ansehen"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Suchanfrage"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Suchen"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Suchanfrage senden"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sprachsuche"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
     <string name="action_settings">Optionen</string>
     <string name="app_name">Comfort Reader</string>
     <string name="app_text_after_shareweblink">Read with Comfort Reader (experimental)</string>
+    <string name="cancel_button_label">Abbrechen</string>
+    <string name="choose_button_label">Auswählen</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_dir_access">Verzeichnis kann nicht zugegriffen werden</string>
+    <string name="feedback_negativeopinionquestion_negative">Später</string>
+    <string name="feedback_negativeopinionquestion_positive">Feedback senden</string>
+    <string name="feedback_negativeopinionquestion_subtitle"/>
+    <string name="feedback_negativeopinionquestion_title">Schade. Du kannst uns helfen, das Problem zu lösen. Willst du uns eine Rückmeldung schicken?</string>
+    <string name="feedback_opinionquestion_negative">Nein</string>
+    <string name="feedback_opinionquestion_positive">Ja</string>
+    <string name="feedback_opinionquestion_subtitle"/>
+    <string name="feedback_opinionquestion_title">Findest du diese App nützlich?</string>
+    <string name="feedback_positiveopinionquestion_negative">No</string>
+    <string name="feedback_positiveopinionquestion_positive">Okay</string>
+    <string name="feedback_positiveopinionquestion_subtitle"/>
+    <string name="feedback_positiveopinionquestion_title">Dies ist eine freie open-source Software. Die Unterstützung vieler macht es möglich. Willst du auch beitragen und eine Bewertung im Play Store abgeben?</string>
+    <string name="feedback_thankyou_subtitle">Damit Comfort Reader auch in Zukunft offen und werbefrei bleibt, solltest du auf der Webseite eine kleine Spende hinterlassen.</string>
+    <string name="feedback_thankyou_title">Viele Dank!</string>
     <string name="fullscreen_copied_title">Kopiertes</string>
     <string name="fullscreen_text_while_loading">...Text wird geladen...\n Bitte warten.</string>
     <string name="georgia">fontname</string>
     <string name="hello_world">Hello world!</string>
+    <string name="label_parent_directory">Verzeichnis hoch</string>
+    <string name="last_edit">Zuletzt bearbeitet: </string>
     <string name="next_button">">>"</string>
     <string name="notes_message_done_saving_note">Ausgeschrieben nach </string>
     <string name="notes_readnotebutton">Notizblock</string>
     <string name="notes_savebutton">Notiz speichern</string>
     <string name="notes_title_current_notebook">Deine Notizen:</string>
     <string name="play_button"> ∣∣ > </string>
-    <string name="pref_default_display_name">John Smith</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message history</string>
-    <string name="pref_header_data_sync">Data &amp; sync</string>
-    <string name="pref_header_general">General</string>
-    <string name="pref_header_notifications">Notifications</string>
-    <string name="pref_ringtone_silent">Silent</string>
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_title_new_message_notifications">New message notifications</string>
-    <string name="pref_title_ringtone">Ringtone</string>
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string name="pref_title_system_sync_settings">System sync settings</string>
-    <string name="pref_title_vibrate">Vibrate</string>
     <string name="previous_button">"&lt;&lt;"</string>
     <string name="settings_backgroundcolor_summary"/>
     <string name="settings_backgroundcolor_title">Hintergrundfarbe</string>
@@ -109,7 +99,7 @@
     <string name="settings_deviceorientation_summary">behavior during device rotation</string>
     <string name="settings_deviceorientation_title">Richtung</string>
     <string name="settings_filepicker_loadingtext">Text wird laden. Pdf-Export am Computer geht schneller.</string>
-    <string name="settings_filepicker_title">Geladene txt oder pdf</string>
+    <string name="settings_filepicker_title">Geladene txt, epub oder pdf</string>
     <string name="settings_focuscolor_summary">Beleuchtete Buchstaben im Fokus</string>
     <string name="settings_focuscolor_title">Fokusfarbe</string>
     <string name="settings_fontname_summary"/>
@@ -142,6 +132,6 @@
     <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
     <string name="title_activity_custommenu">CustommenuActivity</string>
     <string name="title_activity_note">Notizen schreiben</string>
-    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings">Einstellungen</string>
     <string name="wordsperminuteSetting">words per minute</string>
 </resources>

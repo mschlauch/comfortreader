@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.tom_roush:pdfbox-android-1.8.10.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/78a87c724bcb431b669165d9cf2d14f67841f54d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/78a87c724bcb431b669165d9cf2d14f67841f54d/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

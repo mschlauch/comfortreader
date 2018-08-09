@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comfort Reader</string>
+    <string name="app_text_after_shareweblink">Read with Comfort Reader (experimental)</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="next_button">"&gt;&gt;"</string>
+    <string name="previous_button">"&lt;&lt;"</string>
+    <string name="play_button"> ∣∣ > </string>
+    <string name="georgia">fontname</string>
+    <string name="wordsperminuteSetting">palabras por minuto</string>
+    <string name="title_activity_custommenu">CustommenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Optionen</string>
+    <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
+    <string name="title_activity_note">escribir notas</string>
+    <string name="title_activity_settings">configuración</string>
+
+
+
+    <string name="settings_title_readingoptions">Opciones de lectura</string>
+    <string name="settings_title_supportoptions">Ayuda</string>
+    <string name="settings_help_title">visita el sitio web</string>
+
+    <string name="settings_title_textoptions">Opciones de texto</string>
+
+    <string name="settings_recent_texts">Cargar texto reciente</string>
+    <string name="settings_recent_texts_summary">Continuar leyendo algo</string>
+    <string name="settings_filepicker_title">Archivo pdf, txt o epub en uso</string>
+
+    <string name="settings_positionslider_title">Posición</string>
+
+    <string name="settings_wpm_title">Velocidad de lectura</string>
+    <string name="settings_wpn_summary">Palabras por minuto: </string>
+
+    <string name="settings_minwords_title">Longitud mínima de línea</string>
+    <string name="settings_minwords_summary">Line debería tener más de </string>
+    <string name="settings_minwords_summary2">letras.</string>
+
+    <string name="settings_maxwords_title">Longitud de línea máxima</string>
+    <string name="settings_maxwords_summary">La línea debería tener menos de </string>
+    <string name="settings_maxwords_summary2"> letras.</string>
+
+    <string name="settings_title_appearanceoptions">Apariencia</string>
+    <string name="settings_title_linktoappearanceoptions">Cambiar apariencia</string>
+    <string name="settings_fontsize_title">Tamaño de fuente</string>
+
+    <string name="settings_fontname_title">Estilo de fuente</string>
+    <string name="settings_fontname_summary"></string>
+    <string name="settings_textcolor_title">Color del texto</string>
+    <string name="settings_textcolor_summary">color normal</string>
+    <string name="settings_focuscolor_title">Color de foco</string>
+    <string name="settings_focuscolor_summary">letras iluminadas en foco</string>
+
+    <string name="settings_loadcopyandpaste_title">Lectura de texto temporal</string>
+    <string name="settings_loadcopyandpaste_outputmessage_on">Ahora puede leer lo que ha copiado. Desactivar para volver a tu texto.</string>
+    <string name="settings_loadcopyandpaste_outputmessage_off">Ahora está leyendo </string>
+    <string name="settings_fromcopypaste_summary">Activar para pegar el texto copiado</string>
+
+    <string name="settings_backgroundcolor_title">Color de fondo</string>
+    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_deviceorientation_title">Orientación del dispositivo</string>
+    <string name="settings_deviceorientation_summary">comportamiento durante la rotación del dispositivo</string>
+    <string name="settings_deviceorientation_default">Comportamiento predeterminado del sistema</string>
+    <string name="settings_deviceorientation_portrait">Modo de retrato fijo</string>
+    <string name="settings_deviceorientation_landscape">Modo Paisaje fijo</string>
+
+    <string name="notes_savebutton">guardar nota</string>
+    <string name="notes_readnotebutton">Ver notas</string>
+    <string name="notes_message_done_saving_note">Hecho escribiendo a </string>
+    <string name="notes_title_current_notebook">Tus notas:</string>
+
+    <string name="fullscreen_copied_title">Texto copiado</string>
+    <string name="fullscreen_text_while_loading">... Cargando texto ..</string>
+
+    <string name="settings_filepicker_loadingtext">la forma más rápida es cargar un archivio txt</string>
+        <string name="support_standarttext">Sin texto cargado todavía. Vaya a las opciones ("...") y seleccione un txt, epub o pdf para leer.</string>
+
+
+    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_title">¿Le parece útil esta aplicación?</string>
+    <string name="feedback_opinionquestion_positive">Sí</string>
+    <string name="feedback_opinionquestion_negative">No</string>
+    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_title">Comfort Reader es un software libre y open-source, gracias a la ayuda de muchos. ¿Quieres contribuir también y dejar una evaluación en Play Store?</string>
+    <string name="feedback_positiveopinionquestion_positive">Bien</string>
+    <string name="feedback_positiveopinionquestion_negative">No</string>
+    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_title">Lo siento. Podrías ayudarnos a resolver el problema. ¿Desea dejarnos un mensaje?</string>
+    <string name="feedback_negativeopinionquestion_positive">enviar comentarios</string>
+    <string name="feedback_negativeopinionquestion_negative">ahora no </string>
+
+    <string name="feedback_thankyou_title">¡Muchas gracias!</string>
+    <string name="feedback_thankyou_subtitle">Considere hacer una donación en el sitio web de Comfort Reader. Solo para que pueda permanecer libre y libre de publicidad molesta.</string>
+
+
+
+
+
+
+</resources>

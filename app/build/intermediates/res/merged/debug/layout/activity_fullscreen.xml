@@ -2,8 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#000000"
-    tools:context="com.mschlauch.comfortreader.FullscreenActivity" >
+    tools:context="com.mschlauch.comfortreader.FullscreenActivity">
+
+
+
+
 
     <!--
          The primary full-screen view. This can be replaced with whatever view
@@ -34,14 +39,16 @@
         android:text="@string/fullscreen_text_while_loading"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+
+
     <FrameLayout
         android:id="@+id/fullscreen_content_controls"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true" 
         >
-        
-         <LinearLayout
+
+        <LinearLayout
              android:id="@+id/fulllinear"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
@@ -197,4 +204,30 @@
              
        
  </FrameLayout>
+
+    <com.github.stkent.amplify.prompt.DefaultLayoutPromptView
+        android:id="@+id/prompt_view"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:prompt_view_user_opinion_question_title="@string/feedback_opinionquestion_title"
+        app:prompt_view_user_opinion_question_subtitle="@string/feedback_opinionquestion_subtitle"
+        app:prompt_view_user_opinion_question_positive_button_label="@string/feedback_opinionquestion_positive"
+        app:prompt_view_user_opinion_question_negative_button_label="@string/feedback_opinionquestion_negative"
+        app:prompt_view_positive_feedback_question_title="@string/feedback_positiveopinionquestion_title"
+        app:prompt_view_positive_feedback_question_subtitle="@string/feedback_positiveopinionquestion_subtitle"
+        app:prompt_view_positive_feedback_question_positive_button_label="@string/feedback_positiveopinionquestion_positive"
+        app:prompt_view_positive_feedback_question_negative_button_label="@string/feedback_positiveopinionquestion_negative"
+        app:prompt_view_critical_feedback_question_title="@string/feedback_negativeopinionquestion_title"
+        app:prompt_view_critical_feedback_question_subtitle="@string/feedback_negativeopinionquestion_subtitle"
+        app:prompt_view_critical_feedback_question_positive_button_label="@string/feedback_negativeopinionquestion_positive"
+        app:prompt_view_critical_feedback_question_negative_button_label="@string/feedback_negativeopinionquestion_negative"
+        app:prompt_view_thanks_title="@string/feedback_thankyou_title"
+        app:prompt_view_thanks_subtitle="@string/feedback_thankyou_subtitle"
+
+
+
+        />
+
 </FrameLayout>

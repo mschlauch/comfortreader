@@ -20,6 +20,7 @@
 
 package com.mschlauch.comfortreader;
 
+import android.content.res.AssetManager;
 import android.util.Log;
 
 import java.io.File;
@@ -48,17 +49,23 @@ public class PDFManager {
     }
    public String ToText() throws IOException
    {
+
        this.pdfStripper = null;
        this.pdDoc = null;
        this.cosDoc = null;
        
        file = new File(filePath);
-       parser = new PDFParser(new FileInputStream(file));
-       
-       parser.parse();
-       cosDoc = parser.getDocument();
 
-       pdDoc = new PDDocument(cosDoc);
+
+       PDDocument document = null;
+       try {
+           document = PDDocument.load(new FileInputStream(file));
+       } catch(IOException e) {
+           e.printStackTrace();
+       }
+
+
+       pdDoc = document;
        pdfStripper = new PDFTextStripper();
        pdDoc.getNumberOfPages();
        pdfStripper.setStartPage(1);

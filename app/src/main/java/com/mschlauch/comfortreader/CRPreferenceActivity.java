@@ -50,6 +50,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.angads25.filepicker.view.FilePickerPreference;
+import com.github.stkent.amplify.prompt.DefaultLayoutPromptView;
+import com.github.stkent.amplify.tracking.Amplify;
 
 import java.util.Random;
 
@@ -63,6 +65,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
     private Toast toast;
     //boolean filepathmanualchange = false;
    // private ProgressDialog progressDialog;
+
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 
@@ -175,7 +178,11 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
        // progressDialog.dismiss();
         // getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
         //TODO fix this Bug: activity crashes everytime one changes position slider after having changed device orientation. Above line responsible for that.
+        else if (key.equals("filepath")){
 
+
+
+        }
 
     }
 
@@ -191,6 +198,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
         public void onCreate(final Bundle savedInstanceState)
         {
             super.onCreate(savedInstanceState);
+
 
             Log.i("preference fragment", "shared preferences called ");
 
@@ -457,8 +465,6 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                                 }
                             }.execute(eins);
                         }
-
-
 
 
 

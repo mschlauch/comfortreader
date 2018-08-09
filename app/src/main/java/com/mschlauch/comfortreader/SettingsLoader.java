@@ -29,6 +29,11 @@ import android.preference.PreferenceManager;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.github.mertakdut.BookSection;
+import com.github.mertakdut.Reader;
+import com.github.mertakdut.exception.OutOfPagesException;
+import com.github.mertakdut.exception.ReadingException;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -39,6 +44,8 @@ import java.io.OutputStreamWriter;
 
 import static android.util.FloatMath.sqrt;
 import static android.util.Log.d;
+import static java.lang.Boolean.FALSE;
+import static java.lang.Boolean.TRUE;
 
 public class SettingsLoader {
 
@@ -312,6 +319,12 @@ public class SettingsLoader {
 
 
 	}
+	void saveWordsPerMinute(int number){
+		saveNumber(wpmkey, number);
+
+
+	}
+
 	public int getXPpoints(){
 
 		int vhelper = retrieveNumber(xppoints);
@@ -663,10 +676,22 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 			d("settings", "Loading pdf" + path);
 			texttoread = loadfrompdf(path);
 		}
-		else {
+
+		else if (extension.equals("epub:")){
+			path = path.substring(0,(path.lastIndexOf(".")))+".epub";
+			d("settings", "Loading epub" + path);
+			texttoread = loadfromepubfile(path);
+		}
+
+
+		else if (extension.equals("txt:")){
+
 			path = path.substring(0,(path.lastIndexOf(".")))+".txt";
 			d("settings", "Loading txt" + path);
 			texttoread = loadfromtxtfile(path);
+		}
+		else {
+			texttoread = "text file format not supported";
 		}
 
 		Log.d("settings", "loading book global position 0: " + getGlobalPositionSeekbarValue());
@@ -682,6 +707,49 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 		save(texttoreadkey, texttoread);
 		saveGlobalPosition(0);
 		adjustGlobalPositionToPercentage(0);
+
+	}
+
+
+
+	public String loadfromepubfile (String pathtext) {
+		File file2 = new File(pathtext);
+		pathtext = file2.getAbsolutePath();
+
+
+		Reader reader = new Reader();
+		reader.setMaxContentPerSection(1000); // Max string length for the current page.
+		reader.setIsIncludingTextContent(true); // Optional, to return the tags-excluded version.
+		try {
+			reader.setFullContent(pathtext); // Must call before readSection.
+		} catch (ReadingException e) {
+			reader = null;
+			e.printStackTrace();
+			return "Failed to load file";
+		}
+		StringBuilder text = new StringBuilder();
+		int index = 0;
+		boolean counton = TRUE;
+		while (counton) {
+
+
+			BookSection bookSection = null;
+			try {
+				bookSection = reader.readSection(index);
+			} catch (ReadingException e) {
+				counton = FALSE;
+			} catch (OutOfPagesException e) {
+				counton = FALSE;
+			}
+			index = index +1;
+			if (bookSection  != null) {
+				text.append(bookSection.getSectionTextContent());
+			}
+		}
+
+
+
+		return text.toString();
 
 	}
 

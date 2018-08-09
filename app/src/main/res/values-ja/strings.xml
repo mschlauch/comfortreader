@@ -16,6 +16,7 @@
     <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
     <string name="title_activity_note">アノテーション エディター</string>
 
+    <string name="title_activity_settings">設定</string>
 
 
     <string name="settings_title_readingoptions">読み方</string>
@@ -77,4 +78,24 @@
     <string name="fullscreen_copied_title">テキストをコピーしました</string>
 
     <string name="settings_filepicker_loadingtext">pdf の読み込みは時間がかかります。 お使いのコンピューターで pdf から txt に準備することもできます</string>
+
+
+    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_title">このアプリは便利ですか？</string>
+    <string name="feedback_opinionquestion_positive">嗚呼</string>
+    <string name="feedback_opinionquestion_negative">>いいえ</string>
+    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_title">This app is free and open-source. It survives thanks to your support. レビューしますか？</string>
+    <string name="feedback_positiveopinionquestion_positive">はい</string>
+    <string name="feedback_positiveopinionquestion_negative">>いいえ</string>
+    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_title">Sorry for that. You can help us fix the problem. フィードバックを送信しますか？</string>
+    <string name="feedback_negativeopinionquestion_positive">メッセージを送ります</string>
+    <string name="feedback_negativeopinionquestion_negative">>いいえ</string>
+
+    <string name="feedback_thankyou_title">ありがとうございました！</string>
+    <string name="feedback_thankyou_subtitle">To keep Comfort Reader open and free from annoying ads, please consider donating on its webpage.</string>
+
+
+
 </resources>

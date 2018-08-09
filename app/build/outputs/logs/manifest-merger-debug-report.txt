@@ -17,7 +17,7 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:7:5-81
-MERGED from [com.tom_roush:pdfbox-android:1.8.9.1] /home/michael/.android/build-cache/62699c703c3c7823554887fbc1aa1f66e0de6b1c/output/AndroidManifest.xml:11:5-81
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.android/build-cache/78a87c724bcb431b669165d9cf2d14f67841f54d/output/AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.EXPAND_STATUS_BAR
@@ -30,9 +30,11 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:9:22-64
 uses-sdk
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
-MERGED from [com.android.support:support-v4:20.0.0] /home/michael/.android/build-cache/bfde8e8cb75a389797f56c534556d4ca74be5939/output/AndroidManifest.xml:16:5-42
-MERGED from [com.tom_roush:pdfbox-android:1.8.9.1] /home/michael/.android/build-cache/62699c703c3c7823554887fbc1aa1f66e0de6b1c/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.angads25:filepicker:1.0.7] /home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.android/build-cache/e025dfd60f1e563270ec465a43ec4c85fe40056d/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.android/build-cache/3e96bd3d6e45338f987504cd70c2078709d85f1e/output/AndroidManifest.xml:15:5-42
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.android/build-cache/78a87c724bcb431b669165d9cf2d14f67841f54d/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/AndroidManifest.xml:7:5-9:41
 MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.android/build-cache/c3e431454637facedcfad7dc5e959505a49deb15/output/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:12:9-38
@@ -44,12 +46,11 @@ MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPi
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 application
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:14:5-104:19
-MERGED from [com.android.support:support-v4:20.0.0] /home/michael/.android/build-cache/bfde8e8cb75a389797f56c534556d4ca74be5939/output/AndroidManifest.xml:17:5-19
-MERGED from [com.github.angads25:filepicker:1.0.7] /home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/AndroidManifest.xml:13:5-16:38
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.android/build-cache/e025dfd60f1e563270ec465a43ec4c85fe40056d/output/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.android/build-cache/3e96bd3d6e45338f987504cd70c2078709d85f1e/output/AndroidManifest.xml:16:5-19
 	android:label
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:19:9-41
-	android:supportsRtl
-		ADDED from [com.github.angads25:filepicker:1.0.7] /home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/AndroidManifest.xml:16:9-35
 	android:hardwareAccelerated
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
@@ -58,6 +59,8 @@ MERGED from [com.github.angads25:filepicker:1.0.7] /home/michael/.android/build-
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:18:9-45
 	android:theme
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:16:9-49
 activity#com.mschlauch.comfortreader.FullscreenActivity
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:21:9-35:16
 	android:configChanges
@@ -149,6 +152,6 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:98:25-80
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [com.github.angads25:filepicker:1.0.7] /home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/AndroidManifest.xml:11:5-80
+ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from [com.github.angads25:filepicker:1.0.7] /home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/AndroidManifest.xml:11:22-77
+		ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/AndroidManifest.xml:11:22-77

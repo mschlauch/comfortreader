@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "file": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/values-w820dp-v13/values-w820dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -26,17 +26,55 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 101,
-                    "endColumn": 51,
-                    "endOffset": 148
+                    "endColumn": 46,
+                    "endOffset": 143
                 },
                 "from": {
-                    "file": "/home/michael/.android/build-cache/8f5adf6afe738836266403a7df2c64db0a3bcb19/output/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "file": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/values-w820dp-v13/values-w820dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
                         "startOffset": 101,
+                        "endColumn": 46,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 148,
+                    "endColumn": 46,
+                    "endOffset": 190
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 148,
+                        "endColumn": 46,
+                        "endOffset": 190
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 195,
+                    "endColumn": 51,
+                    "endOffset": 242
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 195,
                         "endColumn": 51,
-                        "endOffset": 148
+                        "endOffset": 242
                     }
                 }
             }

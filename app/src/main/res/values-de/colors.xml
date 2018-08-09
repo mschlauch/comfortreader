@@ -1,9 +1,0 @@
-<resources>
-
-    <color name="black_overlay">#CC000000</color>
-    
-	<color name="gray">#333333</color>
-	<color name="white">#FFFFFF</color>
-	<color name="black">#000000</color>
-
-</resources>

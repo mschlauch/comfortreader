@@ -44,6 +44,8 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 
+import com.github.stkent.amplify.prompt.DefaultLayoutPromptView;
+import com.github.stkent.amplify.tracking.Amplify;
 import com.mschlauch.comfortreader.Book;
 
 
@@ -171,6 +173,8 @@ public class FullscreenActivity extends Activity {
     private Boolean goldversion = true;
     private Boolean running = false;
 	private ProgressBar spinner;
+	private int longrewindvelocity = 10;
+	private int longforwardvelocity = 10;
     private GestureDetector mGestureDetector;
     private static final ScheduledExecutorService worker = 
     		  Executors.newSingleThreadScheduledExecutor();
@@ -189,6 +193,13 @@ public class FullscreenActivity extends Activity {
     public void stop() {
         started = false;
         handler.removeCallbacks(runnable);
+
+//resprectfully request feedback
+		DefaultLayoutPromptView promptView
+				= (DefaultLayoutPromptView) findViewById(R.id.prompt_view);
+
+		Amplify.getSharedInstance().promptIfReady(promptView);
+
     }
 
     public void start() {
@@ -357,7 +368,7 @@ public class FullscreenActivity extends Activity {
     }
     
     public void playButtonClicked (View view){
-
+		resetlongvelocities();
 
 		if (switchofallmenus == false) {
 
@@ -386,6 +397,7 @@ public class FullscreenActivity extends Activity {
     
     
     public void nextButtonClicked (View view){
+    	resetlongvelocities();
 		if (switchofallmenus == false) {
 
     	boolean restart = false;
@@ -406,6 +418,7 @@ public class FullscreenActivity extends Activity {
 	}
 
 	public void nextButtonLongClicked (View view){
+
 		if (switchofallmenus == false) {
 
 			boolean restart = false;
@@ -414,16 +427,13 @@ public class FullscreenActivity extends Activity {
 				restart = true;
 			}
 
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
-			segmenterObject.invokenextsegment();
+			int N = longforwardvelocity;
+			if (longforwardvelocity < 50){
+			longforwardvelocity = longforwardvelocity * 2;}
+			for (int i = 0; i < N; i++) {
+				segmenterObject.invokenextsegment();
+			}
+
 			String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
 			contentView.setText(Html.fromHtml(html));
 
@@ -431,13 +441,27 @@ public class FullscreenActivity extends Activity {
 			if (restart){
 				start();
 			}
+
+
+			int duration = Toast.LENGTH_SHORT;
+			Context context = getApplicationContext();
+			CharSequence text = N + " x >>";
+			toast = Toast.makeText(context, text, duration);
+			toast.show();
+
+
+
 		}
 	}
+	public void resetlongvelocities (){
+		longforwardvelocity = 10;
+		longrewindvelocity = 10;
 
+	}
 
     
     public void previousButtonClicked (View view){if (switchofallmenus == false) {
-
+	resetlongvelocities(); //make sure that the next long press is reseted
 	boolean restart = false;
 	if (started == true){
     	stop();
@@ -467,16 +491,13 @@ public class FullscreenActivity extends Activity {
 
 		}
 		segmenterObject.finished = false;
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
-		segmenterObject.invokeprevioussegment();
+		int N = longrewindvelocity;
+		if (longrewindvelocity < 50){
+		longrewindvelocity = longrewindvelocity * 2;}
+		for (int i = 0; i < N; i++) {
+			segmenterObject.invokeprevioussegment();
+		}
+
 
 		String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
 
@@ -486,6 +507,16 @@ public class FullscreenActivity extends Activity {
 		if (restart){
 			start();
 		}
+
+
+		int duration = Toast.LENGTH_SHORT;
+		Context context = getApplicationContext();
+		CharSequence text = N + " x <<";
+		toast = Toast.makeText(context, text, duration);
+		toast.show();
+
+
+
 	}}
 
 
@@ -751,20 +782,29 @@ public class FullscreenActivity extends Activity {
         //VOLUME KEY DOWN
    if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
    {
-	   Context context = getApplicationContext();
-	   CharSequence text = "❙❙";
+   	  String middletext = " wpm (";
+	   int plus = -1;
 
-	   if(started==false){
-		   previousButtonClicked(contentView);
+	   if(started==true){
 
-		   text = "<<";
-
-
+		   plus = 1;
+			middletext = " wpm (+";
 	   }
+
+
+int wpm = settingsload.getWordsPerMinute();
+wpm = wpm + plus;
+settingsload.saveWordsPerMinute(wpm);
+
+
+
+	   Context context = getApplicationContext();
+	   CharSequence text = wpm + middletext + plus + ")";
+
+
 	   toast = Toast.makeText(context, text, duration);
 	   toast.show();
-	 
-	  stop();
+
    	keyCode = -900000;
        return true;
    }

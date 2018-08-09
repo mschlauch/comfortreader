@@ -5,14 +5,6 @@ This file is part of Comfort Reader. Streams text directly to your eyes
 <<<<<<< HEAD:README.txt
 This file is part of Comfort Reader.
 
-version 1.10
-
-last changes:
-- long press functionality (backwards, fast-forward, quick-note (center))
-
-- revised UI and usability
-- bugfixes
-
 DESCRIPTION
 =======
 <a href="https://f-droid.org/packages/com.mschlauch.comfortreader/" target="_blank">
@@ -34,6 +26,20 @@ Main features:
 - fully costumizable text appearance and reading configuration
 
 ## CHANGELOG
+
+version 1.9.5
+- added ability to load epub files
+- localization french and spanish
+- respectfully request feedback feature (using the amplify library https://github.com/stkent/amplify)
+- long press accelerates rewind/forward now up to 80x
+- press volume down button to adjust speed: +1 while reading, -1 when stopped
+
+version 1.9.4
+- bugfixes (mostly string index out of bound exceptions)
+- long-press functionality (fast-forward, rewind, center area: quick note)
+- better responsiveness during note-composition
+
+
 version 1.9 alpha
 
 last changes:

@@ -30,32 +30,6 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="pref_example_list_titles">
-        <item>常に</item>
-        <item>可能な時</item>
-        <item>しない</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 分</item>
-        <item>30 分</item>
-        <item>1 時間</item>
-        <item>3 時間</item>
-        <item>6 時間</item>
-        <item>しない</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
     <string-array name="wpm_list_titles">
         <item>200 遅い</item>
         <item>350 通常</item>
@@ -67,11 +41,40 @@
         <item>350</item>
         <item>1100</item>
     </string-array>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ホームへ移動"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s、%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s、%2$s、%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"上へ移動"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"その他のオプション"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完了"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"すべて表示"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"アプリの選択"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"検索キーワードを削除"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"検索キーワード"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"検索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"音声検索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
     <string name="action_settings">設定</string>
     <string name="app_name">Comfort Reader</string>
     <string name="app_text_after_shareweblink">Comfort Reader で読む(試験的)</string>
     <string name="dummy_button">ダミーボタン</string>
     <string name="dummy_content">ダミー\nコンテンツ</string>
+    <string name="feedback_negativeopinionquestion_negative">>いいえ</string>
+    <string name="feedback_negativeopinionquestion_positive">メッセージを送ります</string>
+    <string name="feedback_negativeopinionquestion_subtitle"/>
+    <string name="feedback_negativeopinionquestion_title">Sorry for that. You can help us fix the problem. フィードバックを送信しますか？</string>
+    <string name="feedback_opinionquestion_negative">>いいえ</string>
+    <string name="feedback_opinionquestion_positive">嗚呼</string>
+    <string name="feedback_opinionquestion_subtitle"/>
+    <string name="feedback_opinionquestion_title">このアプリは便利ですか？</string>
+    <string name="feedback_positiveopinionquestion_negative">>いいえ</string>
+    <string name="feedback_positiveopinionquestion_positive">はい</string>
+    <string name="feedback_positiveopinionquestion_subtitle"/>
+    <string name="feedback_positiveopinionquestion_title">This app is free and open-source. It survives thanks to your support. レビューしますか？</string>
+    <string name="feedback_thankyou_subtitle">To keep Comfort Reader open and free from annoying ads, please consider donating on its webpage.</string>
+    <string name="feedback_thankyou_title">ありがとうございました！</string>
     <string name="fullscreen_copied_title">テキストをコピーしました</string>
     <string name="fullscreen_text_while_loading">...テキストの読み込み中...\n お待ちください。</string>
     <string name="georgia">フォント名</string>
@@ -82,20 +85,6 @@
     <string name="notes_savebutton">このメモを追加</string>
     <string name="notes_title_current_notebook">メモ:</string>
     <string name="play_button"> ∣∣ > </string>
-    <string name="pref_default_display_name">John Smith</string>
-    <string name="pref_description_social_recommendations">メッセージ履歴に基づいて連絡先の人を提案します</string>
-    <string name="pref_header_data_sync">日付 &amp; 同期</string>
-    <string name="pref_header_general">全般</string>
-    <string name="pref_header_notifications">通知</string>
-    <string name="pref_ringtone_silent">サイレント</string>
-    <string name="pref_title_add_friends_to_messages">メッセージする友達を追加</string>
-    <string name="pref_title_display_name">表示名</string>
-    <string name="pref_title_new_message_notifications">新しいメッセージの通知</string>
-    <string name="pref_title_ringtone">着信音</string>
-    <string name="pref_title_social_recommendations">ソーシャル レコメンデーションを有効にする</string>
-    <string name="pref_title_sync_frequency">同期頻度</string>
-    <string name="pref_title_system_sync_settings">システム同期設定</string>
-    <string name="pref_title_vibrate">振動</string>
     <string name="previous_button">"&lt;&lt;"</string>
     <string name="settings_backgroundcolor_summary"/>
     <string name="settings_backgroundcolor_title">背景色</string>

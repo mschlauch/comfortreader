@@ -1,7 +1,7 @@
 Comfort Reader makes reading e-books easier for you. It streams any text directly to your eyes. Smart text processing and colored letter animation help you to recognize and understand text faster and better. Reading an ebook will seem just like watching a film - at the speed that works best for you.
 
 Main features:
-- supported file formats: txt and pdf
+- supported file formats: txt, epub and pdf
 - displays just the current phrase you are about to read
 - makes sure that associated words won't get chopped randomly (as in conventional Speed Reading Apps with Rapid Serial Visual Presentation)
 - creates a fluent stream of text at your desired speed

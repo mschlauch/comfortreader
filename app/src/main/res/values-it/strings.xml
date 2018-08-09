@@ -16,6 +16,7 @@
     <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
     <string name="title_activity_note">Scrivere una nota</string>
 
+    <string name="title_activity_settings">Impostazioni</string>
 
 
     <string name="settings_title_readingoptions">Lettura</string>
@@ -26,7 +27,7 @@
 
     <string name="settings_recent_texts">Ultime letture</string>
     <string name="settings_recent_texts_summary">Leggi un testo precedente</string>
-    <string name="settings_filepicker_title">File txt o pdf da leggere</string>
+    <string name="settings_filepicker_title">File txt, epub o pdf da leggere</string>
 
     <string name="settings_positionslider_title">Posizione</string>
 
@@ -75,5 +76,28 @@
 
     <string name="settings_filepicker_loadingtext">Testo viene processato. Sarebbe meglio preparare il Pdf-Export dal Computer.</string>
         <string name="support_standarttext">Non hai caricato un testo. Vai su configurazioni ("...") e scegli un pdf o txt sul tuo telefono da leggere.</string>
+
+
+    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_title">Trovi che questa app sia utile?</string>
+    <string name="feedback_opinionquestion_positive">Sì</string>
+    <string name="feedback_opinionquestion_negative">No</string>
+    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_title">Comfort Reader è software libero e open-source - grazie all\'aiuto ti tanti. Vuoi contribuire anche tu e lasciare una valutazione nel play store?</string>
+    <string name="feedback_positiveopinionquestion_positive">Okay</string>
+    <string name="feedback_positiveopinionquestion_negative">No</string>
+    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_title">Ci dispiace. Potresti aiutarci a risolvere il problema. Vuoi lasciarci un messaggio?</string>
+    <string name="feedback_negativeopinionquestion_positive">Manda feedback</string>
+    <string name="feedback_negativeopinionquestion_negative">non adesso</string>
+
+    <string name="feedback_thankyou_title">Grazie mille!</string>
+    <string name="feedback_thankyou_subtitle">Considera fare una donazione sul sito di Comfort Reader. Soli così può rimanere gratuito e libero da pubblicità fastidiosa.</string>
+
+
+
+
+
+
 
 </resources>
