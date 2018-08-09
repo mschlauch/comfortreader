@@ -124,12 +124,12 @@
         "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_ab_share_pack_holo_light.9.png",
         "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_ic_menu_selectall_mtrl_alpha.png",
