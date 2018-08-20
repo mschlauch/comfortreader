@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/xml/preferences.xml",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/xml/popup_window.xml",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/xml/popup_window.xml"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/xml/preference_seekbar.xml",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/xml/preference_seekbar.xml"
+    }
+]

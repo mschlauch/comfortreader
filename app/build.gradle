@@ -10,14 +10,14 @@ allprojects {
 
 android {
 
-    compileSdkVersion 21
+    compileSdkVersion 23
     buildToolsVersion "27.0.3"
 
     defaultConfig {
 
         applicationId "com.mschlauch.comfortreader"
         minSdkVersion 22
-        targetSdkVersion 17
+        targetSdkVersion 23
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }

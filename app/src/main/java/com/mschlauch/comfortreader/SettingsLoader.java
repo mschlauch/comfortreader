@@ -42,7 +42,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-import static android.util.FloatMath.sqrt;
 import static android.util.Log.d;
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
@@ -344,7 +343,7 @@ public class SettingsLoader {
 	}
 	public float getGamificationLevel(){
 		int number = getXPpoints();
-		double levelnummer = 0.01 * sqrt( number );
+		double levelnummer = 0.01 * (float) Math.sqrt( number );
 		return (float) levelnummer;
 	}
 

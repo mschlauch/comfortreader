@@ -1,0 +1,1847 @@
+[
+    {
+        "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-it/values-it.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 19,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 951,
+                        "endLine": 45,
+                        "endColumn": 19,
+                        "endOffset": 1097
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 206,
+                    "endLine": 11,
+                    "endColumn": 19,
+                    "endOffset": 341
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 1103,
+                        "endLine": 51,
+                        "endColumn": 19,
+                        "endOffset": 1238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 346,
+                    "endLine": 16,
+                    "endColumn": 19,
+                    "endOffset": 499
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 354,
+                        "endLine": 19,
+                        "endColumn": 19,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 504,
+                    "endLine": 21,
+                    "endColumn": 19,
+                    "endOffset": 625
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 513,
+                        "endLine": 25,
+                        "endColumn": 19,
+                        "endOffset": 634
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 630,
+                    "endLine": 26,
+                    "endColumn": 19,
+                    "endOffset": 799
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 641,
+                        "endLine": 32,
+                        "endColumn": 19,
+                        "endOffset": 810
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 804,
+                    "endLine": 31,
+                    "endColumn": 19,
+                    "endOffset": 932
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 816,
+                        "endLine": 38,
+                        "endColumn": 19,
+                        "endOffset": 944
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 937,
+                    "endLine": 37,
+                    "endColumn": 19,
+                    "endOffset": 1128
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 1,
+                        "startOffset": 19,
+                        "endLine": 8,
+                        "endColumn": 19,
+                        "endOffset": 210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1133,
+                    "endLine": 42,
+                    "endColumn": 19,
+                    "endOffset": 1266
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/arrays.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 215,
+                        "endLine": 13,
+                        "endColumn": 19,
+                        "endOffset": 348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 1271,
+                    "endColumn": 108,
+                    "endOffset": 1375
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 108,
+                        "endOffset": 160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 1380,
+                    "endColumn": 107,
+                    "endOffset": 1483
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 165,
+                        "endColumn": 107,
+                        "endOffset": 268
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 1488,
+                    "endColumn": 122,
+                    "endOffset": 1606
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 273,
+                        "endColumn": 122,
+                        "endOffset": 391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 1611,
+                    "endColumn": 99,
+                    "endOffset": 1706
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 396,
+                        "endColumn": 99,
+                        "endOffset": 491
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 1711,
+                    "endColumn": 108,
+                    "endOffset": 1815
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 496,
+                        "endColumn": 108,
+                        "endOffset": 600
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 1820,
+                    "endColumn": 83,
+                    "endOffset": 1899
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 605,
+                        "endColumn": 83,
+                        "endOffset": 684
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 1904,
+                    "endColumn": 108,
+                    "endOffset": 2008
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 689,
+                        "endColumn": 108,
+                        "endOffset": 793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2013,
+                    "endColumn": 124,
+                    "endOffset": 2133
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 798,
+                        "endColumn": 124,
+                        "endOffset": 918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 2138,
+                    "endColumn": 105,
+                    "endOffset": 2239
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 923,
+                        "endColumn": 105,
+                        "endOffset": 1024
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 2244,
+                    "endColumn": 107,
+                    "endOffset": 2347
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1029,
+                        "endColumn": 107,
+                        "endOffset": 1132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 2352,
+                    "endColumn": 97,
+                    "endOffset": 2445
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1137,
+                        "endColumn": 97,
+                        "endOffset": 1230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 2450,
+                    "endColumn": 103,
+                    "endOffset": 2549
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1235,
+                        "endColumn": 103,
+                        "endOffset": 1334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 2554,
+                    "endColumn": 104,
+                    "endOffset": 2654
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1339,
+                        "endColumn": 104,
+                        "endOffset": 1439
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 2659,
+                    "endColumn": 106,
+                    "endOffset": 2761
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1444,
+                        "endColumn": 106,
+                        "endOffset": 1546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 2766,
+                    "endColumn": 121,
+                    "endOffset": 2883
+                },
+                "from": {
+                    "file": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/values-it/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1551,
+                        "endColumn": 121,
+                        "endOffset": 1668
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 2888,
+                    "endColumn": 58,
+                    "endOffset": 2942
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 710,
+                        "endColumn": 58,
+                        "endOffset": 764
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 2947,
+                    "endColumn": 51,
+                    "endOffset": 2994
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 51,
+                        "endOffset": 103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 2999,
+                    "endColumn": 96,
+                    "endOffset": 3091
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 108,
+                        "endColumn": 96,
+                        "endOffset": 200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 3096,
+                    "endColumn": 53,
+                    "endOffset": 3145
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 205,
+                        "endColumn": 53,
+                        "endOffset": 254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3150,
+                    "endColumn": 56,
+                    "endOffset": 3202
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 259,
+                        "endColumn": 56,
+                        "endOffset": 311
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 3207,
+                    "endColumn": 80,
+                    "endOffset": 3283
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 5562,
+                        "endColumn": 80,
+                        "endOffset": 5638
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 3288,
+                    "endColumn": 84,
+                    "endOffset": 3368
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 5477,
+                        "endColumn": 84,
+                        "endOffset": 5557
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 3373,
+                    "endColumn": 62,
+                    "endOffset": 3431
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 5254,
+                        "endColumn": 70,
+                        "endOffset": 5320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 3436,
+                    "endColumn": 151,
+                    "endOffset": 3583
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 5325,
+                        "endColumn": 151,
+                        "endOffset": 5472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 3588,
+                    "endColumn": 64,
+                    "endOffset": 3648
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 4757,
+                        "endColumn": 64,
+                        "endOffset": 4817
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 3653,
+                    "endColumn": 64,
+                    "endOffset": 3713
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 4,
+                        "startOffset": 4692,
+                        "endColumn": 64,
+                        "endOffset": 4752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 3718,
+                    "endColumn": 54,
+                    "endOffset": 3768
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 4538,
+                        "endColumn": 62,
+                        "endOffset": 4596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 3773,
+                    "endColumn": 90,
+                    "endOffset": 3859
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 4601,
+                        "endColumn": 90,
+                        "endOffset": 4687
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 3864,
+                    "endColumn": 72,
+                    "endOffset": 3932
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 5181,
+                        "endColumn": 72,
+                        "endOffset": 5249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 3937,
+                    "endColumn": 74,
+                    "endOffset": 4007
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 4,
+                        "startOffset": 5106,
+                        "endColumn": 74,
+                        "endOffset": 5176
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 4012,
+                    "endColumn": 62,
+                    "endOffset": 4070
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 4822,
+                        "endColumn": 70,
+                        "endOffset": 4888
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 4075,
+                    "endColumn": 212,
+                    "endOffset": 4283
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 4893,
+                        "endColumn": 212,
+                        "endOffset": 5101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 4288,
+                    "endColumn": 178,
+                    "endOffset": 4462
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 5710,
+                        "endColumn": 178,
+                        "endOffset": 5884
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 4467,
+                    "endColumn": 65,
+                    "endOffset": 4528
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 4,
+                        "startOffset": 5644,
+                        "endColumn": 65,
+                        "endOffset": 5705
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 4533,
+                    "endColumn": 65,
+                    "endOffset": 4594
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 4071,
+                        "endColumn": 65,
+                        "endOffset": 4132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 4599,
+                    "endColumn": 99,
+                    "endOffset": 4694
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 4137,
+                        "endColumn": 99,
+                        "endOffset": 4232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 4699,
+                    "endColumn": 44,
+                    "endOffset": 4739
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 469,
+                        "endColumn": 44,
+                        "endOffset": 509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 4744,
+                    "endColumn": 52,
+                    "endOffset": 4792
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 657,
+                        "endColumn": 52,
+                        "endOffset": 705
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 4797,
+                    "endColumn": 44,
+                    "endOffset": 4837
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 316,
+                        "endColumn": 50,
+                        "endOffset": 362
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 4842,
+                    "endColumn": 78,
+                    "endOffset": 4916
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 3920,
+                        "endColumn": 78,
+                        "endOffset": 3994
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 4921,
+                    "endColumn": 60,
+                    "endOffset": 4977
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 3859,
+                        "endColumn": 60,
+                        "endOffset": 3915
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 4982,
+                    "endColumn": 58,
+                    "endOffset": 5036
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 3800,
+                        "endColumn": 58,
+                        "endOffset": 3854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 5041,
+                    "endColumn": 70,
+                    "endOffset": 5107
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 3999,
+                        "endColumn": 70,
+                        "endOffset": 4065
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 5112,
+                    "endColumn": 46,
+                    "endOffset": 5154
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 422,
+                        "endColumn": 46,
+                        "endOffset": 464
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 5159,
+                    "endColumn": 54,
+                    "endOffset": 5209
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 367,
+                        "endColumn": 54,
+                        "endOffset": 417
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 5214,
+                    "endColumn": 53,
+                    "endOffset": 5263
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 3291,
+                        "endColumn": 61,
+                        "endOffset": 3348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 5268,
+                    "endColumn": 74,
+                    "endOffset": 5338
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 4,
+                        "startOffset": 3216,
+                        "endColumn": 74,
+                        "endOffset": 3286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 5343,
+                    "endColumn": 89,
+                    "endOffset": 5428
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 3526,
+                        "endColumn": 89,
+                        "endOffset": 3611
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 5433,
+                    "endColumn": 92,
+                    "endOffset": 5521
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 3706,
+                        "endColumn": 92,
+                        "endOffset": 3794
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 5526,
+                    "endColumn": 89,
+                    "endOffset": 5611
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3616,
+                        "endColumn": 89,
+                        "endOffset": 3701
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 5616,
+                    "endColumn": 98,
+                    "endOffset": 5710
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3427,
+                        "endColumn": 98,
+                        "endOffset": 3521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 5715,
+                    "endColumn": 73,
+                    "endOffset": 5784
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3353,
+                        "endColumn": 73,
+                        "endOffset": 3422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 5789,
+                    "endColumn": 136,
+                    "endOffset": 5921
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 4,
+                        "startOffset": 4238,
+                        "endColumn": 136,
+                        "endOffset": 4370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 5926,
+                    "endColumn": 85,
+                    "endOffset": 6007
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1397,
+                        "endColumn": 85,
+                        "endOffset": 1478
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 6012,
+                    "endColumn": 96,
+                    "endOffset": 6104
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 2702,
+                        "endColumn": 96,
+                        "endOffset": 2794
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 6109,
+                    "endColumn": 66,
+                    "endOffset": 6171
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 2635,
+                        "endColumn": 66,
+                        "endOffset": 2697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 6176,
+                    "endColumn": 46,
+                    "endOffset": 6218
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2444,
+                        "endColumn": 54,
+                        "endOffset": 2494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 6223,
+                    "endColumn": 62,
+                    "endOffset": 6281
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 2381,
+                        "endColumn": 62,
+                        "endOffset": 2439
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 6286,
+                    "endColumn": 71,
+                    "endOffset": 6353
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 2308,
+                        "endColumn": 71,
+                        "endOffset": 2375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 6358,
+                    "endColumn": 91,
+                    "endOffset": 6445
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 3123,
+                        "endColumn": 91,
+                        "endOffset": 3210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 6450,
+                    "endColumn": 63,
+                    "endOffset": 6509
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1121,
+                        "endColumn": 63,
+                        "endOffset": 1180
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 6514,
+                    "endColumn": 86,
+                    "endOffset": 6596
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 3036,
+                        "endColumn": 86,
+                        "endOffset": 3118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 6601,
+                    "endColumn": 158,
+                    "endOffset": 6755
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 2877,
+                        "endColumn": 158,
+                        "endOffset": 3031
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 6760,
+                    "endColumn": 76,
+                    "endOffset": 6832
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 2800,
+                        "endColumn": 76,
+                        "endOffset": 2872
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 6837,
+                    "endColumn": 83,
+                    "endOffset": 6916
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2007,
+                        "endColumn": 83,
+                        "endOffset": 2086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 6921,
+                    "endColumn": 64,
+                    "endOffset": 6981
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2091,
+                        "endColumn": 64,
+                        "endOffset": 2151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 6986,
+                    "endColumn": 80,
+                    "endOffset": 7062
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 1926,
+                        "endColumn": 80,
+                        "endOffset": 2002
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 7067,
+                    "endColumn": 82,
+                    "endOffset": 7145
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1777,
+                        "endColumn": 82,
+                        "endOffset": 1855
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 7150,
+                    "endColumn": 64,
+                    "endOffset": 7210
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1860,
+                        "endColumn": 64,
+                        "endOffset": 1920
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 7215,
+                    "endColumn": 80,
+                    "endOffset": 7291
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1696,
+                        "endColumn": 80,
+                        "endOffset": 1772
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 7296,
+                    "endColumn": 67,
+                    "endOffset": 7359
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1484,
+                        "endColumn": 67,
+                        "endOffset": 1547
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 7364,
+                    "endColumn": 64,
+                    "endOffset": 7424
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1248,
+                        "endColumn": 64,
+                        "endOffset": 1308
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 7429,
+                    "endColumn": 83,
+                    "endOffset": 7508
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1313,
+                        "endColumn": 83,
+                        "endOffset": 1392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 7513,
+                    "endColumn": 69,
+                    "endOffset": 7578
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2565,
+                        "endColumn": 69,
+                        "endOffset": 2630
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 7583,
+                    "endColumn": 65,
+                    "endOffset": 7644
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2499,
+                        "endColumn": 65,
+                        "endOffset": 2560
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 7649,
+                    "endColumn": 68,
+                    "endOffset": 7713
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 2157,
+                        "endColumn": 68,
+                        "endOffset": 2221
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 7718,
+                    "endColumn": 81,
+                    "endOffset": 7795
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2226,
+                        "endColumn": 81,
+                        "endOffset": 2303
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 7800,
+                    "endColumn": 65,
+                    "endOffset": 7861
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 991,
+                        "endColumn": 65,
+                        "endOffset": 1052
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 7866,
+                    "endColumn": 63,
+                    "endOffset": 7925
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1057,
+                        "endColumn": 63,
+                        "endOffset": 1116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 7930,
+                    "endColumn": 60,
+                    "endOffset": 7986
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1186,
+                        "endColumn": 60,
+                        "endOffset": 1242
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 7991,
+                    "endColumn": 63,
+                    "endOffset": 8050
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1553,
+                        "endColumn": 63,
+                        "endOffset": 1612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 8055,
+                    "endColumn": 77,
+                    "endOffset": 8128
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1617,
+                        "endColumn": 77,
+                        "endOffset": 1690
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 8133,
+                    "endColumn": 156,
+                    "endOffset": 8285
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 8,
+                        "startOffset": 4379,
+                        "endColumn": 160,
+                        "endOffset": 4531
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 8290,
+                    "endColumn": 87,
+                    "endOffset": 8373
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 87,
+                        "endOffset": 852
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 8378,
+                    "endColumn": 72,
+                    "endOffset": 8446
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 584,
+                        "endColumn": 72,
+                        "endOffset": 652
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 8451,
+                    "endColumn": 65,
+                    "endOffset": 8512
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 857,
+                        "endColumn": 65,
+                        "endOffset": 918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 8517,
+                    "endColumn": 64,
+                    "endOffset": 8577
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 924,
+                        "endColumn": 64,
+                        "endOffset": 984
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 8582,
+                    "endColumn": 69,
+                    "endOffset": 8647
+                },
+                "from": {
+                    "file": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 514,
+                        "endColumn": 69,
+                        "endOffset": 579
+                    }
+                }
+            }
+        ]
+    }
+]

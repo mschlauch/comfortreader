@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/mipmap-mdpi-v4/ic_type_file.png",
+        "source": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/mipmap-mdpi-v4/ic_type_file.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/mipmap-mdpi-v4/ic_directory_parent.png",
+        "source": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/mipmap-mdpi-v4/ic_directory_parent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/mipmap-mdpi-v4/ic_type_folder.png",
+        "source": "/home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/res/mipmap-mdpi-v4/ic_type_folder.png"
+    }
+]

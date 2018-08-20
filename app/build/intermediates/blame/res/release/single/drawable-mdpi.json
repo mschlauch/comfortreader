@@ -1,0 +1,226 @@
+[
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_focused_holo.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_college.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_college.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_typefacesize.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_typefacesize.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_loadrecent.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_loadrecent.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_speed.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_speed.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_search_api_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_copypaste.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_copypaste.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_lettercolor.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_lettercolor.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_pressed_holo_dark.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_deviceorientation.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_deviceorientation.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_minimumtext.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_minimumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_maximumtext.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_maximumtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_longpressed_holo.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_happysmiley.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_happysmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_clear_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_sadsmiley.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_sadsmiley.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_support.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_support.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_readnotes.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_readnotes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_notes.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_notes.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_launcher.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_heart.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_heart.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_list_pressed_holo_light.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_loadtext.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_loadtext.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_settings.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/ic_savenote.png",
+        "source": "/home/michael/StudioProjects/ComfortReader/app/src/main/res/drawable-mdpi/ic_savenote.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_popup_background_mtrl_mult.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/res/merged/release/drawable-mdpi/abc_ab_share_pack_holo_light.9.png",
+        "source": "/home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/res/drawable-mdpi/abc_ab_share_pack_holo_light.9.png"
+    }
+]
