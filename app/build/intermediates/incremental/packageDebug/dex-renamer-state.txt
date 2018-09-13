@@ -1,4 +1,4 @@
-#Thu Aug 09 22:42:09 CEST 2018
+#Mon Aug 20 15:51:40 CEST 2018
 base.0=/home/michael/StudioProjects/ComfortReader/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3cd11789e56001ffa53a1b79077f43238878feb2
 renamed.1=classes2.dex
 renamed.0=classes.dex

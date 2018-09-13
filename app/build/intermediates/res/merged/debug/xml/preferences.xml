@@ -164,7 +164,7 @@
 
                android:title="@string/settings_help_title">
                <intent android:action="android.intent.action.VIEW"
-                   android:data="http://www.comfortreader.rhizomaticdesign.com/" />
+                   android:data="http://comfortreader.rhizomaticdesign.net/" />
            </Preference>
            </PreferenceCategory>
 

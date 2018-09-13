@@ -13,6 +13,9 @@ DESCRIPTION
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80"/></a>
 >>>>>>> e246dc916072ba67788f510d13e46779e478d79a:README.md
 
+## DEMO
+[![Comfort Reader demo](https://img.youtube.com/vi/TrauLTAIgMM/1.jpg)](https://www.youtube.com/watch?v=TrauLTAIgMM "Comfort Reader demo")
+
 ## DESCRIPTION
 Comfort Reader makes reading easier for you. It streams any text directly to your eyes. Smart text processing and colored letter animation help you to recognize and understand text faster and better. Reading a book will seem just like watching a film - at the speed that works best for you.
 
