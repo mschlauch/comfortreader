@@ -451,7 +451,7 @@ public class Book {
 			segment.textcolor = textcolor;
 			segment.backgroundcolor = backgroundcolor;
 			segment.emphasiscolor = emphasiscolor;
-
+			segment.helplinesinhtml = htmloptionactive;
 		//	segment.segmentors = segmentors;
 	    //	segment.tickposition = tickposition;
 	    	segment.minblocksize = minblocksize;
