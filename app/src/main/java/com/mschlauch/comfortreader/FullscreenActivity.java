@@ -175,7 +175,9 @@ public class FullscreenActivity extends Activity {
 	private ProgressBar spinner;
 	private int longrewindvelocity = 10;
 	private int longforwardvelocity = 10;
-    private GestureDetector mGestureDetector;
+	private double charactersperword = 6; //here should be only 5, I don't know why it gets 3 times faster on my phone, wegen der streckung im stringsegmenter
+
+	private GestureDetector mGestureDetector;
     private static final ScheduledExecutorService worker = 
     		  Executors.newSingleThreadScheduledExecutor();
     
@@ -207,7 +209,7 @@ public class FullscreenActivity extends Activity {
     	handler.removeCallbacks(runnable);
     	
     	
-        double charactersperword = 6; //here should be only 5, I don't know why it gets 3 times faster on my phone, wegen der streckung im stringsegmenter
+      //  double charactersperword = 6; //here should be only 5, I don't know why it gets 3 times faster on my phone, wegen der streckung im stringsegmenter
         double charactersperminute = wordsperminute * charactersperword;
         tickdistance = 1 + (int) Math.round(charactersperminute/1440);//24 frames/second, 41.6 milliseconds max interval
         if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.HONEYCOMB) {
@@ -236,7 +238,7 @@ public class FullscreenActivity extends Activity {
         
       handler.postDelayed(runnable, milliseconds);  
         //zum timing wichtig, dass der rechenintensive befehl darunter steht
-        playAutomated();
+        playAutomated(milliseconds);
     }
     
     
@@ -353,12 +355,13 @@ public class FullscreenActivity extends Activity {
     public void onStopTrackingTouch(SeekBar seekBar) {
     }
     
-    public void playAutomated(){
+    public void playAutomated(int milliseconds){
 
         Log.i("Fullscreen", "automatic loading webview");
         String html =  segmenterObject.getsegmentoutputNextTick(tickdistance);
         contentView.setText(Html.fromHtml(html));
-		settingsload.saveWordpoints(settingsload.getWordpoints()+tickdistance);
+		settingsload.saveAddReadCharacters(tickdistance);
+		settingsload.saveAddReadingTime(milliseconds);
 		texthaschanged();
     	if (segmenterObject.finished){
     		stop();
@@ -623,6 +626,7 @@ public class FullscreenActivity extends Activity {
 				segmenterObject.textcolor=settingsload.getTextColor();
 				segmenterObject.emphasiscolor=settingsload.getFocusColor();
 				segmenterObject.backgroundcolor=settingsload.getBackgroundColor();
+				segmenterObject.htmloptionactive = settingsload.getHelplinesOn();
 
 				segmenterObject.maxcharactersperline = settingsload.getMaxBlockSize();
 				segmenterObject.loadPreviewcolorString();

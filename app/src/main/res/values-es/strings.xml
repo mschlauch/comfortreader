@@ -17,6 +17,9 @@
     <string name="title_activity_note">escribir notas</string>
     <string name="title_activity_settings">configuración</string>
 
+    <string name="settings_helplines_title">Amplificar visión</string>
+    <string name="settings_helplines_summary">Líneas adicionales (visión periférica)</string>
+
 
 
     <string name="settings_title_readingoptions">Opciones de lectura</string>

@@ -13,7 +13,7 @@
         android:label="Tests for com.mschlauch.comfortreader"
         android:targetPackage="com.mschlauch.comfortreader" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

@@ -73,6 +73,7 @@ public class Book {
 	    public int maxcharactersperline = 15;
 	    public int brighttheme = 0;
 	    public int lenseeffect = 0;
+	    public boolean htmloptionactive = false;
 		public ArrayList<String> loadedprehtmlstrings;
 		private String messagebegin = "tap the screen to start reading";
 		private String messageend = "  ";
@@ -408,6 +409,7 @@ public class Book {
 			segment.loadedprehtmlstrings = loadedprehtmlstrings;//calculated at book creation
 			segment.loaded = true;
 	    	segment.fontnumber = fontnumber ;
+	    	segment.helplinesinhtml = htmloptionactive;
 	    	segment.loadallticks();
 
 

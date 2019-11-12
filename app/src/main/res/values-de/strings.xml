@@ -17,6 +17,14 @@
     <string name="title_activity_note">Notizen schreiben</string>
     <string name="title_activity_settings">Einstellungen</string>
 
+    <string name="settings_helplines_title">Vor- und Rückschau</string>
+    <string name="settings_helplines_summary">Zusätzliche Zeilen über und unter der aktuellen Zeile (Periphäres Lesen).</string>
+    <string name="settings_statistics_summary">Du hast</string>
+    <string name="settings_statistics_summary2">Wörter gelesen in</string>
+    <string name="settings_statistics_summary3">Minuten (hier auf 0 stellen).</string>
+
+    <string name="settings_statistics_title">Read-o-meter</string>
+    <string name="settings_statistics_sectiontitle">Statistik</string>
 
 
     <string name="settings_title_readingoptions">Leseoptionen</string>

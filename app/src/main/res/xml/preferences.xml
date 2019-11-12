@@ -88,6 +88,11 @@
                android:summary="@string/settings_minwords_summary"
                />
 
+               <SwitchPreference
+                   android:key="helplines"
+                   android:summary="@string/settings_helplines_summary"
+                   android:title="@string/settings_helplines_title"
+                   android:defaultValue="false" />
 
            <ListPreference     android:title="@string/settings_deviceorientation_title"
                android:icon="@drawable/ic_deviceorientation"
@@ -146,12 +151,12 @@
 
        </PreferenceScreen>
            </PreferenceCategory>
-           <PreferenceCategory android:title="@string/settings_title_gamification_options">
+           <PreferenceCategory android:title="@string/settings_statistics_sectiontitle">
                <Preference
-                   android:key="gamificationswitch"
+                   android:key="statisticsswitch"
 
-                   android:summary="@string/settings_gamification_summary"
-                   android:title="@string/settings_gamification_title"
+                   android:summary="@string/settings_statistics_summary"
+                   android:title="@string/settings_statistics_title"
                    android:defaultValue="false" />
 
            </PreferenceCategory>

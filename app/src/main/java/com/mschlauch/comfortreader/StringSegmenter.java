@@ -59,7 +59,7 @@ public class StringSegmenter {
 		 
 	   	
 	   	public int fontnumber = 1;
-	   	
+	   	public boolean helplinesinhtml = false;
 	//    public int tickposition = 0;
 	    public int minblocksize = 20;
 	    public int maxblocksize = 110;
@@ -295,8 +295,14 @@ public class StringSegmenter {
 		  
 		  
 		  String colorstandart = "rgb(" + r1 +"," + g1 + "," + b1 + ")";
-		  String packagedpreviewnext = "<br><font color=\""+ previewcolorhex + "\" >"+previewnextString+"</font>";
-			String packagedpreviewlast = "<font color=\""+ previewcolorhex + "\" >"+previewlastString+"</font><br>";
+
+		  //implemented helplines as optional function 12112019
+		String packagedpreviewnext = "";
+		String packagedpreviewlast = "";
+		if (helplinesinhtml){
+
+		  packagedpreviewnext = "<br><font color=\""+ previewcolorhex + "\" >"+previewnextString+"</font>";
+			packagedpreviewlast = "<font color=\""+ previewcolorhex + "\" >"+previewlastString+"</font><br>";}
 
 	    	result = anfang + "<body><div  style=\"color:"+ hextextcolor +";" +"px ;text-align: center ;" + prefixdiv +  "\">"+ packagedpreviewlast + result  +""+ packagedpreviewnext +"</div>"+ "</body></html>";
 	    	// Spanned htmlText = Html.fromHtml(allhtml);

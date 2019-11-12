@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-de/values-de.xml",
+            "map": [
+                {
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/res/values-de/values.xml",
+                    "from": {
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "56,161,269,392,490,602,688,793,908,1019,1122,1221,1332,1434,1541",
+                        "endColumns": "104,107,122,97,111,85,104,114,110,102,98,110,101,106,121",
+                        "endOffsets": "156,264,387,485,597,683,788,903,1014,1117,1216,1327,1429,1536,1658"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,160,268,391,489,601,687,792,907,1018,1121,1220,1331,1433,1540",
+                        "endColumns": "104,107,122,97,111,85,104,114,110,102,98,110,101,106,121",
+                        "endOffsets": "155,263,386,484,596,682,787,902,1013,1116,1215,1326,1428,1535,1657"
+                    }
+                },
+                {
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/res/values-de/values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,113,171,258,326",
+                        "endColumns": "57,57,86,67,58",
+                        "endOffsets": "108,166,253,321,380"
+                    },
+                    "to": {
+                        "startLines": "17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1662,1720,1778,1865,1933",
+                        "endColumns": "57,57,86,67,58",
+                        "endOffsets": "1715,1773,1860,1928,1987"
+                    }
+                }
+            ]
+        }
+    ]
+}

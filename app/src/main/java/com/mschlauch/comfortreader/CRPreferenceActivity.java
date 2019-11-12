@@ -264,63 +264,36 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                 }
 
             });
+            final Preference helplinespref = (Preference) findPreference("helplines");
+            fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                @Override
+                public boolean onPreferenceChange(Preference preference,
+                                                  Object newValue) {
+                    preference.setSummary(getString(R.string.settings_fontname_summary) + " " + newValue + "" );
+                    return true;
+                }
+
+            });
 
 
 
-            final Preference gamificationpreference = findPreference("gamificationswitch");
-            gamificationpreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            final Preference statisticspreference = findPreference("statisticsswitch");
+            statisticspreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick    (Preference preference) {
 // fontsizepref.setSummary("ciao");
 
-                    if(preference.getKey().equals("gamificationswitch")){
-                        int wordpoints = settingslolo.getWordpoints();
-
-                        int xpgain = 0;
-                        if (wordpoints >0) {
-                            int difference = (int) Math.round((float) wordpoints / 9) + 10;
-
-
-                            settingslolo.saveWordpoints(settingslolo.getWordpoints() - difference);
-
-                            Random rand = new Random();
-                            int newrand = rand.nextInt() % 6;//count = 2 for your case
-
-                            double factor = 1.00;
-                            switch(newrand) {
-                                case 0:
-                                    gamificationpreference.setIcon(R.drawable.ic_college);
-                                    factor = 1.5;
-                                    break;
-                                case 1:
-                                    gamificationpreference.setIcon(R.drawable.ic_sadsmiley);
-                                    factor = 0.5;
-                                    break;
-                                case 2:
-                                    gamificationpreference.setIcon(R.drawable.ic_happysmiley);
-                                    factor = 0.25;
-                                    break;
-                                case 3:
-                                    gamificationpreference.setIcon(R.drawable.ic_heart);
-                                    factor = 2.0;
-                                    break;
-                                case 4:
-                                    gamificationpreference.setIcon(R.drawable.ic_notes);
-                                    factor = -3.0;
-                                    break;
-                                case 5:
-                                    gamificationpreference.setIcon(R.drawable.ic_typefacesize);
-                                    factor = 5.0;
-                                    break;
-                            }
-
-                            xpgain = (int) Math.round(difference*factor);
-                            settingslolo.saveXPpoints(settingslolo.getXPpoints() + xpgain);
-
+                    if(preference.getKey().equals("statisticsswitch")){
+                        //reset word counts
+                        settingslolo.resetStatistics();
 
                         }
-                        String gamification_summary = getString(R.string.settings_gamification_summary) + " " + settingslolo.getWordpoints() + " Level: " + String.format("%.3f", settingslolo.getGamificationLevel()) + " (" + xpgain + " added)";
-                        gamificationpreference.setSummary(gamification_summary);
+                        String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters()/6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round( settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
+                        statisticspreference.setSummary(stat_summary);
+
+                return true;
+                }
 
                      /*   // get a reference to the already created main layout
                         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.preferences);
@@ -348,10 +321,8 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                         });
 */
 
-                    }
-                    return true;
-                }
-            } );
+
+                });
 
 
 
@@ -368,7 +339,10 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                         int value = (Integer) newValue;
                         float percentage = (float) value/10;
                        String einvalue = String.format("%.2f", (float)percentage) + "%";
-                     float totalwords = settingslolo.getTexttoRead().length() / 5;
+
+                        float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
+                   //    float totalwords = settingslolo.getGlobalPosition() / settingslolo.getGlobalPositionSeekbarValue() * 1000 / 5;
+                  //   float totalwords = settingslolo.getTexttoRead().length() / 5; find an alternative without reloading tet everytime
                         int totalnumberofwords = (int) totalwords;
                         int numberofwordsread = (int) (totalwords * value / 1000);
                         String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
@@ -510,7 +484,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                     maxblocksize_summary = getString(R.string.settings_maxwords_summary) + " " + settingslolo.getMaxBlockSize() + " " + getString(R.string.settings_maxwords_summary2);
                     minblocksize_summary = getString(R.string.settings_minwords_summary) + " " + settingslolo.getMinBlockSize() + " " + getString(R.string.settings_minwords_summary2);
                     fontsize_summary = getString(R.string.settings_fontname_summary) + " " + settingslolo.getFontSize() + "";
-            float totalwords = settingslolo.getTexttoRead().length() / 5;
+            float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
             int totalnumberofwords = (int) totalwords;
             int numberofwordsread = (int) (settingslolo.getGlobalPosition() / 5);
             String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
@@ -518,7 +492,8 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
                     globalposition_title = getString(R.string.settings_positionslider_title) + ": " + settingslolo.getGlobalPositionPercentString() + " " + wordcount;
 
-            String gamification_summary = getString(R.string.settings_gamification_summary) + " " + settingslolo.getWordpoints() + " Level: " + String.format("%.3f", settingslolo.getGamificationLevel());
+            //String gamification_summary = getString(R.string.settings_gamification_summary) + " " + settingslolo.getWordpoints() + " Level: " + String.format("%.3f", settingslolo.getGamificationLevel());
+            String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters()/6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round( settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
 
                  /*   String [] strinarray= {globalposition_title,filepath,wpm_summary,maxblocksize_summary,minblocksize_summary,fontsize_summary};
                     return strinarray;
@@ -549,8 +524,8 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                         Preference preferencetochange6 = (Preference) findPreference(settingslolo.fontsizekey);
                         preferencetochange6.setSummary(fontsize_summary);
 
-            Preference preferencetochange7 = (Preference) findPreference("gamificationswitch");
-            preferencetochange7.setSummary(gamification_summary);
+            Preference preferencetochange7 = (Preference) findPreference("statisticsswitch");
+            preferencetochange7.setSummary(stat_summary);
 
                         Preference preferencetochange = (Preference) findPreference(settingslolo.orientationkey);
                         String parole = settingslolo.getOrientationMode();
@@ -579,6 +554,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
 
         protected static void setListPreferenceData(ListPreference lp) {
+            //TODO performance lost here
             SettingsLoader settingslolo = new SettingsLoader(lp.getPreferenceManager().getSharedPreferences());
             CharSequence[] entries = settingslolo.getLastBooks();
             CharSequence[] entryValues = settingslolo.getLastBooksValues();//{"2", "3", "4"};

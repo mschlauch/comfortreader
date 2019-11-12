@@ -8,85 +8,85 @@ package com.github.angads25.filepicker;
 
 public final class R {
     public static final class anim {
-        public static final int marked_item_animation = 0x7f050006;
-        public static final int unmarked_item_animation = 0x7f050007;
+        public static final int marked_item_animation = 0x7f010006;
+        public static final int unmarked_item_animation = 0x7f010007;
     }
     public static final class attr {
-        public static final int error_dir = 0x7f010049;
-        public static final int extensions = 0x7f01004b;
-        public static final int offset_dir = 0x7f01004a;
-        public static final int root_dir = 0x7f010048;
-        public static final int selection_mode = 0x7f010046;
-        public static final int selection_type = 0x7f010047;
-        public static final int title_text = 0x7f01004c;
+        public static final int error_dir = 0x7f030048;
+        public static final int extensions = 0x7f03004a;
+        public static final int offset_dir = 0x7f030066;
+        public static final int root_dir = 0x7f030095;
+        public static final int selection_mode = 0x7f03009a;
+        public static final int selection_type = 0x7f03009b;
+        public static final int title_text = 0x7f0300c1;
     }
     public static final class color {
-        public static final int colorAccent = 0x7f0e0014;
-        public static final int colorHeader = 0x7f0e0015;
-        public static final int colorPrimary = 0x7f0e0016;
-        public static final int colorPrimaryDark = 0x7f0e0017;
-        public static final int textColorPrimary = 0x7f0e0039;
-        public static final int textColorSecondary = 0x7f0e003a;
+        public static final int colorAccent = 0x7f05001d;
+        public static final int colorHeader = 0x7f05001e;
+        public static final int colorPrimary = 0x7f05001f;
+        public static final int colorPrimaryDark = 0x7f050020;
+        public static final int textColorPrimary = 0x7f050042;
+        public static final int textColorSecondary = 0x7f050043;
     }
     public static final class dimen {
-        public static final int activity_margin = 0x7f0b000b;
-        public static final int checkbox_dimens = 0x7f0b000c;
-        public static final int checkbox_margin = 0x7f0b000d;
-        public static final int toolbar_image_margin = 0x7f0b000e;
+        public static final int activity_margin = 0x7f060025;
+        public static final int checkbox_dimens = 0x7f060026;
+        public static final int checkbox_margin = 0x7f060027;
+        public static final int toolbar_image_margin = 0x7f060031;
     }
     public static final class drawable {
-        public static final int bottom_shadow = 0x7f020033;
+        public static final int bottom_shadow = 0x7f070033;
     }
     public static final class id {
-        public static final int cancel = 0x7f0f0066;
-        public static final int dir_path = 0x7f0f006a;
-        public static final int dir_select = 0x7f0f0019;
-        public static final int dname = 0x7f0f0069;
-        public static final int fileList = 0x7f0f0073;
-        public static final int file_dir_select = 0x7f0f001a;
-        public static final int file_mark = 0x7f0f0064;
-        public static final int file_select = 0x7f0f001b;
-        public static final int fname = 0x7f0f0062;
-        public static final int footer = 0x7f0f0074;
-        public static final int ftype = 0x7f0f0063;
-        public static final int header = 0x7f0f0072;
-        public static final int imageView = 0x7f0f0068;
-        public static final int image_type = 0x7f0f0061;
-        public static final int linearLayout = 0x7f0f0065;
-        public static final int multi_mode = 0x7f0f0017;
-        public static final int select = 0x7f0f0067;
-        public static final int single_mode = 0x7f0f0018;
-        public static final int title = 0x7f0f0030;
+        public static final int cancel = 0x7f080017;
+        public static final int dir_path = 0x7f080023;
+        public static final int dir_select = 0x7f080024;
+        public static final int dname = 0x7f080026;
+        public static final int fileList = 0x7f08002d;
+        public static final int file_dir_select = 0x7f08002e;
+        public static final int file_mark = 0x7f08002f;
+        public static final int file_select = 0x7f080030;
+        public static final int fname = 0x7f080031;
+        public static final int footer = 0x7f080032;
+        public static final int ftype = 0x7f080033;
+        public static final int header = 0x7f080038;
+        public static final int imageView = 0x7f08003f;
+        public static final int image_type = 0x7f080040;
+        public static final int linearLayout = 0x7f080041;
+        public static final int multi_mode = 0x7f080047;
+        public static final int select = 0x7f080062;
+        public static final int single_mode = 0x7f080067;
+        public static final int title = 0x7f080070;
     }
     public static final class layout {
-        public static final int dialog_file_list = 0x7f04001c;
-        public static final int dialog_file_list_item = 0x7f04001d;
-        public static final int dialog_footer = 0x7f04001e;
-        public static final int dialog_header = 0x7f04001f;
-        public static final int dialog_main = 0x7f040021;
+        public static final int dialog_file_list = 0x7f0a001c;
+        public static final int dialog_file_list_item = 0x7f0a001d;
+        public static final int dialog_footer = 0x7f0a001e;
+        public static final int dialog_header = 0x7f0a001f;
+        public static final int dialog_main = 0x7f0a0021;
     }
     public static final class mipmap {
-        public static final int ic_directory_parent = 0x7f030000;
-        public static final int ic_type_file = 0x7f030001;
-        public static final int ic_type_folder = 0x7f030002;
+        public static final int ic_directory_parent = 0x7f0c0000;
+        public static final int ic_type_file = 0x7f0c0001;
+        public static final int ic_type_folder = 0x7f0c0002;
     }
     public static final class string {
-        public static final int cancel_button_label = 0x7f080012;
-        public static final int choose_button_label = 0x7f080013;
-        public static final int default_dir = 0x7f08005e;
-        public static final int error_dir_access = 0x7f080016;
-        public static final int label_parent_dir = 0x7f080061;
-        public static final int label_parent_directory = 0x7f080029;
-        public static final int last_edit = 0x7f08002a;
+        public static final int cancel_button_label = 0x7f0e0013;
+        public static final int choose_button_label = 0x7f0e0014;
+        public static final int default_dir = 0x7f0e0015;
+        public static final int error_dir_access = 0x7f0e0019;
+        public static final int label_parent_dir = 0x7f0e002d;
+        public static final int label_parent_directory = 0x7f0e002e;
+        public static final int last_edit = 0x7f0e002f;
     }
     public static final class styleable {
-        public static final int[] FilePickerPreference = { 0x7f010046, 0x7f010047, 0x7f010048, 0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c };
-        public static final int FilePickerPreference_error_dir = 3;
-        public static final int FilePickerPreference_extensions = 5;
-        public static final int FilePickerPreference_offset_dir = 4;
-        public static final int FilePickerPreference_root_dir = 2;
-        public static final int FilePickerPreference_selection_mode = 0;
-        public static final int FilePickerPreference_selection_type = 1;
+        public static final int[] FilePickerPreference = { 0x7f030048, 0x7f03004a, 0x7f030066, 0x7f030095, 0x7f03009a, 0x7f03009b, 0x7f0300c1 };
+        public static final int FilePickerPreference_error_dir = 0;
+        public static final int FilePickerPreference_extensions = 1;
+        public static final int FilePickerPreference_offset_dir = 2;
+        public static final int FilePickerPreference_root_dir = 3;
+        public static final int FilePickerPreference_selection_mode = 4;
+        public static final int FilePickerPreference_selection_type = 5;
         public static final int FilePickerPreference_title_text = 6;
     }
 }

@@ -49,10 +49,14 @@ import static java.lang.Boolean.TRUE;
 public class SettingsLoader {
 
 	protected String xppoints = "xppointsvalue";
-	protected String wordpoints = "wordpointsvalue";
+	// protected String wordpoints = "wordpointsvalue";
+	protected String readingcharacterstatistics = "readingcharacterstat";
+	protected String readingtimestatistics = "readingtimestat";
+
 	protected String minblocksizekey = "minblocksizevalue";
 	protected String maxblocksizekey = "maxblocksizevalue";
 	protected String wpmkey="wpmvalue";
+	protected String helplineskey="helplines";
 	protected String textcolorkey = "textcolorvalue";
 	protected String focuscolorkey = "focuscolorvalue";
 	protected String backgroundcolorkey = "backgroundcolorvalue";
@@ -63,6 +67,7 @@ public class SettingsLoader {
 	protected String filepathkey = "filepath";
 	protected String notebooktextkey = "notebook";
 	protected String texttoreadkey = "texttoread";
+	protected String texttoreadtotallengthkey = "texttoreadtotallength";
 	protected String orientationkey = "orientationmode";
 	protected String copypastekey = "fromcopyandpaste";
 	protected String copiedtextkey = "textfromcopyandpaste";
@@ -107,7 +112,7 @@ public class SettingsLoader {
 	}
 
 
-	private String retrieve(String variable){
+	private synchronized String retrieve(String variable){
 	//	SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
   	String slotnumber = "";
 		try{slotnumber = preferences.getString("slotnumber","");}
@@ -124,7 +129,7 @@ public class SettingsLoader {
   	  	return value;
 	}
 
-	public void save(String variable, String value){
+	public synchronized void save(String variable, String value){
 
 			SharedPreferences.Editor editor = preferences.edit();
 
@@ -133,7 +138,7 @@ public class SettingsLoader {
 
 		}
 
-	public void saveNumber(String variable, int value){
+	public synchronized void saveNumber(String variable, int value){
 
 		Integer newinteger = new Integer(value);
 		//String valuestring = newinteger.toString();
@@ -167,7 +172,11 @@ public class SettingsLoader {
 		return preferences.getBoolean(copypastekey,false);
 	}
 
-	protected int retrieveNumber(String variable){
+	public boolean getHelplinesOn(){
+		return preferences.getBoolean(helplineskey,false);
+	}
+
+	protected synchronized int retrieveNumber(String variable){
 
 		int value = 0;
 		try {value = preferences.getInt(variable,0);}
@@ -231,7 +240,9 @@ public class SettingsLoader {
 
 
 	public int saveGlobalPosition(int globalposition){
-		int length = getTexttoRead().length();
+		//TODO getTexttoRead is to heavy on memory
+		//int length = getTexttoRead().length();
+		int length = getTexttoReadtotalLength();
 		Log.i("Settingloader", "text length is: " + length);
 
 		float newposition = ( (float)globalposition / (float)length) * 1000;
@@ -244,7 +255,9 @@ public class SettingsLoader {
 
 	public int adjustGlobalPositionToPercentage(int number){
 		int maxnumber = 1000;
-		int length = getTexttoRead().length();
+		//TODO getTexttoRead to heavy on memory
+		//int length = getTexttoRead().length();
+		int length = getTexttoReadtotalLength();
 		Log.i("Settingloader", "text length is: " + length);
 
 		float newposition = length * ( (float) number / (float) maxnumber);
@@ -303,9 +316,30 @@ public class SettingsLoader {
 
 		return vhelper;
 	}
-	public int getWordpoints(){
+//	public int getWordpoints(){
+//
+//		int vhelper = retrieveNumber(wordpoints);
+//		if (vhelper == 0){
+//			vhelper = 0;
+//		}
+//
+//		return vhelper;
+//
+//	}
+//	void saveWordpoints(int number){
+//		saveNumber(wordpoints, number);
+//
+//
+//	}
 
-		int vhelper = retrieveNumber(wordpoints);
+	void saveAddReadCharacters(int tickdistance){
+	int formernumber = retrieveNumber(readingcharacterstatistics);
+	saveNumber(readingcharacterstatistics, formernumber + tickdistance);
+
+	}
+	public int getReadCharacters(){
+
+		int vhelper = retrieveNumber(readingcharacterstatistics);
 		if (vhelper == 0){
 			vhelper = 0;
 		}
@@ -313,11 +347,30 @@ public class SettingsLoader {
 		return vhelper;
 
 	}
-	void saveWordpoints(int number){
-		saveNumber(wordpoints, number);
 
+	void saveAddReadingTime(int milliseconds){
+	int formernumber = retrieveNumber(readingtimestatistics);
+	saveNumber(readingtimestatistics, formernumber + milliseconds);
 
 	}
+	public int getReadingTime(){
+
+		int vhelper = retrieveNumber(readingtimestatistics);
+		if (vhelper == 0){
+			vhelper = 0;
+		}
+
+		return vhelper;
+
+	}
+
+	public void resetStatistics(){
+		saveNumber(readingtimestatistics, 0);
+		saveNumber(readingcharacterstatistics, 0);
+
+	}
+
+
 	void saveWordsPerMinute(int number){
 		saveNumber(wpmkey, number);
 
@@ -341,6 +394,7 @@ public class SettingsLoader {
 
 
 	}
+
 	public float getGamificationLevel(){
 		int number = getXPpoints();
 		double levelnummer = 0.01 * (float) Math.sqrt( number );
@@ -426,6 +480,14 @@ public class SettingsLoader {
 
 	public String getFilePath(){
 		return retrieve (filepathkeyreal);
+	}
+
+	public int getTexttoReadtotalLength(){
+
+		//float totalwords = getGlobalPosition() / getGlobalPositionSeekbarValue() * 1000;
+		//int output = (int) totalwords;
+		return retrieveNumber(texttoreadtotallengthkey);
+
 	}
 	public String getTexttoRead(){
 		String text;
@@ -561,6 +623,8 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 			save(texttoreadkey,text);
 			save(filepathkeyreal,path);
+
+			initializeTexttoreadTotalLength(text);
 			adjustGlobalPositionToPercentage(permille);
 		}
 		else if (fromSlotNumber.equals("3")) {
@@ -577,6 +641,8 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 			save(texttoreadkey,text);
 			save(filepathkeyreal,path);
+
+			initializeTexttoreadTotalLength(text);
 			adjustGlobalPositionToPercentage(permille);
 		}
 		else if (fromSlotNumber.equals("4")) {
@@ -597,6 +663,8 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 			save(texttoreadkey,text);
 			save(filepathkeyreal,path);
+
+			initializeTexttoreadTotalLength(text);
 			adjustGlobalPositionToPercentage(permille);
 
 		}
@@ -618,6 +686,8 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 			save(texttoreadkey,text);
 			save(filepathkeyreal,path);
+
+			initializeTexttoreadTotalLength(text);
 			adjustGlobalPositionToPercentage(permille);
 
 		}
@@ -639,6 +709,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 			save(texttoreadkey,text);
 			save(filepathkeyreal,path);
+			initializeTexttoreadTotalLength(text);
 			adjustGlobalPositionToPercentage(permille);
 
 		}
@@ -650,7 +721,13 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 	}
 
+public void initializeTexttoreadTotalLength(String texttoberead){
 
+	//initialize total text length when reloading text;
+	saveNumber(texttoreadtotallengthkey, texttoberead.length());
+
+
+}
 
 	/*public void loadNewText(String text){
 		if (text.length() > 30){
@@ -704,6 +781,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 		save(filepathkeyreal,retrieve(filepathkey));
 
 		save(texttoreadkey, texttoread);
+		initializeTexttoreadTotalLength(texttoread);
 		saveGlobalPosition(0);
 		adjustGlobalPositionToPercentage(0);
 

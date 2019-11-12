@@ -67,6 +67,13 @@
 
     <string name="settings_gamification_title">Transform words</string>
 
+    <string name="settings_statistics_summary">You\'ve read</string>
+    <string name="settings_statistics_summary2">words in</string>
+    <string name="settings_statistics_summary3">minutes (tap to reset).</string>
+
+    <string name="settings_statistics_title">Read-o-meter</string>
+    <string name="settings_statistics_sectiontitle">Statistics</string>
+
     <string name="settings_backgroundcolor_title">Background color</string>
     <string name="settings_backgroundcolor_summary"></string>
     <string name="settings_deviceorientation_title">Device orientation</string>
@@ -88,6 +95,8 @@
 
     <string name="settings_filepicker_loadingtext">Loading pdf takes some time. You may also prepare a txt from pdf on a computer</string>
 
+    <string name="settings_helplines_title">Preview and Review</string>
+    <string name="settings_helplines_summary">Additional lines of text above and under the current line (peripheral vision)</string>
 
 
     <string name="feedback_opinionquestion_subtitle"></string>

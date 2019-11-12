@@ -1,6 +1,18 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:14:4-17:12
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:2:1-13:12
+MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/fd28f1df1f284b1d9d4208ed71e2f5c5/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
 	package
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
@@ -9,15 +21,16 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:5:5-32
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:4:5-29
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
-	xmlns:android
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:7:5-81
-MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.android/build-cache/78a87c724bcb431b669165d9cf2d14f67841f54d/output/AndroidManifest.xml:11:5-81
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:11:5-81
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.EXPAND_STATUS_BAR
@@ -30,12 +43,22 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:9:22-64
 uses-sdk
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
-MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.android/build-cache/e025dfd60f1e563270ec465a43ec4c85fe40056d/output/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.android/build-cache/3e96bd3d6e45338f987504cd70c2078709d85f1e/output/AndroidManifest.xml:15:5-42
-MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.android/build-cache/78a87c724bcb431b669165d9cf2d14f67841f54d/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/AndroidManifest.xml:7:5-9:41
-MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.android/build-cache/c3e431454637facedcfad7dc5e959505a49deb15/output/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:15:5-42
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:7:5-9:41
+MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/fd28f1df1f284b1d9d4208ed71e2f5c5/AndroidManifest.xml:7:5-9:41
+MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/fd28f1df1f284b1d9d4208ed71e2f5c5/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
 	android:targetSdkVersion
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:12:9-38
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
@@ -46,17 +69,20 @@ MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPi
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 application
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:14:5-104:19
-MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.android/build-cache/e025dfd60f1e563270ec465a43ec4c85fe40056d/output/AndroidManifest.xml:12:5-20
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.android/build-cache/11e71b253c13b6d44ec9afe247278efb77f1e61c/output/AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.android/build-cache/3e96bd3d6e45338f987504cd70c2078709d85f1e/output/AndroidManifest.xml:16:5-19
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:12:5-20
+MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:16:5-19
 	android:label
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:19:9-41
 	android:hardwareAccelerated
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:15:9-43
-	android:allowBackup
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:17:9-35
 	android:icon
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:18:9-45
+	android:allowBackup
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:20:9-40
 	android:name
@@ -103,6 +129,10 @@ data
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:45:17-47
 	android:scheme
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:45:23-44
+	android:pathPattern
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:47:23-53
+	android:mimeType
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:46:23-52
 activity#com.mschlauch.comfortreader.BroadcastReceiverWebLink
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:58:9-70:20
 	android:label
@@ -119,10 +149,10 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:64:25-66
 activity#com.mschlauch.comfortreader.CRPreferenceActivity
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:75:9-88:20
-	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:77:13-60
 	android:parentActivityName
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:78:13-61
+	android:label
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:77:13-60
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:76:13-49
 meta-data#android.support.PARENT_ACTIVITY
@@ -139,10 +169,10 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:84:25-88
 activity#com.mschlauch.comfortreader.NoteActivity
 ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:89:9-103:20
-	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:91:13-56
 	android:parentActivityName
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:92:13-61
+	android:label
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:91:13-56
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:90:13-41
 intent-filter#android.intent.category.DEFAULT+com.mschlauch.comfortreader.NoteActivity
@@ -152,6 +182,6 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:98:25-80
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/AndroidManifest.xml:11:5-80
+ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.android/build-cache/3d98f1894f0969cedc17baf7df92196fc81900ac/output/AndroidManifest.xml:11:22-77
+		ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:11:22-77

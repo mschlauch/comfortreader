@@ -17,7 +17,14 @@
     <string name="title_activity_note">écrire une note</string>
 
     <string name="title_activity_settings">paramètres</string>
+    <string name="settings_helplines_title">Amplifier la vision</string>
+    <string name="settings_helplines_summary">Lignes supplémentaires (vision périphérique)</string>
+    <string name="settings_statistics_summary">Vous avete lu</string>
+    <string name="settings_statistics_summary2">mots, in </string>
+    <string name="settings_statistics_summary3">minutes (réinitialiser ici).</string>
 
+    <string name="settings_statistics_title">Read-o-meter</string>
+    <string name="settings_statistics_sectiontitle">Statistique</string>
 
     <string name="settings_title_readingoptions">Options de lecture</string>
     <string name="settings_title_supportoptions">Soutien</string>
