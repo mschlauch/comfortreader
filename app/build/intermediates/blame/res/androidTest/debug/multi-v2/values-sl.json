@@ -4,20 +4,13 @@
             "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
-                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/res/values-sl/values.xml",
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/res/values-sl/values-sl.xml",
                     "from": {
-                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "56,163,271,394,501,609,696,799,918,1026,1135,1235,1348,1455,1559",
-                        "endColumns": "106,107,122,106,107,86,102,118,107,108,99,112,106,103,116",
-                        "endOffsets": "158,266,389,496,604,691,794,913,1021,1130,1230,1343,1450,1554,1671"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,162,270,393,500,608,695,798,917,1025,1134,1234,1347,1454,1558",
-                        "endColumns": "106,107,122,106,107,86,102,118,107,108,99,112,106,103,116",
-                        "endOffsets": "157,265,388,495,603,690,793,912,1020,1129,1229,1342,1449,1553,1670"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,162,270,393,500,608,695,798,917,1002,1086,1170,1278,1387,1487,1600,1707,1811,1928,2025",
+                        "endColumns": "106,107,122,106,107,86,102,118,84,83,83,107,108,99,112,106,103,116,96,100",
+                        "endOffsets": "157,265,388,495,603,690,793,912,997,1081,1165,1273,1382,1482,1595,1702,1806,1923,2020,2121"
                     }
                 }
             ]

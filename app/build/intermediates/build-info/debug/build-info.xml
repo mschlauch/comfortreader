@@ -2,26 +2,27 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xxxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1573573196721"
+    timestamp="1573741970760"
     token="791353216150593170"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1321" />
+        duration="81" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="61" />
+        duration="9" />
     <task
         name="verifier"
-        duration="65" />
+        duration="0" />
 
     <artifact
         location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -29,40 +30,10 @@
     <artifact
         location="/home/michael/StudioProjects/ComfortReader/app/build/outputs/apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1573573196721"
+        timestamp="1573741643658"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -89,10 +60,10 @@
             location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -100,6 +71,18 @@
         <artifact
             location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1573741970760"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/michael/StudioProjects/ComfortReader/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/michael/StudioProjects/ComfortReader/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

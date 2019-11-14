@@ -80,6 +80,8 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //auch beim auskommentieren der unteren Zeile, d.h. ohne Fragment, bleibt immernoch stocken
         getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
 
         settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this));
@@ -87,6 +89,40 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
         PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
         Log.i("CPPreferenceActivity", "was created now ");
+    }
+@Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    Log.i("CPPreferenceActivity", "back was pressed ");
+    //TODO make finish apply also with back arrow, cleans everything
+finish();
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.i("CPPreferenceActivity", "destroyed ");
+
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        //  finish();
+        Log.i("CPPreferenceActivity", "stopped ");
+
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+      //  finish();
+        Log.i("CPPreferenceActivity", "stopped ");
+
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.i("CPPreferenceActivity", "resumed ");
+
     }
 
     @Override
@@ -200,30 +236,79 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             super.onCreate(savedInstanceState);
 
 
-            Log.i("preference fragment", "shared preferences called ");
+            Log.i("preference fragment", "shared preferences oncreate called ");
 
             addPreferencesFromResource(R.xml.preferences);
 
-            Log.i("preference fragment", "shared preferences still called ");
+            Log.i("preference fragment", "shared preferences (after addPrerencesFromResource) called ");
 
-            updateAppearance();
+
+
+
+
+
+
+
+        }
+        @Override
+        public void onStart()
+        {
+            super.onStart();
+            //TODO update Appearance entschlanken;
+           // updateAppearance();
 
             final SettingsLoader settingslolo = new SettingsLoader(this.getPreferenceManager().getSharedPreferences());
 
+            //calculations for summaries and titles
+            String globalposition_title;
+            String filepath;
+            String wpm_summary;
+            String maxblocksize_summary;
+            String minblocksize_summary;
+            String fontsize_summary;
+
+            // do stuff on non-UI thread
+            filepath = settingslolo.getFilePath();
+            wpm_summary = getString(R.string.settings_wpn_summary) + " " + settingslolo.getWordsPerMinute() + "";
+            maxblocksize_summary = getString(R.string.settings_maxwords_summary) + " " + settingslolo.getMaxBlockSize() + " " + getString(R.string.settings_maxwords_summary2);
+            minblocksize_summary = getString(R.string.settings_minwords_summary) + " " + settingslolo.getMinBlockSize() + " " + getString(R.string.settings_minwords_summary2);
+            fontsize_summary = getString(R.string.settings_fontname_summary) + " " + settingslolo.getFontSize() + "";
+            float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
+            int totalnumberofwords = (int) totalwords;
+            int numberofwordsread = (int) (settingslolo.getGlobalPosition() / 5);
+            String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
+
+
+            globalposition_title = getString(R.string.settings_positionslider_title) + ": " + settingslolo.getGlobalPositionPercentString() + " " + wordcount;
+
+            //String gamification_summary = getString(R.string.settings_gamification_summary) + " " + settingslolo.getWordpoints() + " Level: " + String.format("%.3f", settingslolo.getGamificationLevel());
+            String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters()/6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round( settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
+
+
+
+
+
+
+
             final Preference wpmpref = (Preference) findPreference("wpmvalue");
+
+              wpmpref.setSummary(wpm_summary);
+
             wpmpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
                 public boolean onPreferenceChange(Preference preference,
                                                   Object newValue) {
                     preference.setSummary(getString(R.string.settings_wpn_summary) + " " + newValue + "" );
-                     return true;
+                    return true;
                 }
 
             });
 
 
             final Preference maxblockpref = (Preference) findPreference("maxblocksizevalue");
+
+              maxblockpref.setSummary(maxblocksize_summary);
             maxblockpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
@@ -236,12 +321,13 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                     }
 
                     preference.setSummary(getString(R.string.settings_maxwords_summary) + " " + zahl + " " + getString(R.string.settings_maxwords_summary2) );
-                     return true;
+                    return true;
                 }
 
             });
 
             final Preference minblockpref = (Preference) findPreference("minblocksizevalue");
+               minblockpref.setSummary(minblocksize_summary);
             minblockpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
@@ -254,6 +340,8 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             });
 
             final Preference fontsizepref = (Preference) findPreference("fontsizevalue");
+
+              fontsizepref.setSummary(fontsize_summary);
             fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
@@ -265,6 +353,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             });
             final Preference helplinespref = (Preference) findPreference("helplines");
+
             fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
@@ -279,6 +368,8 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
 
             final Preference statisticspreference = findPreference("statisticsswitch");
+
+              statisticspreference.setSummary(stat_summary);
             statisticspreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick    (Preference preference) {
@@ -288,11 +379,11 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                         //reset word counts
                         settingslolo.resetStatistics();
 
-                        }
-                        String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters()/6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round( settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
-                        statisticspreference.setSummary(stat_summary);
+                    }
+                    String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters()/6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round( settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
+                    statisticspreference.setSummary(stat_summary);
 
-                return true;
+                    return true;
                 }
 
                      /*   // get a reference to the already created main layout
@@ -322,34 +413,38 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 */
 
 
-                });
+            });
+
+            Log.i("preference fragment", "before positionpreference ");
 
 
 
             final Preference positionpreference = findPreference("globalpositionpercentage");
+
+              positionpreference.setTitle(globalposition_title);
             positionpreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
                 public boolean onPreferenceChange(Preference preference,
                                                   Object newValue) {
-                     if(preference.getKey().equals("globalpositionpercentage"))
+                    if(preference.getKey().equals("globalpositionpercentage"))
                     {
-                       // String einstring = "" + newValue;
-                       // int zahl = Integer.valueOf(einstring);
+                        // String einstring = "" + newValue;
+                        // int zahl = Integer.valueOf(einstring);
                         int value = (Integer) newValue;
                         float percentage = (float) value/10;
-                       String einvalue = String.format("%.2f", (float)percentage) + "%";
+                        String einvalue = String.format("%.2f", (float)percentage) + "%";
 
                         float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
-                   //    float totalwords = settingslolo.getGlobalPosition() / settingslolo.getGlobalPositionSeekbarValue() * 1000 / 5;
-                  //   float totalwords = settingslolo.getTexttoRead().length() / 5; find an alternative without reloading tet everytime
+                        //    float totalwords = settingslolo.getGlobalPosition() / settingslolo.getGlobalPositionSeekbarValue() * 1000 / 5;
+                        //   float totalwords = settingslolo.getTexttoRead().length() / 5; find an alternative without reloading tet everytime
                         int totalnumberofwords = (int) totalwords;
                         int numberofwordsread = (int) (totalwords * value / 1000);
                         String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
-                      //  Preference pref = (Preference) this;
-                      //  SettingsLoader settingslolo = new SettingsLoader(positionpreference.getPreferenceManager().getSharedPreferences());
+                        //  Preference pref = (Preference) this;
+                        //  SettingsLoader settingslolo = new SettingsLoader(positionpreference.getPreferenceManager().getSharedPreferences());
                         positionpreference.setTitle(getString(R.string.settings_positionslider_title) + ": " + einvalue + " " + wordcount);
-  //  positionpreference.setSummary(wordcount);
+                        //  positionpreference.setSummary(wordcount);
 
 
                         int position = settingslolo.adjustGlobalPositionToPercentage(value);
@@ -378,9 +473,14 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                 }
             });
 
-           final FilePickerPreference pickerPreference = (FilePickerPreference) findPreference("filepath");
+            Log.i("preference fragment", "before filepickerpreference");
 
-           pickerPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+            final FilePickerPreference pickerPreference = (FilePickerPreference) findPreference("filepath");
+
+             pickerPreference.setSummary( filepath );
+
+            pickerPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
                 public boolean onPreferenceChange(Preference preference,
@@ -451,12 +551,23 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             });
 
-
+            Log.i("preference fragment", "onCreate finished ");
 
 
         }
+        @Override
+        public void onStop(){
+            super.onStop();
+            Log.i("preference fragment", "has been stopped ");
 
+        }
 
+@Override
+        public void onDetach(){
+            super.onDetach();
+            Log.i("preference fragment", "has been detached ");
+
+        }
 
         protected void updateAppearance() {
 

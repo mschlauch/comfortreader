@@ -4,22 +4,14 @@
             "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/res/values-v14/values.xml",
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/res/values-v14/values-v14.xml",
                     "from": {
-                        "startLines": "3,11,19,27,35,37,39,41",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "56,571,1100,1627,2168,2249,2344,2437",
-                        "endLines": "9,17,25,33,35,37,39,41",
-                        "endColumns": "12,12,12,12,79,93,91,105",
-                        "endOffsets": "565,1094,1621,2162,2243,2338,2431,2538"
-                    },
-                    "to": {
-                        "startLines": "2,9,16,23,30,31,32,33",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,569,1097,1623,2163,2242,2335,2426",
-                        "endLines": "8,15,22,29,30,31,32,33",
-                        "endColumns": "12,12,12,12,78,92,90,104",
-                        "endOffsets": "564,1092,1618,2158,2237,2330,2421,2526"
+                        "startLines": "2,7,8,9,15,21,22,23,26,27",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,331,402,485,895,1317,1437,1500,1654,1717",
+                        "endLines": "6,7,8,14,20,21,22,25,26,27",
+                        "endColumns": "12,70,82,12,12,119,62,12,62,131",
+                        "endOffsets": "326,397,480,890,1312,1432,1495,1649,1712,1844"
                     }
                 }
             ]

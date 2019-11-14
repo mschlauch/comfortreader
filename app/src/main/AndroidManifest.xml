@@ -22,7 +22,8 @@
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FullscreenTheme" >
-            
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

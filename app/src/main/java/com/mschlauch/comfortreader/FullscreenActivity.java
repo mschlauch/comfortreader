@@ -177,36 +177,37 @@ public class FullscreenActivity extends Activity {
 	private int longforwardvelocity = 10;
 	private double charactersperword = 6; //here should be only 5, I don't know why it gets 3 times faster on my phone, wegen der streckung im stringsegmenter
 
-	private GestureDetector mGestureDetector;
-    private static final ScheduledExecutorService worker = 
-    		  Executors.newSingleThreadScheduledExecutor();
-    
+//	private GestureDetector mGestureDetector;
+//    private static final ScheduledExecutorService worker =
+//    		  Executors.newSingleThreadScheduledExecutor();
+//
     final Runnable runnable = new Runnable() {        
         @Override
         public void run() {
             
             if(started) {
                 start();
-               
+				Log.i("Fullscreen reading", "started from runnable");
             }
         }
     };
 
     public void stop() {
+		handler.removeCallbacks(runnable);
         started = false;
-        handler.removeCallbacks(runnable);
+		Log.i("Fullscreen reading", "reading stopped");
 
-//resprectfully request feedback
+		//respectfully request feedback
 		DefaultLayoutPromptView promptView
 				= (DefaultLayoutPromptView) findViewById(R.id.prompt_view);
 
 		Amplify.getSharedInstance().promptIfReady(promptView);
-
     }
 
     public void start() {
+		handler.removeCallbacks(runnable);
     	started = true;
-    	handler.removeCallbacks(runnable);
+		Log.i("Fullscreen reading", "reading started");
     	
     	
       //  double charactersperword = 6; //here should be only 5, I don't know why it gets 3 times faster on my phone, wegen der streckung im stringsegmenter
@@ -240,7 +241,21 @@ public class FullscreenActivity extends Activity {
         //zum timing wichtig, dass der rechenintensive befehl darunter steht
         playAutomated(milliseconds);
     }
-    
+
+	@Override
+	public void onPause() {
+		super.onPause();  // Always call the superclass method first
+
+
+		stop();
+	}
+	@Override
+	public void onResume() {
+		super.onResume();  // Always call the superclass method first
+
+		segmenterObject = new Book();
+		retreiveSavedOptions();
+	}
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -253,7 +268,7 @@ public class FullscreenActivity extends Activity {
         controlsView3tap = findViewById(R.id.fullscreen_content2);
         contentView = (TextView) findViewById(R.id.fullscreen_content);
 		mSeekBar = (SeekBar)findViewById(R.id.reading_progress_bar);
-		mSeekBar.setOnTouchListener(new OnTouchListener(){
+	/*	mSeekBar.setOnTouchListener(new OnTouchListener(){
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 return true;
@@ -267,9 +282,9 @@ public class FullscreenActivity extends Activity {
                  // TODO Auto-generated method stub
         	}
         	
-        }
+        }*/
 
-        public void onStartTrackingTouch(SeekBar seekBar)
+    /*    public void onStartTrackingTouch(SeekBar seekBar)
         {
            // TODO Auto-generated method stub
                                                         }
@@ -279,6 +294,8 @@ public class FullscreenActivity extends Activity {
          // TODO Auto-generated method stub
                                                         }
         });
+*/
+
 
 		View previous = findViewById(R.id.previousbutton);
 		previous.setOnLongClickListener(new View.OnLongClickListener(){
@@ -336,8 +353,7 @@ public class FullscreenActivity extends Activity {
             }
         });
 		settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this));
-		segmenterObject = new Book();
-		retreiveSavedOptions();
+
        /* Context context = getApplicationContext();
         CharSequence text = "comfortreader dev 3.01.17";
         int duration = Toast.LENGTH_SHORT;*/
@@ -345,7 +361,7 @@ public class FullscreenActivity extends Activity {
 
 
 
-    
+    /*
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromTouch) {
     }
  
@@ -354,7 +370,7 @@ public class FullscreenActivity extends Activity {
  
     public void onStopTrackingTouch(SeekBar seekBar) {
     }
-    
+    */
     public void playAutomated(int milliseconds){
 
         Log.i("Fullscreen", "automatic loading webview");
@@ -362,7 +378,8 @@ public class FullscreenActivity extends Activity {
         contentView.setText(Html.fromHtml(html));
 		settingsload.saveAddReadCharacters(tickdistance);
 		settingsload.saveAddReadingTime(milliseconds);
-		texthaschanged();
+		if (segmenterObject.tickposition == 0){
+		texthaschanged();}
     	if (segmenterObject.finished){
     		stop();
 			controlsView2.setVisibility(View.VISIBLE);
@@ -377,8 +394,22 @@ public class FullscreenActivity extends Activity {
 
 
     	if (started || segmenterObject.finished){
-    		stop();
-           	controlsView2.setVisibility(View.VISIBLE);
+
+			stop();
+
+
+
+			controlsView2.setVisibility(View.VISIBLE);
+
+			/*View decorView = getWindow().getDecorView();
+// Hide both the navigation bar and the status bar.
+// SYSTEM_UI_FLAG_FULLSCREEN is only available on Android 4.1 and higher, but as
+// a general rule, you should design your app to hide the status bar whenever you
+// hide the navigation bar.
+			int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+			decorView.setSystemUiVisibility(uiOptions);*/
+
+
     	}
     	else {
 			View decorView = getWindow().getDecorView();
@@ -546,7 +577,7 @@ public class FullscreenActivity extends Activity {
 				wordsperminute = 1;
 			}
 
-			float minutestogo = (segmenterObject.texttoread.length() * (1 - percentage / 100) / (5 * wordsperminute));
+			float minutestogo = (settingsload.getTexttoReadtotalLength() * (1 - percentage / 100) / (5 * wordsperminute));
 			String minutes = String.format("%.1f", minutestogo) + "min";
 
 			int progressseekbar = settingsload.saveGlobalPosition(segmenterObject.globalposition);
@@ -565,7 +596,12 @@ public class FullscreenActivity extends Activity {
     public void noteButtonClicked (View view){
 		if (switchofallmenus == false) {
 
+
 			stop();
+			//for some reason, the activity must be closed and restarted because otherwise it will skip frames or crash
+			finish();
+			Intent refresh = new Intent(this, FullscreenActivity.class);
+			startActivity(refresh);
 
 			// int progress = segmenterObject.calculateprogress(1000);
 			// float percentage = (float) progress / 10;
@@ -578,15 +614,24 @@ public class FullscreenActivity extends Activity {
     
     public void menuButtonClicked (View view){
 		if (switchofallmenus == false) {
-			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
-			settingsload.loadRealSettingstoPreferences();
+
 			stop();
+		//	setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+		//	settingsload.loadRealSettingstoPreferences();
+
+			//for some reason, the activity must be closed and restarted because otherwise it will skip frames or crash
+			finish();
+			Intent refresh = new Intent(this, FullscreenActivity.class);
+			startActivity(refresh);
+
 			Intent i = new Intent(this, CRPreferenceActivity.class);
-			startActivityForResult(i, 1);
+			//startActivityForResult(i, 1);
+			startActivity(i);
+
 		}
 	}
 
-	@Override
+	/*@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 		if(resultCode==RESULT_OK){
@@ -598,7 +643,7 @@ public class FullscreenActivity extends Activity {
 
 		}
 	}
-
+*/
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
@@ -751,7 +796,7 @@ public class FullscreenActivity extends Activity {
 	}
     
 
-	public boolean onTouchEvent(MotionEvent event) {
+	/*public boolean onTouchEvent(MotionEvent event) {
 	    int eventaction = event.getAction();
 
 	    switch (eventaction) {
@@ -773,12 +818,9 @@ public class FullscreenActivity extends Activity {
 
 	    // tell the system that we handled the event and no further processing is required
 	    return false; 
-	}
+	}*/
 	
-	public boolean testMethod(){
-		return true;
-	}
-    
+
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
 		int duration = Toast.LENGTH_SHORT;

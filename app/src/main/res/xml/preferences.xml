@@ -62,9 +62,10 @@
 
            </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/settings_title_readingoptions">
 
 
-           <PreferenceCategory android:title="@string/settings_title_readingoptions">
+
 
            <com.mschlauch.comfortreader.NumberPickerPreference
                android:icon="@drawable/ic_speed"
@@ -102,7 +103,13 @@
                android:defaultValue="0"
                android:entries="@array/orientationarray"
                android:entryValues="@array/orientationvalues" />
+
            </PreferenceCategory>
+
+
+
+
+
            <PreferenceCategory android:title="@string/settings_title_appearanceoptions">
 
        <PreferenceScreen

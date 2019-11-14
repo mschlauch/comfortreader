@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fontlistarray">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospaced</item>
+    </string-array>
+    <string-array name="fontlistvalues">
+        <item>sans</item>
+        <item>serif</item>
+        <item>mono</item>
+    </string-array>
+    <string-array name="listArray">
+        <item>見出し</item>
+        <item>見出しと詳細</item>
+        <item>すべてのデータ</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="orientationarray">
+        <item>デフォルト</item>
+        <item>常に横向き</item>
+        <item>常に縦向き</item>
+    </string-array>
+    <string-array name="orientationvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wpm_list_titles">
+        <item>200 遅い</item>
+        <item>350 通常</item>
+        <item>550 速い</item>
+        <item>1100 非常に速い</item>
+    </string-array>
+    <string-array name="wpm_list_values">
+        <item>200</item>
+        <item>350</item>
+        <item>1100</item>
+    </string-array>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ホームへ移動"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s、%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s、%2$s、%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"上へ移動"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"その他のオプション"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完了"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"すべて表示"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"アプリの選択"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"OFF"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ON"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"検索…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"検索キーワードを削除"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"検索キーワード"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"検索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"音声検索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"折りたたむ"</string>
+    <string name="action_settings">設定</string>
+    <string name="app_name">Comfort Reader</string>
+    <string name="app_text_after_shareweblink">Comfort Reader で読む(試験的)</string>
+    <string name="dummy_button">ダミーボタン</string>
+    <string name="dummy_content">ダミー\nコンテンツ</string>
+    <string name="feedback_negativeopinionquestion_negative">>いいえ</string>
+    <string name="feedback_negativeopinionquestion_positive">メッセージを送ります</string>
+    <string name="feedback_negativeopinionquestion_subtitle"/>
+    <string name="feedback_negativeopinionquestion_title">Sorry for that. You can help us fix the problem. フィードバックを送信しますか？</string>
+    <string name="feedback_opinionquestion_negative">>いいえ</string>
+    <string name="feedback_opinionquestion_positive">嗚呼</string>
+    <string name="feedback_opinionquestion_subtitle"/>
+    <string name="feedback_opinionquestion_title">このアプリは便利ですか？</string>
+    <string name="feedback_positiveopinionquestion_negative">>いいえ</string>
+    <string name="feedback_positiveopinionquestion_positive">はい</string>
+    <string name="feedback_positiveopinionquestion_subtitle"/>
+    <string name="feedback_positiveopinionquestion_title">This app is free and open-source. It survives thanks to your support. レビューしますか？</string>
+    <string name="feedback_thankyou_subtitle">To keep Comfort Reader open and free from annoying ads, please consider donating on its webpage.</string>
+    <string name="feedback_thankyou_title">ありがとうございました！</string>
+    <string name="fullscreen_copied_title">テキストをコピーしました</string>
+    <string name="fullscreen_text_while_loading">...テキストの読み込み中...\n お待ちください。</string>
+    <string name="georgia">フォント名</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="next_button">">>"</string>
+    <string name="notes_message_done_saving_note">書き込み完了</string>
+    <string name="notes_readnotebutton">メモを表示</string>
+    <string name="notes_savebutton">このメモを追加</string>
+    <string name="notes_title_current_notebook">メモ:</string>
+    <string name="play_button"> ∣∣ > </string>
+    <string name="previous_button">"&lt;&lt;"</string>
+    <string name="settings_backgroundcolor_summary"/>
+    <string name="settings_backgroundcolor_title">背景色</string>
+    <string name="settings_deviceorientation_default">デフォルトのシステム動作</string>
+    <string name="settings_deviceorientation_landscape">横向きモードに固定</string>
+    <string name="settings_deviceorientation_portrait">縦向きモードに固定</string>
+    <string name="settings_deviceorientation_summary">デバイスを回転した時の動作</string>
+    <string name="settings_deviceorientation_title">デバイスの向き</string>
+    <string name="settings_filepicker_loadingtext">pdf の読み込みは時間がかかります。 お使いのコンピューターで pdf から txt に準備することもできます</string>
+    <string name="settings_filepicker_title">現在の pdf または txt</string>
+    <string name="settings_focuscolor_summary">流れる文字</string>
+    <string name="settings_focuscolor_title">フォーカス色</string>
+    <string name="settings_fontname_summary"/>
+    <string name="settings_fontname_title">フォント</string>
+    <string name="settings_fontsize_title">フォントサイズ</string>
+    <string name="settings_fromcopypaste_summary">コピーしたテキストを貼り付けるにはオンにします</string>
+    <string name="settings_help_title">ヘルプ</string>
+    <string name="settings_loadcopyandpaste_outputmessage_off">今読んでいるもの</string>
+    <string name="settings_loadcopyandpaste_outputmessage_on">コピーしたものを読むことができます。 オフにするとテキストに戻ります</string>
+    <string name="settings_loadcopyandpaste_title">一時的なテキストを読む</string>
+    <string name="settings_maxwords_summary">行は</string>
+    <string name="settings_maxwords_summary2">文字以下</string>
+    <string name="settings_maxwords_title">行の長さの最大値</string>
+    <string name="settings_minwords_summary">行は</string>
+    <string name="settings_minwords_summary2">文字以上</string>
+    <string name="settings_minwords_title">行の長さの最小値</string>
+    <string name="settings_positionslider_title">位置</string>
+    <string name="settings_recent_texts">最近読んだテキストを読み込む</string>
+    <string name="settings_recent_texts_summary">続けて読む時に使用します</string>
+    <string name="settings_textcolor_summary">通常の色</string>
+    <string name="settings_textcolor_title">文字色</string>
+    <string name="settings_title_appearanceoptions">外観</string>
+    <string name="settings_title_readingoptions">読み方</string>
+    <string name="settings_title_supportoptions">サポート</string>
+    <string name="settings_title_textoptions">テキスト</string>
+    <string name="settings_wpm_title">読む速さ</string>
+    <string name="settings_wpn_summary">語/分:</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="support_standarttext">
+    テキストは読み込まれていません。 左上のメニューボタンをクリックして、txt または pdf ファイルを読み込みます。</string>
+    <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
+    <string name="title_activity_custommenu">CustommenuActivity</string>
+    <string name="title_activity_note">アノテーション エディター</string>
+    <string name="title_activity_settings">設定</string>
+    <string name="wordsperminuteSetting">語/分</string>
+</resources>

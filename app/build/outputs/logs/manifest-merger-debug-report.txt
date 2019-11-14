@@ -1,18 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
 MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:14:4-17:12
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.support:preference-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/preference-v7-23.0.1.aar/219e113af8aaea161e78808f5508b783/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.0.1.aar/a66a905914939eada0746cb0c35c5084/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/69841ec9f11a43df8b7a03fdc4662a98/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/b9902d9a4b9a2f4949d8a8b8911e759f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-v4:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/e032fa53213ef67978c7b77b306eb445/AndroidManifest.xml:17:1-24:12
 MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:2:1-13:12
 MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:2:1-13:12
 MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/fd28f1df1f284b1d9d4208ed71e2f5c5/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
+INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:2:1-107:12
 	package
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
@@ -47,10 +51,18 @@ INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidMan
 INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
 MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:preference-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/preference-v7-23.0.1.aar/219e113af8aaea161e78808f5508b783/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:preference-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/preference-v7-23.0.1.aar/219e113af8aaea161e78808f5508b783/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:recyclerview-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.0.1.aar/a66a905914939eada0746cb0c35c5084/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.0.1.aar/a66a905914939eada0746cb0c35c5084/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/69841ec9f11a43df8b7a03fdc4662a98/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/69841ec9f11a43df8b7a03fdc4662a98/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/b9902d9a4b9a2f4949d8a8b8911e759f/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/b9902d9a4b9a2f4949d8a8b8911e759f/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/e032fa53213ef67978c7b77b306eb445/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/e032fa53213ef67978c7b77b306eb445/AndroidManifest.xml:20:5-43
 MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:7:5-9:41
 MERGED from [com.tom_roush:pdfbox-android:1.8.10.0] /home/michael/.gradle/caches/transforms-1/files-1.1/pdfbox-android-1.8.10.0.aar/5087c7001007400cc051dd27b92cb15e/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:7:5-9:41
@@ -59,6 +71,8 @@ MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPi
 MERGED from [net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0] /home/michael/.gradle/caches/transforms-1/files-1.1/ColorPickerPreference-1.0.0.aar/fd28f1df1f284b1d9d4208ed71e2f5c5/AndroidManifest.xml:7:5-9:41
 INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
 INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:10:5-12:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:12:9-38
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
@@ -68,13 +82,19 @@ INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidMan
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:14:5-104:19
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:14:5-105:19
 MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:12:5-20
 MERGED from [com.github.stkent:amplify:2.2.0] /home/michael/.gradle/caches/transforms-1/files-1.1/amplify-2.2.0.aar/426c92d035d6f51a831709e32ab40b6b/AndroidManifest.xml:12:5-20
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:appcompat-v7:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/2a09d041d2a8d6a2552984067852f0ae/AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/06ac48cd843a6663f34e56357049279f/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:preference-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/preference-v7-23.0.1.aar/219e113af8aaea161e78808f5508b783/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:preference-v7:23.0.1] /home/michael/.gradle/caches/transforms-1/files-1.1/preference-v7-23.0.1.aar/219e113af8aaea161e78808f5508b783/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/69841ec9f11a43df8b7a03fdc4662a98/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/69841ec9f11a43df8b7a03fdc4662a98/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/b9902d9a4b9a2f4949d8a8b8911e759f/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/b9902d9a4b9a2f4949d8a8b8911e759f/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/e032fa53213ef67978c7b77b306eb445/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/michael/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/e032fa53213ef67978c7b77b306eb445/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:19:9-41
 	android:hardwareAccelerated
@@ -88,7 +108,7 @@ MERGED from [com.android.support:support-v4:21.0.3] /home/michael/.gradle/caches
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:16:9-49
 activity#com.mschlauch.comfortreader.FullscreenActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:21:9-35:16
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:21:9-36:16
 	android:configChanges
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:23:13-74
 	android:theme
@@ -96,91 +116,91 @@ ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:22:13-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:26:13-31:29
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:27:13-32:29
 action#android.intent.action.MAIN
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:30:27-74
 activity#com.mschlauch.comfortreader.BroadcastReceiverTest1Activity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:37:9-56:20
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:38:9-57:20
 	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:38:13-45
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:39:13-45
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:39:13-59
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:40:13-59
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:40:13-53:29
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:41:13-54:29
 action#android.intent.action.VIEW
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:42:17-69
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:42:25-66
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:43:25-66
 category#android.intent.category.DEFAULT
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:43:17-76
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:44:17-76
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:43:27-73
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:44:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:44:17-78
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:45:17-78
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:44:27-75
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:45:27-75
 data
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:45:17-47
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:46:17-47
 	android:scheme
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:45:23-44
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:46:23-44
 	android:pathPattern
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:47:23-53
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:48:23-53
 	android:mimeType
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:46:23-52
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:47:23-52
 activity#com.mschlauch.comfortreader.BroadcastReceiverWebLink
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:58:9-70:20
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:59:9-71:20
 	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:59:13-45
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:60:13-45
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:60:13-53
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:61:13-53
 intent-filter#android.intent.action.SEND+android.intent.category.DEFAULT
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:63:13-67:29
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:64:13-68:29
 	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:63:29-80
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:64:29-80
 action#android.intent.action.SEND
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:64:17-69
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:65:17-69
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:64:25-66
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:65:25-66
 activity#com.mschlauch.comfortreader.CRPreferenceActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:75:9-88:20
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:76:9-89:20
 	android:parentActivityName
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:78:13-61
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:79:13-61
 	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:77:13-60
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:78:13-60
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:76:13-49
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:77:13-49
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:79:13-81:82
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:80:13-82:82
 	android:value
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:81:17-79
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:82:17-79
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:80:17-63
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:81:17-63
 intent-filter#android.intent.category.DEFAULT+com.mschlauch.comfortreader.CRPreferenceActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:83:13-87:29
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:84:13-88:29
 action#com.mschlauch.comfortreader.CRPreferenceActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:84:17-91
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:85:17-91
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:84:25-88
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:85:25-88
 activity#com.mschlauch.comfortreader.NoteActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:89:9-103:20
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:90:9-104:20
 	android:parentActivityName
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:92:13-61
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:93:13-61
 	android:label
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:91:13-56
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:92:13-56
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:90:13-41
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:91:13-41
 intent-filter#android.intent.category.DEFAULT+com.mschlauch.comfortreader.NoteActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:97:14-101:29
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:98:14-102:29
 action#com.mschlauch.comfortreader.NoteActivity
-ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:98:17-83
+ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:99:17-83
 	android:name
-		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:98:25-80
+		ADDED from /home/michael/StudioProjects/ComfortReader/app/src/main/AndroidManifest.xml:99:25-80
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [com.github.angads25:filepicker:1.1.1] /home/michael/.gradle/caches/transforms-1/files-1.1/filepicker-1.1.1.aar/19b41ca211ed1a11227be22caa017bb4/AndroidManifest.xml:11:5-80
 	android:name

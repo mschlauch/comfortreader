@@ -49,6 +49,9 @@
     <string msgid="4076576682505996667" name="abc_action_mode_done">"OK"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tout afficher"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Sélectionner une application"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"DÉSACTIVÉ"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ACTIVÉ"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Rechercher…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Effacer la requête"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Requête de recherche"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Rechercher"</string>
@@ -56,6 +59,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Recherche vocale"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partager avec"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partager avec %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Réduire"</string>
     <string name="action_settings">Optionen</string>
     <string name="app_name">Comfort Reader</string>
     <string name="app_text_after_shareweblink">Lire avec Comfort Reader (expérimental)</string>
@@ -135,6 +139,7 @@
     <string name="settings_title_textoptions">Options du texte</string>
     <string name="settings_wpm_title">vitesse de lecture</string>
     <string name="settings_wpn_summary">mots par minute: </string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
     <string name="support_standarttext">
     Aucun texte chargé. Cliquez sur le bouton de menu en haut à gauche et chargez un fichier txt ou pdf.</string>
     <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
