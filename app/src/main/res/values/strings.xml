@@ -63,9 +63,15 @@
 
     <string name="settings_fromcopypaste_summary">Switch On to paste copied text</string>
 
+    <string name="settings_insertmanually_title">Copy &amp; Paste, Edit</string>
+    <string name="settings_insertmanually_summary_empty">Enter text manually</string>
+    <string name="settings_insertmanually_summary_textloaded">Text entered: </string>
+    <string name="settings_insertmanually_filepath">inserted manually</string>
+
     <string name="settings_gamification_summary">Wordpoints earned:</string>
 
     <string name="settings_gamification_title">Transform words</string>
+
 
     <string name="settings_statistics_summary">You\'ve read</string>
     <string name="settings_statistics_summary2">words in</string>

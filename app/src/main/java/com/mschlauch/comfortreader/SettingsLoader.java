@@ -23,6 +23,8 @@ package com.mschlauch.comfortreader;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.res.Resources;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Environment;
 import android.preference.PreferenceManager;
@@ -41,12 +43,16 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 import static android.util.Log.d;
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 
 public class SettingsLoader {
+	protected Context thiscontext;
 
 	protected String xppoints = "xppointsvalue";
 	// protected String wordpoints = "wordpointsvalue";
@@ -61,41 +67,46 @@ public class SettingsLoader {
 	protected String focuscolorkey = "focuscolorvalue";
 	protected String backgroundcolorkey = "backgroundcolorvalue";
 	protected String globalpositionpermillekey = "globalpositionpercentage";//only the one used in Preference Activity
-	protected String globalpositionkey = "globalposition";
+//	protected String globalpositionkey = "globalposition";
 	protected String fontsizekey = "fontsizevalue";
 	protected String fontnamekey = "fontnamevalue";
-	protected String filepathkey = "filepath";
+
 	protected String notebooktextkey = "notebook";
-	protected String texttoreadkey = "texttoread";
-	protected String texttoreadtotallengthkey = "texttoreadtotallength";
+	//protected String texttoreadkey = "texttoread";
+	//protected String texttoreadtotallengthkey = "texttoreadtotallength";
 	protected String orientationkey = "orientationmode";
-	protected String copypastekey = "fromcopyandpaste";
+	// protected String copypastekey = "fromcopyandpaste";
 	protected String copiedtextkey = "textfromcopyandpaste";
 	protected String precopypasteglobalpositionpermillekey = "precopypastepositionpercentage";
 	protected String lastreadskey = "recentreads";
 
-	protected String filepathkeyreal = "filepath2";
-	protected String filepathkey3 = "filepath3";
-	protected String filepathkey4 = "filepath4";
-	protected String filepathkey5 = "filepath5";
-	protected String filepathkey6 = "filepath6";
-	protected String filepathkey7 = "filepath7";
+	protected String filepathkey = "filepath";
+	protected String insertmanualkey = "inserttextmanually";
 
-	protected String globalpositionpermillekeyreal = "globalpositionpercentage2";
-	protected String globalpositionpermillekey3 = "globalpositionpercentage3";
-	protected String globalpositionpermillekey4 = "globalpositionpercentage4";
-	protected String globalpositionpermillekey5 = "globalpositionpercentage5";
-	protected String globalpositionpermillekey6 = "globalpositionpercentage6";
-	protected String globalpositionpermillekey7 = "globalpositionpercentage7";
+	//migrated to database 10-12-2019
+	//protected String filepathkeyreal = "filepath2";
+	//protected String filepathkey3 = "filepath3";
+	//protected String filepathkey4 = "filepath4";
+	//protected String filepathkey5 = "filepath5";
+	//protected String filepathkey6 = "filepath6";
+	//protected String filepathkey7 = "filepath7";
 
-	protected String texttoreadkey2 = "texttoread2";
-	protected String texttoreadkey3 = "texttoread3";
-	protected String texttoreadkey4 = "texttoread4";
-	protected String texttoreadkey5 = "texttoread5";
-	protected String texttoreadkey6 = "texttoread6";
-	protected String texttoreadkey7 = "texttoread7";
+	//protected String globalpositionpermillekeyreal = "globalpositionpercentage2";
+	//protected String globalpositionpermillekey3 = "globalpositionpercentage3";
+	//protected String globalpositionpermillekey4 = "globalpositionpercentage4";
+	//protected String globalpositionpermillekey5 = "globalpositionpercentage5";
+	//protected String globalpositionpermillekey6 = "globalpositionpercentage6";
+	//protected String globalpositionpermillekey7 = "globalpositionpercentage7";
 
+	//protected String texttoreadkey2 = "texttoread2";
+	//protected String texttoreadkey3 = "texttoread3";
+	//protected String texttoreadkey4 = "texttoread4";
+	//protected String texttoreadkey5 = "texttoread5";
+	//protected String texttoreadkey6 = "texttoread6";
+	//protected String texttoreadkey7 = "texttoread7";
 
+	private DBManager dbManager;
+	protected String currentbookidkey = "currentbookid";
   //  public int globalposition = 1;
   //  public int tickposition = 0;
   //  public int minblocksize = 20;
@@ -103,14 +114,72 @@ public class SettingsLoader {
 	public SharedPreferences preferences = null;
 	public String standarttext = "standarttext";
 
-	public SettingsLoader (SharedPreferences shared){
+	public SettingsLoader (SharedPreferences shared, Context context){
 
-
-
+		thiscontext = context;
+		dbManager = new DBManager(context);
+		//dbManager.open();
 
 		preferences = shared;
+		int loadedbookid = retrieveNumber(currentbookidkey);
+		saveNumber(wpmkey, getWordsPerMinute());
+		Log.d("settingslfnew", "bookid: should be same as" + loadedbookid);
+		updatemigration();
 	}
 
+	private void updatemigration ()
+	{
+		String filepathkeyreal = "filepath2";
+		String filepathkey3 = "filepath3";
+		String filepathkey4 = "filepath4";
+		String filepathkey5 = "filepath5";
+		String filepathkey6 = "filepath6";
+		String filepathkey7 = "filepath7";
+
+		String globalpositionpermillekeyreal = "globalpositionpercentage2";
+		String globalpositionpermillekey3 = "globalpositionpercentage3";
+		String globalpositionpermillekey4 = "globalpositionpercentage4";
+		String globalpositionpermillekey5 = "globalpositionpercentage5";
+		String globalpositionpermillekey6 = "globalpositionpercentage6";
+		String globalpositionpermillekey7 = "globalpositionpercentage7";
+
+		String texttoreadkey2 = "texttoread2";
+		String texttoreadkey3 = "texttoread3";
+		String texttoreadkey4 = "texttoread4";
+		String texttoreadkey5 = "texttoread5";
+		String texttoreadkey6 = "texttoread6";
+		String texttoreadkey7 = "texttoread7";
+		 String copypastekey = "fromcopyandpaste";
+		if(preferences.contains(filepathkeyreal)) {
+			SharedPreferences.Editor editor = preferences.edit();
+			editor.remove(filepathkeyreal);
+			editor.remove(filepathkey3);
+			editor.remove(filepathkey4);
+			editor.remove(filepathkey5);
+			editor.remove(filepathkey6);
+			editor.remove(filepathkey7);
+			editor.remove(copypastekey);
+
+			editor.remove(globalpositionpermillekeyreal);
+			editor.remove(globalpositionpermillekey3);
+			editor.remove(globalpositionpermillekey4);
+			editor.remove(globalpositionpermillekey5);
+			editor.remove(globalpositionpermillekey6);
+			editor.remove(globalpositionpermillekey7);
+
+			editor.remove(texttoreadkey2);
+			editor.remove(texttoreadkey3);
+			editor.remove(texttoreadkey4);
+			editor.remove(texttoreadkey5);
+			editor.remove(texttoreadkey6);
+			editor.remove(texttoreadkey7);
+
+			editor.apply();
+
+
+		}
+
+	}
 
 	private synchronized String retrieve(String variable){
 	//	SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -148,7 +217,18 @@ public class SettingsLoader {
 
 
 	}
-	public void saveReadingCopyTextboolean(boolean bool){
+
+	public void saveCommitChanges(){
+
+		SharedPreferences.Editor editor = preferences.edit();
+		editor.commit();
+		dbManager.close();
+
+		Log.d("settingslf", "changes committed (book id:" + retrieveNumber(currentbookidkey));
+
+	}
+
+	/*public void saveReadingCopyTextboolean(boolean bool){
 		preferences.edit().putBoolean(copypastekey,bool).commit();
 		if (bool == false){
 			int newposition = retrieveNumber(precopypasteglobalpositionpermillekey);
@@ -157,20 +237,19 @@ public class SettingsLoader {
 
 		}
 
-	}
+	}*/
 
 	public void saveReadingCopyTextString(String text){
-		save(copiedtextkey,text);
-		if(getReadingCopyTextOn() == false){ //only save position if current text was not loaded from copy-paste as well
-		int previousposition = getGlobalPositionSeekbarValue();
-		saveNumber(precopypasteglobalpositionpermillekey,previousposition);}
-		adjustGlobalPositionToPercentage(0);
+
+
+		helper_insertnewtextintodatabase("shared or copied text", text);
+
 
 	}
 
-	public boolean getReadingCopyTextOn(){
+	/*public boolean getReadingCopyTextOn(){
 		return preferences.getBoolean(copypastekey,false);
-	}
+	}*/
 
 	public boolean getHelplinesOn(){
 		return preferences.getBoolean(helplineskey,false);
@@ -212,20 +291,39 @@ public class SettingsLoader {
 		return vhelper;
 	}
 	public int getGlobalPosition(){
-		int vhelper = retrieveNumber(globalpositionkey);
-		if (vhelper == 0){
-			vhelper = 0;
-		}
+		dbManager.open();
+		Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
+		if (cursor.getCount() > 0) {
+			int number = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKPOSITION));
+			cursor.close();
 
-		return vhelper;
+
+				//	dbManager.close();
+			return number;
+		}
+		else{
+			//dbManager.close();
+		return 0;}
+		//int vhelper = retrieveNumber(globalpositionkey);
+		//if (vhelper == 0){
+		//	vhelper = 0;
+		//}
+
+		//return vhelper;
 	}
 	public int getGlobalPositionSeekbarValue(){
-		int vhelper = retrieveNumber(globalpositionpermillekeyreal);
-		if (vhelper == 0){
-			vhelper = 0;
-		}
 
-		return vhelper;
+
+		int position = getGlobalPosition();
+		int length = getTexttoReadtotalLength();
+		Log.i("Settingloader", "text length is: " + length);
+
+		float newposition = ( (float)position / (float)length) * 1000;
+		int positionpermille = Math.round(newposition);
+
+		return positionpermille;
+
+
 	}
 
 	public String getGlobalPositionPercentString(){
@@ -239,17 +337,19 @@ public class SettingsLoader {
 
 
 
-	public int saveGlobalPosition(int globalposition){
+	public synchronized int saveGlobalPosition(int globalposition){
 		//TODO getTexttoRead is to heavy on memory
 		//int length = getTexttoRead().length();
 		int length = getTexttoReadtotalLength();
 		Log.i("Settingloader", "text length is: " + length);
 
 		float newposition = ( (float)globalposition / (float)length) * 1000;
-		int adjustedposition = Math.round(newposition);
-		saveNumber(globalpositionpermillekeyreal, adjustedposition);
-		saveNumber(globalpositionkey,globalposition);
-		return adjustedposition;
+		int positionpermille = Math.round(newposition);
+		dbManager.open();
+		//TODO also add timestamp
+		dbManager.updateGlobalPosition(retrieveNumber(currentbookidkey),globalposition);
+		//dbManager.close();
+		return positionpermille;
 		//saveNumber(globalpositionkey,position);
 	}
 
@@ -263,7 +363,10 @@ public class SettingsLoader {
 		float newposition = length * ( (float) number / (float) maxnumber);
 		int adjustedposition = Math.round(newposition);
 		Log.i("Settingloader", "position is: " + adjustedposition);
-		saveNumber(globalpositionkey,adjustedposition);
+		dbManager.open();
+		dbManager.updateGlobalPosition(retrieveNumber(currentbookidkey),adjustedposition);
+		//dbManager.close();
+		//saveNumber(globalpositionkey,adjustedposition);
 		//saveNumber(globalpositionpermillekey2, number);
 		//save(filepathkey2, retrieve(filepathkey));
 		return adjustedposition;//is the global position in absolute numbers
@@ -309,12 +412,31 @@ public class SettingsLoader {
 		return number;
 	}
 	public int getWordsPerMinute(){
+		int number = 200;
+		//float totalwords = getGlobalPosition() / getGlobalPositionSeekbarValue() * 1000;
+		//int output = (int) totalwords;
+		dbManager.open();
+		Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
+
+		if (cursor.getCount() > 0) {
+			number = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKWPM));
+			//return retrieveNumber(texttoreadtotallengthkey);
+			cursor.close();
+
+
+
+		}
+		//dbManager.close();
+		return number;
+
+
+/*
 		int vhelper = retrieveNumber(wpmkey);
 		if (vhelper == 0){
 			vhelper = 230;
 		}
 
-		return vhelper;
+		return vhelper;*/
 	}
 //	public int getWordpoints(){
 //
@@ -370,11 +492,21 @@ public class SettingsLoader {
 
 	}
 
+	void saveWordsPerMinuteFromSharedPreferences(){
+		int vhelper = retrieveNumber(wpmkey);
+		if (vhelper == 0){
+			vhelper = 230;
+		}
+		saveWordsPerMinute(vhelper);
 
+
+	}
 	void saveWordsPerMinute(int number){
-		saveNumber(wpmkey, number);
 
-
+		dbManager.open();
+		//TODO also add timestamp
+		dbManager.updateWPM(retrieveNumber(currentbookidkey),number);
+		//dbManager.close();
 	}
 
 	public int getXPpoints(){
@@ -425,10 +557,10 @@ public class SettingsLoader {
 			filename = filename.substring(0, 29); }
 		String newstring = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Comfort Reader/notes_" + filename + ".txt";
 
-		if (getReadingCopyTextOn()) {
+		/*if (getReadingCopyTextOn()) {
 			newstring = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Comfort Reader/notes_copy_pasted_text.txt";
 
-		}
+		}*/
 
 
 		return newstring;
@@ -479,25 +611,66 @@ public class SettingsLoader {
 
 
 	public String getFilePath(){
-		return retrieve (filepathkeyreal);
+		dbManager.open();
+		Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
+
+		if (cursor.getCount() > 0) {
+
+			String path  = cursor.getString(cursor.getColumnIndex(dbManager.dbHelper.BOOKPATH));
+			cursor.close();
+			//dbManager.close();
+			return path;
+		}
+		else{
+		//	dbManager.close();
+			return "empty";}
+
+
+
 	}
 
 	public int getTexttoReadtotalLength(){
 
 		//float totalwords = getGlobalPosition() / getGlobalPositionSeekbarValue() * 1000;
 		//int output = (int) totalwords;
-		return retrieveNumber(texttoreadtotallengthkey);
+		dbManager.open();
+		Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
+		//dbManager.close();
+		if (cursor.getCount() > 0) {
+			int number = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKLENGTH));
+			//return retrieveNumber(texttoreadtotallengthkey);
+			cursor.close();
+			return number;
+
+		}
+		else{
+			return 0;}
+
 
 	}
 	public String getTexttoRead(){
 		String text;
 
-		if(getReadingCopyTextOn()){
-			text = retrieve(copiedtextkey);
-		}
-		else {
-			text = retrieve(texttoreadkey);
-		}
+
+
+			int bookid = retrieveNumber(currentbookidkey);
+			Log.d("settingslf", "trying to load with bookid: " + bookid);
+			dbManager.open();
+			Cursor cursor = dbManager.fetchwithBookID(bookid);
+
+			if (cursor.getCount() > 0) {
+				text = cursor.getString(cursor.getColumnIndex(dbManager.dbHelper.BOOKTEXT));
+				Log.d("settingslf", "loading text from database with lenght: " + text.length());
+				cursor.close();
+
+			}
+			else{
+				text = standarttext;}
+			//dbManager.close();
+
+
+
+
 
 		if (text.length()<14){
 			text = standarttext;
@@ -508,6 +681,28 @@ public class SettingsLoader {
 
 	public void shiftBooks(){
 
+		dbManager.open();
+		Cursor cursor = dbManager.fetchchronological();
+		//save(insertmanualkey, " ");
+
+		int number = 0;
+		while (cursor.isAfterLast() == false) {
+			if (number > 14){
+				int bookid = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper._ID));
+				dbManager.deleteSingleRow(bookid);
+			}
+
+
+			number = number + 1;
+			cursor.moveToNext();
+		}
+	//	dbManager.close();
+//TODO
+		//take ordered list
+
+		//delete everything later than 10
+
+/*
 if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 	Log.i("settings", "aktuelle position in den dritten slot geladen " + getGlobalPositionSeekbarValue());
@@ -557,7 +752,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 	saveNumber(globalpositionpermillekey3, permille);
 	//permille = retrieveNumber(globalpositionpermillekeyreal);
 	//saveNumber(globalpositionpermillekey2, permille);
-}
+}*/
 	}
 
 	public String getPercentStringfromPermille(int zahl){
@@ -574,20 +769,61 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 		return text;
 
 	}
-
+//TODO connect to SQLite Database
 	public CharSequence[] getLastBooks(){
+		dbManager.open();
+		Cursor cursor = dbManager.fetchchronological();
 
-		CharSequence[] entries = { //retrieve(filepathkeyreal) + " " + retrieveNumber(globalpositionpermillekeyreal),
+		List<String> listItems = new ArrayList<String>();
+		while (cursor.isAfterLast() == false) {
+			String filename = getFileofPath(cursor.getString(cursor.getColumnIndex(dbManager.dbHelper.BOOKPATH)));
+			int position  = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKPOSITION));
+			int length = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKLENGTH));
+
+
+			Log.i("Settingloaderlastbooks", "text length is: " + length);
+
+			float newposition = ( (float)position / (float)length) * 1000;
+			int positionpermille = Math.round(newposition);
+			String permille = getPercentStringfromPermille(positionpermille);
+			listItems.add(""+filename + " " + permille);
+
+			cursor.moveToNext();
+
+		}
+	//	dbManager.close();
+		final CharSequence[] entries = listItems.toArray(new CharSequence[listItems.size()]);
+
+
+		/*CharSequence[] entries = { //retrieve(filepathkeyreal) + " " + retrieveNumber(globalpositionpermillekeyreal),
 				getFileofPath(retrieve(filepathkey3)) + " " + getPercentStringfromPermille(retrieveNumber(globalpositionpermillekey3)),
 				getFileofPath(retrieve(filepathkey4)) + " " + getPercentStringfromPermille(retrieveNumber(globalpositionpermillekey4)),
 				getFileofPath(retrieve(filepathkey5)) + " " + getPercentStringfromPermille(retrieveNumber(globalpositionpermillekey5)),
 				getFileofPath(retrieve(filepathkey6)) + " " + getPercentStringfromPermille(retrieveNumber(globalpositionpermillekey6)),
-				getFileofPath(retrieve(filepathkey7)) + " " + getPercentStringfromPermille(retrieveNumber(globalpositionpermillekey7)) };
+				getFileofPath(retrieve(filepathkey7)) + " " + getPercentStringfromPermille(retrieveNumber(globalpositionpermillekey7)) };*/
 		return entries;
 
 	}
+	//TODO connecto to SQLite Database
 	public CharSequence[] getLastBooksValues(){
-		CharSequence[] entryValues ={"2", "3", "4", "5","6"};
+		dbManager.open();
+		Cursor cursor = dbManager.fetchchronological();
+
+		List<String> listItems = new ArrayList<String>();
+		while (cursor.isAfterLast() == false) {
+
+			int id  = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper._ID));
+
+			listItems.add(""+id);
+
+			cursor.moveToNext();
+
+		}
+		final CharSequence[] entryValues = listItems.toArray(new CharSequence[listItems.size()]);
+	//	dbManager.close();
+
+
+		//CharSequence[] entryValues ={"2", "3", "4", "5","6"};
 
 
 	return entryValues;
@@ -597,122 +833,23 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 
 	public void reloadSelectedBook(){ //load book after last read selection may have been changed
-
-
-		Log.i("settings", "aktuelle position in den dritten slot geladen " + getGlobalPositionSeekbarValue());
 		String fromSlotNumber = retrieve(lastreadskey);
+		int bookid = Integer.parseInt(fromSlotNumber);
+	//	Cursor cursor = dbManager.fetchwithBookID();
+		if (bookid > 0) {
+			saveNumber(currentbookidkey, bookid);
+			saveCommitChanges();
+			Log.i("settings", "aktuelle position in den dritten slot geladen " + getGlobalPositionSeekbarValue());
+		}
 		save(lastreadskey,"0");
 
-		String text;
-		String path;
-		int permille;
+		//String text;
+		//String path;
+		//int permille;
 
-		if(fromSlotNumber.equals("1")){
-			;
-		}
-		else if(fromSlotNumber.equals("2")) {
-			preferences.edit().putBoolean(copypastekey,false).commit();
-
-			text = retrieve(texttoreadkey3);
-			path = retrieve(filepathkey3);
+		//	adjustGlobalPositionToPercentage(permille);
 
 
-			permille = retrieveNumber(globalpositionpermillekey3);
-
-			shiftBooks();
-
-			save(texttoreadkey,text);
-			save(filepathkeyreal,path);
-
-			initializeTexttoreadTotalLength(text);
-			adjustGlobalPositionToPercentage(permille);
-		}
-		else if (fromSlotNumber.equals("3")) {
-			preferences.edit().putBoolean(copypastekey,false).commit();
-
-			text = retrieve(texttoreadkey4);
-
-			path = retrieve(filepathkey4);
-
-
-			permille = retrieveNumber(globalpositionpermillekey4);
-
-			shiftBooks();
-
-			save(texttoreadkey,text);
-			save(filepathkeyreal,path);
-
-			initializeTexttoreadTotalLength(text);
-			adjustGlobalPositionToPercentage(permille);
-		}
-		else if (fromSlotNumber.equals("4")) {
-			preferences.edit().putBoolean(copypastekey,false).commit();
-
-			text = retrieve(texttoreadkey5);
-
-
-			path = retrieve(filepathkey5);
-			// Log.i("settings", "aktuelle position in den dritten slot geladen " + getGlobalPositionSeekbarValue());
-
-			permille = retrieveNumber(globalpositionpermillekey5);
-
-
-
-
-			shiftBooks();
-
-			save(texttoreadkey,text);
-			save(filepathkeyreal,path);
-
-			initializeTexttoreadTotalLength(text);
-			adjustGlobalPositionToPercentage(permille);
-
-		}
-		else if (fromSlotNumber.equals("5")) {
-			preferences.edit().putBoolean(copypastekey,false).commit();
-
-			text = retrieve(texttoreadkey6);
-
-
-			path = retrieve(filepathkey6);
-			// Log.i("settings", "aktuelle position in den dritten slot geladen " + getGlobalPositionSeekbarValue());
-
-			permille = retrieveNumber(globalpositionpermillekey6);
-
-
-
-
-			shiftBooks();
-
-			save(texttoreadkey,text);
-			save(filepathkeyreal,path);
-
-			initializeTexttoreadTotalLength(text);
-			adjustGlobalPositionToPercentage(permille);
-
-		}
-		else if (fromSlotNumber.equals("6")) {
-			preferences.edit().putBoolean(copypastekey,false).commit();
-
-			text = retrieve(texttoreadkey7);
-
-
-			path = retrieve(filepathkey7);
-			// Log.i("settings", "aktuelle position in den dritten slot geladen " + getGlobalPositionSeekbarValue());
-
-			permille = retrieveNumber(globalpositionpermillekey7);
-
-
-
-
-			shiftBooks();
-
-			save(texttoreadkey,text);
-			save(filepathkeyreal,path);
-			initializeTexttoreadTotalLength(text);
-			adjustGlobalPositionToPercentage(permille);
-
-		}
 
 
 
@@ -721,13 +858,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 	}
 
-public void initializeTexttoreadTotalLength(String texttoberead){
 
-	//initialize total text length when reloading text;
-	saveNumber(texttoreadtotallengthkey, texttoberead.length());
-
-
-}
 
 	/*public void loadNewText(String text){
 		if (text.length() > 30){
@@ -770,20 +901,69 @@ public void initializeTexttoreadTotalLength(String texttoberead){
 			texttoread = "text file format not supported";
 		}
 
-		Log.d("settings", "loading book global position 0: " + getGlobalPositionSeekbarValue());
-		shiftBooks();
+	/*	Log.d("settings", "loading book global position 0: " + getGlobalPositionSeekbarValue());
+
 		Log.d("settings", "loading book global position 1: " + getGlobalPositionSeekbarValue());
 		preferences.edit().putBoolean(copypastekey,false).commit();
 
 
 		Log.d("settings", "loading book global position 2: " + getGlobalPositionSeekbarValue());
+*/
+		helper_insertnewtextintodatabase(path, texttoread);
+	}
 
-		save(filepathkeyreal,retrieve(filepathkey));
+	public void helper_insertnewcopiedtextintodatabase(String texttoread){
+	//	saveCommitChanges();
+	//	texttoread = retrieve(insertmanualkey);
 
-		save(texttoreadkey, texttoread);
-		initializeTexttoreadTotalLength(texttoread);
-		saveGlobalPosition(0);
+		Resources res = thiscontext.getResources();
+		String copiedfilepath = res.getString(R.string.settings_insertmanually_filepath);
+
+		dbManager.open();
+		Cursor cursor = dbManager.fetchwithBookpath(copiedfilepath);
+
+		if (cursor.getCount() > 0) {
+
+			while (cursor.isAfterLast() == false) {
+
+					int bookid = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper._ID));
+					dbManager.deleteSingleRow(bookid);
+
+
+				cursor.moveToNext();
+			}
+
+		}
+
+
+		helper_insertnewtextintodatabase(copiedfilepath,texttoread);
+
+
+	}
+
+
+	public void helper_insertnewtextintodatabase(String path, String texttoread){
+		int time = (int) (System.currentTimeMillis());
+		Timestamp tsTemp = new Timestamp(time);
+		long timevalue =  tsTemp.getTime();
+		Log.d("settingslf", "loading book text length: " + texttoread.length());
+		//TODO insert currentbookid above
+		dbManager.open();
+		long bookidlong = dbManager.insert(path,texttoread,texttoread.length(),0,timevalue,getWordsPerMinute());
+		//	dbManager.close();
+		int bookid = (int) bookidlong;
+		saveNumber(currentbookidkey,  bookid);
+		int loadedbookid = retrieveNumber(currentbookidkey);
+		Log.d("settingslf", "bookid: "+ bookid + "should be same as" + loadedbookid);
+		saveCommitChanges();
+		//save(filepathkeyreal,retrieve(filepathkey));
+
+		//save(texttoreadkey, texttoread);
+		//initializeTexttoreadTotalLength(texttoread);
+		//saveGlobalPosition(0);
 		adjustGlobalPositionToPercentage(0);
+		shiftBooks();
+
 
 	}
 
@@ -894,11 +1074,11 @@ public void initializeTexttoreadTotalLength(String texttoberead){
 		return text;
 	}
 
-	public void loadRealSettingstoPreferences(){
+	/*public void loadRealSettingstoPreferences(){
 		saveNumber(globalpositionpermillekey,getGlobalPositionSeekbarValue());
 		save(filepathkey,getFilePath());
 
-	}
+	}*/
 
 
 }

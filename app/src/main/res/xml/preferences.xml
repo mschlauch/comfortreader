@@ -36,11 +36,11 @@
         android:entryValues="@array/listValues" />
 
 
-    <SwitchPreference
-        android:key="fromcopyandpaste"
+    <EditTextPreference
+        android:key="inserttextmanually"
         android:icon="@drawable/ic_copypaste"
-        android:summary="@string/settings_fromcopypaste_summary"
-        android:title="@string/settings_loadcopyandpaste_title"
+        android:summary="@string/settings_insertmanually_summary_empty"
+        android:title="@string/settings_insertmanually_title"
         android:defaultValue="false" />
 
    <SeekBarPreference

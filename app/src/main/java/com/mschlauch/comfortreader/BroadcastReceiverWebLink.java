@@ -61,7 +61,7 @@ if (Shouldload){
             String website = intent.getStringExtra(android.content.Intent.EXTRA_TEXT);
 
             Log.i("WebLinkBroadcaster", "loaded: " + website);
-            final SettingsLoader settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this));
+            final SettingsLoader settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this), this);
             final Intent i = new Intent(this, FullscreenActivity.class);
 
             new AsyncTask<String, Void, String>() {
@@ -110,8 +110,9 @@ if (Shouldload){
                     String toread = htmlCode;
                     Log.i("WebLinkBroadcaster", "loaded: " + toread);
                     Shouldload = false;
+                    //TODO set imported text with invented bookpath
                     settingsload.saveReadingCopyTextString(toread);
-                    settingsload.saveReadingCopyTextboolean(true);
+                   // settingsload.saveReadingCopyTextboolean(true);
 
                     finish();
                     startActivity(i);

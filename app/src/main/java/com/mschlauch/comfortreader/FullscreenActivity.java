@@ -172,6 +172,7 @@ public class FullscreenActivity extends Activity {
     private View controlsView3tap;
     private Boolean goldversion = true;
     private Boolean running = false;
+    private Boolean preferencesinprocessofcommitment = false;
 	private ProgressBar spinner;
 	private int longrewindvelocity = 10;
 	private int longforwardvelocity = 10;
@@ -202,6 +203,32 @@ public class FullscreenActivity extends Activity {
 				= (DefaultLayoutPromptView) findViewById(R.id.prompt_view);
 
 		Amplify.getSharedInstance().promptIfReady(promptView);
+		//texthaschanged();
+
+		String eins = "";
+		if (preferencesinprocessofcommitment == false) {
+		new AsyncTask<String, Void, String>() {
+
+
+			@Override
+			protected String doInBackground(String... urlStr) {
+
+					preferencesinprocessofcommitment= true;
+					Log.i("Fullscreen reading", "saving commit begin");
+					settingsload.saveCommitChanges();
+					Log.i("Fullscreen reading", "saving commited");
+
+				String out = "";
+				return out;
+
+			}
+			@Override
+			protected void onPostExecute(String htmlCode) {
+			preferencesinprocessofcommitment= false;
+
+			}
+		}.execute(eins);
+		}
     }
 
     public void start() {
@@ -242,25 +269,67 @@ public class FullscreenActivity extends Activity {
         playAutomated(milliseconds);
     }
 
+
+	@Override
+	public void onStop() {
+
+//TODO commit erwirken der shared preferences
+
+		super.onStop();  // Always call the superclass method first
+		stop();
+
+
+		//overridePendingTransition(0, 0);
+		//startActivity(getIntent());
+		//overridePendingTransition(0, 0);
+//		Intent refresh = new Intent(this, FullscreenActivity.class);
+//		startActivity(refresh);
+		Log.i("Fullscreen reading", "on stop");
+
+	}
 	@Override
 	public void onPause() {
 		super.onPause();  // Always call the superclass method first
-
-
 		stop();
+		Log.i("Fullscreen reading", "on pause");
+
 	}
+@Override
+	public void onRestart(){
+	//spinner = (ProgressBar)findViewById(R.id.spinnerProgress);
+	//spinner.setVisibility(View.VISIBLE);
+	super.onRestart();
+
+
+	/*finish();
+	Intent refresh = new Intent(this, FullscreenActivity.class);
+	startActivity(refresh);*/
+	Log.i("Fullscreen reading", "on restart");
+	segmenterObject = new Book();
+	retreiveSavedOptions();
+	/*segmenterObject = new Book();
+How to avoid to repeat same operation at resum?
+	retreiveSavedOptions();*/
+
+
+}
+
+
 	@Override
 	public void onResume() {
 		super.onResume();  // Always call the superclass method first
+		Log.i("Fullscreen reading", "on resume");
 
-		segmenterObject = new Book();
+ 	segmenterObject = new Book();
+		//settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this));
 		retreiveSavedOptions();
 	}
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+		//	super.onCreate(null);
+			//save
 
    	    setContentView(R.layout.activity_fullscreen);
 		spinner = (ProgressBar)findViewById(R.id.spinnerProgress);
@@ -352,7 +421,7 @@ public class FullscreenActivity extends Activity {
             	playButtonClicked(view);
             }
         });
-		settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this));
+		settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this), this);
 
        /* Context context = getApplicationContext();
         CharSequence text = "comfortreader dev 3.01.17";
@@ -379,7 +448,8 @@ public class FullscreenActivity extends Activity {
 		settingsload.saveAddReadCharacters(tickdistance);
 		settingsload.saveAddReadingTime(milliseconds);
 		if (segmenterObject.tickposition == 0){
-		texthaschanged();}
+		texthaschanged();
+		}
     	if (segmenterObject.finished){
     		stop();
 			controlsView2.setVisibility(View.VISIBLE);
@@ -564,11 +634,9 @@ public class FullscreenActivity extends Activity {
 			float percentage = (float) progress / 10;
 			String percent = String.format("%.2f", (float) percentage) + "%";
 			String filename = "";
-			if (settingsload.getReadingCopyTextOn()) {
-				filename = getString(R.string.fullscreen_copied_title);
-			} else {
+
 				filename = settingsload.getFileofPath(settingsload.getFilePath());
-			}
+
 			if (filename.length() > 11) {
 				filename = filename.substring(0, 10);
 			}
@@ -579,8 +647,10 @@ public class FullscreenActivity extends Activity {
 
 			float minutestogo = (settingsload.getTexttoReadtotalLength() * (1 - percentage / 100) / (5 * wordsperminute));
 			String minutes = String.format("%.1f", minutestogo) + "min";
+int position = segmenterObject.globalposition;
+			int progressseekbar = settingsload.saveGlobalPosition(position);
+			Log.i("Fullscreen reading", "position saved: "+progressseekbar + "   " + position);
 
-			int progressseekbar = settingsload.saveGlobalPosition(segmenterObject.globalposition);
 			mSeekBar.setProgress(progressseekbar);
 			String toshow = filename + "\n" + percent + " ~" + minutes;
 
@@ -657,6 +727,11 @@ public class FullscreenActivity extends Activity {
 		switchofallmenus = true;
 		spinner.setVisibility(View.VISIBLE);
 		String eins = "";
+
+
+
+
+
 		new AsyncTask<String, Void, String>() {
 
 
@@ -677,6 +752,7 @@ public class FullscreenActivity extends Activity {
 				segmenterObject.loadPreviewcolorString();
 
 				int actual = settingsload.getGlobalPosition();
+				Log.i("fullscreen", "global position loaded: " + actual);
 				segmenterObject.globalposition = actual;
 				segmenterObject.globalpositionbefore = actual;
 				//Load Content
@@ -730,16 +806,22 @@ public class FullscreenActivity extends Activity {
 					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);}
 				else if (parole.equals("0")){
 					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);}
+				//TODO here setup availability of new font
+				final Typeface opendyslexic = Typeface.createFromAsset(getAssets(),"fonts/OpenDyslexic-Regular.otf");
+
 
 				parole = settingsload.getFontName();
 
 				Log.i("Fullscreen", "orientation loading" + parole);
 				if (parole.equals("sans")) {
-					contentView.setTypeface(Typeface.SANS_SERIF);}
+					contentView.setTypeface(Typeface.SANS_SERIF);
+				}
 				else if (parole.equals("serif")){
 					contentView.setTypeface(Typeface.SERIF);}
 				else if (parole.equals("mono")){
 					contentView.setTypeface(Typeface.MONOSPACE);}
+				else if (parole.equals("opendyslexic")){
+					contentView.setTypeface(opendyslexic);}
 
 				spinner.setVisibility(View.GONE);
 

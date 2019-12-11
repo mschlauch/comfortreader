@@ -42,17 +42,20 @@
     </string-array>
 
 
+
     <string-array name="fontlistarray">
         <item>Sans Serif</item>
         <item>Serif</item>
         <item>Monospaced</item>
+        <item>OpenDyslexic</item>
     </string-array>
 
     <string-array name="fontlistvalues">
         <item>sans</item>
         <item>serif</item>
         <item>mono</item>
+        <item>opendyslexic</item>
     </string-array>
 
-    
+
 </resources>

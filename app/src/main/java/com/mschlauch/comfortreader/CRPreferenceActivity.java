@@ -33,6 +33,7 @@ import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
@@ -84,7 +85,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
         //auch beim auskommentieren der unteren Zeile, d.h. ohne Fragment, bleibt immernoch stocken
         getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
 
-        settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this));
+        settingsload = new SettingsLoader (PreferenceManager.getDefaultSharedPreferences(this), this);
        // settingsload.loadRealSettingstoPreferences();
 
         PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
@@ -93,13 +94,15 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 @Override
     public void onBackPressed() {
         super.onBackPressed();
+       // settingsload.saveCommitChanges();
     Log.i("CPPreferenceActivity", "back was pressed ");
     //TODO make finish apply also with back arrow, cleans everything
-finish();
+
     }
     @Override
     public void onDestroy() {
         super.onDestroy();
+
         Log.i("CPPreferenceActivity", "destroyed ");
 
     }
@@ -114,6 +117,7 @@ finish();
     @Override
     public void onStop() {
         super.onStop();
+        settingsload.saveCommitChanges();
       //  finish();
         Log.i("CPPreferenceActivity", "stopped ");
 
@@ -149,6 +153,17 @@ finish();
         //    Log.i("CPPreferenceActivity", "new globalposition percentage set: " + position);
 
             }
+
+        else if (key.equals(settingsload.wpmkey)){
+            // int value = settingsload.getGlobalPositionSeekbarValue();
+            settingsload.saveWordsPerMinuteFromSharedPreferences();
+            // sharedPreferences.getInt()
+            //    Log.i("CPPreferenceActivity", "new globalposition percentage set: " + value );
+            //    Log.i("CPPreferenceActivity", "new globalposition percentage set: " + position);
+
+        }
+
+
 /*
         else if (key.equals(settingsload.minblocksizekey)){
 
@@ -163,9 +178,12 @@ finish();
             setResult(RESULT_OK, null);
             finish();
         }
+       else if (key.equals(settingsload.insertmanualkey)){
+            setResult(RESULT_OK, null);
+            finish();
+        }
 
-
-        else if (key.equals("fromcopyandpaste")){
+        /*else if (key.equals("fromcopyandpaste")){
                 if(settingsload.getReadingCopyTextOn()){ //copied text will be loaded
                   //  settingsload.saveReadingCopyTextboolean(false);
 
@@ -201,7 +219,7 @@ finish();
 
             ;
 
-        }
+        }*/
         else if (key.equals("gamificationswitch")){
             Context context = getApplicationContext();
             CharSequence text = "\uD83D\uDE01";
@@ -257,7 +275,7 @@ finish();
             //TODO update Appearance entschlanken;
            // updateAppearance();
 
-            final SettingsLoader settingslolo = new SettingsLoader(this.getPreferenceManager().getSharedPreferences());
+            final SettingsLoader settingslolo = new SettingsLoader(this.getPreferenceManager().getSharedPreferences(), getActivity());
 
             //calculations for summaries and titles
             String globalposition_title;
@@ -352,6 +370,33 @@ finish();
                 }
 
             });
+            final EditTextPreference texteditor = (EditTextPreference) findPreference("inserttextmanually");
+
+            texteditor.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                @Override
+                public boolean onPreferenceChange(Preference preference,
+                                                  Object newValue) {
+
+
+
+                            if (texteditor.getText().trim().length() > 10){
+                                String newtext = (String) newValue;
+                               // texteditor.setText("insert your text");
+                                texteditor.setSummary(getString(R.string.settings_insertmanually_summary_textloaded) + newtext.substring(0,10) + "...");
+                                settingslolo.helper_insertnewcopiedtextintodatabase(newtext);
+
+                            }else{
+                                texteditor.setSummary(R.string.settings_insertmanually_summary_empty);
+                            }
+
+                    updateAppearance();
+                    return true;
+                            //finish();
+                }
+
+            });
+
             final Preference helplinespref = (Preference) findPreference("helplines");
 
             fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -460,7 +505,7 @@ finish();
             final ListPreference listPreference = (ListPreference) findPreference("recentreads");
 
             // THIS IS REQUIRED IF YOU DON'T HAVE 'entries' and 'entryValues' in your XML
-            setListPreferenceData(listPreference);
+            setListPreferenceData(listPreference, getActivity());
 
 
 
@@ -468,7 +513,7 @@ finish();
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
 
-                    setListPreferenceData(listPreference);
+                    setListPreferenceData(listPreference, getActivity());
                     return false;
                 }
             });
@@ -496,7 +541,7 @@ finish();
 
                         Log.i("Preference Fragment", "processing new path: " + value );
 
-                        final SettingsLoader settingslolo = new SettingsLoader(preference.getPreferenceManager().getSharedPreferences());
+                        final SettingsLoader settingslolo = new SettingsLoader(preference.getPreferenceManager().getSharedPreferences(), getActivity());
 
                         String eins = " ";
 
@@ -574,7 +619,7 @@ finish();
             //filepath und appearance trennen...updaten bevor listener registriert wird.
             String eins = "";
             final Preference preferencetochange1 = (Preference) findPreference("filepath");
-            final SettingsLoader settingslolo = new SettingsLoader(preferencetochange1.getPreferenceManager().getSharedPreferences());
+            final SettingsLoader settingslolo = new SettingsLoader(preferencetochange1.getPreferenceManager().getSharedPreferences(), getActivity());
 
 
        /*     new AsyncTask<String, Void, String[]>() {
@@ -664,9 +709,9 @@ finish();
         }
 
 
-        protected static void setListPreferenceData(ListPreference lp) {
+        protected static void setListPreferenceData(ListPreference lp, Context context) {
             //TODO performance lost here
-            SettingsLoader settingslolo = new SettingsLoader(lp.getPreferenceManager().getSharedPreferences());
+            SettingsLoader settingslolo = new SettingsLoader(lp.getPreferenceManager().getSharedPreferences(), context);
             CharSequence[] entries = settingslolo.getLastBooks();
             CharSequence[] entryValues = settingslolo.getLastBooksValues();//{"2", "3", "4"};
             lp.setEntries(entries);
