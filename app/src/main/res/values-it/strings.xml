@@ -20,6 +20,16 @@
     <string name="settings_helplines_title">Anteprima e retrospettiva</string>
     <string name="settings_helplines_summary">Righe di testo sopra e sotto il testo da leggere (visione periferica)</string>
 
+
+    <string name="settings_insertmanually_title">Copia incolla, modifica</string>
+    <string name="settings_insertmanually_summary_empty">Aggiungi un testo manualmente</string>
+    <string name="settings_insertmanually_summary_textloaded">Testo inserito: </string>
+    <string name="settings_insertmanually_filepath">aggiunto manualmente</string>
+
+
+
+
+
     <string name="settings_statistics_summary">Hai letto</string>
     <string name="settings_statistics_summary2">parole in</string>
     <string name="settings_statistics_summary3">minuti (resettare qui).</string>
@@ -83,7 +93,6 @@
     <string name="fullscreen_text_while_loading">...Il testo viene caricato...\n Aspettare</string>
 
     <string name="settings_filepicker_loadingtext">Testo viene processato. Sarebbe meglio preparare il Pdf-Export dal Computer.</string>
-        <string name="support_standarttext">Non hai caricato un testo. Vai su configurazioni ("...") e scegli un pdf o txt sul tuo telefono da leggere.</string>
 
 
     <string name="feedback_opinionquestion_subtitle"></string>
@@ -103,6 +112,10 @@
     <string name="feedback_thankyou_subtitle">Considera fare una donazione sul sito di Comfort Reader. Soli così può rimanere gratuito e libero da pubblicità fastidiosa.</string>
 
 
+    <string name="support_standarttext">
+____________________TOCCA PER LEGGERE _____________ Benvenuti in Comfort Reader! Prima di iniziare, ecco alcuni suggerimenti.
+\n ———LETTURA ——— \n Per avviare e mettere in pausa la lettura, tocca al centro dello schermo. Per saltare all\'indietro, tocca il lato sinistro dello schermo. Per saltare in avanti, tocca il lato destro. Tieni premuto il dito un po più a lungo per saltare ancora più testo. \n ———IMPOSTAZIONI——— \n Per accedere alle impostazioni, metti in pausa e tocca l\'icona della ruota dentata nell\'angolo in alto a sinistra. \n Nelle impostazioni, puoi regolare la velocità di lettura e la dimensione dei blocchi di testo. Una persona media legge 200-250 parole al minuto. Nel tempo, potresti diventare più veloce poiché Comfort Reader è progettato per ridurre lo stress visivo. Puoi anche modificare la tua posizione e cambiare l\'aspetto del testo. Scegli un carattere adatto al tuo stile. Comfort Reader supporta Sans, Serif, Mono e OpenDyslexic e vari colori. \n ———CARICARE IL TESTO ——— \n Esistono 4 modi per caricare un testo. \n 1) Nelle impostazioni, puoi importare un file \"txt\", \"pdf\" o \"epub\" che risiede nella memoria interna del tuo dispositivo. \n 2) Apri il menu delle impostazioni. Incolla e modifica il testo manualmente. \n 3) Avvia un file manager a tua scelta. Cerca e seleziona il tuo file \"txt\", \"pdf\" o \"epub\". Poi, scegli \'Read with Comfort Reader\'. \n 4) Apri un sito web, per esempio un articolo di Wikipedia nel tuo browser. Usa l\'opzione \"condividi\" del tuo browser e seleziona \"Comfort Reader\". Una versione testuale del sito Web verrà visualizzata in Comfort Reader. \n ———APPUNTI ——— \n Nell\'angolo in alto a destra, tocca l\'icona della penna e aggiungi una nota. Una nota contiene il tuo commento e l\'attuale passaggio di testo su cui stai commentando. \n Per ogni libro, Comfort Reader salva i tuoi appunti in un file di testo separato nella directory \"Comfort Reader\" all\'interno della memoria interna. Nel caso in cui non hai bisogno di commentare e desideri solo aggiungere una parte interessante del testo alle tue note, tieni il dito premuto al centro dello schermo .——— SUGGERIMENTI EXTRA ——— \n Utilizza i pulsanti del volume per mettere in pausa e adattare la velocità di lettura. Utilizza la tua visione periferica: mantieni attivo \"Anteprima e retrospettiva\" nelle impostazioni. Molte persone usano Comfort Reader per ridurre l\'affaticamento degli occhi. Preferiscono testi chiari su sfondo scuro e caratteri più ampi come per esempio OpenDyslexia. \n ———— Grazie per il tuo tempo! Buona lettura! -----
+    </string>
 
 
 

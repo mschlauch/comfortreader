@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mschlauch.comfortreader"
-    android:versionCode="12"
-    android:versionName="1.9.5" >
+    android:versionCode="13"
+    android:versionName="1.9.6" >
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
      <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-sdk
         android:minSdkVersion="20"
-        android:targetSdkVersion="20" />
+        android:targetSdkVersion="28" />
 
     <application
         android:hardwareAccelerated="true"
@@ -107,6 +107,25 @@
             </intent-filter>
             
         </activity>
+
+      <!--  <activity android:name=".ComfortReaderIntro"
+            android:label="intro"
+            android:parentActivityName=".FullscreenActivity" >
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.mschlauch.comfortreader.FullscreenActivity" />
+
+        <intent-filter>
+            <action android:name="com.mschlauch.comfortreader.ComfortReaderIntro" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+
+        </activity>-->
+
+
     </application>
 
 </manifest>

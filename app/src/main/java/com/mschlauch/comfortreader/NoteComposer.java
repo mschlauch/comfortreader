@@ -36,7 +36,15 @@ public class NoteComposer {
         if (end > textlength || end < 0){
             end = textlength;
         }
-        String preextract = texttoread.substring(begin,end);
+
+        String preextract = "empty";
+        try {
+            preextract = texttoread.substring(begin,end);
+        } catch (IndexOutOfBoundsException e) {
+
+        }
+
+
 
 
         //get extracted text as words
@@ -51,7 +59,13 @@ public class NoteComposer {
         }
 
         String extract = " ";
+
+        try {
         extract = preextract.substring(begin, end);
+        } catch (IndexOutOfBoundsException e) {
+
+        }
+
         extract =	extract.replaceAll("-\n","");
 
         extract =	extract.replaceAll("\n"," ");

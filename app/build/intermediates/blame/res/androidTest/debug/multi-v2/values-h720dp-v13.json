@@ -4,7 +4,7 @@
             "outputFile": "/home/michael/StudioProjects/ComfortReader/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/85560155e7dcb824f39d8e6563fcc5e8/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/home/michael/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/632efcff8888b6a44142dd2f086e9b6d/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

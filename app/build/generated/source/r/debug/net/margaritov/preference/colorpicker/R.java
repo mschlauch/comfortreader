@@ -8,17 +8,17 @@ package net.margaritov.preference.colorpicker;
 
 public final class R {
     public static final class id {
-        public static final int color_picker_view = 0x7f080020;
-        public static final int hex_val = 0x7f080042;
-        public static final int new_color_panel = 0x7f08005b;
-        public static final int old_color_panel = 0x7f080060;
-        public static final int text_hex_wrapper = 0x7f08008f;
+        public static final int color_picker_view = 0x7f080034;
+        public static final int hex_val = 0x7f08005b;
+        public static final int new_color_panel = 0x7f080076;
+        public static final int old_color_panel = 0x7f08007e;
+        public static final int text_hex_wrapper = 0x7f0800b9;
     }
     public static final class layout {
-        public static final int dialog_color_picker = 0x7f0a001d;
+        public static final int dialog_color_picker = 0x7f0a0020;
     }
     public static final class string {
-        public static final int dialog_color_picker = 0x7f0e0019;
-        public static final int press_color_to_apply = 0x7f0e0039;
+        public static final int dialog_color_picker = 0x7f0e002d;
+        public static final int press_color_to_apply = 0x7f0e004e;
     }
 }

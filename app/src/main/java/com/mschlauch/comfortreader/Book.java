@@ -500,16 +500,22 @@ public class Book {
 	    }
 	    
 	public int calculateprogress (int progressbarmax){
-	    	double position = (float)globalposition / texttoread.length();
-	    	position = position * progressbarmax;
-	    	
-	    
-	    	
-	    	int newposition = (int) position;
-        	// newposition = (int) position;
-        	 ;
-        	 
-	    	return newposition;
+
+
+
+			double position = (float)globalposition / texttoread.length();
+			position = position * progressbarmax;
+
+
+
+			int newposition = (int) position;
+			// newposition = (int) position;
+			;
+
+			return newposition;
+
+
+
 	    }
 	    
 	public String tokenize(String test){

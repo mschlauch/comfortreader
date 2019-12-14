@@ -26,6 +26,10 @@
     <string name="settings_statistics_title">Read-o-meter</string>
     <string name="settings_statistics_sectiontitle">Statistik</string>
 
+    <string name="settings_insertmanually_title">Copy &amp; Paste, Editieren</string>
+    <string name="settings_insertmanually_summary_empty">Text manuell einfügen</string>
+    <string name="settings_insertmanually_summary_textloaded">Eingegebener Text: </string>
+    <string name="settings_insertmanually_filepath">manuell eingegeben</string>
 
     <string name="settings_title_readingoptions">Leseoptionen</string>
     <string name="settings_title_supportoptions">Hilfe</string>
@@ -83,7 +87,6 @@
     <string name="fullscreen_text_while_loading">...Text wird geladen...\n Bitte warten.</string>
 
     <string name="settings_filepicker_loadingtext">Text wird laden. Pdf-Export am Computer geht schneller.</string>
-        <string name="support_standarttext">Noch kein Text geladen. Gehe zu den Optionen ("...") und wähle ein txt oder pdf zum Lesen aus.</string>
 
 
     <string name="feedback_opinionquestion_subtitle"></string>
@@ -103,7 +106,9 @@
     <string name="feedback_thankyou_subtitle">Damit Comfort Reader auch in Zukunft offen und werbefrei bleibt, solltest du auf der Webseite eine kleine Spende hinterlassen.</string>
 
 
-
+    <string name="support_standarttext">
+____________________HIER DRÜCKEN UM ZU STARTEN _____________ Willkommen bei Comfort Reader! Bevor du beginnst, hier einige Tipps.\n ———LESEN——— \nZum Starten und Unterbrechen des Lesens tippe in die Mitte des Bildschirms. Tippe auf die linke Seite, um zurückzuspringen. Tippe auf die rechte Seite, um vorwärts zu springen. Halte den Finger etwas länger gedrückt, um längeren Text auf einmal zu überspringen. \n——— EINSTELLUNGEN——— \n Um zu den Einstellungen zu gelangen, halten an und tippe auf das Zahnradsymbol in der oberen linken Ecke. \n In den Einstellungen kannst du die Lesegeschwindigkeit und die Größe der Textblöcke anpassen. Eine durchschnittliche Person liest 200-250 Wörter pro Minute. Mit der Zeit wirst du schneller lesen, da Comfort Reader die visuelle Belastung beim Lesen verringert. In den Settings kannst du deine Position und das Erscheinungsbild des Texts ändern. Wähle eine Schriftart, die dir am besten passt. Comfort Reader unterstützt Sans, Serif, Mono und OpenDyslexic sowie verschiedene Farben. \n ———EINEN TEXT LADEN——— \n Es gibt 4 Möglichkeiten, einen Text zu laden. \n 1) In den Einstellungen kannst du eine \"txt \", \"pdf\" oder \"epub\" - Datei öffnen, die sich im internen Speicher deines Geräts befindet. \n 2) Öffne das Einstellungsmenü. Fügen den Text manuell ein, z.B. mit Copy&amp;Paste. \n 3) Starte einen Dateimanager deiner Wahl. Suche dort eine \"txt\"-, \"pdf\"- oder \"epub\"-Datei und öffne sie. Wähle dann \'Read with Comfort Reader\'. \n 4) Öffne eine Website oder ein Wikipedia-Artikel im Browser. Verwende die \"Teilen\"-Option des Browsers und tippe auf \"Comfort Reader\". Eine Textversion der Website wird dann im Comfort Reader angezeigt. \n ———NOTIZBLOCK——— \n Tippe oben rechts auf das Stiftsymbol und füge eine Notiz hinzu. Eine Notiz enthält dein Kommentar und die Textpassage, die du gerade kommentierst. \n Für jedes Buch speichert Comfort Reader deine Notizen in einer separaten Textdatei im Verzeichnis \"Comfort Reader\" auf deinem internen Speicher. Wenn du nichts schreiben willst und nur eine interessante Textpassage dokumentieren möchtest, halte deinen Finger etwas länger in der Mitte des Bildschirms gedrückt. —— ZUSÄTZLICHE TIPPS——— \n Verwende die Lautstärketasten am Gerät, um zu pausieren und die Lesegeschwindigkeit zu optimieren. Nutze dein peripheres Sehvermögen: aktiviere dazu die \"Vorschau und Rückschau\"-Option in den Einstellungen. Viele Menschen verwenden den Comfort Reader, um ihre Augen zu schonen. Sie bevorzugen hellen Text auf dunklem Hintergrund und breitere Schriftarten wie OpenDyslexia. \n ———— Vielen Dank für deine Zeit! Viel Spaß beim Lesen! —————
+    </string>
 
 
 

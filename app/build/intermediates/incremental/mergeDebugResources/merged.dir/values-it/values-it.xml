@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="fontlistarray">
         <item>Sans Serif</item>
         <item>Serif</item>
@@ -44,8 +44,6 @@
         <item>1100</item>
     </string-array>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Vai alla home page"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Vai in alto"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Altre opzioni"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Fine"</string>
@@ -53,6 +51,16 @@
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Scegli un\'applicazione"</string>
     <string msgid="121134116657445385" name="abc_capital_off">"OFF"</string>
     <string msgid="3405795526292276155" name="abc_capital_on">"ON"</string>
+    <string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"ALT +"</string>
+    <string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"CTRL +"</string>
+    <string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"CANC"</string>
+    <string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"INVIO"</string>
+    <string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"FUNZIONE +"</string>
+    <string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"META +"</string>
+    <string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"MAIUSC +"</string>
+    <string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"barra spaziatrice"</string>
+    <string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"SYM +"</string>
+    <string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"MENU +"</string>
     <string msgid="7723749260725869598" name="abc_search_hint">"Cerca…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Cancella query"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Query di ricerca"</string>
@@ -60,13 +68,14 @@
     <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Invia query"</string>
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Ricerca vocale"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Condividi con"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Condividi tramite <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Comprimi"</string>
     <string name="action_settings">Configurazione</string>
     <string name="app_name">Comfort Reader</string>
     <string name="app_text_after_shareweblink">Leggi con Comfort Reader (esperimentale)</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Avanzate"</string>
     <string name="feedback_negativeopinionquestion_negative">non adesso</string>
     <string name="feedback_negativeopinionquestion_positive">Manda feedback</string>
     <string name="feedback_negativeopinionquestion_subtitle"/>
@@ -92,6 +101,7 @@
     <string name="notes_title_current_notebook">Tuoi appunti:</string>
     <string name="play_button"> ∣∣ > </string>
     <string name="previous_button">"&lt;&lt;"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Ricerca"</string>
     <string name="settings_backgroundcolor_summary"/>
     <string name="settings_backgroundcolor_title">Colore di fondo</string>
     <string name="settings_deviceorientation_default">configurazione del sistema</string>
@@ -110,6 +120,10 @@
     <string name="settings_help_title">Vai al sito web</string>
     <string name="settings_helplines_summary">Righe di testo sopra e sotto il testo da leggere (visione periferica)</string>
     <string name="settings_helplines_title">Anteprima e retrospettiva</string>
+    <string name="settings_insertmanually_filepath">aggiunto manualmente</string>
+    <string name="settings_insertmanually_summary_empty">Aggiungi un testo manualmente</string>
+    <string name="settings_insertmanually_summary_textloaded">Testo inserito: </string>
+    <string name="settings_insertmanually_title">Copia incolla, modifica</string>
     <string name="settings_loadcopyandpaste_outputmessage_off">Stai leggendo </string>
     <string name="settings_loadcopyandpaste_outputmessage_on">Adesso puoi leggere quello che hai copiato. Spegnere per tornare alla lettura orginale.</string>
     <string name="settings_loadcopyandpaste_title">Testo temporaneo</string>
@@ -136,11 +150,17 @@
     <string name="settings_title_textoptions">Testo</string>
     <string name="settings_wpm_title">Velocità lettura</string>
     <string name="settings_wpn_summary">Numero di parole al minuto: </string>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="support_standarttext">Non hai caricato un testo. Vai su configurazioni ("...") e scegli un pdf o txt sul tuo telefono da leggere.</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="support_standarttext">
+____________________TOCCA PER LEGGERE _____________ Benvenuti in Comfort Reader! Prima di iniziare, ecco alcuni suggerimenti.
+\n ———LETTURA ——— \n Per avviare e mettere in pausa la lettura, tocca al centro dello schermo. Per saltare all\'indietro, tocca il lato sinistro dello schermo. Per saltare in avanti, tocca il lato destro. Tieni premuto il dito un po più a lungo per saltare ancora più testo. \n ———IMPOSTAZIONI——— \n Per accedere alle impostazioni, metti in pausa e tocca l\'icona della ruota dentata nell\'angolo in alto a sinistra. \n Nelle impostazioni, puoi regolare la velocità di lettura e la dimensione dei blocchi di testo. Una persona media legge 200-250 parole al minuto. Nel tempo, potresti diventare più veloce poiché Comfort Reader è progettato per ridurre lo stress visivo. Puoi anche modificare la tua posizione e cambiare l\'aspetto del testo. Scegli un carattere adatto al tuo stile. Comfort Reader supporta Sans, Serif, Mono e OpenDyslexic e vari colori. \n ———CARICARE IL TESTO ——— \n Esistono 4 modi per caricare un testo. \n 1) Nelle impostazioni, puoi importare un file \"txt\", \"pdf\" o \"epub\" che risiede nella memoria interna del tuo dispositivo. \n 2) Apri il menu delle impostazioni. Incolla e modifica il testo manualmente. \n 3) Avvia un file manager a tua scelta. Cerca e seleziona il tuo file \"txt\", \"pdf\" o \"epub\". Poi, scegli \'Read with Comfort Reader\'. \n 4) Apri un sito web, per esempio un articolo di Wikipedia nel tuo browser. Usa l\'opzione \"condividi\" del tuo browser e seleziona \"Comfort Reader\". Una versione testuale del sito Web verrà visualizzata in Comfort Reader. \n ———APPUNTI ——— \n Nell\'angolo in alto a destra, tocca l\'icona della penna e aggiungi una nota. Una nota contiene il tuo commento e l\'attuale passaggio di testo su cui stai commentando. \n Per ogni libro, Comfort Reader salva i tuoi appunti in un file di testo separato nella directory \"Comfort Reader\" all\'interno della memoria interna. Nel caso in cui non hai bisogno di commentare e desideri solo aggiungere una parte interessante del testo alle tue note, tieni il dito premuto al centro dello schermo .——— SUGGERIMENTI EXTRA ——— \n Utilizza i pulsanti del volume per mettere in pausa e adattare la velocità di lettura. Utilizza la tua visione periferica: mantieni attivo \"Anteprima e retrospettiva\" nelle impostazioni. Molte persone usano Comfort Reader per ridurre l\'affaticamento degli occhi. Preferiscono testi chiari su sfondo scuro e caratteri più ampi come per esempio OpenDyslexia. \n ———— Grazie per il tuo tempo! Buona lettura! -----
+    </string>
     <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
     <string name="title_activity_custommenu">CustommenuActivity</string>
     <string name="title_activity_note">Scrivere una nota</string>
     <string name="title_activity_settings">Impostazioni</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"OFF"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"ON"</string>
     <string name="wordsperminuteSetting">parole in un minuto</string>
 </resources>

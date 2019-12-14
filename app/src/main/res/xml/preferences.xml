@@ -91,6 +91,7 @@
 
                <SwitchPreference
                    android:key="helplines"
+                   android:icon="@drawable/ic_peripherallines"
                    android:summary="@string/settings_helplines_summary"
                    android:title="@string/settings_helplines_title"
                    android:defaultValue="false" />
@@ -134,19 +135,26 @@
                android:entries="@array/fontlistarray"
                android:entryValues="@array/fontlistvalues" />
 
+           <!--
+                      <Preference android:title="@string/settings_removesweepingeffectbutton_title"
+                          android:key="removesweepingeffectbutton"
+                      />
+                      -->
 
-           <net.margaritov.preference.colorpicker.ColorPickerPreference
-               android:key="focuscolorvalue"
-               android:title="@string/settings_focuscolor_title"
-               android:summary="@string/settings_focuscolor_summary"
-               android:defaultValue="#ffee00"/>
+                                 <net.margaritov.preference.colorpicker.ColorPickerPreference
+                                     android:key="focuscolorvalue"
+                                     android:title="@string/settings_focuscolor_title"
+                                     android:summary="@string/settings_focuscolor_summary"
+                                 android:defaultValue="#ffee00"/>
 
 
-           <net.margaritov.preference.colorpicker.ColorPickerPreference
-               android:key="textcolorvalue"
-               android:title="@string/settings_textcolor_title"
-               android:summary="@string/settings_textcolor_summary"
-               android:defaultValue="#ffffff"/>
+
+                      <net.margaritov.preference.colorpicker.ColorPickerPreference
+                          android:key="textcolorvalue"
+                          android:title="@string/settings_textcolor_title"
+                          android:summary="@string/settings_textcolor_summary"
+                          android:defaultValue="#ffffff"/>
+
 
 
            <net.margaritov.preference.colorpicker.ColorPickerPreference

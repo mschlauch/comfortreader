@@ -39,6 +39,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
+import android.preference.PreferenceScreen;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -53,6 +54,8 @@ import android.widget.Toast;
 import com.github.angads25.filepicker.view.FilePickerPreference;
 import com.github.stkent.amplify.prompt.DefaultLayoutPromptView;
 import com.github.stkent.amplify.tracking.Amplify;
+
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.Random;
 
@@ -378,19 +381,19 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
                 public boolean onPreferenceChange(Preference preference,
                                                   Object newValue) {
 
+                    String newtext = (String) newValue;
 
+                            if (newtext.length() > 10){
 
-                            if (texteditor.getText().trim().length() > 10){
-                                String newtext = (String) newValue;
                                // texteditor.setText("insert your text");
                                 texteditor.setSummary(getString(R.string.settings_insertmanually_summary_textloaded) + newtext.substring(0,10) + "...");
                                 settingslolo.helper_insertnewcopiedtextintodatabase(newtext);
-
+                                updateAppearance();
                             }else{
                                 texteditor.setSummary(R.string.settings_insertmanually_summary_empty);
                             }
 
-                    updateAppearance();
+
                     return true;
                             //finish();
                 }
@@ -467,6 +470,9 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             final Preference positionpreference = findPreference("globalpositionpercentage");
 
               positionpreference.setTitle(globalposition_title);
+
+
+
             positionpreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
                 @Override
@@ -519,6 +525,22 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             });
 
             Log.i("preference fragment", "before filepickerpreference");
+
+           /* //draft for sweeping effect removal:
+            final Preference button = findPreference("removesweepingeffectbutton");
+            button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                   ColorPickerPreference focuscolorpreference = (ColorPickerPreference) findPreference("focuscolorvalue");
+                   ColorPickerPreference textcolorpreference = (ColorPickerPreference) findPreference("textcolorvalue");
+                   settingslolo.saveNumber("focuscolorvalue",settingslolo.retrieveNumber("textcolorvalue"));
+
+
+                    //code for what you want it to do
+                    return true;
+                }
+            });*/
+
 
 
             final FilePickerPreference pickerPreference = (FilePickerPreference) findPreference("filepath");

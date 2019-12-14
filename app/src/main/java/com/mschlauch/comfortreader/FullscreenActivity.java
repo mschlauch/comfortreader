@@ -330,6 +330,14 @@ How to avoid to repeat same operation at resum?
         super.onCreate(savedInstanceState);
 		//	super.onCreate(null);
 			//save
+boolean isFirstStart = false;
+		//  If the activity has never started before...
+		if (isFirstStart) {
+			Intent inent = new Intent("com.mschlauch.comfortreader.ComfortReaderIntro");
+
+					startActivity(inent);
+
+		}
 
    	    setContentView(R.layout.activity_fullscreen);
 		spinner = (ProgressBar)findViewById(R.id.spinnerProgress);
@@ -426,9 +434,27 @@ How to avoid to repeat same operation at resum?
        /* Context context = getApplicationContext();
         CharSequence text = "comfortreader dev 3.01.17";
         int duration = Toast.LENGTH_SHORT;*/
+		segmenterObject = new Book();
+
     }
 
+	@Override
+	public void onStart() {
+		super.onStart();  // Always call the superclass method first
+		Log.i("Fullscreen reading", "on start");
 
+if(settingsload.firststart()){
+	/*Toast.makeText(getBaseContext(),
+			"First start",
+			Toast.LENGTH_SHORT).show();
+	*///for some reason, the activity must be closed and restarted because otherwise it will skip frames or crash
+
+
+}
+
+		retreiveSavedOptions();
+		texthaschanged();
+	}
 
     /*
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromTouch) {
@@ -757,11 +783,11 @@ int position = segmenterObject.globalposition;
 				segmenterObject.globalpositionbefore = actual;
 				//Load Content
 				String text = settingsload.getTexttoRead() + "";
-				String textdefault = getString(R.string.support_standarttext);
+				//String textdefault = getString(R.string.support_standarttext);
 				Log.i("fullscreen", "text  is: " + text);
 
-				segmenterObject.loadTexttoRead(textdefault);
-				if (text.equals("standarttext")){
+				segmenterObject.loadTexttoRead(text);
+				/*if (text.equals("standarttext")){
 					segmenterObject.loadTexttoRead(textdefault);
 					segmenterObject.globalposition = 0;
 					segmenterObject.emphasiscolor = Color.parseColor("#ffee00");
@@ -770,14 +796,8 @@ int position = segmenterObject.globalposition;
 				else {
 					segmenterObject.loadTexttoRead(text);
 				}
+*/
 
-				if (text.length() > 16){
-
-				}
-				else {
-					//it is importanted that the default text is already segmentable.
-
-				}
 				Log.i("fullscreen 2", " real text  is: " + segmenterObject.texttoread);
 
 

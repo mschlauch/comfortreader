@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="fontlistarray">
         <item>Sans Serif</item>
         <item>Serif</item>
@@ -44,8 +44,6 @@
         <item>1100</item>
     </string-array>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Revenir à l\'accueil"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Revenir en haut de la page"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Plus d\'options"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"OK"</string>
@@ -53,6 +51,16 @@
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Sélectionner une application"</string>
     <string msgid="121134116657445385" name="abc_capital_off">"DÉSACTIVÉ"</string>
     <string msgid="3405795526292276155" name="abc_capital_on">"ACTIVÉ"</string>
+    <string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"supprimer"</string>
+    <string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"entrée"</string>
+    <string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fonction+"</string>
+    <string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Méta+"</string>
+    <string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Maj+"</string>
+    <string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"espace"</string>
+    <string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu+"</string>
     <string msgid="7723749260725869598" name="abc_search_hint">"Rechercher…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Effacer la requête"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Requête de recherche"</string>
@@ -60,7 +68,7 @@
     <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Envoyer la requête"</string>
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Recherche vocale"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partager avec"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partager avec %s"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Partager avec <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Réduire"</string>
     <string name="action_settings">Optionen</string>
     <string name="app_name">Comfort Reader</string>
@@ -70,6 +78,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="error_dir_access">L\'annuaire ne peut pas être consulté</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Préférences avancées"</string>
     <string name="feedback_negativeopinionquestion_negative">plus tard</string>
     <string name="feedback_negativeopinionquestion_positive">Envoyer la critique</string>
     <string name="feedback_negativeopinionquestion_subtitle"/>
@@ -97,6 +106,7 @@
     <string name="notes_title_current_notebook">tes notes:</string>
     <string name="play_button"> ∣∣ > </string>
     <string name="previous_button">"&lt;&lt;"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Rechercher"</string>
     <string name="settings_backgroundcolor_summary"/>
     <string name="settings_backgroundcolor_title">couleur de fond</string>
     <string name="settings_deviceorientation_default">Comportement du système par défaut</string>
@@ -115,6 +125,10 @@
     <string name="settings_help_title">visiter le site</string>
     <string name="settings_helplines_summary">Lignes supplémentaires (vision périphérique)</string>
     <string name="settings_helplines_title">Amplifier la vision</string>
+    <string name="settings_insertmanually_filepath">ajouté manuellement</string>
+    <string name="settings_insertmanually_summary_empty">Ajouter un texte manuellement</string>
+    <string name="settings_insertmanually_summary_textloaded">Texte saisi: </string>
+    <string name="settings_insertmanually_title">Copier coller, éditer</string>
     <string name="settings_loadcopyandpaste_outputmessage_off">Vous lisez </string>
     <string name="settings_loadcopyandpaste_outputmessage_on">Vous pouvez maintenant lire ce que vous avez copié. éteindre pour revenir</string>
     <string name="settings_loadcopyandpaste_title">texte temporaire</string>
@@ -141,12 +155,16 @@
     <string name="settings_title_textoptions">Options du texte</string>
     <string name="settings_wpm_title">vitesse de lecture</string>
     <string name="settings_wpn_summary">mots par minute: </string>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string name="support_standarttext">
-    Aucun texte chargé. Cliquez sur le bouton de menu en haut à gauche et chargez un fichier txt ou pdf.</string>
+      ____________________TOCCA À LIRE _____________ Bienvenue dans Comfort Reader! Avant de commencer, voici quelques suggestions. \n ———LECTURE ——— \n Pour démarrer et suspendre la lecture, appuyez sur au centre de l\'écran. Pour reculer, touchez le côté gauche de l\'écran. Pour sauter en avant, touchez le côté droit. Maintenez votre doigt un peu plus longtemps pour sauter plus de texte. \n ———PARAMÈTRES ——— \n Pour accéder aux paramètres, faites une pause et appuyez sur l\'icône de la roue dentée dans le coin supérieur gauche. \n Dans les paramètres, vous pouvez régler la vitesse de lecture et la taille des blocs de texte. Une personne moyenne lit 200 à 250 mots par minute. Au fil du temps, vous pouvez devenir plus rapide car Comfort Reader est conçu pour réduire le stress visuel. Vous pouvez également modifier votre position et modifier l\'apparence du texte. Comfort Reader prend en charge Sans, Serif, Mono et OpenDyslexic et diverses couleurs. \n ———CHARGER LE TEXTE ——— n Il existe 4 façons de charger un texte. 1) Dans les paramètres, vous pouvez importer un fichier \"txt\", \"pdf\" ou \"epub\" qui réside dans la mémoire interne de votre appareil. 2) Ouvrez le menu des paramètres. Collez et modifiez le texte manuellement. 3) Démarrez un gestionnaire de fichiers de votre choix. Recherchez et sélectionnez votre fichier \"txt\", \"pdf\" ou \"epub\". Ensuite, choisissez Lire avec Comfort Reader. 4) Ouvrez un site Web, par exemple un article Wikipedia dans votre navigateur. Utilisez l\'option «partager» de votre navigateur et sélectionnez «Comfort Reader». Une version texte du site Web sera affichée dans Comfort Reader. \n ———NOTES ——— Dans le coin supérieur droit, appuyez sur l\'icône du stylet et ajoutez une note. Une note contient votre commentaire et le passage actuel du texte sur lequel vous commentez. Pour chaque livre, Comfort Reader enregistre vos notes dans un fichier texte séparé dans le dossier «Comfort Reader» de la mémoire interne. Si vous n\'avez pas besoin de commenter et souhaitez simplement ajouter une partie intéressante du texte à vos notes, maintenez votre doigt appuyé au centre de l\'écran. ———CONSEILS SUPPLÉMENTAIRES ——— Utilisez les boutons de volume pour faire une pause et adapter la vitesse de lecture. Utilisez votre vision périphérique: restez actif Aperçu et rétrospective dans les paramètres. De nombreuses personnes utilisent Comfort Reader pour réduire la fatigue oculaire. Ils préfèrent les textes clairs sur fond sombre et les polices plus grandes comme par exemple OpenDyslexia. \n ————Merci de votre attention! Bonne lecture! -----
+    </string>
     <string name="title_activity_another_fullscreen">AnotherFullscreenActivity</string>
     <string name="title_activity_custommenu">CustommenuActivity</string>
     <string name="title_activity_note">écrire une note</string>
     <string name="title_activity_settings">paramètres</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"DÉSACTIVÉ"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"ACTIVÉ"</string>
     <string name="wordsperminuteSetting">words per minute</string>
 </resources>

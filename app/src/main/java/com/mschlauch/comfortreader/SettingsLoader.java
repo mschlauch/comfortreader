@@ -112,7 +112,7 @@ public class SettingsLoader {
   //  public int minblocksize = 20;
   //  public int maxblocksize = 110;
 	public SharedPreferences preferences = null;
-	public String standarttext = "standarttext";
+	//public String standarttext = "standarttext";
 
 	public SettingsLoader (SharedPreferences shared, Context context){
 
@@ -125,6 +125,23 @@ public class SettingsLoader {
 		saveNumber(wpmkey, getWordsPerMinute());
 		Log.d("settingslfnew", "bookid: should be same as" + loadedbookid);
 		updatemigration();
+	}
+	public boolean getBoolean(String key, boolean defValue) {
+		return preferences.getBoolean(key, defValue);
+	}
+
+	public void saveBoolean(String key, boolean value) {
+		preferences.edit().putBoolean(key, value).commit();
+	}
+	public boolean firststart (){
+		if (getBoolean("firststart", true)){
+			saveBoolean("firststart",false);
+			return true;
+		}
+		else {
+			return false;
+		}
+
 	}
 
 	private void updatemigration ()
@@ -349,6 +366,7 @@ public class SettingsLoader {
 		//TODO also add timestamp
 		dbManager.updateGlobalPosition(retrieveNumber(currentbookidkey),globalposition);
 		//dbManager.close();
+		saveNumber(globalpositionpermillekey, positionpermille);
 		return positionpermille;
 		//saveNumber(globalpositionkey,position);
 	}
@@ -367,7 +385,7 @@ public class SettingsLoader {
 		dbManager.updateGlobalPosition(retrieveNumber(currentbookidkey),adjustedposition);
 		//dbManager.close();
 		//saveNumber(globalpositionkey,adjustedposition);
-		//saveNumber(globalpositionpermillekey2, number);
+
 		//save(filepathkey2, retrieve(filepathkey));
 		return adjustedposition;//is the global position in absolute numbers
 	}
@@ -412,7 +430,7 @@ public class SettingsLoader {
 		return number;
 	}
 	public int getWordsPerMinute(){
-		int number = 200;
+		int number = 175;
 		//float totalwords = getGlobalPosition() / getGlobalPositionSeekbarValue() * 1000;
 		//int output = (int) totalwords;
 		dbManager.open();
@@ -623,7 +641,7 @@ public class SettingsLoader {
 		}
 		else{
 		//	dbManager.close();
-			return "empty";}
+			return "intro";}
 
 
 
@@ -644,7 +662,9 @@ public class SettingsLoader {
 
 		}
 		else{
-			return 0;}
+			Resources res = thiscontext.getResources();
+			String standart = res.getString(R.string.support_standarttext);
+			return standart.length();}
 
 
 	}
@@ -665,7 +685,9 @@ public class SettingsLoader {
 
 			}
 			else{
-				text = standarttext;}
+				Resources res = thiscontext.getResources();
+				text = res.getString(R.string.support_standarttext);
+				}
 			//dbManager.close();
 
 
@@ -673,7 +695,8 @@ public class SettingsLoader {
 
 
 		if (text.length()<14){
-			text = standarttext;
+			Resources res = thiscontext.getResources();
+			text = res.getString(R.string.support_standarttext);
 		}
 		return text;
 	}
@@ -834,8 +857,24 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 	public void reloadSelectedBook(){ //load book after last read selection may have been changed
 		String fromSlotNumber = retrieve(lastreadskey);
-		int bookid = Integer.parseInt(fromSlotNumber);
+		int bookid = 0;
 	//	Cursor cursor = dbManager.fetchwithBookID();
+
+		try
+		{
+			// the String to int conversion happens here
+			bookid = Integer.parseInt(fromSlotNumber);
+
+			// print out the value after the conversion
+			//System.out.println("int i = " + i);
+		}
+		catch (NumberFormatException nfe)
+		{
+			//System.out.println("NumberFormatException: " + nfe.getMessage());
+
+		}
+
+
 		if (bookid > 0) {
 			saveNumber(currentbookidkey, bookid);
 			saveCommitChanges();
@@ -943,6 +982,12 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
 
 	public void helper_insertnewtextintodatabase(String path, String texttoread){
+		/*if (texttoread.length()<10){
+			Resources res = thiscontext.getResources();
+			texttoread = res.getString(R.string.support_standarttext);
+		}*/
+
+
 		int time = (int) (System.currentTimeMillis());
 		Timestamp tsTemp = new Timestamp(time);
 		long timevalue =  tsTemp.getTime();

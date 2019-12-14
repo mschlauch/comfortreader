@@ -30,6 +30,12 @@ Main features:
 
 ## CHANGELOG
 
+version 1.9.6
+- switch additional lines on or off (peripheral vision)
+- support for OpenDyslexic typeface
+- settings (import text): paste text and edit
+- save up to 10 recents reads (along with respective wpm settings)
+
 version 1.9.5
 - added ability to load epub files
 - localization french and spanish
