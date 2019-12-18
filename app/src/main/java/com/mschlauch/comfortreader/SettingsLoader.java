@@ -630,6 +630,8 @@ public class SettingsLoader {
 
 	public String getFilePath(){
 		dbManager.open();
+
+		if(preferences.contains(currentbookidkey)){
 		Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
 
 		if (cursor.getCount() > 0) {
@@ -643,8 +645,8 @@ public class SettingsLoader {
 		//	dbManager.close();
 			return "intro";}
 
-
-
+		}
+		else {return "intro";}
 	}
 
 	public int getTexttoReadtotalLength(){
