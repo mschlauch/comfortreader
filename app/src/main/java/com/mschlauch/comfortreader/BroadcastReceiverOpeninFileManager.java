@@ -38,6 +38,7 @@ public class BroadcastReceiverOpeninFileManager extends Activity {
     /**
      * Called when the activity is first created.
      */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,18 +71,21 @@ public class BroadcastReceiverOpeninFileManager extends Activity {
                     protected String doInBackground(String... urlStr) {
                         // do stuff on non-UI thread
 
-                        if (extension.equals(".pdf")) {
-                            Log.i("TextBroadcaster", "loaded is pdf" + uri);
-                            settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfrompdf(uri));
-                        } else if (extension.equals(".txt")) {
-                            Log.i("TextBroadcaster", "loaded is txt: " + uri);
-                            settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfromtxtfile(uri));
-                        } else if (extension.equals(".epup")) {
-                            Log.i("TextBroadcaster", "loaded is epub" + uri);
-                            settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfromepubfile(uri));
+                        switch (extension) {
+                            case ".pdf":
+                                Log.i("TextBroadcaster", "loaded is pdf" + uri);
+                                settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfrompdf(uri));
+                                break;
+                            case ".txt":
+                                Log.i("TextBroadcaster", "loaded is txt: " + uri);
+                                settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfromtxtfile(uri));
+                                break;
+                            case ".epup":
+                                Log.i("TextBroadcaster", "loaded is epub" + uri);
+                                settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfromepubfile(uri));
+                                break;
                         }
-                        String out = "";
-                        return out;
+                        return "";
                     }
 
 

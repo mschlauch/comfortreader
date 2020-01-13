@@ -31,8 +31,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import android.support.v7.app.ActionBarActivity;
-
 public class NoteActivity extends Activity {
 
 

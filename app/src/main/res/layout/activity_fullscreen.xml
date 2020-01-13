@@ -57,6 +57,7 @@
                 android:layout_gravity="top"
                 android:alpha="1"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="top"
                 android:orientation="vertical">
 
@@ -129,7 +130,7 @@
                 android:id="@+id/spinnerProgress"
                 style="?android:attr/progressBarStyleLarge"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></ProgressBar>
+                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:id="@+id/fullscreen_content2"

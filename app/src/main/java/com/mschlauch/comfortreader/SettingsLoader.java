@@ -43,10 +43,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.util.Log.d;
-import static java.lang.Boolean.FALSE;
-import static java.lang.Boolean.TRUE;
-
 public class SettingsLoader {
     //  public int globalposition = 1;
     //  public int tickposition = 0;
@@ -123,7 +119,7 @@ public class SettingsLoader {
     }
 
     public void saveBoolean(String key, boolean value) {
-        preferences.edit().putBoolean(key, value).commit();
+        preferences.edit().putBoolean(key, value).apply();
     }
 
     public boolean firststart() {
@@ -202,7 +198,7 @@ public class SettingsLoader {
         String value = "";
         try {
             value = preferences.getString(variable, "");
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
 
         Log.i("SettingsLoader", "loading" + variable + " which is:" + value);
@@ -222,7 +218,7 @@ public class SettingsLoader {
 
     public synchronized void saveNumber(String variable, int value) {
 
-        Integer newinteger = new Integer(value);
+        Integer newinteger = value;
         //String valuestring = newinteger.toString();
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt(variable, value);
@@ -234,7 +230,7 @@ public class SettingsLoader {
     public void saveCommitChanges() {
 
         SharedPreferences.Editor editor = preferences.edit();
-        editor.commit();
+        editor.apply();
         dbManager.close();
 
         Log.d("settingslf", "changes committed (book id:" + retrieveNumber(currentbookidkey));
@@ -273,14 +269,13 @@ public class SettingsLoader {
         int value = 0;
         try {
             value = preferences.getInt(variable, 0);
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
         return value;
     }
 
     public String getOrientationMode() {
-        String vhelper = retrieve(orientationkey);
-        return vhelper;
+        return retrieve(orientationkey);
     }
 
 
@@ -337,9 +332,8 @@ public class SettingsLoader {
         Log.i("Settingloader", "text length is: " + length);
 
         float newposition = ((float) position / (float) length) * 1000;
-        int positionpermille = Math.round(newposition);
 
-        return positionpermille;
+        return Math.round(newposition);
 
 
     }
@@ -347,8 +341,7 @@ public class SettingsLoader {
     public String getGlobalPositionPercentString() {
         int permille = getGlobalPositionSeekbarValue();
         float percentage = (float) permille / 10;
-        String percent = String.format("%.2f", (float) percentage) + "%";
-        return percent;
+        return String.format("%.2f", (float) percentage) + "%";
 
 
     }
@@ -593,9 +586,8 @@ public class SettingsLoader {
 
     public Boolean addtoCurrentNotes(String note) {
 
-        String textwriteout = note;
         String path = getCurrentNotesFilePath();
-        Boolean success = false;
+        boolean success = false;
 
         try {
             File myFile = new File(path);
@@ -606,7 +598,7 @@ public class SettingsLoader {
             FileOutputStream fOut = new FileOutputStream(myFile);
             OutputStreamWriter myOutWriter =
                     new OutputStreamWriter(fOut);
-            myOutWriter.append(textwriteout);
+            myOutWriter.append(note);
             myOutWriter.close();
             fOut.close();
             success = true;
@@ -710,7 +702,7 @@ public class SettingsLoader {
         //save(insertmanualkey, " ");
 
         int number = 0;
-        while (cursor.isAfterLast() == false) {
+        while (!cursor.isAfterLast()) {
             if (number > 14) {
                 int bookid = cursor.getInt(cursor.getColumnIndex(DatabaseHelper._ID));
                 dbManager.deleteSingleRow(bookid);
@@ -789,7 +781,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         String text = "";
         try {
             text = path.substring(path.lastIndexOf("/") + 1);
-        } catch (Error E) {
+        } catch (Error ignored) {
         }
         return text;
 
@@ -800,8 +792,8 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         dbManager.open();
         Cursor cursor = dbManager.fetchchronological();
 
-        List<String> listItems = new ArrayList<String>();
-        while (cursor.isAfterLast() == false) {
+        List<String> listItems = new ArrayList<>();
+        while (!cursor.isAfterLast()) {
             String filename = getFileofPath(cursor.getString(cursor.getColumnIndex(DatabaseHelper.BOOKPATH)));
             int position = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKPOSITION));
             int length = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKLENGTH));
@@ -818,7 +810,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
         }
         //	dbManager.close();
-        final CharSequence[] entries = listItems.toArray(new CharSequence[listItems.size()]);
+        final CharSequence[] entries = listItems.toArray(new CharSequence[0]);
 
 
 		/*CharSequence[] entries = { //retrieve(filepathkeyreal) + " " + retrieveNumber(globalpositionpermillekeyreal),
@@ -836,8 +828,8 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         dbManager.open();
         Cursor cursor = dbManager.fetchchronological();
 
-        List<String> listItems = new ArrayList<String>();
-        while (cursor.isAfterLast() == false) {
+        List<String> listItems = new ArrayList<>();
+        while (!cursor.isAfterLast()) {
 
             int id = cursor.getInt(cursor.getColumnIndex(DatabaseHelper._ID));
 
@@ -846,7 +838,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
             cursor.moveToNext();
 
         }
-        final CharSequence[] entryValues = listItems.toArray(new CharSequence[listItems.size()]);
+        final CharSequence[] entryValues = listItems.toArray(new CharSequence[0]);
         //	dbManager.close();
 
 
@@ -902,30 +894,35 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 	}*/
 
     public void loadTextfromFilePath(String path) {
-        d("settings", "filename is " + path);
+        Log.d("settings", "filename is " + path);
         String extension = "";
         if (path.contains(".")) {
             extension = path.substring((path.lastIndexOf(".") + 1));
         }
 
-        d("settings", "extension is " + extension);
+        Log.d("settings", "extension is " + extension);
         String texttoread = "";
-        if (extension.equals("pdf:")) {// the : sign is necessary because of the caracteristics of the filepicker preference that appends always :
+        switch (extension) {
+            case "pdf:": // the : sign is necessary because of the caracteristics of the filepicker preference that appends always :
 
-            path = path.substring(0, (path.lastIndexOf("."))) + ".pdf";
-            d("settings", "Loading pdf" + path);
-            texttoread = loadfrompdf(path);
-        } else if (extension.equals("epub:")) {
-            path = path.substring(0, (path.lastIndexOf("."))) + ".epub";
-            d("settings", "Loading epub" + path);
-            texttoread = loadfromepubfile(path);
-        } else if (extension.equals("txt:")) {
+                path = path.substring(0, (path.lastIndexOf("."))) + ".pdf";
+                Log.d("settings", "Loading pdf" + path);
+                texttoread = loadfrompdf(path);
+                break;
+            case "epub:":
+                path = path.substring(0, (path.lastIndexOf("."))) + ".epub";
+                Log.d("settings", "Loading epub" + path);
+                texttoread = loadfromepubfile(path);
+                break;
+            case "txt:":
 
-            path = path.substring(0, (path.lastIndexOf("."))) + ".txt";
-            d("settings", "Loading txt" + path);
-            texttoread = loadfromtxtfile(path);
-        } else {
-            texttoread = "text file format not supported";
+                path = path.substring(0, (path.lastIndexOf("."))) + ".txt";
+                Log.d("settings", "Loading txt" + path);
+                texttoread = loadfromtxtfile(path);
+                break;
+            default:
+                texttoread = "text file format not supported";
+                break;
         }
 
 	/*	Log.d("settings", "loading book global position 0: " + getGlobalPositionSeekbarValue());
@@ -951,7 +948,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
         if (cursor.getCount() > 0) {
 
-            while (cursor.isAfterLast() == false) {
+            while (!cursor.isAfterLast()) {
 
                 int bookid = cursor.getInt(cursor.getColumnIndex(DatabaseHelper._ID));
                 dbManager.deleteSingleRow(bookid);
@@ -1018,17 +1015,15 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         }
         StringBuilder text = new StringBuilder();
         int index = 0;
-        boolean counton = TRUE;
+        boolean counton = Boolean.TRUE;
         while (counton) {
 
 
             BookSection bookSection = null;
             try {
                 bookSection = reader.readSection(index);
-            } catch (ReadingException e) {
-                counton = FALSE;
-            } catch (OutOfPagesException e) {
-                counton = FALSE;
+            } catch (ReadingException | OutOfPagesException e) {
+                counton = Boolean.FALSE;
             }
             index = index + 1;
             if (bookSection != null) {
@@ -1050,7 +1045,6 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
             reader = new BufferedReader(new FileReader(pathtext));
         } catch (FileNotFoundException e) {
-            reader = null;
             e.printStackTrace();
             return "Failed to load file";
         }
@@ -1086,7 +1080,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         pathtext = file2.getAbsolutePath();
         //	myOutBox.setText("" + pathtext);
 
-        d("settings", "loading from pdf");
+        Log.d("settings", "loading from pdf");
 
         PDFManager pdfManager = new PDFManager();
         pdfManager.setFilePath(pathtext);

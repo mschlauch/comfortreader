@@ -13,9 +13,9 @@
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:orientation="vertical">
 
         <LinearLayout
@@ -27,7 +27,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.50"
-                android:drawableLeft="@drawable/ic_readnotes"
+                android:drawableStart="@drawable/ic_readnotes"
                 android:onClick="opennotebook"
                 android:text="@string/notes_readnotebutton"
                 android:textColor="@color/white" />
@@ -37,7 +37,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.60"
-                android:drawableLeft="@drawable/ic_savenote"
+                android:drawableStart="@drawable/ic_savenote"
                 android:onClick="enter"
                 android:text="@string/notes_savebutton"
                 android:textColor="@color/white" />
@@ -98,7 +98,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical" />
 
     </LinearLayout>
 

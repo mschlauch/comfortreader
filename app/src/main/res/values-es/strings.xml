@@ -54,7 +54,7 @@
     <string name="settings_fontsize_title">Tamaño de fuente</string>
 
     <string name="settings_fontname_title">Estilo de fuente</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">Color del texto</string>
     <string name="settings_textcolor_summary">color normal</string>
     <string name="settings_focuscolor_title">Color de foco</string>
@@ -66,7 +66,7 @@
     <string name="settings_fromcopypaste_summary">Activar para pegar el texto copiado</string>
 
     <string name="settings_backgroundcolor_title">Color de fondo</string>
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">Orientación del dispositivo</string>
     <string name="settings_deviceorientation_summary">comportamiento durante la rotación del dispositivo</string>
     <string name="settings_deviceorientation_default">Comportamiento predeterminado del sistema</string>
@@ -79,20 +79,20 @@
     <string name="notes_title_current_notebook">Tus notas:</string>
 
     <string name="fullscreen_copied_title">Texto copiado</string>
-    <string name="fullscreen_text_while_loading">... Cargando texto ..</string>
+    <string name="fullscreen_text_while_loading">… Cargando texto …</string>
 
     <string name="settings_filepicker_loadingtext">la forma más rápida es cargar un archivio txt</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">¿Le parece útil esta aplicación?</string>
     <string name="feedback_opinionquestion_positive">Sí</string>
     <string name="feedback_opinionquestion_negative">No</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">Comfort Reader es un software libre y open-source, gracias a la ayuda de muchos. ¿Quieres contribuir también y dejar una evaluación en Play Store?</string>
     <string name="feedback_positiveopinionquestion_positive">Bien</string>
     <string name="feedback_positiveopinionquestion_negative">No</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">Lo siento. Podrías ayudarnos a resolver el problema. ¿Desea dejarnos un mensaje?</string>
     <string name="feedback_negativeopinionquestion_positive">enviar comentarios</string>
     <string name="feedback_negativeopinionquestion_negative">ahora no </string>

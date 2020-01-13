@@ -123,19 +123,17 @@ public class Book {
 
 
         //derweil gebe neuen segmenter in Auftrag
-        new Thread(new Runnable() {
-            public void run() {
-                preloadrunning = true;
-                segmenterwhileloading = loadnextsegment();
-				/*try {
-					sleep(3000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}*/
+        new Thread(() -> {
+            preloadrunning = true;
+            segmenterwhileloading = loadnextsegment();
+            /*try {
+                sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }*/
 
-                latch.countDown();
-                //     preloadrunning = false;
-            }
+            latch.countDown();
+            //     preloadrunning = false;
         }).start();
         incrementglobalposition(segmenter.globalpositionoffset);
     }
@@ -198,7 +196,7 @@ public class Book {
 
         try {
             loadedstring = loadedstring.substring(loadedstring.indexOf(" "));
-        } catch (Exception e) {
+        } catch (Exception ignored) {
 
         }
 
@@ -233,14 +231,13 @@ public class Book {
 
     public String loadStringofsegmentafterPosition(int position, int minimumblocksize) {
 
-        int srcBegin = position;
         int srcEnd = position + maxblocksize;
 
         String loadedstring = "";
 
 
         try {
-            loadedstring = texttoread.substring(srcBegin, srcEnd);
+            loadedstring = texttoread.substring(position, srcEnd);
         } catch (Exception e) {
             loadedstring = messageend;
         }
@@ -248,9 +245,6 @@ public class Book {
         int maxcutter = loadedstring.lastIndexOf(" ");
         if (maxcutter > 0) {
             loadedstring = loadedstring.substring(0, maxcutter);
-        } else {
-            loadedstring = loadedstring;
-
         }
 
 
@@ -344,11 +338,11 @@ public class Book {
         StringSegmenter segment = new StringSegmenter();
 
         segment.globalpositionoffset = loadedstring.length(); //oo
-        if (finished == false) {
+        if (!finished) {
             segment.previewnextString = loadStringofsegmentafterPosition(globalposition + segment.globalpositionoffset, minblocksize);
             segment.previewlastString = loadStringofsegmentafterPosition(globalpositionbefore, minblocksize);
             if (globalposition + segment.globalpositionoffset + maxblocksize > texttoread.length()) {
-                segment.previewnextString = segment.previewnextString = loadStringofsegmentbeforePosition(texttoread.length());
+                segment.previewnextString = loadStringofsegmentbeforePosition(texttoread.length());
             }
         } else {
             // segment.previewnextString = loadStringofsegmentbeforePosition(texttoread.length());
@@ -454,8 +448,7 @@ public class Book {
     public void updateglobalposition(double percent) {
 
         double position = percent * texttoread.length() / 1000;
-        int newposition = (int) Math.round(position);
-        globalposition = newposition;
+        globalposition = (int) Math.round(position);
         //(int) Math.round(position);
 
     }
@@ -479,7 +472,7 @@ public class Book {
         //String test = "";
         //	test.replaceAll(System.getProperty ("line.separator")," ");
 
-        String localtokenizedstring = " ";
+        StringBuilder localtokenizedstring = new StringBuilder(" ");
         //ArrayList<String> tokens = new ArrayList<String>();
 
         //no breakups...¿
@@ -501,15 +494,15 @@ public class Book {
 
         for (int numberi = 0; numberi < test.length(); numberi++) {
             String addstring = test.substring(numberi, numberi + 1);
-            localtokenizedstring = localtokenizedstring + addstring;
+            localtokenizedstring.append(addstring);
             if (numberi > maxcharacters && addstring.equals(" ")) {
-                localtokenizedstring = localtokenizedstring + newline;
+                localtokenizedstring.append(newline);
 
                 maxcharacters = numberi + maxcharactersperline;
             }
 
         }
-        localtokenizedstring = localtokenizedstring + "   ";
+        localtokenizedstring.append("   ");
         //	loadedtokens = tokens;
         //   	Iterator<String> it = loadedtokens.iterator();
         //  	while(it.hasNext()){
@@ -518,7 +511,7 @@ public class Book {
         //}
 
         //	tokenize= null;
-        return localtokenizedstring;
+        return localtokenizedstring.toString();
     }
 
     public String getsegmentoutput(int tick) {
@@ -572,11 +565,8 @@ public class Book {
     public void loadallprehtmls() {
 
         int radius = 20;
-        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.HONEYCOMB) {
-            radius = 15;
-        }
 
-        loadedprehtmlstrings = new ArrayList<String>();
+        loadedprehtmlstrings = new ArrayList<>();
 
         for (int i = 0; i < radius; i++) {
             String insert = getprehtml(i, radius);
@@ -598,10 +588,8 @@ public class Book {
             low = (float) number1;
         }
 
-        float mid = low + ((high - low) / 2);
 
-
-        return mid;
+        return low + ((high - low) / 2);
     }
 
     private String getHexSingleColor(int color) {

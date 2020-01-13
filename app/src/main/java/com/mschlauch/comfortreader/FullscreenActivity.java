@@ -40,8 +40,6 @@ import android.widget.Toast;
 import com.github.stkent.amplify.prompt.DefaultLayoutPromptView;
 import com.github.stkent.amplify.tracking.Amplify;
 
-//import android.support.v7.app.ActionBarActivity;
-
 /**
  * d.annotation.TargetApi;
  * import android.app.d.annotation.TargetApi;
@@ -123,14 +121,11 @@ public class FullscreenActivity extends Activity {
 //    private static final ScheduledExecutorService worker =
 //    		  Executors.newSingleThreadScheduledExecutor();
 //
-    final Runnable runnable = new Runnable() {
-        @Override
-        public void run() {
+    final Runnable runnable = () -> {
 
-            if (started) {
-                start();
-                Log.i("Fullscreen reading", "started from runnable");
-            }
+        if (started) {
+            start();
+            Log.i("Fullscreen reading", "started from runnable");
         }
     };
 
@@ -147,7 +142,7 @@ public class FullscreenActivity extends Activity {
         //texthaschanged();
 
         String eins = "";
-        if (preferencesinprocessofcommitment == false) {
+        if (!preferencesinprocessofcommitment) {
             new AsyncTask<String, Void, String>() {
 
 
@@ -159,8 +154,7 @@ public class FullscreenActivity extends Activity {
                     settingsload.saveCommitChanges();
                     Log.i("Fullscreen reading", "saving commited");
 
-                    String out = "";
-                    return out;
+                    return "";
 
                 }
 
@@ -182,11 +176,6 @@ public class FullscreenActivity extends Activity {
         //  double charactersperword = 6; //here should be only 5, I don't know why it gets 3 times faster on my phone, wegen der streckung im stringsegmenter
         double charactersperminute = wordsperminute * charactersperword;
         tickdistance = 1 + (int) Math.round(charactersperminute / 1440);//24 frames/second, 41.6 milliseconds max interval
-        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.HONEYCOMB) {
-            //  tickdistance = (int) Math.round(charactersperminute/1090);//18 frames/second, 55 milliseconds mac interval
-            tickdistance = 1 + (int) Math.round(charactersperminute / 1400);//10 frames/second, 100 milliseconds mac interval
-
-        }
         if (tickdistance < 1) {
             tickdistance = 1;
         }
@@ -321,59 +310,45 @@ How to avoid to repeat same operation at resum?
 
 
         View previous = findViewById(R.id.previousbutton);
-        previous.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                previousButtonLongClicked(view);
-                return true;
-            }
+        previous.setOnLongClickListener(view -> {
+            previousButtonLongClicked(view);
+            return true;
         });
 
         View nextb = findViewById(R.id.nextbutton);
 
-        nextb.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                nextButtonLongClicked(view);
-                return true;
-            }
+        nextb.setOnLongClickListener(view -> {
+            nextButtonLongClicked(view);
+            return true;
         });
         View middlebutton = findViewById(R.id.playbutton);
 
-        middlebutton.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
+        middlebutton.setOnLongClickListener(view -> {
 //refactor!!!
 
-                NoteComposer notec = new NoteComposer();
+            NoteComposer notec = new NoteComposer();
 
 
-                Boolean success = settingsload.addtoCurrentNotes(notec.getcomposedNote("", settingsload));
-                if (success) {
-                    String newpath = settingsload.getCurrentNotesFilePath();
-                    newpath = newpath.substring(newpath.lastIndexOf("/") + 1);
+            Boolean success = settingsload.addtoCurrentNotes(notec.getcomposedNote("", settingsload));
+            if (success) {
+                String newpath = settingsload.getCurrentNotesFilePath();
+                newpath = newpath.substring(newpath.lastIndexOf("/") + 1);
 
-                    Toast.makeText(getBaseContext(),
-                            getString(R.string.notes_message_done_saving_note) + "Comfort Reader/" + newpath,
-                            Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getBaseContext(),
-                            "Error",
-                            Toast.LENGTH_SHORT).show();
-                }
-
-
-                return true;
+                Toast.makeText(getBaseContext(),
+                        getString(R.string.notes_message_done_saving_note) + "Comfort Reader/" + newpath,
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getBaseContext(),
+                        "Error",
+                        Toast.LENGTH_SHORT).show();
             }
+
+
+            return true;
         });
 
 
-        controlsView3tap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                playButtonClicked(view);
-            }
-        });
+        controlsView3tap.setOnClickListener(this::playButtonClicked);
         settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this), this);
 
        /* Context context = getApplicationContext();
@@ -431,7 +406,7 @@ How to avoid to repeat same operation at resum?
     public void playButtonClicked(View view) {
         resetlongvelocities();
 
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
 
             if (started || segmenterObject.finished) {
@@ -470,10 +445,10 @@ How to avoid to repeat same operation at resum?
 
     public void nextButtonClicked(View view) {
         resetlongvelocities();
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
             boolean restart = false;
-            if (started == true) {
+            if (started) {
                 stop();
                 restart = true;
             }
@@ -491,10 +466,10 @@ How to avoid to repeat same operation at resum?
 
     public void nextButtonLongClicked(View view) {
 
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
             boolean restart = false;
-            if (started == true) {
+            if (started) {
                 stop();
                 restart = true;
             }
@@ -534,10 +509,10 @@ How to avoid to repeat same operation at resum?
 
 
     public void previousButtonClicked(View view) {
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
             resetlongvelocities(); //make sure that the next long press is reseted
             boolean restart = false;
-            if (started == true) {
+            if (started) {
                 stop();
                 restart = true;
 
@@ -558,10 +533,10 @@ How to avoid to repeat same operation at resum?
 
 
     public void previousButtonLongClicked(View view) {
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
             boolean restart = false;
-            if (started == true) {
+            if (started) {
                 stop();
                 restart = true;
 
@@ -598,7 +573,7 @@ How to avoid to repeat same operation at resum?
 
 
     public void texthaschanged() {
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
             int progress = segmenterObject.calculateprogress(1000);
             float percentage = (float) progress / 10;
@@ -627,13 +602,11 @@ How to avoid to repeat same operation at resum?
 
             TextView myOutBox = findViewById(R.id.textViewStatus);
             myOutBox.setText(toshow);
-        } else {
-
         }
     }
 
     public void noteButtonClicked(View view) {
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
 
             stop();
@@ -652,7 +625,7 @@ How to avoid to repeat same operation at resum?
     }
 
     public void menuButtonClicked(View view) {
-        if (switchofallmenus == false) {
+        if (!switchofallmenus) {
 
             stop();
             //	setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
@@ -743,8 +716,7 @@ How to avoid to repeat same operation at resum?
                 segmenterObject.loadallprehtmls();
 
 
-                String out = "";
-                return out;
+                return "";
 
             }
 
@@ -759,12 +731,16 @@ How to avoid to repeat same operation at resum?
                 String parole = settingsload.getOrientationMode();
 
                 Log.i("Fullscreen", "orientation loading" + parole);
-                if (parole.equals("1")) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
-                } else if (parole.equals("2")) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
-                } else if (parole.equals("0")) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+                switch (parole) {
+                    case "1":
+                        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+                        break;
+                    case "2":
+                        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
+                        break;
+                    case "0":
+                        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+                        break;
                 }
                 //TODO here setup availability of new font
                 final Typeface opendyslexic = Typeface.createFromAsset(getAssets(), "fonts/OpenDyslexic-Regular.otf");
@@ -773,14 +749,19 @@ How to avoid to repeat same operation at resum?
                 parole = settingsload.getFontName();
 
                 Log.i("Fullscreen", "orientation loading" + parole);
-                if (parole.equals("sans")) {
-                    contentView.setTypeface(Typeface.SANS_SERIF);
-                } else if (parole.equals("serif")) {
-                    contentView.setTypeface(Typeface.SERIF);
-                } else if (parole.equals("mono")) {
-                    contentView.setTypeface(Typeface.MONOSPACE);
-                } else if (parole.equals("opendyslexic")) {
-                    contentView.setTypeface(opendyslexic);
+                switch (parole) {
+                    case "sans":
+                        contentView.setTypeface(Typeface.SANS_SERIF);
+                        break;
+                    case "serif":
+                        contentView.setTypeface(Typeface.SERIF);
+                        break;
+                    case "mono":
+                        contentView.setTypeface(Typeface.MONOSPACE);
+                        break;
+                    case "opendyslexic":
+                        contentView.setTypeface(opendyslexic);
+                        break;
                 }
 
                 spinner.setVisibility(View.GONE);
@@ -813,13 +794,13 @@ How to avoid to repeat same operation at resum?
         //	startdialog();
 
     }
-    
+
 
 	/*public boolean onTouchEvent(MotionEvent event) {
 	    int eventaction = event.getAction();
 
 	    switch (eventaction) {
-	        case MotionEvent.ACTION_DOWN: 
+	        case MotionEvent.ACTION_DOWN:
 	            // finger touches the screen
 	            break;
 
@@ -827,16 +808,16 @@ How to avoid to repeat same operation at resum?
 	            // finger moves on the screen
 	            break;
 
-	        case MotionEvent.ACTION_UP:   
+	        case MotionEvent.ACTION_UP:
 	            // finger leaves the screen
 	        	playButtonClicked(contentView);
 	            break;
-	            
-	            
+
+
 	    }
 
 	    // tell the system that we handled the event and no further processing is required
-	    return false; 
+	    return false;
 	}*/
 
 
@@ -849,7 +830,7 @@ How to avoid to repeat same operation at resum?
             String middletext = " wpm (";
             int plus = -1;
 
-            if (started == true) {
+            if (started) {
 
                 plus = 1;
                 middletext = " wpm (+";
@@ -868,7 +849,6 @@ How to avoid to repeat same operation at resum?
             toast = Toast.makeText(context, text, duration);
             toast.show();
 
-            keyCode = -900000;
             return true;
         }
         //VOLUME KEY UP
@@ -877,7 +857,7 @@ How to avoid to repeat same operation at resum?
             Context context = getApplicationContext();
             CharSequence text = "➤";
 
-            if (started == true) {
+            if (started) {
 
                 text = "❙❙";
                 toast = Toast.makeText(context, text, duration);
@@ -887,7 +867,6 @@ How to avoid to repeat same operation at resum?
 
 
             playButtonClicked(contentView);
-            keyCode = -900000;
             return true;
 
         } else if (keyCode == KeyEvent.KEYCODE_MENU) {

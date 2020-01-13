@@ -322,151 +322,109 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             wpmpref.setSummary(wpm_summary);
 
-            wpmpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
-                    preference.setSummary(getString(R.string.settings_wpn_summary) + " " + newValue + "");
-                    return true;
-                }
-
+            wpmpref.setOnPreferenceChangeListener((preference, newValue) -> {
+                preference.setSummary(getString(R.string.settings_wpn_summary) + " " + newValue + "");
+                return true;
             });
 
 
             final Preference maxblockpref = findPreference("maxblocksizevalue");
 
             maxblockpref.setSummary(maxblocksize_summary);
-            maxblockpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
-                    String einstring = "" + newValue;
-                    int zahl = Integer.valueOf(einstring);
-                    if (settingslolo.getMinBlockSize() > zahl) {
-                        zahl = settingslolo.getMinBlockSize();
-                    }
-
-                    preference.setSummary(getString(R.string.settings_maxwords_summary) + " " + zahl + " " + getString(R.string.settings_maxwords_summary2));
-                    return true;
+            maxblockpref.setOnPreferenceChangeListener((preference, newValue) -> {
+                String einstring = "" + newValue;
+                int zahl = Integer.valueOf(einstring);
+                if (settingslolo.getMinBlockSize() > zahl) {
+                    zahl = settingslolo.getMinBlockSize();
                 }
 
+                preference.setSummary(getString(R.string.settings_maxwords_summary) + " " + zahl + " " + getString(R.string.settings_maxwords_summary2));
+                return true;
             });
 
             final Preference minblockpref = findPreference("minblocksizevalue");
             minblockpref.setSummary(minblocksize_summary);
-            minblockpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
-                    preference.setSummary(getString(R.string.settings_minwords_summary) + " " + newValue + " " + getString(R.string.settings_minwords_summary2));
-                    return true;
-                }
-
+            minblockpref.setOnPreferenceChangeListener((preference, newValue) -> {
+                preference.setSummary(getString(R.string.settings_minwords_summary) + " " + newValue + " " + getString(R.string.settings_minwords_summary2));
+                return true;
             });
 
             final Preference fontsizepref = findPreference("fontsizevalue");
 
             fontsizepref.setSummary(fontsize_summary);
-            fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
-                    preference.setSummary(getString(R.string.settings_fontname_summary) + " " + newValue + "");
-                    return true;
-                }
-
+            fontsizepref.setOnPreferenceChangeListener((preference, newValue) -> {
+                preference.setSummary(getString(R.string.settings_fontname_summary) + " " + newValue + "");
+                return true;
             });
             final EditTextPreference texteditor = (EditTextPreference) findPreference("inserttextmanually");
 
-            texteditor.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            texteditor.setOnPreferenceChangeListener((preference, newValue) -> {
 
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
+                String newtext = (String) newValue;
 
-                    String newtext = (String) newValue;
+                if (newtext.length() > 10) {
 
-                    if (newtext.length() > 10) {
-
-                        // texteditor.setText("insert your text");
-                        texteditor.setSummary(getString(R.string.settings_insertmanually_summary_textloaded) + newtext.substring(0, 10) + "...");
-                        settingslolo.helper_insertnewcopiedtextintodatabase(newtext);
-                        updateAppearance();
-                    } else {
-                        texteditor.setSummary(R.string.settings_insertmanually_summary_empty);
-                    }
-
-
-                    return true;
-                    //finish();
+                    // texteditor.setText("insert your text");
+                    texteditor.setSummary(getString(R.string.settings_insertmanually_summary_textloaded) + newtext.substring(0, 10) + "...");
+                    settingslolo.helper_insertnewcopiedtextintodatabase(newtext);
+                    updateAppearance();
+                } else {
+                    texteditor.setSummary(R.string.settings_insertmanually_summary_empty);
                 }
 
+
+                return true;
+                //finish();
             });
 
             final Preference helplinespref = findPreference("helplines");
 
-            fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
-                    preference.setSummary(getString(R.string.settings_fontname_summary) + " " + newValue + "");
-                    return true;
-                }
-
+            fontsizepref.setOnPreferenceChangeListener((preference, newValue) -> {
+                preference.setSummary(getString(R.string.settings_fontname_summary) + " " + newValue + "");
+                return true;
             });
 
 
             final Preference statisticspreference = findPreference("statisticsswitch");
 
             statisticspreference.setSummary(stat_summary);
-            statisticspreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
+            /*   // get a reference to the already created main layout
+               LinearLayout mainLayout = (LinearLayout) findViewById(R.id.preferences);
+
+               // inflate the layout of the popup window
+               LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+               View popupView = inflater.inflate(R.layout.popup_window, null);
+
+               // create the popup window
+               int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+               int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+               boolean focusable = true; // lets taps outside the popup also dismiss it
+               final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+               // show the popup window
+               popupWindow.showAtLocation(mainLayout, Gravity.CENTER, 0, 0);
+
+               // dismiss the popup window when touched
+               popupView.setOnTouchListener(new View.OnTouchListener() {
+                   @Override
+                   public boolean onTouch(View v, MotionEvent event) {
+                       popupWindow.dismiss();
+                       return true;
+                   }
+               });
+*/
+            statisticspreference.setOnPreferenceClickListener(preference -> {
 // fontsizepref.setSummary("ciao");
 
-                    if (preference.getKey().equals("statisticsswitch")) {
-                        //reset word counts
-                        settingslolo.resetStatistics();
+                if (preference.getKey().equals("statisticsswitch")) {
+                    //reset word counts
+                    settingslolo.resetStatistics();
 
-                    }
-                    String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters() / 6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round(settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
-                    statisticspreference.setSummary(stat_summary);
-
-                    return true;
                 }
+                String stat_summary1 = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters() / 6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round(settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
+                statisticspreference.setSummary(stat_summary1);
 
-                     /*   // get a reference to the already created main layout
-                        LinearLayout mainLayout = (LinearLayout) findViewById(R.id.preferences);
-
-                        // inflate the layout of the popup window
-                        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                        View popupView = inflater.inflate(R.layout.popup_window, null);
-
-                        // create the popup window
-                        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
-                        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
-                        boolean focusable = true; // lets taps outside the popup also dismiss it
-                        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
-
-                        // show the popup window
-                        popupWindow.showAtLocation(mainLayout, Gravity.CENTER, 0, 0);
-
-                        // dismiss the popup window when touched
-                        popupView.setOnTouchListener(new View.OnTouchListener() {
-                            @Override
-                            public boolean onTouch(View v, MotionEvent event) {
-                                popupWindow.dismiss();
-                                return true;
-                            }
-                        });
-*/
-
-
+                return true;
             });
 
             Log.i("preference fragment", "before positionpreference ");
@@ -477,38 +435,32 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             positionpreference.setTitle(globalposition_title);
 
 
-            positionpreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            positionpreference.setOnPreferenceChangeListener((preference, newValue) -> {
+                if (preference.getKey().equals("globalpositionpercentage")) {
+                    // String einstring = "" + newValue;
+                    // int zahl = Integer.valueOf(einstring);
+                    int value = (Integer) newValue;
+                    float percentage = (float) value / 10;
+                    String einvalue = String.format("%.2f", (float) percentage) + "%";
 
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
-                    if (preference.getKey().equals("globalpositionpercentage")) {
-                        // String einstring = "" + newValue;
-                        // int zahl = Integer.valueOf(einstring);
-                        int value = (Integer) newValue;
-                        float percentage = (float) value / 10;
-                        String einvalue = String.format("%.2f", (float) percentage) + "%";
-
-                        float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
-                        //    float totalwords = settingslolo.getGlobalPosition() / settingslolo.getGlobalPositionSeekbarValue() * 1000 / 5;
-                        //   float totalwords = settingslolo.getTexttoRead().length() / 5; find an alternative without reloading tet everytime
-                        int totalnumberofwords = (int) totalwords;
-                        int numberofwordsread = (int) (totalwords * value / 1000);
-                        String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
-                        //  Preference pref = (Preference) this;
-                        //  SettingsLoader settingslolo = new SettingsLoader(positionpreference.getPreferenceManager().getSharedPreferences());
-                        positionpreference.setTitle(getString(R.string.settings_positionslider_title) + ": " + einvalue + " " + wordcount);
-                        //  positionpreference.setSummary(wordcount);
+                    float totalwords1 = settingslolo.getTexttoReadtotalLength() / 5;
+                    //    float totalwords = settingslolo.getGlobalPosition() / settingslolo.getGlobalPositionSeekbarValue() * 1000 / 5;
+                    //   float totalwords = settingslolo.getTexttoRead().length() / 5; find an alternative without reloading tet everytime
+                    int totalnumberofwords1 = (int) totalwords1;
+                    int numberofwordsread1 = (int) (totalwords1 * value / 1000);
+                    String wordcount1 = "~" + numberofwordsread1 + "/" + totalnumberofwords1 + " " + getString(R.string.words);
+                    //  Preference pref = (Preference) this;
+                    //  SettingsLoader settingslolo = new SettingsLoader(positionpreference.getPreferenceManager().getSharedPreferences());
+                    positionpreference.setTitle(getString(R.string.settings_positionslider_title) + ": " + einvalue + " " + wordcount1);
+                    //  positionpreference.setSummary(wordcount);
 
 
-                        int position = settingslolo.adjustGlobalPositionToPercentage(value);
-                        settingslolo.saveGlobalPosition(position);//save to real global position
+                    int position = settingslolo.adjustGlobalPositionToPercentage(value);
+                    settingslolo.saveGlobalPosition(position);//save to real global position
 
 
-                    }
-                    return true;
                 }
-
+                return true;
             });
 
             final ListPreference listPreference = (ListPreference) findPreference("recentreads");
@@ -517,13 +469,10 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             setListPreferenceData(listPreference, getActivity());
 
 
-            listPreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
+            listPreference.setOnPreferenceClickListener(preference -> {
 
-                    setListPreferenceData(listPreference, getActivity());
-                    return false;
-                }
+                setListPreferenceData(listPreference, getActivity());
+                return false;
             });
 
             Log.i("preference fragment", "before filepickerpreference");
@@ -548,69 +497,62 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             pickerPreference.setSummary(filepath);
 
-            pickerPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                @Override
-                public boolean onPreferenceChange(Preference preference,
-                                                  Object newValue) {
+            pickerPreference.setOnPreferenceChangeListener((preference, newValue) -> {
 
 
-                    if (preference.getKey().equals("filepath")) {
+                if (preference.getKey().equals("filepath")) {
 
-                        final Preference picker = preference;
-                        final String value = (String) newValue;
+                    final Preference picker = preference;
+                    final String value = (String) newValue;
 
-                        Log.i("Preference Fragment", "processing new path: " + value);
+                    Log.i("Preference Fragment", "processing new path: " + value);
 
-                        final SettingsLoader settingslolo = new SettingsLoader(preference.getPreferenceManager().getSharedPreferences(), getActivity());
+                    final SettingsLoader settingslolo1 = new SettingsLoader(preference.getPreferenceManager().getSharedPreferences(), getActivity());
 
-                        String eins = " ";
+                    String eins = " ";
 
-                        preference.setTitle(getString(R.string.fullscreen_text_while_loading));
-                        preference.setSummary(getString(R.string.settings_filepicker_loadingtext));
+                    preference.setTitle(getString(R.string.fullscreen_text_while_loading));
+                    preference.setSummary(getString(R.string.settings_filepicker_loadingtext));
 
-                        if (value != null && !value.isEmpty() && !value.equals("null")) //fix for bugreport java.lang.StringIndexOutOfBoundsException #12, menu now closes without crashing after secenting "empty"
-                        {
-                            new AsyncTask<String, Void, String>() {
-
-
-                                @Override
-                                protected String doInBackground(String... urlStr) {
-                                    // do stuff on non-UI thread
-
-                                    Log.d("settings", "loading book global position 0: " + settingslolo.getGlobalPositionSeekbarValue());
-
-                                    settingslolo.loadTextfromFilePath(value);
-
-                                    String out = "";
-                                    return out;
-
-                                    // String chunk1 = rawoutput.substring(rawoutput.indexOf(". "));
-                                    // String chunk2 = chunk1.substring(chunk1.indexOf(". "));
-
-                                    // return chunk2;
-
-                                    // return htmlCode.toString();
-                                }
+                    if (value != null && !value.isEmpty() && !value.equals("null")) //fix for bugreport java.lang.StringIndexOutOfBoundsException #12, menu now closes without crashing after secenting "empty"
+                    {
+                        new AsyncTask<String, Void, String>() {
 
 
-                                @Override
-                                protected void onPostExecute(String htmlCode) {
-                                    // do stuff on UI thread with the html
-                                    picker.setSummary(value);
+                            @Override
+                            protected String doInBackground(String... urlStr) {
+                                // do stuff on non-UI thread
 
-                                    settingslolo.save("filepath", value);
+                                Log.d("settings", "loading book global position 0: " + settingslolo1.getGlobalPositionSeekbarValue());
+
+                                settingslolo1.loadTextfromFilePath(value);
+
+                                return "";
+
+                                // String chunk1 = rawoutput.substring(rawoutput.indexOf(". "));
+                                // String chunk2 = chunk1.substring(chunk1.indexOf(". "));
+
+                                // return chunk2;
+
+                                // return htmlCode.toString();
+                            }
 
 
-                                }
-                            }.execute(eins);
-                        }
+                            @Override
+                            protected void onPostExecute(String htmlCode) {
+                                // do stuff on UI thread with the html
+                                picker.setSummary(value);
+
+                                settingslolo1.save("filepath", value);
 
 
+                            }
+                        }.execute(eins);
                     }
-                    return false;
-                }
 
+
+                }
+                return false;
             });
 
             Log.i("preference fragment", "onCreate finished ");
@@ -703,12 +645,16 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             Preference preferencetochange = findPreference(settingslolo.orientationkey);
             String parole = settingslolo.getOrientationMode();
-            if (parole.equals("1")) {
-                preferencetochange.setSummary(getString(R.string.settings_deviceorientation_landscape) + "");
-            } else if (parole.equals("2")) {
-                preferencetochange.setSummary(getString(R.string.settings_deviceorientation_portrait) + "");
-            } else if (parole.equals("0")) {
-                preferencetochange.setSummary(getString(R.string.settings_deviceorientation_default) + "");
+            switch (parole) {
+                case "1":
+                    preferencetochange.setSummary(getString(R.string.settings_deviceorientation_landscape) + "");
+                    break;
+                case "2":
+                    preferencetochange.setSummary(getString(R.string.settings_deviceorientation_portrait) + "");
+                    break;
+                case "0":
+                    preferencetochange.setSummary(getString(R.string.settings_deviceorientation_default) + "");
+                    break;
             }
           /*          }
                 }.execute(eins);

@@ -42,7 +42,7 @@
             android:defaultValue="220"
             android:key="globalpositionpercentage"
             android:max="1000"
-            android:title="@string/settings_positionslider_title"></SeekBarPreference>
+            android:title="@string/settings_positionslider_title" />
         <!--
                <com.mschlauch.comfortreader.PositionPickerPreference
 

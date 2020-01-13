@@ -38,8 +38,7 @@ public class DBManager {
         contentValue.put(DatabaseHelper.BOOKPOSITION, bookposition);
         contentValue.put(DatabaseHelper.BOOKLASTREADING, booklastread);
         contentValue.put(DatabaseHelper.BOOKWPM, bookwpm);
-        long rowid = database.insert(DatabaseHelper.TABLE_NAME, null, contentValue);
-        return rowid;
+        return database.insert(DatabaseHelper.TABLE_NAME, null, contentValue);
     }
 
     public Cursor fetch() {
@@ -100,8 +99,6 @@ public class DBManager {
         Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, null, null, null, null, orderclause);
         if (cursor != null) {
             cursor.moveToFirst();
-        } else {
-
         }
         return cursor;
     }
@@ -114,8 +111,7 @@ public class DBManager {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelper.BOOKPATH, name);
         contentValues.put(DatabaseHelper.BOOKTEXT, desc);
-        int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
-        return i;
+        return database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
     }
 
     public int updateGlobalPosition(long _id, int position) {
@@ -126,16 +122,14 @@ public class DBManager {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelper.BOOKPOSITION, position);
         contentValues.put(DatabaseHelper.BOOKLASTREADING, timevalue);
-        int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
-        return i;
+        return database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
     }
 
     public int updateWPM(long _id, int wpm) {
 
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelper.BOOKWPM, wpm);
-        int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
-        return i;
+        return database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
     }
 
     public int updateText(long _id, String text) {
@@ -151,8 +145,7 @@ public class DBManager {
         contentValues.put(DatabaseHelper.BOOKLASTREADING, timevalue);
         contentValues.put(DatabaseHelper.BOOKPOSITION, 0);
 
-        int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
-        return i;
+        return database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
     }
 
 

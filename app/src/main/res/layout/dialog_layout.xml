@@ -6,7 +6,7 @@
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></ScrollView>
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:text="Rate this app with 5 stars" />
 
         <Button
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:text="Tell your friends about it" />
 
         <Button
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:text="Become a sponsor, get Comfort Reader Gold" />
 
         <Button
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:text="Visit my homepage" />
 
         <Button
@@ -60,10 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:text="Do something later" />
     </LinearLayout>
 
-    />
-    />
 </RelativeLayout>

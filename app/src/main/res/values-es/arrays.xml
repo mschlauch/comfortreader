@@ -25,15 +25,15 @@
     </string-array>
 
 
-        
+
     <string-array name="orientationarray">
-                
+
         <item> Predeterminado </item>
-                
+
         <item> modo horizontal siempre </item>
-                
+
         <item> modo vertical siempre</item>
-            
+
     </string-array>
 
 

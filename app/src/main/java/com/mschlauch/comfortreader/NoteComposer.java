@@ -1,6 +1,10 @@
 package com.mschlauch.comfortreader;
 
 
+import android.text.format.DateFormat;
+
+import java.util.Date;
+
 /**
  * Created by michael on 02.02.18.
  */
@@ -26,7 +30,7 @@ public class NoteComposer {
 
         //String pathtofile = ("" + filepath + "/" + filename);
 
-        String datetext = " " + android.text.format.DateFormat.format("yyyy-MM-dd hh:mm", new java.util.Date());
+        String datetext = " " + DateFormat.format("yyyy-MM-dd hh:mm", new Date());
 
 
         int textlength = texttoread.length();
@@ -42,7 +46,7 @@ public class NoteComposer {
         String preextract = "empty";
         try {
             preextract = texttoread.substring(begin, end);
-        } catch (IndexOutOfBoundsException e) {
+        } catch (IndexOutOfBoundsException ignored) {
 
         }
 
@@ -64,7 +68,7 @@ public class NoteComposer {
 
         try {
             extract = preextract.substring(begin, end);
-        } catch (IndexOutOfBoundsException e) {
+        } catch (IndexOutOfBoundsException ignored) {
 
         }
 
@@ -90,7 +94,7 @@ public class NoteComposer {
 
         //String pathtofile = ("" + filepath + "/" + filename);
 
-        String datetext = " " + android.text.format.DateFormat.format("yyyy-MM-dd hh:mm", new java.util.Date());
+        String datetext = " " + DateFormat.format("yyyy-MM-dd hh:mm", new Date());
 /*
 
         int textlength = texttoread.length();

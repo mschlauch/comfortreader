@@ -46,7 +46,7 @@
     <string name="settings_fontsize_title">Yazı boyutu</string>
 
     <string name="settings_fontname_title">Yazı biçimi</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">Metin rengi</string>
     <string name="settings_textcolor_summary">normal renk</string>
     <string name="settings_focuscolor_title">Renge odaklan</string>
@@ -58,7 +58,7 @@
     <string name="settings_fromcopypaste_summary">Kopyalanan metni yapıştırmak için açın</string>
 
     <string name="settings_backgroundcolor_title">Arkaplan rengi</string>
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">Cihaz yönü</string>
     <string name="settings_deviceorientation_summary">cihaz döndürüldüğünde davranış</string>
     <string name="settings_deviceorientation_default">Öntanımlı sistem davranışı</string>
@@ -71,22 +71,21 @@
     <string name="notes_title_current_notebook">Deine Notizen:</string>
 
     <string name="fullscreen_copied_title">Kopyalanan metin</string>
-    <string name="fullscreen_text_while_loading">...Metin yükleniyor... \n
- Lütfen bekleyin.</string>
+    <string name="fullscreen_text_while_loading">…Metin yükleniyor… \nLütfen bekleyin.</string>
 
     <string name="settings_filepicker_loadingtext">Pdf yüklemesi zaman alıyor. Bilgisayarında pdf\'ten txt de hazırlayabilirsin.</string>
     <string name="support_standarttext">Hiçbir metin yüklemedi. Sol üstteki menü butonuna basın ve bir txt, epub ya da pdf dosyası yükleyin.</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">Bu uygulamayı faydalı buluyor musunuz?</string>
     <string name="feedback_opinionquestion_positive">Evet</string>
     <string name="feedback_opinionquestion_negative">yok hayır</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">Bu uygulama ücretsiz ve open-source. Desteğiniz gerekli. PlayStore\'da bir inceleme yapmak ister misiniz?</string>
     <string name="feedback_positiveopinionquestion_positive">Tamam</string>
     <string name="feedback_positiveopinionquestion_negative">yok hayır</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">
 Üzgünüz. Sorunu çözmeye yardımcı olabilirsiniz. Bize mesaj göndermek ister misin?</string>
     <string name="feedback_negativeopinionquestion_positive">

@@ -39,7 +39,6 @@ import java.net.URL;
  * You should have received a copy of the GNU General Public License
  * along with Comfort Reader.  If not, see <http://www.gnu.org/licenses/>.>.
  */
-//import static com.mschlauch.comfortreader.R.id.dialog;
 
 public class BroadcastReceiverWebLink extends Activity {
     private String TAG = "TagOpenTxt";
@@ -61,7 +60,7 @@ public class BroadcastReceiverWebLink extends Activity {
             if (Intent.ACTION_SEND.equals(action)) {
                 //uri = intent.getStringExtra("URI");
                 uri2 = intent.getData();
-                String website = intent.getStringExtra(android.content.Intent.EXTRA_TEXT);
+                String website = intent.getStringExtra(Intent.EXTRA_TEXT);
                 String websiteescaped = website;
             /*try {
                 websiteescaped = URLEncoder.encode(website, "UTF-8");
@@ -80,7 +79,7 @@ public class BroadcastReceiverWebLink extends Activity {
                         @Override
                         protected String doInBackground(String... urlStr) {
                             // do stuff on non-UI thread
-                            StringBuffer htmlCode = new StringBuffer();
+                            StringBuilder htmlCode = new StringBuilder();
                             try {
                                 URL url = new URL(urlStr[0]);
                                 BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -117,12 +116,11 @@ public class BroadcastReceiverWebLink extends Activity {
                             // do stuff on UI thread with the html
 
                             /* String path = data.getPath();*/
-                            String toread = htmlCode;
-                            if (toread.length() > 10) {
-                                Log.i("WebLinkBroadcaster", "loaded: " + toread);
+                            if (htmlCode.length() > 10) {
+                                Log.i("WebLinkBroadcaster", "loaded: " + htmlCode);
                                 Shouldload = false;
                                 //TODO set imported text with invented bookpath
-                                settingsload.helper_insertnewcopiedtextintodatabase(toread);
+                                settingsload.helper_insertnewcopiedtextintodatabase(htmlCode);
                                 // settingsload.saveReadingCopyTextboolean(true);
 
                             } else {
@@ -160,7 +158,7 @@ public class BroadcastReceiverWebLink extends Activity {
         try {
             URL url = new URL(urlString);
             return URLUtil.isValidUrl(urlString) && Patterns.WEB_URL.matcher(urlString).matches();
-        } catch (MalformedURLException e) {
+        } catch (MalformedURLException ignored) {
 
         }
 

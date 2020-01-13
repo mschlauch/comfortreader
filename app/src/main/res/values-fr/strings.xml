@@ -61,7 +61,7 @@
     <string name="settings_fontsize_title">taille de la police</string>
 
     <string name="settings_fontname_title">fonte</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">couleur du texte</string>
     <string name="settings_textcolor_summary">couleur normale</string>
     <string name="settings_focuscolor_title">couleur central</string>
@@ -75,7 +75,7 @@
     <string name="settings_backgroundcolor_title">couleur de fond</string>
 
 
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">Orientation de l\'appareil</string>
     <string name="settings_deviceorientation_summary">comportement pendant la rotation de l\'appareil</string>
     <string name="settings_deviceorientation_default">Comportement du système par défaut</string>
@@ -87,21 +87,21 @@
     <string name="notes_message_done_saving_note">fini d\'écrire à</string>
     <string name="notes_title_current_notebook">tes notes:</string>
 
-    <string name="fullscreen_text_while_loading">...Loading text...\n Please wait.</string>
+    <string name="fullscreen_text_while_loading">…Loading text…\n Please wait.</string>
     <string name="fullscreen_copied_title">texte copie</string>
 
     <string name="settings_filepicker_loadingtext">Le chargement du pdf prend du temps. Vous pouvez également préparer un texte à partir de pdf sur un ordinateur</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">Trouvez-vous cette application utile?</string>
     <string name="feedback_opinionquestion_positive">Oui</string>
     <string name="feedback_opinionquestion_negative">Non</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">Cette application est gratuite et open-source. Il survit grâce à votre soutien. Voulez-vous laisser une évaluation sur Google Play?</string>
     <string name="feedback_positiveopinionquestion_positive">D\'accord</string>
     <string name="feedback_positiveopinionquestion_negative">No</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">Désolé. Vous pouvez nous aider à résoudre le problème. Voulez-vous envoyer des commentaires?</string>
     <string name="feedback_negativeopinionquestion_positive">Envoyer la critique</string>
     <string name="feedback_negativeopinionquestion_negative">plus tard</string>

@@ -89,12 +89,12 @@ public class StringSegmenter {
         this.maxticks = point.maxticks;
 
         try {
-            this.loadedprehtmlstrings = new ArrayList<String>(point.loadedprehtmlstrings);
-        } catch (Exception ex) {
+            this.loadedprehtmlstrings = new ArrayList<>(point.loadedprehtmlstrings);
+        } catch (Exception ignored) {
         }
 
         try {
-            this.loadedhtmlstrings = new ArrayList<String>(point.loadedhtmlstrings);
+            this.loadedhtmlstrings = new ArrayList<>(point.loadedhtmlstrings);
         } catch (Exception ex) {
             this.loadallticks();
         }
@@ -122,7 +122,7 @@ public class StringSegmenter {
 
 
         getsegmenthtml(0);//load maxticks
-        loadedhtmlstrings = new ArrayList<String>();
+        loadedhtmlstrings = new ArrayList<>();
         int saltaticker = 0;
         for (int i = 0; i < maxticks + 1; i++) {
             saltaticker = saltaticker + 1;
@@ -202,9 +202,7 @@ public class StringSegmenter {
         for (int numberi = mind; numberi < max; numberi = numberi + feinheitsgrad) {
 
             String obj = tokenizedstring.substring(numberi, numberi + feinheitsgrad);
-            boolean zeilenumbruch = false;
             if (obj.contains("◜")) {
-                zeilenumbruch = true;
                 obj = obj.replaceAll("◜", "");
             }
 

@@ -59,7 +59,7 @@
     <string name="settings_fontsize_title">Schriftgröße</string>
 
     <string name="settings_fontname_title">Schriftart</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">Textfarbe</string>
     <string name="settings_textcolor_summary">Normale Farbe</string>
     <string name="settings_focuscolor_title">Fokusfarbe</string>
@@ -71,7 +71,7 @@
     <string name="settings_fromcopypaste_summary">Anschalten um Kopie einzufügen</string>
 
     <string name="settings_backgroundcolor_title">Hintergrundfarbe</string>
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">Richtung</string>
     <string name="settings_deviceorientation_summary">behavior during device rotation</string>
     <string name="settings_deviceorientation_default">Systemeinstellung</string>
@@ -84,20 +84,20 @@
     <string name="notes_title_current_notebook">Deine Notizen:</string>
 
     <string name="fullscreen_copied_title">Kopiertes</string>
-    <string name="fullscreen_text_while_loading">...Text wird geladen...\n Bitte warten.</string>
+    <string name="fullscreen_text_while_loading">…Text wird geladen…\n Bitte warten.</string>
 
     <string name="settings_filepicker_loadingtext">Text wird laden. Pdf-Export am Computer geht schneller.</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">Findest du diese App nützlich?</string>
     <string name="feedback_opinionquestion_positive">Ja</string>
     <string name="feedback_opinionquestion_negative">Nein</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">Dies ist eine freie open-source Software. Die Unterstützung vieler macht es möglich. Willst du auch beitragen und eine Bewertung im Play Store abgeben?</string>
     <string name="feedback_positiveopinionquestion_positive">Okay</string>
     <string name="feedback_positiveopinionquestion_negative">No</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">Schade. Du kannst uns helfen, das Problem zu lösen. Willst du uns eine Rückmeldung schicken?</string>
     <string name="feedback_negativeopinionquestion_positive">Feedback senden</string>
     <string name="feedback_negativeopinionquestion_negative">Später</string>
