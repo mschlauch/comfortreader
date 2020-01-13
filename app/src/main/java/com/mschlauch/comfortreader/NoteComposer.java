@@ -16,7 +16,7 @@ public class NoteComposer {
     private String position;
 
 
-    public String getExtract (SettingsLoader settingsload){
+    public String getExtract(SettingsLoader settingsload) {
 
         // savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
         position = settingsload.getGlobalPositionPercentString();
@@ -32,19 +32,19 @@ public class NoteComposer {
         int textlength = texttoread.length();
         int begin = globalposition - 100 - settingsload.getMaxBlockSize();
         int end = globalposition + 100;
-        if (begin < 1){begin = 0;}
-        if (end > textlength || end < 0){
+        if (begin < 1) {
+            begin = 0;
+        }
+        if (end > textlength || end < 0) {
             end = textlength;
         }
 
         String preextract = "empty";
         try {
-            preextract = texttoread.substring(begin,end);
+            preextract = texttoread.substring(begin, end);
         } catch (IndexOutOfBoundsException e) {
 
         }
-
-
 
 
         //get extracted text as words
@@ -53,22 +53,24 @@ public class NoteComposer {
         end = 0;
         begin = preextract.indexOf(" ");
         end = preextract.lastIndexOf(" ");
-        if (begin < 1){begin = 0;}
-        if (end > preextract.length() || end < 0){
-            end = preextract.length() ;
+        if (begin < 1) {
+            begin = 0;
+        }
+        if (end > preextract.length() || end < 0) {
+            end = preextract.length();
         }
 
         String extract = " ";
 
         try {
-        extract = preextract.substring(begin, end);
+            extract = preextract.substring(begin, end);
         } catch (IndexOutOfBoundsException e) {
 
         }
 
-        extract =	extract.replaceAll("-\n","");
+        extract = extract.replaceAll("-\n", "");
 
-        extract =	extract.replaceAll("\n"," ");
+        extract = extract.replaceAll("\n", " ");
 
         extract = "[…]" + extract + "[…]";
         return extract;
@@ -76,7 +78,7 @@ public class NoteComposer {
 
     }
 
-    public String getPrefix (SettingsLoader settingsload){
+    public String getPrefix(SettingsLoader settingsload) {
 
         // savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
         position = settingsload.getGlobalPositionPercentString();
@@ -133,14 +135,14 @@ public class NoteComposer {
         //current position
         //percentage
 
-        prefix = "\n____________________\nQUOTATION:" + "\nFile:"+ filepath + "\nPosition: " +  position + "\nDate:" + datetext + "\nOriginal text:"  + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//" ;
+        prefix = "\n____________________\nQUOTATION:" + "\nFile:" + filepath + "\nPosition: " + position + "\nDate:" + datetext + "\nOriginal text:" + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//";
         return prefix;
 
     }
 
-    public String getcomposedNote (String note, SettingsLoader settingsload){
+    public String getcomposedNote(String note, SettingsLoader settingsload) {
         prefix = getPrefix(settingsload);
-        return composednotebook = settingsload.getCurrentNotes() + ""  + prefix  + note + "";
+        return composednotebook = settingsload.getCurrentNotes() + "" + prefix + note + "";
 
     }
 }

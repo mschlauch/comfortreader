@@ -26,11 +26,6 @@
     <string name="settings_insertmanually_filepath">ajouté manuellement</string>
 
 
-
-
-
-
-
     <string name="settings_statistics_summary">Vous avete lu</string>
     <string name="settings_statistics_summary2">mots, in </string>
     <string name="settings_statistics_summary3">minutes (réinitialiser ici).</string>
@@ -96,7 +91,6 @@
     <string name="fullscreen_copied_title">texte copie</string>
 
     <string name="settings_filepicker_loadingtext">Le chargement du pdf prend du temps. Vous pouvez également préparer un texte à partir de pdf sur un ordinateur</string>
-
 
 
     <string name="feedback_opinionquestion_subtitle"></string>

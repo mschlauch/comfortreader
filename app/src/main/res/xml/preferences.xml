@@ -2,53 +2,47 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-
-
     <PreferenceCategory android:title="@string/settings_title_textoptions">
 
+        <com.github.angads25.filepicker.view.FilePickerPreference
+
+            xmlns:app="http://schemas.android.com/apk/lib/android"
+            android:defaultValue="/sdcard:/mnt"
+            android:icon="@drawable/ic_loadtext"
+            android:key="filepath"
+            android:summary="Just a Summary"
+            android:title="@string/settings_filepicker_title"
+            app:error_dir="/mnt"
+            app:extensions="txt:pdf:"
+            app:root_dir="/sdcard"
+            app:selection_mode="single_mode"
+            app:selection_type="dir_select"
+            app:titleText="Select Directories" />
 
 
-    <com.github.angads25.filepicker.view.FilePickerPreference
+        <ListPreference
+            android:defaultValue="1"
 
-        xmlns:app="http://schemas.android.com/apk/lib/android"
-        android:icon="@drawable/ic_loadtext"
-        android:key="filepath"
-        android:title="@string/settings_filepicker_title"
-        android:summary="Just a Summary"
-        android:defaultValue="/sdcard:/mnt"
-        app:titleText="Select Directories"
-        app:error_dir="/mnt"
-        app:root_dir="/sdcard"
-        app:selection_mode="single_mode"
-        app:selection_type="dir_select"
-        app:extensions="txt:pdf:"/>
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            android:icon="@drawable/ic_loadrecent"
+            android:key="recentreads"
+            android:summary="@string/settings_recent_texts_summary"
+            android:title="@string/settings_recent_texts" />
 
 
+        <EditTextPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_copypaste"
+            android:key="inserttextmanually"
+            android:summary="@string/settings_insertmanually_summary_empty"
+            android:title="@string/settings_insertmanually_title" />
 
-    <ListPreference     android:title="@string/settings_recent_texts"
-
-        android:summary="@string/settings_recent_texts_summary"
-        android:icon="@drawable/ic_loadrecent"
-        android:key="recentreads"
-        android:defaultValue="1"
-        android:entries="@array/listArray"
-        android:entryValues="@array/listValues" />
-
-
-    <EditTextPreference
-        android:key="inserttextmanually"
-        android:icon="@drawable/ic_copypaste"
-        android:summary="@string/settings_insertmanually_summary_empty"
-        android:title="@string/settings_insertmanually_title"
-        android:defaultValue="false" />
-
-   <SeekBarPreference
-        android:defaultValue="220"
-        android:max="1000"
-        android:title="@string/settings_positionslider_title"
-        android:key="globalpositionpercentage">
-    </SeekBarPreference>
+        <SeekBarPreference
+            android:defaultValue="220"
+            android:key="globalpositionpercentage"
+            android:max="1000"
+            android:title="@string/settings_positionslider_title"></SeekBarPreference>
         <!--
                <com.mschlauch.comfortreader.PositionPickerPreference
 
@@ -60,132 +54,123 @@
        -->
 
 
-           </PreferenceCategory>
+    </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/settings_title_readingoptions">
 
 
+        <com.mschlauch.comfortreader.NumberPickerPreference
+            android:defaultValue="170"
+            android:icon="@drawable/ic_speed"
+            android:key="wpmvalue"
+            android:summary="@string/settings_wpn_summary"
+            android:title="@string/settings_wpm_title" />
+        <com.mschlauch.comfortreader.NumberPickerPreference
+            android:defaultValue="50"
+            android:icon="@drawable/ic_maximumtext"
+            android:key="maxblocksizevalue"
+            android:summary="@string/settings_maxwords_summary"
+            android:title="@string/settings_maxwords_title" />
+        <com.mschlauch.comfortreader.NumberPickerPreference
+            android:defaultValue="17"
+            android:icon="@drawable/ic_minimumtext"
+            android:key="minblocksizevalue"
+            android:summary="@string/settings_minwords_summary"
+            android:title="@string/settings_minwords_title" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_peripherallines"
+            android:key="helplines"
+            android:summary="@string/settings_helplines_summary"
+            android:title="@string/settings_helplines_title" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/orientationarray"
+
+            android:entryValues="@array/orientationvalues"
+            android:icon="@drawable/ic_deviceorientation"
+            android:key="orientationmode"
+            android:summary="@string/settings_deviceorientation_summary"
+            android:title="@string/settings_deviceorientation_title" />
+
+    </PreferenceCategory>
 
 
-           <com.mschlauch.comfortreader.NumberPickerPreference
-               android:icon="@drawable/ic_speed"
-               android:title="@string/settings_wpm_title"
-               android:key="wpmvalue"
-               android:defaultValue="170"
-               android:summary="@string/settings_wpn_summary"
-               />
-           <com.mschlauch.comfortreader.NumberPickerPreference
-               android:icon="@drawable/ic_maximumtext"
-               android:title="@string/settings_maxwords_title"
-               android:key="maxblocksizevalue"
-               android:defaultValue="50"
-               android:summary="@string/settings_maxwords_summary"
-               />
-           <com.mschlauch.comfortreader.NumberPickerPreference
-               android:icon="@drawable/ic_minimumtext"
-               android:title="@string/settings_minwords_title"
-               android:key="minblocksizevalue"
-               android:defaultValue="17"
-               android:summary="@string/settings_minwords_summary"
-               />
+    <PreferenceCategory android:title="@string/settings_title_appearanceoptions">
 
-               <SwitchPreference
-                   android:key="helplines"
-                   android:icon="@drawable/ic_peripherallines"
-                   android:summary="@string/settings_helplines_summary"
-                   android:title="@string/settings_helplines_title"
-                   android:defaultValue="false" />
-
-           <ListPreference     android:title="@string/settings_deviceorientation_title"
-               android:icon="@drawable/ic_deviceorientation"
-
-               android:summary="@string/settings_deviceorientation_summary"
-               android:key="orientationmode"
-               android:defaultValue="0"
-               android:entries="@array/orientationarray"
-               android:entryValues="@array/orientationvalues" />
-
-           </PreferenceCategory>
+        <PreferenceScreen
+            android:icon="@drawable/ic_typefacesize"
+            android:key="appearance_preferencescreen"
+            android:title="@string/settings_title_linktoappearanceoptions">
 
 
+            <com.mschlauch.comfortreader.NumberPickerPreference
+                android:defaultValue="21"
+                android:icon="@drawable/ic_typefacesize"
+                android:key="fontsizevalue"
+                android:title="@string/settings_fontsize_title" />
+
+            <ListPreference
+                android:defaultValue="1"
+                android:entries="@array/fontlistarray"
+                android:entryValues="@array/fontlistvalues"
+                android:icon="@drawable/ic_lettercolor"
+                android:key="fontnamevalue"
+                android:summary="@string/settings_fontname_summary"
+                android:title="@string/settings_fontname_title" />
+
+            <!--
+                       <Preference android:title="@string/settings_removesweepingeffectbutton_title"
+                           android:key="removesweepingeffectbutton"
+                       />
+                       -->
+
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                android:defaultValue="#ffee00"
+                android:key="focuscolorvalue"
+                android:summary="@string/settings_focuscolor_summary"
+                android:title="@string/settings_focuscolor_title" />
 
 
-
-           <PreferenceCategory android:title="@string/settings_title_appearanceoptions">
-
-       <PreferenceScreen
-       android:key="appearance_preferencescreen"
-       android:title="@string/settings_title_linktoappearanceoptions"
-           android:icon="@drawable/ic_typefacesize"
-           >
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                android:defaultValue="#ffffff"
+                android:key="textcolorvalue"
+                android:summary="@string/settings_textcolor_summary"
+                android:title="@string/settings_textcolor_title" />
 
 
-
-           <com.mschlauch.comfortreader.NumberPickerPreference
-               android:icon="@drawable/ic_typefacesize"
-               android:key="fontsizevalue"
-               android:title="@string/settings_fontsize_title"
-               android:defaultValue="21" />
-
-           <ListPreference     android:title="@string/settings_fontname_title"
-               android:icon="@drawable/ic_lettercolor"
-               android:summary="@string/settings_fontname_summary"
-               android:key="fontnamevalue"
-               android:defaultValue="1"
-               android:entries="@array/fontlistarray"
-               android:entryValues="@array/fontlistvalues" />
-
-           <!--
-                      <Preference android:title="@string/settings_removesweepingeffectbutton_title"
-                          android:key="removesweepingeffectbutton"
-                      />
-                      -->
-
-                                 <net.margaritov.preference.colorpicker.ColorPickerPreference
-                                     android:key="focuscolorvalue"
-                                     android:title="@string/settings_focuscolor_title"
-                                     android:summary="@string/settings_focuscolor_summary"
-                                 android:defaultValue="#ffee00"/>
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                android:defaultValue="#000000"
+                android:key="backgroundcolorvalue"
+                android:summary="@string/settings_backgroundcolor_summary"
+                android:title="@string/settings_backgroundcolor_title" />
 
 
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_statistics_sectiontitle">
+        <Preference
+            android:defaultValue="false"
 
-                      <net.margaritov.preference.colorpicker.ColorPickerPreference
-                          android:key="textcolorvalue"
-                          android:title="@string/settings_textcolor_title"
-                          android:summary="@string/settings_textcolor_summary"
-                          android:defaultValue="#ffffff"/>
+            android:key="statisticsswitch"
+            android:summary="@string/settings_statistics_summary"
+            android:title="@string/settings_statistics_title" />
 
+    </PreferenceCategory>
 
-
-           <net.margaritov.preference.colorpicker.ColorPickerPreference
-               android:key="backgroundcolorvalue"
-               android:title="@string/settings_backgroundcolor_title"
-               android:summary="@string/settings_backgroundcolor_summary"
-               android:defaultValue="#000000"/>
-
-
-       </PreferenceScreen>
-           </PreferenceCategory>
-           <PreferenceCategory android:title="@string/settings_statistics_sectiontitle">
-               <Preference
-                   android:key="statisticsswitch"
-
-                   android:summary="@string/settings_statistics_summary"
-                   android:title="@string/settings_statistics_title"
-                   android:defaultValue="false" />
-
-           </PreferenceCategory>
-
-           <PreferenceCategory android:title="@string/settings_title_supportoptions">
+    <PreferenceCategory android:title="@string/settings_title_supportoptions">
 
 
-           <Preference
-               android:icon="@drawable/ic_support"
+        <Preference
+            android:icon="@drawable/ic_support"
 
-               android:title="@string/settings_help_title">
-               <intent android:action="android.intent.action.VIEW"
-                   android:data="http://comfortreader.rhizomaticdesign.net/" />
-           </Preference>
-           </PreferenceCategory>
+            android:title="@string/settings_help_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://comfortreader.rhizomaticdesign.net/" />
+        </Preference>
+    </PreferenceCategory>
 
-       </PreferenceScreen>
+</PreferenceScreen>

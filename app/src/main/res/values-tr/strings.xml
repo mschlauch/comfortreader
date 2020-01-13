@@ -18,7 +18,6 @@
     <string name="title_activity_settings">Ayarlar</string>
 
 
-
     <string name="settings_title_readingoptions">Okuma</string>
     <string name="settings_title_supportoptions">Destek</string>
     <string name="settings_help_title">Yardım al</string>
@@ -76,7 +75,7 @@
  Lütfen bekleyin.</string>
 
     <string name="settings_filepicker_loadingtext">Pdf yüklemesi zaman alıyor. Bilgisayarında pdf\'ten txt de hazırlayabilirsin.</string>
-        <string name="support_standarttext">Hiçbir metin yüklemedi. Sol üstteki menü butonuna basın ve bir txt, epub ya da pdf dosyası yükleyin.</string>
+    <string name="support_standarttext">Hiçbir metin yüklemedi. Sol üstteki menü butonuna basın ve bir txt, epub ya da pdf dosyası yükleyin.</string>
 
 
     <string name="feedback_opinionquestion_subtitle"></string>
@@ -96,10 +95,6 @@ geribildirim yolla</string>
 
     <string name="feedback_thankyou_title">Teşekkür ederim.</string>
     <string name="feedback_thankyou_subtitle">Lütfen Comfort Reader web sayfasında bağış yapmayı düşünün. Bu şekilde reklamdan arınmış kalır.</string>
-
-
-
-
 
 
 </resources>

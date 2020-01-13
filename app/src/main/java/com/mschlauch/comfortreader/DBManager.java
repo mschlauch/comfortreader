@@ -1,6 +1,5 @@
 package com.mschlauch.comfortreader;
 
-import com.mschlauch.comfortreader.DatabaseHelper;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -44,7 +43,7 @@ public class DBManager {
     }
 
     public Cursor fetch() {
-        String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION,  DatabaseHelper.BOOKWPM};
+        String[] columns = new String[]{DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION, DatabaseHelper.BOOKWPM};
 
         Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, null, null, null, null, null);
         if (cursor != null) {
@@ -54,9 +53,9 @@ public class DBManager {
     }
 
     public Cursor fetchwithBookpath(String bookpathselected) {
-        String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION,  DatabaseHelper.BOOKWPM};
-        String whereClause = DatabaseHelper.BOOKPATH+"=?";
-        String[] whereArgs = new String[] {
+        String[] columns = new String[]{DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION, DatabaseHelper.BOOKWPM};
+        String whereClause = DatabaseHelper.BOOKPATH + "=?";
+        String[] whereArgs = new String[]{
                 "" + bookpathselected,
         };
         Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, whereClause, whereArgs, null, null, null);
@@ -65,10 +64,11 @@ public class DBManager {
         }
         return cursor;
     }
-    public Cursor fetchwithBookID (int bookid) {
-        String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION,  DatabaseHelper.BOOKWPM};
-        String whereClause = DatabaseHelper._ID +"=?";
-        String[] whereArgs = new String[] {
+
+    public Cursor fetchwithBookID(int bookid) {
+        String[] columns = new String[]{DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION, DatabaseHelper.BOOKWPM};
+        String whereClause = DatabaseHelper._ID + "=?";
+        String[] whereArgs = new String[]{
                 "" + bookid,
         };
         Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, whereClause, whereArgs, null, null, null);
@@ -92,22 +92,21 @@ public class DBManager {
     }*/
 
 
-    public Cursor fetchchronological () {
-        String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION,  DatabaseHelper.BOOKWPM};
+    public Cursor fetchchronological() {
+        String[] columns = new String[]{DatabaseHelper._ID, DatabaseHelper.BOOKPATH, DatabaseHelper.BOOKTEXT, DatabaseHelper.BOOKLENGTH, DatabaseHelper.BOOKPOSITION, DatabaseHelper.BOOKWPM};
 
 
-        String orderclause = DatabaseHelper.BOOKLASTREADING+" DESC LIMIT 10";
+        String orderclause = DatabaseHelper.BOOKLASTREADING + " DESC LIMIT 10";
         Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, null, null, null, null, orderclause);
         if (cursor != null) {
             cursor.moveToFirst();
-        }
-        else{
+        } else {
 
         }
         return cursor;
     }
-    public boolean deleteSingleRow(int rowId)
-    {
+
+    public boolean deleteSingleRow(int rowId) {
         return database.delete(DatabaseHelper.TABLE_NAME, DatabaseHelper._ID + "=" + rowId, null) > 0;
     }
 
@@ -123,13 +122,14 @@ public class DBManager {
 
         int time = (int) (System.currentTimeMillis());
         Timestamp tsTemp = new Timestamp(time);
-        long timevalue =  tsTemp.getTime();
+        long timevalue = tsTemp.getTime();
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelper.BOOKPOSITION, position);
         contentValues.put(DatabaseHelper.BOOKLASTREADING, timevalue);
         int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
         return i;
     }
+
     public int updateWPM(long _id, int wpm) {
 
         ContentValues contentValues = new ContentValues();
@@ -146,7 +146,7 @@ public class DBManager {
 
         int time = (int) (System.currentTimeMillis());
         Timestamp tsTemp = new Timestamp(time);
-        long timevalue =  tsTemp.getTime();
+        long timevalue = tsTemp.getTime();
 
         contentValues.put(DatabaseHelper.BOOKLASTREADING, timevalue);
         contentValues.put(DatabaseHelper.BOOKPOSITION, 0);
@@ -154,7 +154,6 @@ public class DBManager {
         int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper._ID + " = " + _id, null);
         return i;
     }
-
 
 
     public void delete(long _id) {

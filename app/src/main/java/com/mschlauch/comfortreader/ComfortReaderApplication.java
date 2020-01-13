@@ -22,7 +22,7 @@ public class ComfortReaderApplication extends Application {
                 .setPositiveFeedbackCollectors(new GooglePlayStoreFeedbackCollector())
                 .setCriticalFeedbackCollectors(new DefaultEmailFeedbackCollector("support@rhizomaticdesign.net"))
                 .applyAllDefaultRules();
-       // .setAlwaysShow(BuildConfig.DEBUG);
+        // .setAlwaysShow(BuildConfig.DEBUG);
     }
 
 }
