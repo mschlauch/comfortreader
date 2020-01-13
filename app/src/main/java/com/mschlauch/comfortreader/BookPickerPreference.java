@@ -39,7 +39,7 @@ public class BookPickerPreference extends FilePickerPreference implements Prefer
     public boolean onPreferenceChange(Preference preference, Object o) {
         if (preference.getKey().equals("your_preference_key")) {
             String value = (String) o;
-            String arr[] = value.split(":");
+            String[] arr = value.split(":");
 
         }
         return false;

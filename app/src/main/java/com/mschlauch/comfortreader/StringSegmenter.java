@@ -112,7 +112,7 @@ public class StringSegmenter {
 //	       globalposition=0;
 //	    }
     public Object clone() throws CloneNotSupportedException {
-        return (StringSegmenter) super.clone();
+        return super.clone();
     }
 
     public void loadallticks() {

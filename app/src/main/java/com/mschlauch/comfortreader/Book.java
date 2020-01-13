@@ -265,7 +265,7 @@ public class Book {
             String placeholder = "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh";
             placeholder = placeholder.substring(0, minimumblocksize);
 
-            referencestring = placeholder + loadedstring.substring(minimumblocksize, loadedstring.length());
+            referencestring = placeholder + loadedstring.substring(minimumblocksize);
         }
 
         for (int x = 0; x < segmentors.length(); x = x + 1) {
@@ -276,7 +276,6 @@ public class Book {
 
             if (p < positionofsegmenter && p > 0) {
                 positionofsegmenter = p;
-                ;
             }
 
         }
@@ -470,7 +469,6 @@ public class Book {
 
         int newposition = (int) position;
         // newposition = (int) position;
-        ;
 
         return newposition;
 

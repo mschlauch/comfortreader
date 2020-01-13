@@ -308,7 +308,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             fontsize_summary = getString(R.string.settings_fontname_summary) + " " + settingslolo.getFontSize() + "";
             float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
             int totalnumberofwords = (int) totalwords;
-            int numberofwordsread = (int) (settingslolo.getGlobalPosition() / 5);
+            int numberofwordsread = settingslolo.getGlobalPosition() / 5;
             String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
 
 
@@ -318,7 +318,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             String stat_summary = getString(R.string.settings_statistics_summary) + " " + Math.round(settingslolo.getReadCharacters() / 6) + " " + getString(R.string.settings_statistics_summary2) + " " + Math.round(settingslolo.getReadingTime() / 60000) + " " + getString(R.string.settings_statistics_summary3);
 
 
-            final Preference wpmpref = (Preference) findPreference("wpmvalue");
+            final Preference wpmpref = findPreference("wpmvalue");
 
             wpmpref.setSummary(wpm_summary);
 
@@ -334,7 +334,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             });
 
 
-            final Preference maxblockpref = (Preference) findPreference("maxblocksizevalue");
+            final Preference maxblockpref = findPreference("maxblocksizevalue");
 
             maxblockpref.setSummary(maxblocksize_summary);
             maxblockpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -354,7 +354,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             });
 
-            final Preference minblockpref = (Preference) findPreference("minblocksizevalue");
+            final Preference minblockpref = findPreference("minblocksizevalue");
             minblockpref.setSummary(minblocksize_summary);
             minblockpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
@@ -367,7 +367,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             });
 
-            final Preference fontsizepref = (Preference) findPreference("fontsizevalue");
+            final Preference fontsizepref = findPreference("fontsizevalue");
 
             fontsizepref.setSummary(fontsize_summary);
             fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -407,7 +407,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             });
 
-            final Preference helplinespref = (Preference) findPreference("helplines");
+            final Preference helplinespref = findPreference("helplines");
 
             fontsizepref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
@@ -636,7 +636,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
 
             //filepath und appearance trennen...updaten bevor listener registriert wird.
             String eins = "";
-            final Preference preferencetochange1 = (Preference) findPreference("filepath");
+            final Preference preferencetochange1 = findPreference("filepath");
             final SettingsLoader settingslolo = new SettingsLoader(preferencetochange1.getPreferenceManager().getSharedPreferences(), getActivity());
 
 
@@ -660,7 +660,7 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             fontsize_summary = getString(R.string.settings_fontname_summary) + " " + settingslolo.getFontSize() + "";
             float totalwords = settingslolo.getTexttoReadtotalLength() / 5;
             int totalnumberofwords = (int) totalwords;
-            int numberofwordsread = (int) (settingslolo.getGlobalPosition() / 5);
+            int numberofwordsread = settingslolo.getGlobalPosition() / 5;
             String wordcount = "~" + numberofwordsread + "/" + totalnumberofwords + " " + getString(R.string.words);
 
 
@@ -685,23 +685,23 @@ public class CRPreferenceActivity extends PreferenceActivity implements SharedPr
             // do stuff on UI thread with the html
             preferencetochange1.setSummary(filepath);
 
-            Preference preferencetochange2 = (Preference) findPreference(settingslolo.globalpositionpermillekey);
+            Preference preferencetochange2 = findPreference(settingslolo.globalpositionpermillekey);
             preferencetochange2.setTitle(globalposition_title);
 
-            Preference preferencetochange3 = (Preference) findPreference(settingslolo.wpmkey);
+            Preference preferencetochange3 = findPreference(settingslolo.wpmkey);
             preferencetochange3.setSummary(wpm_summary);
-            Preference preferencetochange4 = (Preference) findPreference(settingslolo.maxblocksizekey);
+            Preference preferencetochange4 = findPreference(settingslolo.maxblocksizekey);
             preferencetochange4.setSummary(maxblocksize_summary);
 
-            Preference preferencetochange5 = (Preference) findPreference(settingslolo.minblocksizekey);
+            Preference preferencetochange5 = findPreference(settingslolo.minblocksizekey);
             preferencetochange5.setSummary(minblocksize_summary);
-            Preference preferencetochange6 = (Preference) findPreference(settingslolo.fontsizekey);
+            Preference preferencetochange6 = findPreference(settingslolo.fontsizekey);
             preferencetochange6.setSummary(fontsize_summary);
 
-            Preference preferencetochange7 = (Preference) findPreference("statisticsswitch");
+            Preference preferencetochange7 = findPreference("statisticsswitch");
             preferencetochange7.setSummary(stat_summary);
 
-            Preference preferencetochange = (Preference) findPreference(settingslolo.orientationkey);
+            Preference preferencetochange = findPreference(settingslolo.orientationkey);
             String parole = settingslolo.getOrientationMode();
             if (parole.equals("1")) {
                 preferencetochange.setSummary(getString(R.string.settings_deviceorientation_landscape) + "");

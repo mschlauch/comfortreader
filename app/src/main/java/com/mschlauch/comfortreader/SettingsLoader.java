@@ -311,7 +311,7 @@ public class SettingsLoader {
         dbManager.open();
         Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
         if (cursor.getCount() > 0) {
-            int number = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKPOSITION));
+            int number = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKPOSITION));
             cursor.close();
 
 
@@ -440,7 +440,7 @@ public class SettingsLoader {
         Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
 
         if (cursor.getCount() > 0) {
-            number = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKWPM));
+            number = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKWPM));
             //return retrieveNumber(texttoreadtotallengthkey);
             cursor.close();
 
@@ -638,7 +638,7 @@ public class SettingsLoader {
 
             if (cursor.getCount() > 0) {
 
-                String path = cursor.getString(cursor.getColumnIndex(dbManager.dbHelper.BOOKPATH));
+                String path = cursor.getString(cursor.getColumnIndex(DatabaseHelper.BOOKPATH));
                 cursor.close();
                 //dbManager.close();
                 return path;
@@ -660,7 +660,7 @@ public class SettingsLoader {
         Cursor cursor = dbManager.fetchwithBookID(retrieveNumber(currentbookidkey));
         //dbManager.close();
         if (cursor.getCount() > 0) {
-            int number = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKLENGTH));
+            int number = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKLENGTH));
             //return retrieveNumber(texttoreadtotallengthkey);
             cursor.close();
             return number;
@@ -684,7 +684,7 @@ public class SettingsLoader {
         Cursor cursor = dbManager.fetchwithBookID(bookid);
 
         if (cursor.getCount() > 0) {
-            text = cursor.getString(cursor.getColumnIndex(dbManager.dbHelper.BOOKTEXT));
+            text = cursor.getString(cursor.getColumnIndex(DatabaseHelper.BOOKTEXT));
             Log.d("settingslf", "loading text from database with lenght: " + text.length());
             cursor.close();
 
@@ -712,7 +712,7 @@ public class SettingsLoader {
         int number = 0;
         while (cursor.isAfterLast() == false) {
             if (number > 14) {
-                int bookid = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper._ID));
+                int bookid = cursor.getInt(cursor.getColumnIndex(DatabaseHelper._ID));
                 dbManager.deleteSingleRow(bookid);
             }
 
@@ -802,9 +802,9 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
         List<String> listItems = new ArrayList<String>();
         while (cursor.isAfterLast() == false) {
-            String filename = getFileofPath(cursor.getString(cursor.getColumnIndex(dbManager.dbHelper.BOOKPATH)));
-            int position = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKPOSITION));
-            int length = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper.BOOKLENGTH));
+            String filename = getFileofPath(cursor.getString(cursor.getColumnIndex(DatabaseHelper.BOOKPATH)));
+            int position = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKPOSITION));
+            int length = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.BOOKLENGTH));
 
 
             Log.i("Settingloaderlastbooks", "text length is: " + length);
@@ -839,7 +839,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         List<String> listItems = new ArrayList<String>();
         while (cursor.isAfterLast() == false) {
 
-            int id = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper._ID));
+            int id = cursor.getInt(cursor.getColumnIndex(DatabaseHelper._ID));
 
             listItems.add("" + id);
 
@@ -905,7 +905,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
         d("settings", "filename is " + path);
         String extension = "";
         if (path.contains(".")) {
-            extension = path.substring((path.lastIndexOf(".") + 1), path.length());
+            extension = path.substring((path.lastIndexOf(".") + 1));
         }
 
         d("settings", "extension is " + extension);
@@ -953,7 +953,7 @@ if (retrieve(filepathkey3).equals(getFilePath())==false) {
 
             while (cursor.isAfterLast() == false) {
 
-                int bookid = cursor.getInt(cursor.getColumnIndex(dbManager.dbHelper._ID));
+                int bookid = cursor.getInt(cursor.getColumnIndex(DatabaseHelper._ID));
                 dbManager.deleteSingleRow(bookid);
 
 

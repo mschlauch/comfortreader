@@ -42,29 +42,28 @@ import com.github.stkent.amplify.tracking.Amplify;
 
 //import android.support.v7.app.ActionBarActivity;
 
-/**d.annotation.TargetApi;
- import android.app.d.annotation.TargetApi;
- import android.app.d.annotation.TargetApi;
- import android.app.Activity;
- import android.app.Dialog;
- import androidd.annotation.TargetApi;
- import android.app.Activity;
- import android.app.Dialog;
- import androidActivity;
- import android.app.Dialog;
- import androidd.annotation.TargetApi;
- import android.app.Activity;
- import android.app.Dialog;
- import androidd.annotation.TargetApi;
- import android.app.Activity;
- import android.app.Dialog;
- import androidActivity;
- import android.app.Dialog;
- import android
+/**
+ * d.annotation.TargetApi;
+ * import android.app.d.annotation.TargetApi;
+ * import android.app.d.annotation.TargetApi;
+ * import android.app.Activity;
+ * import android.app.Dialog;
+ * import androidd.annotation.TargetApi;
+ * import android.app.Activity;
+ * import android.app.Dialog;
+ * import androidActivity;
+ * import android.app.Dialog;
+ * import androidd.annotation.TargetApi;
+ * import android.app.Activity;
+ * import android.app.Dialog;
+ * import androidd.annotation.TargetApi;
+ * import android.app.Activity;
+ * import android.app.Dialog;
+ * import androidActivity;
+ * import android.app.Dialog;
+ * import android
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
- *
- *
  */
 
 
@@ -142,7 +141,7 @@ public class FullscreenActivity extends Activity {
 
         //respectfully request feedback
         DefaultLayoutPromptView promptView
-                = (DefaultLayoutPromptView) findViewById(R.id.prompt_view);
+                = findViewById(R.id.prompt_view);
 
         Amplify.getSharedInstance().promptIfReady(promptView);
         //texthaschanged();
@@ -287,11 +286,11 @@ How to avoid to repeat same operation at resum?
         }
 
         setContentView(R.layout.activity_fullscreen);
-        spinner = (ProgressBar) findViewById(R.id.spinnerProgress);
+        spinner = findViewById(R.id.spinnerProgress);
         controlsView2 = findViewById(R.id.topcontrolbar);
         controlsView3tap = findViewById(R.id.fullscreen_content2);
-        contentView = (TextView) findViewById(R.id.fullscreen_content);
-        mSeekBar = (SeekBar) findViewById(R.id.reading_progress_bar);
+        contentView = findViewById(R.id.fullscreen_content);
+        mSeekBar = findViewById(R.id.reading_progress_bar);
 	/*	mSeekBar.setOnTouchListener(new OnTouchListener(){
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -626,7 +625,7 @@ How to avoid to repeat same operation at resum?
             String toshow = filename + "\n" + percent + " ~" + minutes;
 
 
-            TextView myOutBox = (TextView) findViewById(R.id.textViewStatus);
+            TextView myOutBox = findViewById(R.id.textViewStatus);
             myOutBox.setText(toshow);
         } else {
 

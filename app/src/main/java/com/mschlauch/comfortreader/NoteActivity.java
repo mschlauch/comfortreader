@@ -56,8 +56,8 @@ public class NoteActivity extends Activity {
 
         settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this), this);
         //EditText
-        inputTextView = (TextView) findViewById(R.id.editTextInput);
-        prefixTextView = (TextView) findViewById(R.id.textViewPrefix);
+        inputTextView = findViewById(R.id.editTextInput);
+        prefixTextView = findViewById(R.id.textViewPrefix);
         //	composedTextView = (TextView) findViewById(R.id.textViewComposed);
 
 		/*
