@@ -1,42 +1,44 @@
 apply plugin: 'com.android.application'
 
-
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
-
-
 android {
-
     compileSdkVersion 28
-    buildToolsVersion "28.0.0"
+    buildToolsVersion "29.0.2"
 
     defaultConfig {
-
         applicationId "com.mschlauch.comfortreader"
         minSdkVersion 22
         targetSdkVersion 28
+        versionCode 13
+        versionName "1.9.6"
+
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
-    lintOptions{
+    lintOptions {
         checkReleaseBuilds false
         abortOnError false
+        disable 'GoogleAppIndexingWarning'
     }
-
 
     dexOptions {
         jumboMode true
+    }
+
+    compileOptions {
+        encoding = 'UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*'
     }
 }
 
@@ -47,61 +49,41 @@ configurations.all {
 }
 
 dependencies {
+// Support libraries
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:preference-v7:28.0.0'
 
 
-    compile 'com.github.mertakdut:EpubParser:1.0.95'
+// 3rd party
+    //https://github.com/mertakdut/EpubParser/releases
+    implementation 'com.github.mertakdut:EpubParser:1.0.95'
 
-    compile ('com.github.stkent:amplify:2.2.0'){
+    //https://github.com/stkent/amplify/blob/master/CHANGELOG.md
+    implementation('com.github.stkent:amplify:2.2.0') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
-    // Other dependencies ...
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2')
-    // Required -- JUnit 4 framework
-    testCompile 'junit:junit:4.12'
-    testCompile 'org.robolectric:robolectric:3.6.1'
-   compile 'com.android.support:support-v4:28.0.0'
 
-   // compile 'com.android.support:support-compat:26.0.0'
-  compile  'com.android.support:appcompat-v7:28.0.0'
+    //https://github.com/jhy/jsoup/blob/master/CHANGES
+    implementation 'org.jsoup:jsoup:1.10.2'
 
+    //https://github.com/TomRoush/PdfBox-Android/releases
+    implementation 'com.tom_roush:pdfbox-android:1.8.10.0'
 
-   // compile 'com.android.support:'
-    //  compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:preference-v7:28.0.0'
-   // compile 'com.android.support:appcompat-v7:25.0.3'
-    compile 'org.jsoup:jsoup:1.10.2'
-    //compile files('libs/awt-android-1.0.jar')
-    //compile files('libs/fontbox-2.0.0-SNAPSHOT.jar')
-    //compile files('libs/jempbox-2.0.0-SNAPSHOT.jar')
-    //compile files('libs/pdfbox-2.0.0-SNAPSHOT.jar')
-    //compile files('libs/xmpbox-2.0.0-SNAPSHOT.jar')
-    compile 'com.tom_roush:pdfbox-android:1.8.10.0'
+    //https://github.com/Angads25/android-filepicker/releases
+    implementation 'com.github.angads25:filepicker:1.1.1'
 
-    //image viewing, to develop later
-    // compile 'com.github.chathuralakmal:AndroidImagePopup:1.2.1'
-    //dependency for filepicker
-    compile 'com.github.angads25:filepicker:1.1.1'
-    //dependency for colorpicker
-    compile 'net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0'
-    testCompile 'junit:junit:4.12'
-
-    // AndroidX Capable version
-   // implementation 'com.github.AppIntro:AppIntro:5.1.0'
-// Support Library compatibility version
- //   implementation 'com.github.AppIntro:AppIntro:4.2.3'
- //   implementation 'com.heinrichreimersoftware:material-intro:1.6.2'
-
-}
+    //https://github.com/attenzione/android-ColorPickerPreference
+    implementation 'net.margaritov.preference.colorpicker.ColorPickerPreference:ColorPickerPreference:1.0.0'
 
 
+// To implement...
+    //https://github.com/chathuralakmal/AndroidImagePopup/releases
+    // implementation 'com.github.chathuralakmal:AndroidImagePopup:1.2.1'
 
+    //https://github.com/AppIntro/AppIntro/releases
+    // implementation 'com.github.AppIntro:AppIntro:4.2.3' //5.x is AndroidX
 
-android {
-    testOptions {
-        unitTests {
-//            includeAndroidResources = true
-        }
-    }
-
-
+    //https://github.com/heinrichreimer/material-intro/releases
+    // implementation 'com.heinrichreimersoftware:material-intro:1.6.2'
 }
