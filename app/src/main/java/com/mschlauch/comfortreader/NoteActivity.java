@@ -33,19 +33,17 @@ import android.widget.Toast;
 
 public class NoteActivity extends Activity {
 
-
     public SettingsLoader settingsload = null;
     // public String savednotebook;
     public String prefix;
     public String extract;
     public String filename;
     public String note;
-    public String composednotebook;
+    public String composedNotebook;
     private String position;
     private TextView inputTextView;
     private TextView prefixTextView;
     private TextView composedTextView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,81 +54,77 @@ public class NoteActivity extends Activity {
         //EditText
         inputTextView = findViewById(R.id.editTextInput);
         prefixTextView = findViewById(R.id.textViewPrefix);
-        //	composedTextView = (TextView) findViewById(R.id.textViewComposed);
+        // composedTextView = findViewById(R.id.textViewComposed);
 
-		/*
-		// savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
-		position = settingsload.getGlobalPositionPercentString();
+/*
+        // savednotebook = settingsload.getCurrentNotes();//TODO call settingsloader instead
+        position = settingsload.getGlobalPositionPercentString();
 
-		String texttoread = settingsload.getTexttoRead();//TODO ""
-		int globalposition = settingsload.getGlobalPosition();
-		String filepath = settingsload.getFilePath();//TODO ""
-		filename = settingsload.getFileofPath(filepath);
+        String textToRead = settingsload.getTextToRead();//TODO ""
+        int globalPosition = settingsload.getGlobalPosition();
+        String filepath = settingsload.getFilePath();//TODO ""
+        filename = settingsload.getFileOfPath(filepath);
 
-		//String pathtofile = ("" + filepath + "/" + filename);
+        //String pathtofile = ("" + filepath + "/" + filename);
 
-		String datetext = " " + android.text.format.DateFormat.format("yyyy-MM-dd hh:mm", new java.util.Date());
+        String datetext = " " + android.text.format.DateFormat.format("yyyy-MM-dd hh:mm", new java.util.Date());
 
+        int textlength = textToRead.length();
+        int begin = globalPosition - 100 - settingsload.getMaxBlockSize();
+        int end = globalPosition + 100;
+        if (begin < 1) {
+            begin = 0;
+        }
+        if (end > textlength || end < 0) {
+            end = textlength;
+        }
+        String preextract = textToRead.substring(begin, end);
 
-		int textlength = texttoread.length();
-		int begin = globalposition - 100 - settingsload.getMaxBlockSize();
-		int end = globalposition + 100;
-		if (begin < 1){begin = 0;}
-		if (end > textlength || end < 0){
-			end = textlength;
-		}
-		String preextract = texttoread.substring(begin,end);
+        //get extracted text as words
+        textlength = preextract.length();
+        begin = 0;
+        end = 0;
+        begin = preextract.indexOf(" ");
+        end = preextract.lastIndexOf(" ");
+        if (begin < 1) {
+            begin = 0;
+        }
+        if (end > preextract.length() || end < 0) {
+            end = preextract.length();
+        }
 
+        String extract = " ";
+        extract = preextract.substring(begin, end);
+        extract = extract.replaceAll("-\n", "");
 
-		//get extracted text as words
-		textlength = preextract.length();
-		begin = 0;
-		end = 0;
-		begin = preextract.indexOf(" ");
-		end = preextract.lastIndexOf(" ");
-		if (begin < 1){begin = 0;}
-		if (end > preextract.length() || end < 0){
-			end = preextract.length() ;
-		}
+        extract = extract.replaceAll("\n", " ");
 
-		String extract = " ";
-		extract = preextract.substring(begin, end);
-		extract =	extract.replaceAll("-\n","");
+        extract = "[…]" + extract + "[…]";
+        //linebreak bereinigung
+        //extract.replace(System.getProperty ("line.separator"), "");
+        //geht nicht TODO line.separator bereinigen...später
 
-		   extract =	extract.replaceAll("\n"," ");
+        //	SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        // 	position = preferences.getString("positiontextfornote","");
 
-		extract = "[…]" + extract + "[…]";
-		//linebreak bereinigung
-		//extract.replace(System.getProperty ("line.separator"), "");
-		//geht nicht TODO line.separator bereinigen...später
+        //position = "position";
+        //current position
+        //percentage
 
-	//	SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-  	 // 	position = preferences.getString("positiontextfornote","");
+        prefix = "\n____________________\nQUOTATION:" + "\nFile:" + filepath + "\nPosition: " + position + "\nDate:" + datetext + "\nOriginal text:" + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//";
 
-		//position = "position";
-		//current position
-		//percentage
-
-		prefix = "\n____________________\nQUOTATION:" + "\nFile:"+ filepath + "\nPosition: " +  position + "\nDate:" + datetext + "\nOriginal text:"  + "\n \"" + extract + "\" \n\n" + "COMMENT:\n//" ;
-
-
-
-		//composedTextView.setText((CharSequence)savednotebook);
-		//composednotebook = savednotebook;
-
-		*/
+        //composedTextView.setText((CharSequence)savednotebook);
+        //composedNotebook = savednotebook;
+*/
 
         String eins = " ";
         new AsyncTask<String, Void, String>() {
-
-
             @Override
             protected String doInBackground(String... urlStr) {
                 // do stuff on non-UI thread
 
                 NoteComposer notec = new NoteComposer();
                 extract = notec.getExtract(settingsload);
-
 
                 return extract;
 
@@ -142,23 +136,17 @@ public class NoteActivity extends Activity {
                 // return htmlCode.toString();
             }
 
-
             @Override
             protected void onPostExecute(String htmlCode) {
                 // do stuff on UI thread with the html
                 prefixTextView.setText("Original text: " + extract);
-
-
             }
         }.execute(eins);
-
-
     }
 
 
     private void saveTextfile(String text) {
-
-        Boolean success = settingsload.addtoCurrentNotes(text);
+        Boolean success = settingsload.addToCurrentNotes(text);
         if (success) {
             String newpath = settingsload.getCurrentNotesFilePath();
             newpath = newpath.substring(newpath.lastIndexOf("/") + 1);
@@ -171,14 +159,11 @@ public class NoteActivity extends Activity {
                     "Error",
                     Toast.LENGTH_SHORT).show();
         }
-
-
         finish();
     }
 
 
     public void enter(View view) {
-
         InputMethodManager imm = (InputMethodManager) getSystemService(
                 Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(inputTextView.getWindowToken(), 0);
@@ -189,11 +174,11 @@ public class NoteActivity extends Activity {
         note = inputTextView.getText().toString();
 
         NoteComposer notec = new NoteComposer();
-        composednotebook = notec.getcomposedNote(note, settingsload);
-        //	composedTextView.setText((CharSequence)composednotebook);
-        //	save("savednotebook",composednotebook);
+        composedNotebook = notec.getComposedNote(note, settingsload);
+        //	composedTextView.setText((CharSequence)composedNotebook);
+        //	save("savednotebook",composedNotebook);
 
-        saveTextfile(composednotebook);
+        saveTextfile(composedNotebook);
     }
 
     public void opennotebook(View view) {
@@ -203,6 +188,5 @@ public class NoteActivity extends Activity {
         Uri uri = Uri.parse("file://" + settingsload.getCurrentNotesFilePath());
         intent.setDataAndType(uri, "text/plain");
         startActivity(intent);
-
     }
 }

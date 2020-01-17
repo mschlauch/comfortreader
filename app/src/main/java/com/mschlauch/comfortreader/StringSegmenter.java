@@ -26,14 +26,13 @@ import java.util.ArrayList;
 
 public class StringSegmenter {
 
-
-    //   	public String segmentors =".,)(:;";
+    // public String segmenters = ".,)(:;";
 
     public int backgroundcolor;
     public int textcolor;
     public int emphasiscolor;
     public String previewcolorhex;
-    //public String hextextcolor;
+    // public String hextextcolor;
 
     public int r1 = 255;
     public int g1 = 255;
@@ -46,19 +45,19 @@ public class StringSegmenter {
 
     public int fontnumber = 1;
     public boolean helplinesinhtml = false;
-    //    public int tickposition = 0;
+    // public int tickPosition = 0;
     public int minblocksize = 20;
     public int maxblocksize = 110;
-    //    public boolean finished;
-    //    public boolean begin;
-    //    public int standartfontsize = 15;
-    //    public int maxcharactersperline = 15;
+    // public boolean finished;
+    // public boolean begin;
+    // public int standardFontSize = 15;
+    // public int maxCharactersPerLine = 15;
     public int brighttheme = 0;
-    //    public int lenseeffect = 0;
-    public int globalpositionoffset = 0;
+    // public int lenseEffect = 0;
+    public int globalPositionOffset = 0;
     public boolean loaded = false;
     public int radius = 19;
-    public String previewnextString = "";
+    public String previewNextString = "";
     public String previewlastString = "";
     public ArrayList<String> loadedprehtmlstrings;
     public String tokenizedstring;
@@ -69,18 +68,17 @@ public class StringSegmenter {
     private boolean tickturnsegment = false;
 
     public StringSegmenter(StringSegmenter point) {
-
-        //	this.segmentors = point.segmentors;
-        //	this.tickposition = point.tickposition;
+        // this.segmenters = point.segmenters;
+        // this.tickPosition = point.tickPosition;
         this.minblocksize = point.minblocksize;
         this.maxblocksize = point.maxblocksize;
-        //	this.finished = point.finished;
-        //	this.begin = point.begin;
-        //	this.standartfontsize = point.standartfontsize;
-        //	this. maxcharactersperline = point.maxcharactersperline;
+        // this.finished = point.finished;
+        // this.begin = point.begin;
+        // this.standardFontSize = point.standardFontSize;
+        // this. maxCharactersPerLine = point.maxCharactersPerLine;
         this.brighttheme = point.brighttheme;
-        //	this.lenseeffect = point.lenseeffect;
-        this.globalpositionoffset = point.globalpositionoffset + 0;
+        // this.lenseEffect = point.lenseEffect;
+        this.globalPositionOffset = point.globalPositionOffset + 0;
         this.loaded = point.loaded;
         this.radius = point.radius;
         this.loadedstring = point.loadedstring;
@@ -96,30 +94,24 @@ public class StringSegmenter {
         try {
             this.loadedhtmlstrings = new ArrayList<>(point.loadedhtmlstrings);
         } catch (Exception ex) {
-            this.loadallticks();
+            this.loadAllTicks();
         }
-
-
     }
 
     public StringSegmenter() {
 
         // TODO Auto-generated constructor stub
+        //globalPosition = 0;
     }
 
-    //	    public StringSegmenter()
-//	    {
-//	       globalposition=0;
-//	    }
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 
-    public void loadallticks() {
-        //loadallprehtmls(); //for some reason we have to load them twice?
+    public void loadAllTicks() {
+        //loadAllPreHtmls(); //for some reason we have to load them twice?
 
         Log.i("StringSegmenter", "start loadingallticks");
-
 
         getsegmenthtml(0);//load maxticks
         loadedhtmlstrings = new ArrayList<>();
@@ -130,16 +122,13 @@ public class StringSegmenter {
                 saltaticker = 0;
                 loadedhtmlstrings.add(getsegmenthtml(i));
             }
-            //  Log.i("MyActivity", "loadingallticks in loop" + i);
-
+            // Log.i("MyActivity", "loadingallticks in loop" + i);
         }
         Log.i("StringSegmenter", "all ticks loaded: total:" + loadedhtmlstrings.size());
-
     }
 
-
-    public String loadsegmentoutput(int tick) {
-        //return loadedhtmlstrings.get(tick);
+    public String loadSegmentOutput(int tick) {
+        // return loadedhtmlstrings.get(tick);
 
         int newtick = Math.round(tick / saltaitickinbuffer);
         String output = "";
@@ -150,13 +139,9 @@ public class StringSegmenter {
             output = getsegmenthtml(tick);
         }
         return output;
-
     }
 
-
     public String getsegmenthtml(int tick) {
-
-
         int r1 = Color.red(textcolor);
         int g1 = Color.green(textcolor);
         int b1 = Color.blue(textcolor);
@@ -165,11 +150,9 @@ public class StringSegmenter {
         int g2 = Color.green(emphasiscolor);
         int b2 = Color.blue(emphasiscolor);
 
-
         String hextextcolor = "#" + Integer.toHexString(r1) + Integer.toHexString(g1) + Integer.toHexString(b1);
 
-
-        //   Log.i("StringSegmenter", "heavy string rendering");
+        // Log.i("StringSegmenter", "heavy string rendering");
         StringBuilder allhtml = new StringBuilder();
         int ihelper = 0;
         int mind = tick - radius;
@@ -206,7 +189,6 @@ public class StringSegmenter {
                 obj = obj.replaceAll("◜", "");
             }
 
-
             String prehtml = "";
             String backhtml = "";
 
@@ -215,28 +197,23 @@ public class StringSegmenter {
                 abstand = (abstand) * (-1);
             }
             if (abstand < radius + 1) {
-
                 try {
                     prehtml = loadedprehtmlstrings.get(abstand);
                 } catch (Exception ex) {
-                    // Display exception.
+                    // Display exception
                     prehtml = "<span style=\"font-size:" + 17 + "px ; color:white" + ";\">";
 
                 }
-                //  Log.i("stringsegmenter", "prehtml gotten from array" + arraysize + " " + abstand + " inhalt:" + prehtml);
-
+                // Log.i("stringsegmenter", "prehtml gotten from array" + arraysize + " " + abstand + " inhalt:" + prehtml);
 
                 backhtml = "</font>";
             }
-
 
             allhtml.append(prehtml);
             allhtml.append(obj);
             allhtml.append(backhtml);
 
-
             ihelper = ihelper + 1;
-
         }
 
         ihelper = ihelper + rest;
@@ -247,24 +224,20 @@ public class StringSegmenter {
         String result = allhtml.toString();
 
         String prefixdiv = "";
-		/*  String fontfilename = "";
-		  
-		  if (fontnumber == 0){
-			  fontfilename = "Crimson-Roman.ttf";
-		  }
-		  else if (fontnumber == 1){
-			  fontfilename = "LiberationSans-Regular.ttf";
-		  }
-		  else if (fontnumber == 2){
-			  fontfilename = "LiberationMono-Regular.ttf";
-		  }*/
-
+        String fontfilename = "";
+/*
+        if (fontNumber == 0) {
+            fontfilename = "Crimson-Roman.ttf";
+        } else if (fontNumber == 1) {
+            fontfilename = "LiberationSans-Regular.ttf";
+        } else if (fontNumber == 2) {
+            fontfilename = "LiberationMono-Regular.ttf";
+        }
+*/
         String backgroundimagename = "";
-
 
         String anfang;
         anfang = "";
-
 
         String colorstandart = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
 
@@ -272,16 +245,12 @@ public class StringSegmenter {
         String packagedpreviewnext = "";
         String packagedpreviewlast = "";
         if (helplinesinhtml) {
-
-            packagedpreviewnext = "<br><font color=\"" + previewcolorhex + "\" >" + previewnextString + "</font>";
+            packagedpreviewnext = "<br><font color=\"" + previewcolorhex + "\" >" + previewNextString + "</font>";
             packagedpreviewlast = "<font color=\"" + previewcolorhex + "\" >" + previewlastString + "</font><br>";
         }
 
         result = anfang + "<body><div  style=\"color:" + hextextcolor + ";" + "px ;text-align: center ;" + prefixdiv + "\">" + packagedpreviewlast + result + "" + packagedpreviewnext + "</div>" + "</body></html>";
         // Spanned htmlText = Html.fromHtml(allhtml);
         return result;
-
     }
-
-
 }

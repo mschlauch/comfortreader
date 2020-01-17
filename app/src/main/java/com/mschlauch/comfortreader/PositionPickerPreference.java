@@ -85,8 +85,6 @@ public class PositionPickerPreference extends DialogPreference {
                 setValue(newValue);
             }
         }
-
-
     }
 
     @Override
@@ -115,6 +113,4 @@ public class PositionPickerPreference extends DialogPreference {
     public void setMaximum(int max) {
         MAX_VALUE = max;
     }
-
-
 }

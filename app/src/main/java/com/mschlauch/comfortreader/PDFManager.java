@@ -41,17 +41,14 @@ public class PDFManager {
     private File file;
 
     public PDFManager() {
-
     }
 
     public String ToText() throws IOException {
-
         this.pdfStripper = null;
         this.pdDoc = null;
         this.cosDoc = null;
 
         file = new File(filePath);
-
 
         PDDocument document = null;
         try {
@@ -60,7 +57,6 @@ public class PDFManager {
             e.printStackTrace();
         }
 
-
         pdDoc = document;
         pdfStripper = new PDFTextStripper();
         pdDoc.getNumberOfPages();
@@ -68,15 +64,16 @@ public class PDFManager {
         // pdfStripper.setEndPage(3);
         pdfStripper.setEndPage(pdDoc.getNumberOfPages());
 
-      /* int max = pdDoc.getNumberOfPages();
-
-       StringBuilder textbuild = new StringBuilder();
-       for (int i = 1; i < max; i++) {
-           pdfStripper.setStartPage(i);
-           pdfStripper.setEndPage(i+1);
-           textbuild.append(pdfStripper.getText(pdDoc));
-           Log.d("PDFManager", "is loading pdf at page" + i);
-       }*/
+        int max = pdDoc.getNumberOfPages();
+/*
+        StringBuilder textbuild = new StringBuilder();
+        for (int i = 1; i < max; i++) {
+            pdfStripper.setStartPage(i);
+            pdfStripper.setEndPage(i + 1);
+            textbuild.append(pdfStripper.getText(pdDoc));
+            Log.d("PDFManager", "is loading pdf at page" + i);
+        }
+*/
         // reading text from page 1 to 10
         // if you want to get text from full pdf file use this code
         // pdfStripper.setEndPage(pdDoc.getNumberOfPages());
@@ -88,6 +85,4 @@ public class PDFManager {
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
-
-
 }

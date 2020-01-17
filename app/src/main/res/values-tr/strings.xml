@@ -74,7 +74,7 @@
     <string name="fullscreen_text_while_loading">…Metin yükleniyor… \nLütfen bekleyin.</string>
 
     <string name="settings_filepicker_loadingtext">Pdf yüklemesi zaman alıyor. Bilgisayarında pdf\'ten txt de hazırlayabilirsin.</string>
-    <string name="support_standarttext">Hiçbir metin yüklemedi. Sol üstteki menü butonuna basın ve bir txt, epub ya da pdf dosyası yükleyin.</string>
+    <string name="support_standardtext">Hiçbir metin yüklemedi. Sol üstteki menü butonuna basın ve bir txt, epub ya da pdf dosyası yükleyin.</string>
 
 
     <string name="feedback_opinionquestion_subtitle" />

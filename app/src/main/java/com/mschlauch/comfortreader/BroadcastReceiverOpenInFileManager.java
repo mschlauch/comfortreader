@@ -30,7 +30,7 @@ import java.io.File;
  * along with Comfort Reader.  If not, see <http://www.gnu.org/licenses/>.>.
  */
 
-public class BroadcastReceiverOpeninFileManager extends Activity {
+public class BroadcastReceiverOpenInFileManager extends Activity {
     private String TAG = "TagOpenTxt";
     private String uri = "";
     private Uri uri2;
@@ -56,15 +56,13 @@ public class BroadcastReceiverOpeninFileManager extends Activity {
             uri = myFile.getAbsolutePath();
             Log.i("TextBroadcaster", "loaded: " + uri);
 
-
-            final SettingsLoader settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this), this);
+            final SettingsLoader settingsLoad = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this), this);
             /* String path = data.getPath();*/
             String eins = " ";
 
             if (uri.contains(".")) {
                 final String extension = uri.substring(uri.lastIndexOf("."));
                 Log.i("TextBroadcaster", "extension is " + extension);
-
 
                 new AsyncTask<String, Void, String>() {
                     @Override
@@ -73,49 +71,40 @@ public class BroadcastReceiverOpeninFileManager extends Activity {
 
                         switch (extension) {
                             case ".pdf":
-                                Log.i("TextBroadcaster", "loaded is pdf" + uri);
-                                settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfrompdf(uri));
+                                Log.i("TextBroadcaster", "loaded pdf:" + uri);
+                                settingsLoad.helper_insertNewTextIntoDatabase(uri, settingsLoad.loadFromPdfFile(uri));
                                 break;
                             case ".txt":
-                                Log.i("TextBroadcaster", "loaded is txt: " + uri);
-                                settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfromtxtfile(uri));
+                                Log.i("TextBroadcaster", "loaded txt: " + uri);
+                                settingsLoad.helper_insertNewTextIntoDatabase(uri, settingsLoad.loadFromTxtFile(uri));
                                 break;
-                            case ".epup":
-                                Log.i("TextBroadcaster", "loaded is epub" + uri);
-                                settingsload.helper_insertnewtextintodatabase(uri, settingsload.loadfromepubfile(uri));
+                            case ".epub":
+                                Log.i("TextBroadcaster", "loaded epub:" + uri);
+                                settingsLoad.helper_insertNewTextIntoDatabase(uri, settingsLoad.loadFromEpubFile(uri));
                                 break;
                         }
                         return "";
                     }
 
-
                     @Override
                     protected void onPostExecute(String htmlCode) {
                         // do stuff on UI thread with the html
-
-
                     }
                 }.execute(eins);
 
                 Intent i = new Intent(this, FullscreenActivity.class);
                 finish();
                 startActivity(i);
-
-
             }
-
         }
 
-
         //TODO make sure text gets saved in sqlite table with fake path
-        //   settingsload.helper_insertnewtextintodatabase(uri, toread);
-        // settingsload.saveReadingCopyTextboolean(true);
+        // settingsLoad.helper_insertNewTextIntoDatabase(uri, toread);
+        // settingsLoad.saveReadingCopyTextBoolean(true);
 
-
-        //  TextView textView = (TextView)findViewById(R.id.textView);
-        //  textView.setText(uri);
+        // TextView textView = (TextView) findViewById(R.id.textView);
+        // textView.setText(uri);
         // now you call whatever function your app uses
         // to consume the txt file whose location you now know
-
     }
 }

@@ -16,7 +16,6 @@ public class ComfortReaderApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-
         Amplify.setLogger(new AndroidLogger());
         Amplify.initSharedInstance(this)
                 .setPositiveFeedbackCollectors(new GooglePlayStoreFeedbackCollector())
@@ -24,5 +23,4 @@ public class ComfortReaderApplication extends Application {
                 .applyAllDefaultRules();
         // .setAlwaysShow(BuildConfig.DEBUG);
     }
-
 }

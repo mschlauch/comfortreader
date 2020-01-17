@@ -44,7 +44,7 @@ public class BroadcastReceiverWebLink extends Activity {
     private String TAG = "TagOpenTxt";
     private String uri = "";
     private Uri uri2;
-    private boolean Shouldload = true;
+    private boolean shouldLoad = true;
 
     /**
      * Called when the activity is first created.
@@ -56,30 +56,29 @@ public class BroadcastReceiverWebLink extends Activity {
         //  setContentView(R.layout.activity_main);
         final Intent intent = getIntent();
         final String action = intent.getAction();
-        if (Shouldload) {
+        if (shouldLoad) {
             if (Intent.ACTION_SEND.equals(action)) {
                 //uri = intent.getStringExtra("URI");
                 uri2 = intent.getData();
                 String website = intent.getStringExtra(Intent.EXTRA_TEXT);
-                String websiteescaped = website;
-            /*try {
-                websiteescaped = URLEncoder.encode(website, "UTF-8");
-            } catch (UnsupportedEncodingException ex) {
-               // throw new RuntimeException(ex.getCause());
-            }*/
+                String websiteEscaped = website;
+                /*try {
+                    websiteEscaped = URLEncoder.encode(website, "UTF-8");
+                } catch (UnsupportedEncodingException ex) {
+                    // throw new RuntimeException(ex.getCause());
+                }*/
 
                 Log.i("WebLinkBroadcaster", "loaded: " + website);
                 final SettingsLoader settingsload = new SettingsLoader(PreferenceManager.getDefaultSharedPreferences(this), this);
                 final Intent i = new Intent(this, FullscreenActivity.class);
 
-                if (isValid(websiteescaped)) {
+                if (isValid(websiteEscaped)) {
                     new AsyncTask<String, Void, String>() {
-
-
                         @Override
                         protected String doInBackground(String... urlStr) {
                             // do stuff on non-UI thread
                             StringBuilder htmlCode = new StringBuilder();
+
                             try {
                                 URL url = new URL(urlStr[0]);
                                 BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -90,8 +89,8 @@ public class BroadcastReceiverWebLink extends Activity {
                                     htmlCode.append(inputLine);
                                     Log.d(TAG, "html: " + inputLine);
                                 }
-
                                 in.close();
+
                             } catch (Exception e) {
                                 e.printStackTrace();
                                 Log.d(TAG, "Error: " + e.getMessage());
@@ -110,7 +109,6 @@ public class BroadcastReceiverWebLink extends Activity {
                             // return htmlCode.toString();
                         }
 
-
                         @Override
                         protected void onPostExecute(String htmlCode) {
                             // do stuff on UI thread with the html
@@ -118,10 +116,10 @@ public class BroadcastReceiverWebLink extends Activity {
                             /* String path = data.getPath();*/
                             if (htmlCode.length() > 10) {
                                 Log.i("WebLinkBroadcaster", "loaded: " + htmlCode);
-                                Shouldload = false;
+                                shouldLoad = false;
                                 //TODO set imported text with invented bookpath
-                                settingsload.helper_insertnewcopiedtextintodatabase(htmlCode);
-                                // settingsload.saveReadingCopyTextboolean(true);
+                                settingsload.helper_insertNewCopiedTextIntoDatabase(htmlCode);
+                                //settingsload.saveReadingCopyTextBoolean(true);
 
                             } else {
                                 Toast.makeText(getBaseContext(),
@@ -133,8 +131,7 @@ public class BroadcastReceiverWebLink extends Activity {
                             startActivity(i);
 
                         }
-                    }.execute(websiteescaped);
-
+                    }.execute(websiteEscaped);
 
                 } else {
                     Toast.makeText(getBaseContext(),
@@ -143,7 +140,6 @@ public class BroadcastReceiverWebLink extends Activity {
                     finish();
                 }
             }
-
 
             //  TextView textView = (TextView)findViewById(R.id.textView);
             //  textView.setText(uri);
@@ -161,8 +157,6 @@ public class BroadcastReceiverWebLink extends Activity {
         } catch (MalformedURLException ignored) {
 
         }
-
         return false;
     }
-
 }

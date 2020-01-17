@@ -71,7 +71,7 @@
     <string name="notes_message_done_saving_note">書き込み完了</string>
     <string name="notes_title_current_notebook">メモ:</string>
 
-    <string name="support_standarttext">
+    <string name="support_standardtext">
     テキストは読み込まれていません。 左上のメニューボタンをクリックして、txt または pdf ファイルを読み込みます。</string>
 
     <string name="fullscreen_text_while_loading">…テキストの読み込み中…\n お待ちください。</string>
