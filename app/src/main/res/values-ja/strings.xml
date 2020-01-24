@@ -46,7 +46,7 @@
     <string name="settings_fontsize_title">フォントサイズ</string>
 
     <string name="settings_fontname_title">フォント</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">文字色</string>
     <string name="settings_textcolor_summary">通常の色</string>
     <string name="settings_focuscolor_title">フォーカス色</string>
@@ -59,7 +59,7 @@
     <string name="settings_fromcopypaste_summary">コピーしたテキストを貼り付けるにはオンにします</string>
 
     <string name="settings_backgroundcolor_title">背景色</string>
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">デバイスの向き</string>
     <string name="settings_deviceorientation_summary">デバイスを回転した時の動作</string>
     <string name="settings_deviceorientation_default">デフォルトのシステム動作</string>
@@ -71,31 +71,30 @@
     <string name="notes_message_done_saving_note">書き込み完了</string>
     <string name="notes_title_current_notebook">メモ:</string>
 
-    <string name="support_standarttext">
+    <string name="support_standardtext">
     テキストは読み込まれていません。 左上のメニューボタンをクリックして、txt または pdf ファイルを読み込みます。</string>
 
-    <string name="fullscreen_text_while_loading">...テキストの読み込み中...\n お待ちください。</string>
+    <string name="fullscreen_text_while_loading">…テキストの読み込み中…\n お待ちください。</string>
     <string name="fullscreen_copied_title">テキストをコピーしました</string>
 
     <string name="settings_filepicker_loadingtext">pdf の読み込みは時間がかかります。 お使いのコンピューターで pdf から txt に準備することもできます</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">このアプリは便利ですか？</string>
     <string name="feedback_opinionquestion_positive">嗚呼</string>
     <string name="feedback_opinionquestion_negative">>いいえ</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">This app is free and open-source. It survives thanks to your support. レビューしますか？</string>
     <string name="feedback_positiveopinionquestion_positive">はい</string>
     <string name="feedback_positiveopinionquestion_negative">>いいえ</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">Sorry for that. You can help us fix the problem. フィードバックを送信しますか？</string>
     <string name="feedback_negativeopinionquestion_positive">メッセージを送ります</string>
     <string name="feedback_negativeopinionquestion_negative">>いいえ</string>
 
     <string name="feedback_thankyou_title">ありがとうございました！</string>
     <string name="feedback_thankyou_subtitle">To keep Comfort Reader open and free from annoying ads, please consider donating on its webpage.</string>
-
 
 
 </resources>

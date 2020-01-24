@@ -1,7 +1,6 @@
-
 <resources>
-    
-	<string-array name="wpm_list_titles">
+
+    <string-array name="wpm_list_titles">
         <item>200 遅い</item>
         <item>350 通常</item>
         <item>550 速い</item>
@@ -39,8 +38,6 @@
     </string-array>
 
 
-
-
     <string-array name="orientationarray">
         <item>デフォルト</item>
         <item>常に横向き</item>
@@ -54,5 +51,4 @@
     </string-array>
 
 
-    
 </resources>

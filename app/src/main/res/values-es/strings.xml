@@ -26,7 +26,6 @@
     <string name="settings_insertmanually_filepath">ingresado manualmente</string>
 
 
-
     <string name="settings_title_readingoptions">Opciones de lectura</string>
     <string name="settings_title_supportoptions">Ayuda</string>
     <string name="settings_help_title">visita el sitio web</string>
@@ -55,7 +54,7 @@
     <string name="settings_fontsize_title">Tamaño de fuente</string>
 
     <string name="settings_fontname_title">Estilo de fuente</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">Color del texto</string>
     <string name="settings_textcolor_summary">color normal</string>
     <string name="settings_focuscolor_title">Color de foco</string>
@@ -67,7 +66,7 @@
     <string name="settings_fromcopypaste_summary">Activar para pegar el texto copiado</string>
 
     <string name="settings_backgroundcolor_title">Color de fondo</string>
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">Orientación del dispositivo</string>
     <string name="settings_deviceorientation_summary">comportamiento durante la rotación del dispositivo</string>
     <string name="settings_deviceorientation_default">Comportamiento predeterminado del sistema</string>
@@ -80,20 +79,20 @@
     <string name="notes_title_current_notebook">Tus notas:</string>
 
     <string name="fullscreen_copied_title">Texto copiado</string>
-    <string name="fullscreen_text_while_loading">... Cargando texto ..</string>
+    <string name="fullscreen_text_while_loading">… Cargando texto …</string>
 
     <string name="settings_filepicker_loadingtext">la forma más rápida es cargar un archivio txt</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">¿Le parece útil esta aplicación?</string>
     <string name="feedback_opinionquestion_positive">Sí</string>
     <string name="feedback_opinionquestion_negative">No</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">Comfort Reader es un software libre y open-source, gracias a la ayuda de muchos. ¿Quieres contribuir también y dejar una evaluación en Play Store?</string>
     <string name="feedback_positiveopinionquestion_positive">Bien</string>
     <string name="feedback_positiveopinionquestion_negative">No</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">Lo siento. Podrías ayudarnos a resolver el problema. ¿Desea dejarnos un mensaje?</string>
     <string name="feedback_negativeopinionquestion_positive">enviar comentarios</string>
     <string name="feedback_negativeopinionquestion_negative">ahora no </string>
@@ -101,7 +100,7 @@
     <string name="feedback_thankyou_title">¡Muchas gracias!</string>
     <string name="feedback_thankyou_subtitle">Considere hacer una donación en el sitio web de Comfort Reader. Solo para que pueda permanecer libre y libre de publicidad molesta.</string>
 
-    <string name="support_standarttext">
+    <string name="support_standardtext">
     ____________________TOCCA PARA LEER _____________ ¡Bienvenido a Comfort Reader! Antes de comenzar, aquí hay algunas sugerencias.
     n ———LECTURA ——— \n Para comenzar y pausar la lectura, toque en el centro de la pantalla. Para saltar hacia atrás, toque el lado izquierdo de la pantalla. Para saltar hacia adelante, toca el lado derecho. Mantenga su dedo un poco más para saltar más texto. \n ——-CONFIGURACIÓN ——— \n Para acceder a la configuración, haga una pausa y toque el icono de la rueda dentada en la esquina superior izquierda. \n En la configuración, puede ajustar la velocidad de lectura y el tamaño de los bloques de texto. Una persona promedio lee 200-250 palabras por minuto. Con el tiempo, puede volverse más rápido ya que Comfort Reader está diseñado para reducir el estrés visual. También puede cambiar su posición y cambiar la apariencia del texto. Elige un personaje que se adapte a tu estilo. Comfort Reader admite Sans, Serif, Mono y OpenDyslexic y varios colores. \n ———CARGAR EL TEXTO ——— \n Hay 4 maneras de cargar un texto. 1) En la configuración, puede importar un archivo \"txt\", \"pdf\" o \"epub\" que reside en la memoria interna de su dispositivo. 2) Abra el menú de configuración. Pega y edita el texto manualmente. 3) Inicie un administrador de archivos de su elección. Busque y seleccione su archivo \"txt\", \"pdf\" o \"epub\". Luego, elija Leer con Comfort Reader. 4) Abra un sitio web, por ejemplo, un artículo de Wikipedia en su navegador. Use la opción "compartir" de su navegador y seleccione "Confort Reader". Se mostrará una versión de texto del sitio web en Comfort Reader. \n ———NOTAS ——— En la esquina superior derecha, toca el ícono del lápiz y agrega una nota. Una nota contiene su comentario y el pasaje actual del texto que está comentando. Para cada libro, Comfort Reader guarda sus notas en un archivo de texto separado en el directorio de Comfort Reader dentro de la memoria interna. En caso de que no necesite comentar y solo quiera agregar una parte interesante del texto a sus notas, mantenga presionado el dedo en el centro de la pantalla. ———CONSEJOS ADICIONALES ——— Use los botones de volumen para pausar y adaptar la velocidad de lectura. Use su visión periférica: mantenga activa \"Líneas adicionales\" en la configuración. Muchas personas usan Comfort Reader para reducir la fatiga visual. Prefieren textos claros sobre un fondo oscuro y fuentes más grandes como OpenDyslexia. \n ———— ¡Gracias por tu tiempo! Feliz lectura! -----
 </string>

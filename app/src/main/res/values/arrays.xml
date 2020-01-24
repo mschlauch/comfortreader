@@ -1,7 +1,6 @@
-
 <resources>
-    
-	<string-array name="wpm_list_titles">
+
+    <string-array name="wpm_list_titles">
         <item>200 slow</item>
         <item>350 normal</item>
         <item>550 very fast</item>
@@ -41,8 +40,6 @@
     </string-array>
 
 
-
-
     <string-array name="orientationarray">
         <item>Default</item>
         <item>Landscape always</item>
@@ -56,5 +53,4 @@
     </string-array>
 
 
-    
 </resources>

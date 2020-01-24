@@ -5,11 +5,9 @@ package com.mschlauch.comfortreader;
  */
 
 
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-        import android.content.Context;
-        import android.database.sqlite.SQLiteDatabase;
-        import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -18,14 +16,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // Table columns
     public static final String _ID = "_id";
-    public static final String BOOKPATH = "bookpath";
-    public static final String BOOKTEXT = "booktext";
-    public static final String BOOKLENGTH = "booklength";//int
-    public static final String BOOKPOSITION = "bookposition";//int
-    public static final String BOOKWPM = "bookwpm";//int speed configuration
-    public static final String BOOKLASTREADING = "readingtimestamp";
-
-
+    public static final String BOOK_PATH = "bookpath";
+    public static final String BOOK_TEXT = "booktext";
+    public static final String BOOK_LENGTH = "booklength";//int
+    public static final String BOOK_POSITION = "bookposition";//int
+    public static final String BOOK_LASTREADING = "readingtimestamp";
+    public static final String BOOK_WPM = "bookwpm";//int speed configuration
 
     // Database Information
     static final String DB_NAME = "JOURNALDEV_COUNTRIES.DB";
@@ -35,9 +31,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // Creating table query
     private static final String CREATE_TABLE = "create table " + TABLE_NAME + "(" + _ID
-            + " INTEGER PRIMARY KEY AUTOINCREMENT, " + BOOKPATH + " TEXT NOT NULL, "
-            + BOOKTEXT + " TEXT," + BOOKLENGTH + " INTEGER," + BOOKPOSITION
-            + " INTEGER," + BOOKWPM + " INTEGER," + BOOKLASTREADING + " INTEGER" +  ");";
+            + " INTEGER PRIMARY KEY AUTOINCREMENT, " + BOOK_PATH + " TEXT NOT NULL, "
+            + BOOK_TEXT + " TEXT," + BOOK_LENGTH + " INTEGER," + BOOK_POSITION
+            + " INTEGER," + BOOK_WPM + " INTEGER," + BOOK_LASTREADING + " INTEGER" + ");";
 
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
