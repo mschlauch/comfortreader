@@ -16,13 +16,11 @@ public class ComfortReaderApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-
         Amplify.setLogger(new AndroidLogger());
         Amplify.initSharedInstance(this)
                 .setPositiveFeedbackCollectors(new GooglePlayStoreFeedbackCollector())
                 .setCriticalFeedbackCollectors(new DefaultEmailFeedbackCollector("support@rhizomaticdesign.net"))
                 .applyAllDefaultRules();
-       // .setAlwaysShow(BuildConfig.DEBUG);
+        // .setAlwaysShow(BuildConfig.DEBUG);
     }
-
 }

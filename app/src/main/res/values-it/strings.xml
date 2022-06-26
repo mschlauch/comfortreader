@@ -27,9 +27,6 @@
     <string name="settings_insertmanually_filepath">aggiunto manualmente</string>
 
 
-
-
-
     <string name="settings_statistics_summary">Hai letto</string>
     <string name="settings_statistics_summary2">parole in</string>
     <string name="settings_statistics_summary3">minuti (resettare qui).</string>
@@ -65,7 +62,7 @@
     <string name="settings_fontsize_title">Grandezza caratteri</string>
 
     <string name="settings_fontname_title">Tipografia</string>
-    <string name="settings_fontname_summary"></string>
+    <string name="settings_fontname_summary" />
     <string name="settings_textcolor_title">Colore testo</string>
     <string name="settings_textcolor_summary">Colore normale</string>
     <string name="settings_focuscolor_title">Colore focus</string>
@@ -77,7 +74,7 @@
     <string name="settings_fromcopypaste_summary">Accendere per fare copia-incolla</string>
 
     <string name="settings_backgroundcolor_title">Colore di fondo</string>
-    <string name="settings_backgroundcolor_summary"></string>
+    <string name="settings_backgroundcolor_summary" />
     <string name="settings_deviceorientation_title">Orientamento</string>
     <string name="settings_deviceorientation_summary">cosa succede quando giri il display</string>
     <string name="settings_deviceorientation_default">configurazione del sistema</string>
@@ -90,20 +87,20 @@
     <string name="notes_title_current_notebook">Tuoi appunti:</string>
 
     <string name="fullscreen_copied_title">Copia-incolla</string>
-    <string name="fullscreen_text_while_loading">...Il testo viene caricato...\n Aspettare</string>
+    <string name="fullscreen_text_while_loading">…Il testo viene caricato…\n Aspettare</string>
 
     <string name="settings_filepicker_loadingtext">Testo viene processato. Sarebbe meglio preparare il Pdf-Export dal Computer.</string>
 
 
-    <string name="feedback_opinionquestion_subtitle"></string>
+    <string name="feedback_opinionquestion_subtitle" />
     <string name="feedback_opinionquestion_title">Trovi che questa app sia utile?</string>
     <string name="feedback_opinionquestion_positive">Sì</string>
     <string name="feedback_opinionquestion_negative">No</string>
-    <string name="feedback_positiveopinionquestion_subtitle"></string>
+    <string name="feedback_positiveopinionquestion_subtitle" />
     <string name="feedback_positiveopinionquestion_title">Comfort Reader è software libero e open-source - grazie all\'aiuto ti tanti. Vuoi contribuire anche tu e lasciare una valutazione nel play store?</string>
     <string name="feedback_positiveopinionquestion_positive">Okay</string>
     <string name="feedback_positiveopinionquestion_negative">No</string>
-    <string name="feedback_negativeopinionquestion_subtitle"></string>
+    <string name="feedback_negativeopinionquestion_subtitle" />
     <string name="feedback_negativeopinionquestion_title">Ci dispiace. Potresti aiutarci a risolvere il problema. Vuoi lasciarci un messaggio?</string>
     <string name="feedback_negativeopinionquestion_positive">Manda feedback</string>
     <string name="feedback_negativeopinionquestion_negative">non adesso</string>
@@ -112,13 +109,10 @@
     <string name="feedback_thankyou_subtitle">Considera fare una donazione sul sito di Comfort Reader. Soli così può rimanere gratuito e libero da pubblicità fastidiosa.</string>
 
 
-    <string name="support_standarttext">
+    <string name="support_standardtext">
 ____________________TOCCA PER LEGGERE _____________ Benvenuti in Comfort Reader! Prima di iniziare, ecco alcuni suggerimenti.
 \n ———LETTURA ——— \n Per avviare e mettere in pausa la lettura, tocca al centro dello schermo. Per saltare all\'indietro, tocca il lato sinistro dello schermo. Per saltare in avanti, tocca il lato destro. Tieni premuto il dito un po più a lungo per saltare ancora più testo. \n ———IMPOSTAZIONI——— \n Per accedere alle impostazioni, metti in pausa e tocca l\'icona della ruota dentata nell\'angolo in alto a sinistra. \n Nelle impostazioni, puoi regolare la velocità di lettura e la dimensione dei blocchi di testo. Una persona media legge 200-250 parole al minuto. Nel tempo, potresti diventare più veloce poiché Comfort Reader è progettato per ridurre lo stress visivo. Puoi anche modificare la tua posizione e cambiare l\'aspetto del testo. Scegli un carattere adatto al tuo stile. Comfort Reader supporta Sans, Serif, Mono e OpenDyslexic e vari colori. \n ———CARICARE IL TESTO ——— \n Esistono 4 modi per caricare un testo. \n 1) Nelle impostazioni, puoi importare un file \"txt\", \"pdf\" o \"epub\" che risiede nella memoria interna del tuo dispositivo. \n 2) Apri il menu delle impostazioni. Incolla e modifica il testo manualmente. \n 3) Avvia un file manager a tua scelta. Cerca e seleziona il tuo file \"txt\", \"pdf\" o \"epub\". Poi, scegli \'Read with Comfort Reader\'. \n 4) Apri un sito web, per esempio un articolo di Wikipedia nel tuo browser. Usa l\'opzione \"condividi\" del tuo browser e seleziona \"Comfort Reader\". Una versione testuale del sito Web verrà visualizzata in Comfort Reader. \n ———APPUNTI ——— \n Nell\'angolo in alto a destra, tocca l\'icona della penna e aggiungi una nota. Una nota contiene il tuo commento e l\'attuale passaggio di testo su cui stai commentando. \n Per ogni libro, Comfort Reader salva i tuoi appunti in un file di testo separato nella directory \"Comfort Reader\" all\'interno della memoria interna. Nel caso in cui non hai bisogno di commentare e desideri solo aggiungere una parte interessante del testo alle tue note, tieni il dito premuto al centro dello schermo .——— SUGGERIMENTI EXTRA ——— \n Utilizza i pulsanti del volume per mettere in pausa e adattare la velocità di lettura. Utilizza la tua visione periferica: mantieni attivo \"Anteprima e retrospettiva\" nelle impostazioni. Molte persone usano Comfort Reader per ridurre l\'affaticamento degli occhi. Preferiscono testi chiari su sfondo scuro e caratteri più ampi come per esempio OpenDyslexia. \n ———— Grazie per il tuo tempo! Buona lettura! -----
     </string>
-
-
-
 
 
 </resources>
